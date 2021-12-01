@@ -1,0 +1,115 @@
+---
+import ExampleReactComponent from '../components/exampleReactComponent.tsx';
+import ExampleSvelteComponent from '../components/exampleSvelteComponent.svelte';
+import { Markdown } from 'astro/components';
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<html lang="en-GB">
+  <head>
+    <title>RodneyLab Minimal Astro Example</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        background: hsl(
+          var(--colour-dark-hue) var(--colour-dark-saturation) var(--colour-dark-luminance)
+        );
+        color: hsl(
+          var(--colour-light-text-hue) var(--colour-light-text-saturation)
+            var(--colour-light-text-luminance)
+        );
+        padding: var(--spacing-8) var(--spacing-0) var(--spacing-32);
+      }
+
+      .container a {
+        color: hsl(
+          var(--colour-secondary-hue) var(--colour-secondary-saturation)
+            var(--colour-secondary-luminance)
+        );
+      }
+
+      :global(.react-container) {
+        display: flex;
+        flex-direction: column;
+        background: hsl(
+          var(--colour-secondary-hue) var(--colour-secondary-saturation)
+            var(--colour-secondary-luminance)
+        );
+        align-items: center;
+        width: 100%;
+        padding: var(--spacing-8) var(--spacing-0);
+        color: hsl(
+          var(--colour-light-text-hue) var(--colour-light-text-saturation)
+            var(--colour-light-text-luminance)
+        );
+      }
+
+      :global(.react-container-alt) {
+        background: hsl(
+          var(--colour-alternative-hue) var(--colour-alternative-saturation)
+            var(--colour-alternative-luminance)
+        );
+      }
+
+      :global(.react-button) {
+        background: hsl(
+          var(--colour-alternative-hue) var(--colour-alternative-saturation)
+            var(--colour-alternative-luminance)
+        );
+      }
+
+      :global(.react-button-alt) {
+        background: hsl(
+          var(--colour-secondary-hue) var(--colour-secondary-saturation)
+            var(--colour-secondary-luminance)
+        );
+      }
+
+      .mdx-container {
+        display: flex;
+        flex-direction: column;
+        background: hsl(
+          var(--colour-alternative-hue) var(--colour-alternative-saturation)
+            var(--colour-alternative-luminance)
+        );
+        align-items: center;
+        width: 100%;
+        padding: var(--spacing-8) var(--spacing-0) var(--spacing-12);
+        color: hsl(
+          var(--colour-light-text-hue) var(--colour-light-text-saturation)
+            var(--colour-light-text-luminance)
+        );
+      }
+    </style>
+  </head>
+
+  <body>
+    <BaseLayout>
+      <header></header>
+      <main class="container">
+        <h1>Minimal <a href="https://astro.build/">Astro</a> Example</h1>
+        <p>This demo is not endorsed by Ben Awad, just thought the video content was fitting!</p>
+        <ExampleReactComponent client:load />
+        <ExampleSvelteComponent client:load />
+        <section class="mdx-container">
+          <Markdown>
+            ## Astro in 100 Seconds
+
+            <div class="video-container">
+            <iframe 
+            title="Astro in 100 Seconds"
+            width="560"
+            height="315"
+            src="https://www.youtube-nocookie.com/embed/dsTXcSeAZq8"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            ></iframe>
+            </div>
+          </Markdown>
+        </section>
+      </main>
+    </BaseLayout>
+  </body>
+</html>
