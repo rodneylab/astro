@@ -5,6 +5,7 @@
 // VSCode and other TypeScript-enabled text editors will provide auto-completion,
 // helpful tooltips, and warnings if your exported object is invalid.
 // You can disable this by removing "@ts-check" and `@type` comments below.
+import path from 'node:path';
 
 // @ts-check
 export default /** @type {import('astro').AstroUserConfig} */ ({
@@ -15,6 +16,13 @@ export default /** @type {import('astro').AstroUserConfig} */ ({
     site: 'https://astro.build/',
   },
   vite: {
+    resolve: {
+      alias: {
+        $src: path.resolve('./src'),
+        $components: path.resolve('./src/components'),
+        $layouts: path.resolve('./src/layouts'),
+      },
+    },
     define: {
       'process.env.VITE_BUILD_TIME': JSON.stringify(new Date().toISOString()),
     },
