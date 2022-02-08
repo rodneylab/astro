@@ -16,13 +16,6 @@ export default /** @type {import('astro').AstroUserConfig} */ ({
     site: 'https://astro.build/',
   },
   vite: {
-    resolve: {
-      alias: {
-        $src: path.resolve('./src'),
-        $components: path.resolve('./src/components'),
-        $layouts: path.resolve('./src/layouts'),
-      },
-    },
     define: {
       'process.env.VITE_BUILD_TIME': JSON.stringify(new Date().toISOString()),
     },
