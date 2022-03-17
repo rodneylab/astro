@@ -13,7 +13,7 @@
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/rodneylab/astro/tree/main/demos/astro-scroll-to-anchor)
 
-[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/rodneylab/astro/tree/main/demos/astro-scroll-to-anchor)
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/rodneylab/astro
 
 Final code from Rodney Lab <a aria-label="Open Rodney Lab blog post on Astro Scroll to Anchor" href="https://rodneylab.com/astro-scroll-to-anchor/">tutorial on Astro scroll to anchor</a>, which offers a gentle introduction to Astro for beginners as well as a new way to add SVG icons to your Astro app for anyone already familiar with Astro.
 
