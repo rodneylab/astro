@@ -1,43 +1,35 @@
-# Astro Starter Kit: Minimal
+<img src="../../images/rodneylab-github-astro-scroll-to-anchor.png" alt="Rodney Lab astro-scroll-to-anchor Github banner">
+
+<p align="center">
+  <a aria-label="Open Rodney Lab site" href="https://rodneylab.com" rel="nofollow noopener noreferrer">
+    <img alt="Rodney Lab logo" src="https://rodneylab.com/assets/icon.png" width="60" />
+  </a>
+</p>
+<h1 align="center">
+  Astro Scroll to Anchor
+</h1>
+
+# astro-scroll-to-anchor
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/rodneylab/astro/tree/main/demos/astro-scroll-to-anchor)
+
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/rodneylab/astro/tree/main/demos/astro-scroll-to-anchor)
+
+Final code from Rodney Lab <a aria-label="Open Rodney Lab blog post on Astro Scroll to Anchor" href="https://rodneylab.com/astro-scroll-to-anchor/">tutorial on Astro scroll to anchor</a>, which offers a gentle introduction to Astro for beginners as well as a new way to add SVG icons to your Astro app for anyone already familiar with Astro.
+
+# Astro Scroll to Anchor
 
 ```
-npm init astro -- --template minimal
+pnpm init astro -- --template https://github.com/rodneylab/astro/tree/main/demos/astro-scroll-to-anchor
 ```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
 
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
 
-| Command           | Action                                       |
-| :---------------- | :------------------------------------------- |
-| `npm install`     | Installs dependencies                        |
-| `npm run dev`     | Starts local dev server at `localhost:3000`  |
-| `npm run build`   | Build your production site to `./dist/`      |
-| `npm run preview` | Preview your build locally, before deploying |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://github.com/withastro/astro) or jump into our [Discord server](https://astro.build/chat).
+| Command            | Action                                       |
+| :----------------- | :------------------------------------------- |
+| `pnpm install`     | Installs dependencies                        |
+| `pnpm run dev`     | Starts local dev server at `localhost:3000`  |
+| `pnpm run build`   | Build your production site to `./dist/`      |
+| `pnpm run preview` | Preview your build locally, before deploying |
