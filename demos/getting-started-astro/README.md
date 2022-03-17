@@ -13,8 +13,6 @@
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/rodneylab/astro/tree/main/demos/getting-started-astro)
 
-[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/rodneylab/astro/tree/main/demos/getting-started-astro)
-
 Playground code handy if you are just getting going in Astro and want to try our React, Svelte and Markdown components while playing with partial hydration. The code accompanies the <a aria-label="Open Rodney Lab blog post on getting started with Astro" href="https://rodneylab.com/getting-started-astro/">post on getting started with Astro</a>. If you have any questions, please drop a comment at the bottom of that page.
 
 # Getting Started with Astro Playground
