@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import type { FC } from 'react';
 
 export const ReactExample: FC<{}> = function ReactExample() {
