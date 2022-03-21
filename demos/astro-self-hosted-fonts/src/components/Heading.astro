@@ -1,0 +1,36 @@
+---
+import { Icon } from 'astro-icon';
+
+const { 'aria-label': ariaLabel, id, text } = Astro.props;
+
+const href = `#${id}`;
+---
+
+<span {id} class="container">
+  {text}
+  <a aria-label={ariaLabel} {href}
+    ><span class="anchor-link"><Icon name="heroicons-solid:link" /> </span></a
+  >
+</span>
+
+<style lang="css">
+  .anchor-link {
+    visibility: hidden;
+  }
+
+  a {
+    color: hsl(var(--colour-text-hue) var(--colour-text-saturation) var(--colour-text-luminance));
+    text-decoration: none;
+  }
+
+  [astro-icon] {
+    display: inline;
+    width: var(--font-size-5);
+    vertical-align: middle;
+  }
+
+  .container:focus .anchor-link,
+  .container:hover .anchor-link {
+    visibility: visible;
+  }
+</style>
