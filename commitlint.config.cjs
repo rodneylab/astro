@@ -7,6 +7,7 @@ module.exports = {
       [
         "demos",
         "root",
+        "astro-contact-form",
         "astro-self-hosted-fonts",
         "astro-scroll-to-anchor",
         "getting-started-astro",
