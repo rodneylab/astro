@@ -6,7 +6,16 @@ use aws_lambda_events::encodings::Body;
 use http::header::HeaderMap;
 use lambda_runtime::{handler_fn, Context, Error};
 use log::LevelFilter;
+use serde::{Deserialize, Serialize};
 use simple_logger::SimpleLogger;
+
+#[derive(Deserialize, Serialize)]
+struct ContactFormRequest {
+    bot_field: String,
+    email: String,
+    name: String,
+    message: String,
+}
 
 #[tokio::main]
 async fn main() -> Result<(), Error> {
@@ -18,10 +27,8 @@ async fn main() -> Result<(), Error> {
 }
 
 pub(crate) async fn my_handler(event: ApiGatewayProxyRequest, _ctx: Context) -> Result<ApiGatewayProxyResponse, Error> {
-    let body = event.path.unwrap();
-
-    let body = request.body();
-    let body: ClientRequest = serde_json::from_slice(&body)?;
+    let body = event.body.unwrap();
+    let body: ContactFormRequest = serde_json::from_slice(body.as_bytes())?;
 
     let telegram_message = serde_json::to_string_pretty(&body).unwrap();
     let telegram_bot_api_token = dotenv::var("TELEGRAM_BOT_API_TOKEN").unwrap();

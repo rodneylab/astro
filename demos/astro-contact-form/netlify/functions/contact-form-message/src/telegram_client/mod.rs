@@ -38,15 +38,16 @@ impl TelegramClient {
     }
 
     pub async fn send_message(&self, message: &str) -> bool {
-        let client = reqwest::Client::new();
-        let mut map = HashMap::<&str, &str>::new();
-        map.insert("chat_id", self.bot_chat_id.as_str());
-        map.insert("text", message);
-        let url = format!("{}bot{}/sendMessage", self.base_url, self.bot_api_token);
+        // let client = reqwest::Client::new();
+        // let mut map = HashMap::<&str, &str>::new();
+        // map.insert("chat_id", self.bot_chat_id.as_str());
+        // map.insert("text", message);
+        // let url = format!("{}bot{}/sendMessage", self.base_url, self.bot_api_token);
 
-        match client.post(url).json(&map).send().await {
-            Ok(_) => true,
-            Err(_) => false,
-        }
+        // match client.post(url).json(&map).send().await {
+        //     Ok(_) => true,
+        //     Err(_) => false,
+        // }
+        true
     }
 }
