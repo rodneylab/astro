@@ -19,7 +19,7 @@
   const handleSubmit = async () => {
     try {
       submitting = true;
-      await fetch(`/.netlify/functions/message_via_telegram_bot`, {
+      await fetch(`/.netlify/functions/contact-form-message`, {
         method: "POST",
         credentials: "omit",
         headers: {

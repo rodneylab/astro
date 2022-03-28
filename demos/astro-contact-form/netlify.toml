@@ -2,3 +2,6 @@
   command = "make build && npm run build"
   functions = "netlify/functions"
   publish = "dist"
+
+[context.production]
+environment = { NETLIFY_EXPERIMENTAL_BUILD_RUST_SOURCE = "true" }
