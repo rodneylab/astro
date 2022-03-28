@@ -13,7 +13,7 @@
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/rodneylab/astro/tree/main/demos/astro-self-hosted-fonts)
 
-Final code from Rodney Lab <a aria-label="Open Rodney Lab blog post on Astro Self-Hosted Fonst" href="https://rodneylab.com/astro-self-hosted-fonts/">video on Astro self-hosted fonts and font optimisation</a>.
+Final code from Rodney Lab <a aria-label="Open Rodney Lab blog post on Astro Self-Hosted Fonts" href="https://rodneylab.com/astro-self-hosted-fonts/">video on Astro self-hosted fonts and font optimisation</a>.
 
 # Astro Self-Hosted Fonts
 
