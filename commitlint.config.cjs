@@ -4,7 +4,13 @@ module.exports = {
     "scope-enum": [
       2,
       "always",
-      ["demos", "root", "getting-started-astro", "astro-scroll-to-anchor"],
+      [
+        "demos",
+        "root",
+        "astro-self-hosted-fonts",
+        "astro-scroll-to-anchor",
+        "getting-started-astro",
+      ],
     ],
     "scope-empty": [2, "never"],
   },
