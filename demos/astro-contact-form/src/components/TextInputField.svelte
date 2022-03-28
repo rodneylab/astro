@@ -1,0 +1,41 @@
+<script lang="ts">
+  import InputField from "$components/InputField.svelte";
+  import { createEventDispatcher } from "svelte";
+
+  export let value: string;
+  export let required: boolean = false;
+  export let placeholder: string;
+  export let id: string;
+  export let title: string;
+  export let error: string | null = null;
+  export let dataList: string[] | null = null;
+  export let style: string = "";
+
+  const dispatch = createEventDispatcher();
+</script>
+
+<div {style}>
+  <InputField {id} {title} {error}>
+    <input
+      bind:value
+      on:change={() => {
+        dispatch("update", value);
+      }}
+      {required}
+      {id}
+      aria-invalid={error != null}
+      aria-describedby={error != null ? `${id}-error` : null}
+      {placeholder}
+      {title}
+      type="text"
+      list={dataList ? `${id}-list` : null}
+    />
+    {#if dataList}
+      <datalist id={`${id}-list`}>
+        {#each dataList as value}
+          <option {value} />
+        {/each}
+      </datalist>
+    {/if}
+  </InputField>
+</div>

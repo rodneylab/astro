@@ -1,0 +1,20 @@
+{
+  "name": "@example/minimal",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "format": "prettier --write --plugin-search-dir=. ."
+  },
+  "devDependencies": {
+    "@astrojs/svelte": "^0.0.2",
+    "astro": "^0.25.2",
+    "prettier": "^2.6.1",
+    "prettier-plugin-astro": "^0.0.12",
+    "svelte": "^3.46.4",
+    "vite": "^2.8.6"
+  }
+}
