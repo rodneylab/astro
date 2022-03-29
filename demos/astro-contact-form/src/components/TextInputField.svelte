@@ -1,20 +1,18 @@
-<script lang="ts">
+<script>
   import InputField from "$components/InputField.svelte";
   import { createEventDispatcher } from "svelte";
 
-  export let value: string;
-  export let required: boolean = false;
-  export let placeholder: string;
-  export let id: string;
-  export let title: string;
-  export let error: string | null = null;
-  export let dataList: string[] | null = null;
-  export let style: string = "";
+  export let value;
+  export let required = false;
+  export let placeholder;
+  export let id;
+  export let title;
+  export let error = null;
 
   const dispatch = createEventDispatcher();
 </script>
 
-<div {style}>
+<div>
   <InputField {id} {title} {error}>
     <input
       bind:value
@@ -28,14 +26,6 @@
       {placeholder}
       {title}
       type="text"
-      list={dataList ? `${id}-list` : null}
     />
-    {#if dataList}
-      <datalist id={`${id}-list`}>
-        {#each dataList as value}
-          <option {value} />
-        {/each}
-      </datalist>
-    {/if}
   </InputField>
 </div>

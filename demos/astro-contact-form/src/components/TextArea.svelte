@@ -1,14 +1,14 @@
-<script lang="ts">
+<script>
   import InputField from "$components/InputField.svelte";
   import { createEventDispatcher } from "svelte";
 
-  export let value: string;
-  export let required: boolean = false;
-  export let placeholder: string;
-  export let id: string;
-  export let title: string;
-  export let error: string | null = null;
-  export let rows: number = 5;
+  export let value;
+  export let required = false;
+  export let placeholder;
+  export let id;
+  export let title;
+  export let error = null;
+  export let rows = 5;
 
   const dispatch = createEventDispatcher();
 </script>
@@ -31,10 +31,3 @@
     />
   </InputField>
 </div>
-
-<!-- <style>
-  textarea {
-    width: 100%;
-    resize: none;
-  }
-</style> -->

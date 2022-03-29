@@ -1,13 +1,8 @@
-import axios from "axios";
+import axios from 'axios';
 
 const { TELEGRAM_BOT_API_TOKEN, TELEGRAM_BOT_CHAT_ID } = process.env;
 
-async function notifyViaTelegramBot({
-  honeyBotFlaggedSpam,
-  name,
-  email,
-  message,
-}) {
+async function notifyViaTelegramBot({ honeyBotFlaggedSpam, name, email, message }) {
   try {
     const data = JSON.stringify(
       {
@@ -17,12 +12,12 @@ async function notifyViaTelegramBot({
         message,
       },
       null,
-      2
+      2,
     );
-    const text = `Comment: ${data}`;
+    const text = `Contact form message: ${data}`;
     await axios({
       url: `https://api.telegram.org/bot${TELEGRAM_BOT_API_TOKEN}/sendMessage`,
-      method: "POST",
+      method: 'POST',
       data: {
         chat_id: TELEGRAM_BOT_CHAT_ID,
         text,
@@ -44,10 +39,10 @@ async function notifyViaTelegramBot({
 
 export async function handler({ body, httpMethod }) {
   try {
-    if (httpMethod !== "POST") {
+    if (httpMethod !== 'POST') {
       return {
         statusCode: 405,
-        body: "Method Not Allowed",
+        body: 'Method Not Allowed',
       };
     }
 
@@ -55,7 +50,7 @@ export async function handler({ body, httpMethod }) {
     const { botField, email, name, message } = data;
 
     const { error: telegramError } = await notifyViaTelegramBot({
-      honeyBotFlaggedSpam: botField !== "",
+      honeyBotFlaggedSpam: botField !== '',
       email,
       name,
       message,
@@ -68,7 +63,7 @@ export async function handler({ body, httpMethod }) {
       };
     }
 
-    return { statusCode: 200, body: "Over and out." };
+    return { statusCode: 200, body: 'Over and out.' };
   } catch (error) {
     return {
       statusCode: 400,
