@@ -7,7 +7,8 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "check:svelte": "svelte-check --tsconfig ./tsconfig.json",
+    "check": "astro check --fail-on-warnings",
+    "check:svelte": "svelte-check --fail-on-hints",
     "format": "prettier --write --plugin-search-dir=. .",
     "lint:css": "stylelint \"src/**/*.{astro,css,svelte}\""
   },
