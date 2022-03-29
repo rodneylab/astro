@@ -1,17 +1,16 @@
 ---
-import ContactForm from "$components/ContactForm.svelte";
+import ContactForm from '$components/ContactForm.svelte';
 ---
 
-<html lang="en">
+<html lang="en-GB">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Astro Contact Form: using Netlify Serverless Functions in Rust</title
-    >
+    <title>Astro Contact Form: using Netlify Serverless Functions</title>
   </head>
   <body>
     <header class="header-container">
-      <h1>Astro Landing Page: using Serverless Rust</h1>
+      <h1>Astro Landing Page: using Serverless Functions</h1>
     </header>
     <main class="main-container">
       <section class="card">
@@ -22,13 +21,10 @@ import ContactForm from "$components/ContactForm.svelte";
           <li>10 Step plan for your business</li>
         </ul>
       </section>
-
       <section class="card card-alt">
         <h2>Find out more</h2>
         <ContactForm client:load />
       </section>
-
-      <!-- </div> -->
     </main>
   </body>
 </html>
@@ -36,22 +32,20 @@ import ContactForm from "$components/ContactForm.svelte";
 <style>
   /* hind-regular - latin */
   @font-face {
-    font-family: "Hind";
+    font-family: Hind;
     font-style: normal;
-    font-weight: 400;
-    src: local(""), url("/fonts/hind-v15-latin-regular.woff2") format("woff2"),
-      /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url("/fonts/hind-v15-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-weight: var(--font-weight-normal);
+    src: local(''), url('/fonts/hind-v15-latin-regular.woff2') format('woff2'),
+      url('/fonts/hind-v15-latin-regular.woff') format('woff');
   }
 
   /* hind-700 - latin */
   @font-face {
-    font-family: "Hind";
+    font-family: Hind;
     font-style: normal;
-    font-weight: 700;
-    src: local(""), url("/fonts/hind-v15-latin-700.woff2") format("woff2"),
-      /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url("/fonts/hind-v15-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-weight: var(--font-weight-bold);
+    src: local(''), url('/fonts/hind-v15-latin-700.woff2') format('woff2'),
+      url('/fonts/hind-v15-latin-700.woff') format('woff');
   }
 
   :global(html) {
@@ -71,7 +65,7 @@ import ContactForm from "$components/ContactForm.svelte";
 
   :global(h1) {
     font-size: var(--font-size-6);
-    font-weight: var(--font-weight-extrabold);
+    font-weight: var(--font-weight-bold);
   }
 
   :global(h2) {
@@ -85,6 +79,7 @@ import ContactForm from "$components/ContactForm.svelte";
     width: min(32rem, 100%);
     margin-left: auto;
     margin-right: auto;
+    color: var(--colour-dark);
   }
 
   :global(input, textarea) {
@@ -96,11 +91,11 @@ import ContactForm from "$components/ContactForm.svelte";
     border-radius: var(--spacing-1);
     font-size: var(--font-size-3);
     background-color: var(--colour-light);
-    color: var(--colour-theme);
   }
 
-  :global(input:focus, textarea:focus) {
-    border-color: var(--colour-brand);
+  :global(textarea) {
+    padding: var(--spacing-2) var(--spacing-0);
+    resize: none;
   }
 
   :global(button) {
@@ -115,11 +110,6 @@ import ContactForm from "$components/ContactForm.svelte";
     cursor: pointer;
   }
 
-  :global(textarea) {
-    padding: var(--spacing-2) var(--spacing-0);
-
-    resize: none;
-  }
   :global(.screen-reader-text) {
     border: 0;
     clip: rect(1px, 1px, 1px, 1px);
@@ -135,7 +125,9 @@ import ContactForm from "$components/ContactForm.svelte";
   :global(.error-text) {
     color: var(--colour-brand);
   }
+
   :global(:root) {
+    /* https://coolors.co/efefef-64737d-d90368-3e1929-07004d **/
     --colour-theme: hsl(334 43% 17%); /* dark purple */
     --colour-brand: hsl(332 97% 43%); /* dogwood rose */
     --colour-alt: hsl(201 11% 41%); /* cadet */
@@ -171,7 +163,7 @@ import ContactForm from "$components/ContactForm.svelte";
 
     --spacing-0: 0;
     --spacing-px: 1px;
-    --spacing-px-2: 1px;
+    --spacing-px-2: 2px;
     --spacing-1: 0.25rem;
     --spacing-2: 0.5rem;
     --spacing-4: 1rem;
@@ -188,10 +180,9 @@ import ContactForm from "$components/ContactForm.svelte";
 
     --font-weight-normal: 400;
     --font-weight-bold: 700;
-    --font-weight-extrabold: 800;
 
-    --font-heading: "Hind";
-    --font-body: "Hind";
+    --font-heading: 'Hind';
+    --font-body: 'Hind';
 
     /* CREDIT: https://www.joshwcomeau.com/shadow-palette/ */
     --shadow-color: 0deg 0% 58%;
@@ -199,6 +190,10 @@ import ContactForm from "$components/ContactForm.svelte";
       -2.7px 2.7px 3.7px -1.2px hsl(var(--shadow-color) / 0.43),
       -7.6px 7.6px 10.5px -2.3px hsl(var(--shadow-color) / 0.36),
       -20px 20px 27.6px -3.5px hsl(var(--shadow-color) / 0.29);
+  }
+
+  :global(input:focus, textarea:focus) {
+    border-color: var(--colour-brand);
   }
 
   .header-container {
@@ -231,7 +226,7 @@ import ContactForm from "$components/ContactForm.svelte";
     color: var(--colour-dark);
   }
   .card {
-    border: var(--spacing-px) solid var(--colour-theme);
+    border: var(--spacing-px-2) solid var(--colour-theme);
     box-shadow: var(--shadow-elevation-medium);
     background-color: var(--colour-theme);
     background-image: var(--colour-brand-gradient);
@@ -241,38 +236,10 @@ import ContactForm from "$components/ContactForm.svelte";
   }
 
   .card-alt {
-    border: var(--spacing-px-2) solid var(--colour-dark);
+    border-color: var(--colour-dark);
     background-color: var(--colour-alt);
 
     background-image: var(--colour-alt-gradient);
     color: var(--colour-light);
-  }
-
-  .picker {
-    display: flex;
-    justify-content: space-around;
-    background-color: var(--colour-dark);
-    box-shadow: var(--shadow-elevation-medium);
-    color: var(--colour-theme);
-    padding: var(--spacing-6);
-    border-radius: var(--spacing-2);
-    font-size: var(--font-size-3);
-  }
-  .colours {
-    margin: var(--spacing-12) auto;
-  }
-  .colour {
-    text-align: center;
-    padding: var(--spacing-6);
-    border-radius: var(--spacing-1);
-  }
-  .colour-code {
-    font-weight: var(--font-weight-bold);
-  }
-  .text-light {
-    color: var(--colour-light);
-  }
-  .text-dark {
-    color: var(--colour-dark);
   }
 </style>

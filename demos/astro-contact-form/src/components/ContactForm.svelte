@@ -1,96 +1,79 @@
 <script>
-  import EmailInputField from "$components/EmailInputField.svelte";
-  import TextArea from "$components/TextArea.svelte";
-  import TextInputField from "$components/TextInputField.svelte";
-
-  let botField = "";
-  let name = "";
-  let email = "";
-  let message = "";
+  let botField = '';
+  let name = '';
+  let email = '';
+  let message = '';
 
   let serverState;
   $: submitting = false;
-  $: errors = null;
 
   function handleServerResponse(ok, msg) {
     serverState = { ok, msg };
   }
 
   const handleSubmit = async () => {
+    console.log({ email, name, message });
     try {
       submitting = true;
-      await fetch(`/.netlify/functions/message_via_telegram_bot`, {
-        method: "POST",
-        credentials: "omit",
+      await fetch(`/.netlify/functions/contact-form-message`, {
+        method: 'POST',
+        credentials: 'omit',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          bot_field: botField,
+          botField,
           email,
           name,
           message,
         }),
       });
       submitting = false;
-      handleServerResponse(true, "");
+      handleServerResponse(true, '');
     } catch (error) {
       console.error(`Eror: ${error}`);
       submitting = false;
       handleServerResponse(
         false,
-        "Unable to send your message at the moment.  Please try again later."
+        'Unable to send your message at the moment.  Please try again later.',
       );
     }
   };
 </script>
 
 <form on:submit|preventDefault={handleSubmit} class="form-container">
-  <input
-    aria-hidden="true"
-    type="hidden"
-    name="bot-field"
-    bind:value={botField}
-  />
-  <TextInputField
-    value={name}
-    id="contact-name"
-    placeholder="Name"
-    title="Name"
-    required
-    error={errors?.name ?? null}
-    on:update={(event) => {
-      name = event.detail;
-    }}
-  />
-  <EmailInputField
-    value={email}
-    id="contact-email"
-    placeholder="blake@example.com"
-    title="Email"
-    required
-    error={errors?.email ?? null}
-    on:update={(event) => {
-      email = event.detail;
-    }}
-  />
-  <TextArea
-    value={message}
-    id="contact-message"
-    placeholder="Write your message here..."
-    title="Message"
-    required
-    rows={6}
-    error={errors?.message ?? null}
-    on:update={(event) => {
-      const value = event.detail.trim();
-      message = value;
-    }}
-  />
+  <input aria-hidden="true" type="hidden" name="bot-field" bind:value={botField} />
+  <div>
+    <span class="screen-reader-text"><label for="name">Name</label></span>
+    <input bind:value={name} required id="name" placeholder="Name" title="Name" type="text" />
+  </div>
+  <div>
+    <span class="screen-reader-text"><label for="email">Email</label></span>
+    <input
+      bind:value={email}
+      required
+      id="email"
+      placeholder="blake@example.com"
+      title="Email"
+      type="email"
+    />
+  </div>
+  <div>
+    <span class="screen-reader-text"><label for="message">Message</label></span>
+    <textarea
+      bind:value={message}
+      required
+      id="message"
+      rows={6}
+      placeholder="Write your message here..."
+      title="Message"
+      type="text"
+    />
+  </div>
   <div class="button-container">
     <button type="submit" disabled={submitting}> Send</button>
   </div>
-  {#if serverState}<p class={!serverState.ok ? "errorMsg" : ""}>
+  {#if serverState}<p class={!serverState.ok ? 'errorMsg' : ''}>
       {serverState.msg}
     </p>{/if}
 </form>
