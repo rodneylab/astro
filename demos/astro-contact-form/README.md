@@ -9,7 +9,7 @@
   Astro Contact Form
 </h1>
 
-# astro-contaact-form
+# astro-contact-form
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/rodneylab/astro/tree/main/demos/astro-contact-form)
 
