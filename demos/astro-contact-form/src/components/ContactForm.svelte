@@ -26,7 +26,7 @@
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          bot_field: botField,
+          botField,
           email,
           name,
           message,

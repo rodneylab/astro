@@ -12,9 +12,13 @@
   "devDependencies": {
     "@astrojs/svelte": "^0.0.2",
     "astro": "^0.25.4",
+    "axios": "^0.26.1",
     "prettier": "^2.6.1",
     "prettier-plugin-astro": "^0.0.12",
     "svelte": "^3.46.4",
     "vite": "^2.8.6"
+  },
+  "dependencies": {
+    "@netlify/functions": "^1.0.0"
   }
 }
