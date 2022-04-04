@@ -5,11 +5,8 @@ import svelte from '@astrojs/svelte';
 
 // https://astro.build/config
 export default defineConfig({
-  buildOptions: {
-    sitemap: true,
-    site: 'https://astro.build/',
-  },
-  // Comment out "renderers: []" to enable Astro's default component support.
+  sitemap: true,
+  site: 'https://example.com/',
   integrations: [react(), svelte()],
   vite: {
     define: {
