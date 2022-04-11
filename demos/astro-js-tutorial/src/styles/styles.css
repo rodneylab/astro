@@ -1,0 +1,156 @@
+:root {
+  /* colours */
+  /* honey-yellow */
+  --colour-brand-hue: 39;
+  --colour-brand-saturation: 92%;
+  --colour-brand-luminance: 57%;
+
+  /* safety orange blaze orange */
+  --colour-secondary-hue: 21;
+  --colour-secondary-saturation: 89%;
+  --colour-secondary-luminance: 52%;
+
+  /* moss green */
+  --colour-alternative-hue: 84;
+  --colour-alternative-saturation: 29%;
+  --colour-alternative-luminance: 43%;
+
+  /* pine tree */
+  --colour-dark-text-hue: 100;
+  --colour-dark-text-saturation: 18%;
+  --colour-dark-text-luminance: 13%;
+
+  /* old lace */
+  --colour-light-text-hue: 50;
+  --colour-light-text-saturation: 66%;
+  --colour-light-text-luminance: 95%;
+
+  --colour-dark-hue: 206;
+  --colour-dark-saturation: 46%;
+  --colour-dark-luminance: 37%;
+
+  /* spacing */
+  --spacing-px: 1px;
+  --spacing-0: 0;
+  --spacing-4: 1rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-12: 3rem;
+  --spacing-32: 8rem;
+}
+
+/* roboto-regular - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("/fonts/roboto-v29-latin-regular.woff2") format("woff2"),
+    url("/fonts/roboto-v29-latin-regular.woff") format("woff");
+}
+
+/* roboto-700 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("/fonts/roboto-v29-latin-700.woff2") format("woff2"),
+    url("/fonts/roboto-v29-latin-700.woff") format("woff");
+}
+
+body {
+  margin: var(--spacing-0);
+  background: hsl(var(--colour-dark-hue) var(--colour-dark-saturation));
+  font-family: Roboto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.815rem;
+  margin-bottom: var(--spacing-12);
+}
+
+h2 {
+  font-size: 1.802rem;
+  margin-bottom: var(--spacing-8);
+}
+
+p {
+  margin: var(--spacing-6) var(--spacing-6) var(--spacing-8);
+}
+
+button {
+  cursor: pointer;
+  margin: var(--spacing-6);
+  border: solid var(--spacing-px)
+    hsl(
+      var(--colour-light-text-hue) var(--colour-light-text-saturation)
+        var(--colour-light-text-luminance)
+    );
+  border-radius: 50%;
+  padding: var(--spacing-8);
+}
+
+.video-container {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  max-width: 560px;
+  margin: var(--spacing-0) var(--spacing-6);
+}
+
+.video-container iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  width: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  word-wrap: normal !important;
+}
+
+.react-container {
+  display: flex;
+  flex-direction: column;
+  background: hsl(
+    var(--colour-secondary-hue) var(--colour-secondary-saturation)
+      var(--colour-secondary-luminance)
+  );
+  align-items: center;
+  width: 100%;
+  padding: var(--spacing-8) var(--spacing-0);
+  color: hsl(
+    var(--colour-light-text-hue) var(--colour-light-text-saturation)
+      var(--colour-light-text-luminance)
+  );
+}
+
+.react-container-alt {
+  background: hsl(
+    var(--colour-alternative-hue) var(--colour-alternative-saturation)
+      var(--colour-alternative-luminance)
+  );
+}
+
+.react-button {
+  background: hsl(
+    var(--colour-alternative-hue) var(--colour-alternative-saturation)
+      var(--colour-alternative-luminance)
+  );
+}
+
+.react-button-alt {
+  background: hsl(
+    var(--colour-secondary-hue) var(--colour-secondary-saturation)
+      var(--colour-secondary-luminance)
+  );
+}
