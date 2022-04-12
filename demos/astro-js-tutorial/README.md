@@ -13,8 +13,6 @@
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/rodneylab/astro/tree/main/demos/astro-js-tutorial)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/cb983465-4082-4f8d-9f11-42845db0f4a6/deploy-status)](https://app.netlify.com/sites/grand-lokum-9aa0bf/deploys)
-
 Code from Rodney Lab <a aria-label="Open Rodney Lab blog post on Astro JS Tutorial" href="https://rodneylab.com/astro-landing-page-form/">quick start Astro JS tutorial</a>. If you have any questions, please drop a comment at the bottom of that page.
 
 # Astro Contact Form
