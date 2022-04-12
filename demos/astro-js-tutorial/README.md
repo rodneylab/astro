@@ -32,4 +32,4 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm run build`   | Build your production site to `./dist/`      |
 | `pnpm run preview` | Preview your build locally, before deploying |
 
-Feel free to jump into the [RodneyLab matrix chat room](https://matrix.to/#/%23rodney:matrix.org).
+Feel free to jump into the [Rodney Lab matrix chat room](https://matrix.to/#/%23rodney:matrix.org).
