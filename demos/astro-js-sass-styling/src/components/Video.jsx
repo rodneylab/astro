@@ -1,5 +1,5 @@
-import { useState } from 'react';
 import styles from '$components/Video.module.scss';
+import { useState } from 'react';
 
 export const ReactExample = function ReactExample() {
   const [altColours, setAltColours] = useState(false);
