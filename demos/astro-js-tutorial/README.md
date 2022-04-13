@@ -9,16 +9,16 @@
   Astro JS Tutorial
 </h1>
 
-# astro-contact-form
+# astro-js-tutorial
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/rodneylab/astro/tree/main/demos/astro-js-tutorial)
 
 Code from Rodney Lab <a aria-label="Open Rodney Lab blog post on Astro JS Tutorial" href="https://rodneylab.com/astro-js-tutorial/">quick start Astro JS tutorial</a>. If you have any questions, please drop a comment at the bottom of that page.
 
-# Astro Contact Form
+# Astro JS Tutorial
 
 ```
-pnpm init astro -- --template https://github.com/rodneylab/astro/tree/main/demos/astro-contact-form
+pnpm init astro -- --template https://github.com/rodneylab/astro/tree/main/demos/astro-js-tutorial
 ```
 
 ## 🧞 Commands
