@@ -1,0 +1,43 @@
+{
+  "name": "astro-js-sass-styling",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "format": "prettier --write --plugin-search-dir=. .",
+    "lint:scss": "stylelint \"src/**/*.{astro,scss,svelte}\"",
+    "prettier:check": "prettier --check --plugin-search-dir=. ."
+  },
+  "devDependencies": {
+    "@astrojs/react": "^0.1.0",
+    "@astrojs/svelte": "^0.1.1",
+    "astro": "^1.0.0-beta.7",
+    "postcss": "^8.4.12",
+    "postcss-html": "^1.3.0",
+    "prettier": "^2.6.2",
+    "prettier-plugin-astro": "^0.0.12",
+    "prettier-plugin-svelte": "^2.7.0",
+    "react": "^17.0.2 || ^18.0.0",
+    "react-dom": "^17.0.2 || ^18.0.0",
+    "sass": "^1.50.0",
+    "stylelint": "^14.6.1",
+    "stylelint-config-recommended": "^7.0.0",
+    "stylelint-config-recommended-scss": "^6.0.0",
+    "stylelint-config-standard": "^25.0.0",
+    "svelte": "^3.46.4"
+  },
+  "dependencies": {
+    "@babel/core": "^7.17.9",
+    "vite": "^2.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rodneylab/astro"
+  },
+  "bugs": {
+    "url": "https://github.com/rodneylab/astro/issues"
+  }
+}
