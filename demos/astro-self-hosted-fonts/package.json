@@ -2,6 +2,8 @@
   "name": "astro-self-hosted-fonts",
   "version": "0.0.1",
   "private": true,
+  "license": "BSD-3-Clause",
+  "description": "SvelteKit Shiki syntax highlighting: use any VSCode colour theme to accessibly syntax highlight code on your SvelteKit app with line numbers.",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -10,13 +12,20 @@
     "format": "prettier --write --plugin-search-dir=. ."
   },
   "devDependencies": {
-    "astro": "~1.0.0-beta.12",
+    "astro": "~1.0.0-beta.18",
     "astro-icon": "^0.7.1",
-    "autoprefixer": "^10.4.4",
+    "autoprefixer": "^10.4.5",
     "postcss": "^8.4.12",
     "postcss-html": "^1.4.1",
     "prettier": "^2.6.2",
     "prettier-plugin-astro": "^0.0.12",
     "subfont": "^6.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rodneylab/astro/tree/main/demos/astro-self-hosted-fonts"
+  },
+  "bugs": {
+    "url": "https://github.com/rodneylab/astro/issues"
   }
 }
