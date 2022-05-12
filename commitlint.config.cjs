@@ -1,20 +1,21 @@
 module.exports = {
-  extends: ["@commitlint/config-conventional"],
+  extends: ['@commitlint/config-conventional'],
   rules: {
-    "scope-enum": [
+    'scope-enum': [
       2,
-      "always",
+      'always',
       [
-        "demos",
-        "root",
-        "astro-contact-form",
-        "astro-js-sass-styling",
-        "astro-js-tutorial",
-        "astro-self-hosted-fonts",
-        "astro-scroll-to-anchor",
-        "getting-started-astro",
+        'demos',
+        'root',
+        'astro-contact-form',
+        'astro-js-sass-styling',
+        'astro-js-tutorial',
+        'astro-self-hosted-fonts',
+        'astro-scroll-to-anchor',
+        'getting-started-astro',
+        'temporal-api-time-zones',
       ],
     ],
-    "scope-empty": [2, "never"],
+    'scope-empty': [2, 'never'],
   },
 };

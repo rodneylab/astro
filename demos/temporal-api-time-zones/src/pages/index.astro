@@ -1,0 +1,141 @@
+---
+import { Temporal } from '@js-temporal/polyfill';
+import '$styles/fonts.css';
+import '$styles/global.css';
+
+const localTimeZoneName = 'Europe/London';
+const remoteTimeZoneName = 'America/Sao_Paulo';
+
+const localDateTime = Temporal.Now.plainDateTimeISO().toZonedDateTime(localTimeZoneName);
+const remoteTimeZone = Temporal.TimeZone.from(remoteTimeZoneName);
+const remoteDateTime = localDateTime.withTimeZone(remoteTimeZone);
+---
+
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Temporal API: Time Zone Conversion</title>
+    <meta name="description" content="Temporal API: Time Zone Conversion" />
+  </head>
+  <body>
+    <main>
+      <h1 class="heading">Temporal API: Time Zone Conversion</h1>
+      <section class="container">
+        <div class="clock-wrapper">
+          <div class="time-zone">{localTimeZoneName}</div>
+          <div class="clock">
+            <div class="time">
+              {localDateTime.toLocaleString('en-GB', { timeStyle: 'short' })}
+            </div>
+            <div class="date">
+              {localDateTime.toLocaleString('en-GB', { dateStyle: 'medium' })}
+            </div>
+          </div>
+        </div>
+        <div class="clock-wrapper">
+          <div class="time-zone">
+            {remoteTimeZoneName}
+          </div>
+
+          <div class="clock">
+            <div class="time">
+              {remoteDateTime.toLocaleString('en-GB', { timeStyle: 'short' })}
+            </div>
+            <div class="date">
+              {remoteDateTime.toLocaleString('en-GB', { dateStyle: 'medium' })}
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+
+<style>
+  .heading {
+    text-align: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: var(--spacing-12) auto;
+    padding-top: var(--spacing-12);
+    background-color: var(--colour-alt);
+    border: var(--spacing-px-2) solid var(--colour-light);
+    box-shadow: var(--shadow-colour-theme-elevation-medium);
+    border-radius: var(--spacing-4);
+    width: min(100% - var(--spacing-12), var(--max-width-wrapper));
+  }
+
+  .clock-wrapper {
+    background-color: var(--colour-brand);
+    border: var(--spacing-px-2) solid var(--colour-dark);
+    box-shadow: var(--shadow-colour-alt-elevation-medium);
+
+    border-radius: var(--spacing-2);
+    padding: var(--spacing-6) auto var(--spacing-2);
+    margin: var(--spacing-0) var(--spacing-12) var(--spacing-12);
+    max-width: 100%;
+  }
+  .time-zone {
+    font-size: var(--font-size-6);
+    line-height: 58.8359px;
+    padding: var(--spacing-6) var(--spacing-6);
+    margin-bottom: var(--spacing-4);
+    width: 100%;
+  }
+
+  .clock {
+    display: flex;
+    font-family: var(--font-family-heading);
+    flex-direction: column;
+    background-color: var(--colour-dark);
+    border-radius: var(--spacing-1);
+    color: var(--colour-light);
+    max-width: 100%;
+    width: fit-content;
+
+    padding: var(--spacing-6) var(--spacing-6);
+    margin: var(--spacing-0) auto var(--spacing-8);
+    text-align: right;
+  }
+
+  .time {
+    font-size: var(--font-size-10);
+    font-variant-numeric: tabular-nums;
+    line-height: 105.991px;
+    padding-bottom: var(--spacing-6);
+  }
+
+  /* CREDIT: https://seek-oss.github.io/capsize/ */
+  .time::before {
+    content: '';
+    margin-bottom: -0.0913em;
+    display: table;
+  }
+
+  .time::after {
+    content: '';
+    margin-top: -0.1103em;
+    display: table;
+  }
+
+  .date {
+    font-size: var(--font-size-6);
+    line-height: 58.8359px;
+  }
+
+  /* CREDIT: https://seek-oss.github.io/capsize/ */
+  :is(.date, .time-zone)::before {
+    content: '';
+    margin-bottom: -0.2312em;
+    display: table;
+  }
+
+  :is(.date, .time-zone)::after {
+    content: '';
+    margin-top: -0.2586em;
+    display: table;
+  }
+</style>

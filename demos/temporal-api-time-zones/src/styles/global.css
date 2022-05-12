@@ -1,0 +1,76 @@
+:root {
+  --spacing-px-2: 2px;
+  --spacing-0: 0;
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-4: 1rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-12: 3rem;
+
+  --max-width-wrapper: 48rem;
+
+  --font-size-root: 16px;
+  --font-size-0: 0.833rem;
+  --font-size-1: 1rem;
+  --font-size-2: 1.25rem;
+  --font-size-3: 1.563rem;
+  --font-size-4: 1.953rem;
+  --font-size-5: 2.441rem;
+  --font-size-6: 3.052rem;
+  --font-size-7: 3.815rem;
+  --font-size-8: 4.768rem;
+  --font-size-9: 5.96rem;
+  --font-size-10: 7.451rem;
+
+  --font-weight-normal: 400;
+
+  /* CREDIT: https://www.joshwcomeau.com/shadow-palette/ */
+  --colour-dark: hsl(218 58% 4%); /* ebony */
+  --colour-brand: hsl(39 91% 49%); /* gamboge */
+  --colour-theme: hsl(258 68% 60%); /* medium purple */
+  --colour-alt: hsl(192 97% 73%); /* malibu */
+  --colour-light: hsl(205 100% 97%); /* alice blue */
+
+  --shadow-colour-theme: 259deg 58% 36%;
+  --shadow-colour-theme-elevation-medium: -1px 1px 1.4px hsl(var(--shadow-colour-theme) / 0.51),
+    -2.7px 2.7px 3.7px -1.2px hsl(var(--shadow-colour-theme) / 0.43),
+    -7.6px 7.6px 10.5px -2.3px hsl(var(--shadow-colour-theme) / 0.36),
+    -20px 20px 27.6px -3.5px hsl(var(--shadow-colour-theme) / 0.29);
+
+  --shadow-colour-alt: 192deg 63% 45%;
+  --shadow-colour-alt-elevation-medium: -1px 1px 1.4px hsl(var(--shadow-colour-alt) / 0.51),
+    -2.7px 2.7px 3.7px -1.2px hsl(var(--shadow-colour-alt) / 0.43),
+    -7.6px 7.6px 10.5px -2.3px hsl(var(--shadow-colour-alt) / 0.36),
+    -20px 20px 27.6px -3.5px hsl(var(--shadow-colour-alt) / 0.29);
+
+  --font-family-body: Roboto;
+  --font-family-heading: Fira Sans;
+}
+
+html {
+  font-family: var(--font-family-body);
+}
+
+body {
+  background-color: var(--colour-theme);
+}
+
+h1 {
+  font-size: var(--font-size-6);
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-normal);
+  color: var(--colour-light);
+}
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  width: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  word-wrap: normal !important;
+}
