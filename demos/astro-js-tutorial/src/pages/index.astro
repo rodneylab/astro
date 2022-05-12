@@ -1,8 +1,8 @@
 ---
-import "$styles/styles.css";
-import { Markdown } from "astro/components";
-import ReactVideo from "$components/Video.jsx";
-import SvelteVideo from "$components/Video.svelte";
+import '$styles/styles.css';
+import { Markdown } from 'astro/components';
+import ReactVideo from '$components/Video.jsx';
+import SvelteVideo from '$components/Video.svelte';
 ---
 
 <html lang="en-GB">
@@ -16,10 +16,7 @@ import SvelteVideo from "$components/Video.svelte";
   <body>
     <main class="container">
       <h1>Astro JS Tutorial Site</h1>
-      <p>
-        This demo is not endorsed by Ben Awad, just thought the video content
-        was fitting!
-      </p>
+      <p>This demo is not endorsed by Ben Awad, just thought the video content was fitting!</p>
       <ReactVideo client:load />
       <SvelteVideo client:load />
       <section class="mdx-container">
@@ -48,8 +45,7 @@ import SvelteVideo from "$components/Video.svelte";
     display: flex;
     flex-direction: column;
     background: hsl(
-      var(--colour-dark-hue) var(--colour-dark-saturation)
-        var(--colour-dark-luminance)
+      var(--colour-dark-hue) var(--colour-dark-saturation) var(--colour-dark-luminance)
     );
     color: hsl(
       var(--colour-light-text-hue) var(--colour-light-text-saturation)

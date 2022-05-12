@@ -2,7 +2,7 @@
   $: altColours = false;
 </script>
 
-<section class={`container${altColours ? " container-alt" : ""}`}>
+<section class={`container${altColours ? ' container-alt' : ''}`}>
   <h2>Svelte Component</h2>
   <div class="video-container">
     <iframe
@@ -16,7 +16,7 @@
     />
   </div>
   <button
-    class={`button${altColours ? " button-alt" : ""}`}
+    class={`button${altColours ? ' button-alt' : ''}`}
     on:click={() => {
       altColours = !altColours;
     }}><span class="screen-reader-text">Toggle colours</span></button
@@ -28,8 +28,7 @@
     display: flex;
     flex-direction: column;
     background: hsl(
-      var(--colour-brand-hue) var(--colour-brand-saturation)
-        var(--colour-brand-luminance)
+      var(--colour-brand-hue) var(--colour-brand-saturation) var(--colour-brand-luminance)
     );
     align-items: center;
     width: 100%;
@@ -61,8 +60,7 @@
 
   .button-alt {
     background: hsl(
-      var(--colour-brand-hue) var(--colour-brand-saturation)
-        var(--colour-brand-luminance)
+      var(--colour-brand-hue) var(--colour-brand-saturation) var(--colour-brand-luminance)
     );
   }
 </style>

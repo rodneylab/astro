@@ -1,12 +1,10 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 export const ReactExample = function ReactExample() {
   const [altColours, setAltColours] = useState(false);
 
   return (
-    <section
-      className={`react-container${altColours ? " react-container-alt" : ""}`}
-    >
+    <section className={`react-container${altColours ? ' react-container-alt' : ''}`}>
       <h2>Example React Component</h2>
       <div className="video-container">
         <iframe
@@ -20,7 +18,7 @@ export const ReactExample = function ReactExample() {
         />
       </div>
       <button
-        className={`react-button${altColours ? " react-button-alt" : ""}`}
+        className={`react-button${altColours ? ' react-button-alt' : ''}`}
         onClick={() => {
           setAltColours(!altColours);
         }}
