@@ -13,7 +13,7 @@
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/rodneylab/astro/tree/main/demos/astro-contact-form)
 
-Code from Rodney Lab <a aria-label="Open Rodney Lab blog post on Astro Scroll to Anchor" href="https://rodneylab.com/astro-landing-page-form/">tutorial on adding a contact form to your Astro landing page using Netlify serverless functions</a>. If you have any questions, please drop a comment at the bottom of that page.
+Code from Rodney Lab <a aria-label="Open Rodney Lab blog post on Landing page to Anchor" href="https://rodneylab.com/astro-landing-page-form/">tutorial on adding a contact form to your Astro landing page using Netlify serverless functions</a>. If you have any questions, please drop a comment at the bottom of that page.
 
 # Astro Contact Form
 
@@ -25,11 +25,12 @@ pnpm init astro -- --template https://github.com/rodneylab/astro/tree/main/demos
 
 All commands are run from the root of the project, from a terminal:
 
-| Command            | Action                                       |
-| :----------------- | :------------------------------------------- |
-| `pnpm install`     | Installs dependencies                        |
-| `pnpm run dev`     | Starts local dev server at `localhost:3000`  |
-| `pnpm run build`   | Build your production site to `./dist/`      |
-| `pnpm run preview` | Preview your build locally, before deploying |
+| Command                        | Action                                       |
+| :----------------------------- | :------------------------------------------- |
+| `pnpm install`                 | Installs dependencies                        |
+| `pnpm astro telemetry disable` | Disable data collection                      |
+| `pnpm run dev`                 | Starts local dev server at `localhost:3000`  |
+| `pnpm run build`               | Build your production site to `./dist/`      |
+| `pnpm run preview`             | Preview your build locally, before deploying |
 
 Feel free to jump into the [Rodney Lab matrix chat room](https://matrix.to/#/%23rodney:matrix.org).
