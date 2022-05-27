@@ -1,6 +1,8 @@
 {
   "name": "temporal-api-time-zones",
   "version": "0.0.1",
+  "license": "BSD-3-Clause",
+  "description": "Temporal API time zones: how you can use the new JavaScript Temporal API to convert a time instant from one time zone to another.",
   "private": true,
   "scripts": {
     "dev": "astro dev",
@@ -23,5 +25,12 @@
     "stylelint-config-recommended": "^7.0.0",
     "stylelint-config-standard": "^25.0.0",
     "vite": "^2.9.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rodneylab/astro/tree/main/demos/temporal-api-time-zones"
+  },
+  "bugs": {
+    "url": "https://github.com/rodneylab/astro/issues"
   }
 }
