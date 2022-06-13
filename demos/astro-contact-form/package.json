@@ -2,6 +2,8 @@
   "name": "@example/minimal",
   "version": "0.0.1",
   "private": true,
+  "license": "BSD-3-Clause",
+  "description": "Astro landing page contact form: how to use Netlify serverless functions with Telegram bots to add a contact form to your Astro landing page.",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -28,5 +30,12 @@
   },
   "dependencies": {
     "@netlify/functions": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rodneylab/astro"
+  },
+  "bugs": {
+    "url": "https://github.com/rodneylab/astro/issues"
   }
 }
