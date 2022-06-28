@@ -14,6 +14,7 @@ module.exports = {
         'astro-self-hosted-fonts',
         'astro-scroll-to-anchor',
         'getting-started-astro',
+        'temporal-api-duration',
         'temporal-api-time-zones',
       ],
     ],

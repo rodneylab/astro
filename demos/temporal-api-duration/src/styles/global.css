@@ -1,0 +1,44 @@
+:root {
+  --spacing-0: 0;
+  --spacing-px-2: 2px;
+  --spacing-2: 0.5rem;
+  --spacing-4: 1rem;
+  --spacing-6: 1.5rem;
+  --spacing-12: 3rem;
+
+  --max-width-wrapper: 48rem;
+
+  --font-size-1: 1rem;
+  --font-size-2: 1.25rem;
+  --font-size-3: 1.563rem;
+  --font-size-5: 2.441rem;
+  --colour-dark: hsl(227 15% 24%); /* tuna */
+  --colour-brand: hsl(149 100% 34%); /* jade */
+  --colour-theme: hsl(48 100% 61%); /* bright sun */
+  --colour-light: hsl(315 100% 99%); /* amaranth */
+  --colour-alt: hsl(190 95% 45%); /* cerulean */
+
+  --font-family-body: Rubik;
+  --font-family-heading: Josefin Slab;
+}
+
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-family-body);
+}
+
+body {
+  background-color: var(--colour-brand);
+  font-size: var(--font-size-2);
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: var(--font-size-5);
+  font-family: var(--font-family-heading);
+}
