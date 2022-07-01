@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build && subfont -ir --root dist",
+    "build": "pnpm astro telemetry disable && astro build && subfont -ir --root dist",
     "preview": "astro preview",
     "format": "prettier --write --plugin-search-dir=. ."
   },
