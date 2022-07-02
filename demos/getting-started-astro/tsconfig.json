@@ -1,19 +1,19 @@
 {
-  "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "isolatedModules": true,
-    "moduleResolution": "node",
-    "module": "es2020",
-    "lib": ["es2020", "DOM"],
-    "target": "es2020",
-    "resolveJsonModule": true,
-    "baseUrl": ".",
-    "paths": {
-      "$components/*": ["src/components/*"],
-      "$layouts/*": ["src/layouts/*"],
-      "$src/*": ["src/*"],
-      "$styles/*": ["src/styles/*"]
-    }
-  },
-  "include": ["src/**/*.ts"]
+	"compilerOptions": {
+		"allowSyntheticDefaultImports": true,
+		"isolatedModules": true,
+		"moduleResolution": "node",
+		"module": "es2020",
+		"lib": ["es2020", "DOM"],
+		"target": "es2020",
+		"resolveJsonModule": true,
+		"baseUrl": ".",
+		"paths": {
+			"$components/*": ["src/components/*"],
+			"$layouts/*": ["src/layouts/*"],
+			"$src/*": ["src/*"],
+			"$styles/*": ["src/styles/*"]
+		}
+	},
+	"include": ["src/**/*.ts"]
 }
