@@ -29,11 +29,12 @@
     "stylelint-config-recommended": "^8.0.0",
     "stylelint-config-recommended-scss": "^6.0.0",
     "stylelint-config-standard": "^26.0.0",
-    "svelte": "^3.48.0"
+    "svelte": "^3.48.0",
+    "typescript": "^4.7.4",
+    "vite": "^2.9.14"
   },
   "dependencies": {
-    "@babel/core": "^7.18.6",
-    "vite": "^2.9.13"
+    "@babel/core": "^7.18.6"
   },
   "repository": {
     "type": "git",
@@ -41,5 +42,9 @@
   },
   "bugs": {
     "url": "https://github.com/rodneylab/astro/issues"
+  },
+  "peerDependencies": {
+    "typescript": "^4.7.4",
+    "vite": "^2.9.14"
   }
 }
