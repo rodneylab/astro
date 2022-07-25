@@ -83,109 +83,110 @@ import Heading from '../components/Heading.astro';
         </p>
       </div>
     </main>
+    <style>
+      /* raleway-regular - latin */
+      @font-face {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        src: local(''), url('/fonts/raleway-v26-latin-regular.woff2') format('woff2'),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/raleway-v26-latin-regular.woff')
+            format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      }
+
+      /* raleway-700 - latin */
+      @font-face {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        src: local(''), url('/fonts/raleway-v26-latin-700.woff2') format('woff2'),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/raleway-v26-latin-700.woff')
+            format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      }
+
+      /* raleway-900 - latin */
+      @font-face {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 900;
+        src: local(''), url('/fonts/raleway-v26-latin-900.woff2') format('woff2'),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/raleway-v26-latin-900.woff')
+            format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      }
+
+      :global(html) {
+        --colour-background-hue: 47.36;
+        --colour-background-saturation: 100%;
+        --colour-background-luminance: 52.55%;
+
+        --colour-text-hue: 282.86;
+        --colour-text-saturation: 53.85%;
+        --colour-text-luminance: 35.69%;
+
+        --font-family-heading: Raleway;
+        --font-family-body: Raleway;
+
+        --font-size-1: 1rem;
+        --font-size-5: 2.441rem;
+        --font-size-6: 3.052rem;
+
+        --font-weight-bold: 700;
+        --font-weight-black: 900;
+
+        --line-height-relaxed: 1.75;
+
+        --max-width-full: 100%;
+        --max-width-wrapper: 38rem;
+
+        --spacing-20: 5rem;
+
+        background-color: hsl(
+          var(--colour-background-hue) var(--colour-background-saturation)
+            var(--colour-background-luminance)
+        );
+        color: hsl(
+          var(--colour-text-hue) var(--colour-text-saturation) var(--colour-text-luminance)
+        );
+
+        scroll-behavior: smooth;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        :global(html) {
+          scroll-behavior: auto;
+        }
+      }
+
+      :global(h1),
+      :global(h2) {
+        font-family: var(--font-family-heading);
+      }
+
+      :global(h1) {
+        font-size: var(--font-size-6);
+        font-weight: var(--font-weight-black);
+      }
+      :global(h2) {
+        font-size: var(--font-size-5);
+        font-weight: var(--font-weight-bold);
+      }
+
+      :global(p) {
+        font-family: var(--font-family-body);
+        font-size: var(--font-size-1);
+        line-height: var(--line-height-relaxed);
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+        padding-bottom: var(--spacing-20);
+      }
+
+      .wrapper {
+        width: var(--max-width-full);
+        max-width: var(--max-width-wrapper);
+        margin: 0 auto;
+      }
+    </style>
   </body>
 </html>
-
-<style>
-  /* raleway-regular - latin */
-  @font-face {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''), url('/fonts/raleway-v26-latin-regular.woff2') format('woff2'),
-      /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/raleway-v26-latin-regular.woff')
-        format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-
-  /* raleway-700 - latin */
-  @font-face {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    src: local(''), url('/fonts/raleway-v26-latin-700.woff2') format('woff2'),
-      /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/raleway-v26-latin-700.woff')
-        format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-
-  /* raleway-900 - latin */
-  @font-face {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 900;
-    src: local(''), url('/fonts/raleway-v26-latin-900.woff2') format('woff2'),
-      /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/raleway-v26-latin-900.woff')
-        format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-
-  :global(html) {
-    --colour-background-hue: 47.36;
-    --colour-background-saturation: 100%;
-    --colour-background-luminance: 52.55%;
-
-    --colour-text-hue: 282.86;
-    --colour-text-saturation: 53.85%;
-    --colour-text-luminance: 35.69%;
-
-    --font-family-heading: Raleway;
-    --font-family-body: Raleway;
-
-    --font-size-1: 1rem;
-    --font-size-5: 2.441rem;
-    --font-size-6: 3.052rem;
-
-    --font-weight-bold: 700;
-    --font-weight-black: 900;
-
-    --line-height-relaxed: 1.75;
-
-    --max-width-full: 100%;
-    --max-width-wrapper: 38rem;
-
-    --spacing-20: 5rem;
-
-    background-color: hsl(
-      var(--colour-background-hue) var(--colour-background-saturation)
-        var(--colour-background-luminance)
-    );
-    color: hsl(var(--colour-text-hue) var(--colour-text-saturation) var(--colour-text-luminance));
-
-    scroll-behavior: smooth;
-  }
-  @media (prefers-reduced-motion: reduce) {
-    :global(html) {
-      scroll-behavior: auto;
-    }
-  }
-
-  :global(h1),
-  :global(h2) {
-    font-family: var(--font-family-heading);
-  }
-
-  :global(h1) {
-    font-size: var(--font-size-6);
-    font-weight: var(--font-weight-black);
-  }
-  :global(h2) {
-    font-size: var(--font-size-5);
-    font-weight: var(--font-weight-bold);
-  }
-
-  :global(p) {
-    font-family: var(--font-family-body);
-    font-size: var(--font-size-1);
-    line-height: var(--line-height-relaxed);
-  }
-
-  .container {
-    display: flex;
-    align-items: center;
-    padding-bottom: var(--spacing-20);
-  }
-
-  .wrapper {
-    width: var(--max-width-full);
-    max-width: var(--max-width-wrapper);
-    margin: 0 auto;
-  }
-</style>
