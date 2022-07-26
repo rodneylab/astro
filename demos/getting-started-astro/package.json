@@ -32,6 +32,7 @@
 		"stylelint-config-standard": "^26.0.0",
 		"svelte": "^3.48.0",
 		"svelte-check": "^2.8.0",
+		"typescript": "^4.7.4",
 		"vite": "^2.9.13"
 	},
 	"repository": {
@@ -40,5 +41,8 @@
 	},
 	"bugs": {
 		"url": "https://github.com/rodneylab/astro/issues"
+	},
+	"peerDependencies": {
+		"typescript": "^4.7.4"
 	}
 }
