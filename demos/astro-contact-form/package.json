@@ -15,18 +15,19 @@
     "lint:css": "stylelint \"src/**/*.{astro,css,svelte}\""
   },
   "devDependencies": {
-    "@astrojs/svelte": "^0.2.0",
+    "@astrojs/svelte": "^0.5.1",
     "astro": "^1.0.0-beta.64",
     "axios": "^0.27.2",
     "postcss-html": "^1.5.0",
     "prettier": "^2.7.1",
-    "prettier-plugin-astro": "^0.0.12",
+    "prettier-plugin-astro": "^0.2.0",
     "stylelint": "^14.9.1",
     "stylelint-config-recommended": "^8.0.0",
     "stylelint-config-standard": "^26.0.0",
     "svelte": "^3.49.0",
     "svelte-check": "^2.8.0",
-    "vite": "^2.9.13"
+    "typescript": "^4.7.4",
+    "vite": "^3.0.4"
   },
   "dependencies": {
     "@netlify/functions": "^1.0.0"
@@ -37,5 +38,8 @@
   },
   "bugs": {
     "url": "https://github.com/rodneylab/astro/issues"
+  },
+  "peerDependencies": {
+    "typescript": "^4.7.4"
   }
 }
