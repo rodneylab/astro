@@ -1,11 +1,11 @@
 {
-  "compilerOptions": {
-    "moduleResolution": "node",
-    "baseUrl": ".",
-    "paths": {
-      "$components/*": ["src/components/*"],
-      "$content/*": ["src/content/*"],
-      "$styles/*": ["src/styles/*"]
-    }
-  }
+	"compilerOptions": {
+		"moduleResolution": "node",
+		"baseUrl": ".",
+		"paths": {
+			"$components/*": ["src/components/*"],
+			"$content/*": ["src/content/*"],
+			"$styles/*": ["src/styles/*"]
+		}
+	}
 }
