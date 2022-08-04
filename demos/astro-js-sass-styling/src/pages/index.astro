@@ -6,52 +6,52 @@ import { Content as MarkdownVideoContent } from '../content/video.md';
 ---
 
 <html lang="en-GB">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.png" />
-    <meta name="viewport" content="width=device-width" />
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width" />
 
-    <title>RodneyLab Minimal Astro Example</title>
-  </head>
-  <body>
-    <main class="container">
-      <h1>Astro JS Tutorial Site</h1>
-      <p>This demo is not endorsed by Ben Awad, just thought the video content was fitting!</p>
-      <ReactVideo client:load />
-      <SvelteVideo client:load />
-      <section class="mdx-container">
-        <MarkdownVideoContent />
-      </section>
-    </main>
-    <style lang="scss">
-      @import '../styles/variables';
+		<title>RodneyLab Minimal Astro Example</title>
+	</head>
+	<body>
+		<main class="container">
+			<h1>Astro JS Tutorial Site</h1>
+			<p>This demo is not endorsed by Ben Awad, just thought the video content was fitting!</p>
+			<ReactVideo client:load />
+			<SvelteVideo client:load />
+			<section class="mdx-container">
+				<MarkdownVideoContent />
+			</section>
+		</main>
+		<style lang="scss">
+			@import '../styles/variables';
 
-      .container {
-        display: flex;
-        flex-direction: column;
-        background: hsl($colour-dark-hue $colour-dark-saturation $colour-dark-luminance);
-        color: hsl(
-          $colour-light-text-hue $colour-light-text-saturation $colour-light-text-luminance
-        );
-        padding: $spacing-8 $spacing-0 $spacing-32;
-      }
+			.container {
+				display: flex;
+				flex-direction: column;
+				background: hsl($colour-dark-hue $colour-dark-saturation $colour-dark-luminance);
+				color: hsl(
+					$colour-light-text-hue $colour-light-text-saturation $colour-light-text-luminance
+				);
+				padding: $spacing-8 $spacing-0 $spacing-32;
+			}
 
-      .container a {
-        color: hsl($colour-secondary-hue $colour-secondary-saturation $colour-secondary-luminance);
-      }
-      .mdx-container {
-        display: flex;
-        flex-direction: column;
-        background: hsl(
-          $colour-alternative-hue $colour-alternative-saturation $colour-alternative-luminance
-        );
-        align-items: center;
-        width: 100%;
-        padding: $spacing-8 $spacing-0 $spacing-12;
-        color: hsl(
-          $colour-light-text-hue $colour-light-text-saturation $colour-light-text-luminance
-        );
-      }
-    </style>
-  </body>
+			.container a {
+				color: hsl($colour-secondary-hue $colour-secondary-saturation $colour-secondary-luminance);
+			}
+			.mdx-container {
+				display: flex;
+				flex-direction: column;
+				background: hsl(
+					$colour-alternative-hue $colour-alternative-saturation $colour-alternative-luminance
+				);
+				align-items: center;
+				width: 100%;
+				padding: $spacing-8 $spacing-0 $spacing-12;
+				color: hsl(
+					$colour-light-text-hue $colour-light-text-saturation $colour-light-text-luminance
+				);
+			}
+		</style>
+	</body>
 </html>

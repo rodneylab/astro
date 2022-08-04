@@ -1,27 +1,27 @@
 @import '../styles/variables';
 
 .container {
-  display: flex;
-  flex-direction: column;
-  background: hsl($colour-secondary-hue $colour-secondary-saturation $colour-secondary-luminance);
-  align-items: center;
-  width: 100%;
-  padding: $spacing-8 $spacing-0;
-  color: hsl($colour-light-text-hue $colour-light-text-saturation $colour-light-text-luminance);
+	display: flex;
+	flex-direction: column;
+	background: hsl($colour-secondary-hue $colour-secondary-saturation $colour-secondary-luminance);
+	align-items: center;
+	width: 100%;
+	padding: $spacing-8 $spacing-0;
+	color: hsl($colour-light-text-hue $colour-light-text-saturation $colour-light-text-luminance);
 }
 
 .container-alt {
-  background: hsl(
-    $colour-alternative-hue $colour-alternative-saturation $colour-alternative-luminance
-  );
+	background: hsl(
+		$colour-alternative-hue $colour-alternative-saturation $colour-alternative-luminance
+	);
 }
 
 .button {
-  background: hsl(
-    $colour-alternative-hue $colour-alternative-saturation $colour-alternative-luminance
-  );
+	background: hsl(
+		$colour-alternative-hue $colour-alternative-saturation $colour-alternative-luminance
+	);
 }
 
 .button-alt {
-  background: hsl($colour-secondary-hue $colour-secondary-saturation $colour-secondary-luminance);
+	background: hsl($colour-secondary-hue $colour-secondary-saturation $colour-secondary-luminance);
 }
