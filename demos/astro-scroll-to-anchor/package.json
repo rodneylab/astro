@@ -1,30 +1,30 @@
 {
-  "name": "astro-scroll-to-anchor",
-  "version": "0.0.1",
-  "private": true,
-  "license": "BSD-3-Clause",
-  "description": "Astro Scroll to Anchor: how you can accessibly add smooth scroll to anchor to your Astro app using CSS. We also add hiding shortcut links.",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro telemetry disable && astro build",
-    "preview": "astro preview",
-    "format": "prettier --write --plugin-search-dir=. ."
-  },
-  "devDependencies": {
-    "astro": "~1.0.0-rc.6",
-    "astro-icon": "^0.7.3",
-    "autoprefixer": "^10.4.8",
-    "postcss": "^8.4.14",
-    "postcss-html": "^1.5.0",
-    "prettier": "^2.7.1",
-    "prettier-plugin-astro": "^0.3.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/rodneylab/astro"
-  },
-  "bugs": {
-    "url": "https://github.com/rodneylab/astro/issues"
-  }
+	"name": "astro-scroll-to-anchor",
+	"version": "0.0.1",
+	"private": true,
+	"license": "BSD-3-Clause",
+	"description": "Astro Scroll to Anchor: how you can accessibly add smooth scroll to anchor to your Astro app using CSS. We also add hiding shortcut links.",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro telemetry disable && astro build",
+		"preview": "astro preview",
+		"format": "prettier --write --plugin-search-dir=. ."
+	},
+	"devDependencies": {
+		"astro": "~1.0.0-rc.6",
+		"astro-icon": "^0.7.3",
+		"autoprefixer": "^10.4.8",
+		"postcss": "^8.4.14",
+		"postcss-html": "^1.5.0",
+		"prettier": "^2.7.1",
+		"prettier-plugin-astro": "^0.3.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/rodneylab/astro"
+	},
+	"bugs": {
+		"url": "https://github.com/rodneylab/astro/issues"
+	}
 }
