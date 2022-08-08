@@ -1,31 +1,31 @@
 {
-  "name": "astro-self-hosted-fonts",
-  "version": "0.0.1",
-  "private": true,
-  "license": "BSD-3-Clause",
-  "description": "Astro self-hosted fonts workflow: optimise how you add self-hosted Google fonts to your Astro project, shaving up to 80% off your font files.",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "pnpm astro telemetry disable && astro build && subfont -ir --root dist",
-    "preview": "astro preview",
-    "format": "prettier --write --plugin-search-dir=. ."
-  },
-  "devDependencies": {
-    "astro": "~1.0.0-rc.7",
-    "astro-icon": "^0.7.3",
-    "autoprefixer": "^10.4.8",
-    "postcss": "^8.4.16",
-    "postcss-html": "^1.5.0",
-    "prettier": "^2.7.1",
-    "prettier-plugin-astro": "^0.3.0",
-    "subfont": "^6.9.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/rodneylab/astro/tree/main/demos/astro-self-hosted-fonts"
-  },
-  "bugs": {
-    "url": "https://github.com/rodneylab/astro/issues"
-  }
+	"name": "astro-self-hosted-fonts",
+	"version": "0.0.1",
+	"private": true,
+	"license": "BSD-3-Clause",
+	"description": "Astro self-hosted fonts workflow: optimise how you add self-hosted Google fonts to your Astro project, shaving up to 80% off your font files.",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "pnpm astro telemetry disable && astro build && subfont -ir --root dist",
+		"preview": "astro preview",
+		"format": "prettier --write --plugin-search-dir=. ."
+	},
+	"devDependencies": {
+		"astro": "~1.0.0-rc.7",
+		"astro-icon": "^0.7.3",
+		"autoprefixer": "^10.4.8",
+		"postcss": "^8.4.16",
+		"postcss-html": "^1.5.0",
+		"prettier": "^2.7.1",
+		"prettier-plugin-astro": "^0.3.0",
+		"subfont": "^6.9.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/rodneylab/astro/tree/main/demos/astro-self-hosted-fonts"
+	},
+	"bugs": {
+		"url": "https://github.com/rodneylab/astro/issues"
+	}
 }
