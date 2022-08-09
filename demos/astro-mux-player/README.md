@@ -13,7 +13,7 @@
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/rodneylab/astro/tree/main/demos/astro-mux-player)
 
-How to use the Mux HTML custom elements video player with Astro. This code from Rodney Lab accompanies the<a aria-label="Open Rodney Lab blog post on Astro JS Tutorial" href="https://rodneylab.com/astro-js-mux-video/">article on using Astro JS with Mux mideo player</a>. If you have any questions, please drop a comment at the bottom of that page.
+How to use the Mux HTML custom elements video player with Astro. This code from Rodney Lab accompanies the<a aria-label="Open Rodney Lab blog post on Astro JS Tutorial" href="https://rodneylab.com/astro-js-mux-video/">article on using Astro JS with Mux video player</a>. If you have any questions, please drop a comment at the bottom of that page.
 
 # Astro Mux Player
 
