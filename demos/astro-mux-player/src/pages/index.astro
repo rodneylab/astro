@@ -1,0 +1,151 @@
+---
+
+---
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="icon" href="/favicon.ico" sizes="any" />
+	<link rel="icon" href="/icon.svg" type="image/svg+xml" />
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+	<link rel="manifest" href="/manifest.webmanifest" />
+	<script>import '../components/mux-video.ts'</script>
+	<title>Mux Video Player in 🖖🏽 Astro</title>
+</head>
+
+<body>
+	<main class="container">
+		<h1 class="heading">Mux Video Player in 🖖🏽 Astro</h1>
+		<figure>
+			<div class="video-container">
+				<mux-video playback-id={import.meta.env.PUBLIC_MUX_PLAYBACK_ID} autoplay controls loop width="688px"
+					height="387px" poster="/mux-video-player-poster.png" preload="none" primary-color="#31274a"
+					secondary-color="#ff5d01">
+				</mux-video>
+			</div>
+			<figcaption>VIDEO CREDIT: William Ehrendreich: <a href="https://www.videvo.net/profile/williamehrendreich/"
+					rel="nofollow noopener noreferrer">www.videvo.net/profile/williamehrendreich/</a> </figcaption>
+		</figure>
+		<p>Boldly going where no video player has gone before&hellip;</p>
+	</main>
+</body>
+
+</html>
+
+<style>
+	/* space-grotesk-500 - latin */
+	@font-face {
+		font-family: Space Grotesk;
+		font-style: normal;
+		font-weight: 500;
+		src: local(''),
+			url('/fonts/space-grotesk-v12-latin-500.woff2') format('woff2'),
+			/* Chrome 26+, Opera 23+, Firefox 39+ */
+			url('/fonts/space-grotesk-v12-latin-500.woff') format('woff');
+		/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+	}
+
+	/* space-grotesk-700 - latin */
+	@font-face {
+		font-family: Space Grotesk;
+		font-style: normal;
+		font-weight: bold;
+		src: local(''),
+			url('/fonts/space-grotesk-v12-latin-700.woff2') format('woff2'),
+			/* Chrome 26+, Opera 23+, Firefox 39+ */
+			url('/fonts/space-grotesk-v12-latin-700.woff') format('woff');
+		/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+	}
+
+	:root {
+		/* mercury */
+		--colour-light: hsl(0deg 5% 92%);
+
+		/* green spring */
+		--colour-alt: hsl(107deg 7% 74%);
+
+		/* Xiketic */
+		--colour-dark: hsl(240deg 100% 4%);
+
+		/* BlazeOrange */
+		--colour-theme: hsl(22 100% 50%);
+	}
+
+	body {
+		margin: var(--spacing-0);
+		min-height: 100vh;
+
+		--spacing-0: 0;
+		--spacing-1: 0.25rem;
+		--spacing-2: 0.5rem;
+		--spacing-12: 3rem;
+		--spacing-18: 4.5rem;
+		--max-width-wrapper: 48rem;
+
+		--font-size-root: 16px;
+		--font-size-1: 1rem;
+		--font-size-3: 1.563rem;
+		--font-size-6: 3.052rem;
+
+
+		--font-weight-medium: 500;
+		--font-weight-bold: 700;
+
+		font-family: Space Grotesk;
+		font-weight: var(--font-weight-medium);
+
+		background-color: var(--colour-dark);
+		/* CREDIT https://www.joshwcomeau.com/gradient-generator/ */
+		background-image: linear-gradient(45deg,
+				hsl(240deg 100% 4%) 0%,
+				hsl(243deg 37% 10%) 27%,
+				hsl(246deg 32% 15%) 41%,
+				hsl(253deg 31% 20%) 53%,
+				hsl(285deg 36% 26%) 64%,
+				hsl(327deg 60% 38%) 75%,
+				hsl(347deg 72% 51%) 86%,
+				hsl(22deg 100% 50%) 99%);
+	}
+
+	a {
+		color: var(--colour-theme)
+	}
+
+	.container {
+		color: var(--colour-alt);
+		width: min(100% - var(--spacing-12), var(--max-width-wrapper));
+		margin: var(--spacing-18) auto;
+		font-size: var(--font-size-3);
+		text-align: right;
+	}
+
+	.heading {
+		color: var(--colour-light);
+		text-align: center;
+		font-size: var(--font-size-6);
+		font-weight: var(--font-weight-bold);
+		margin-bottom: var(--spacing-18)
+	}
+
+	mux-video {
+		background-color: var(--colour-theme);
+	}
+
+	.video-container,
+	mux-video {
+		max-width: var(--max-width-full);
+		aspect-ratio: 16 / 9;
+	}
+
+	figure {
+		margin-bottom: var(--spacing-12);
+		text-align: left;
+	}
+
+	figcaption {
+		font-size: var(--font-size-1);
+		margin-block: var(--spacing-2);
+	}
+</style>

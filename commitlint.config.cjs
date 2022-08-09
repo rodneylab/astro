@@ -11,6 +11,7 @@ module.exports = {
         'astro-js-favicon',
         'astro-js-sass-styling',
         'astro-js-tutorial',
+        'astro-mux-player',
         'astro-self-hosted-fonts',
         'astro-scroll-to-anchor',
         'getting-started-astro',
