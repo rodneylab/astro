@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@mux/mux-player': 0.1.0-beta.26
+  '@mux/mux-video': ^0.8.4
   astro: ^1.0.1
   postcss: ^8.4.16
   postcss-html: ^1.5.0
@@ -12,7 +12,7 @@ specifiers:
   stylelint-config-standard: ^26.0.0
 
 devDependencies:
-  '@mux/mux-player': 0.1.0-beta.26
+  '@mux/mux-video': 0.8.4
   astro: 1.0.1
   postcss: 8.4.16
   postcss-html: 1.5.0
@@ -392,10 +392,6 @@ packages:
     dev: true
     optional: true
 
-  /@github/template-parts/0.5.3:
-    resolution: {integrity: sha512-Jw7gNq1zIwd17gTmtD/h+kTpSsue/fRGiqso42+A36AYMVlkXxmQ3UB+lInE8+4KPSxaOIvMMLD90LQjFlLz5A==}
-    dev: true
-
   /@jridgewell/gen-mapping/0.1.1:
     resolution: {integrity: sha512-sQXCasFk+U8lWYEe66WxRDOE9PjVz4vSM51fTu3Hw+ClTpUSQb718772vH3pyS5pShp6lvQM7SxgIDXXXmOX7w==}
     engines: {node: '>=6.0.0'}
@@ -436,15 +432,6 @@ packages:
 
   /@ljharb/has-package-exports-patterns/0.0.2:
     resolution: {integrity: sha512-4/RWEeXDO6bocPONheFe6gX/oQdP/bEpv0oL4HqjPP5DCenBSt0mHgahppY49N0CpsaqffdwPq+TlX9CYOq2Dw==}
-    dev: true
-
-  /@mux/mux-player/0.1.0-beta.26:
-    resolution: {integrity: sha512-kIRcsuy6+JqVQHFcn0jh8Vsmermb+cToSySzWfSSlhiqTAb47ei1508RfqbF0IJ84Gmky6VGIxlyHLXNZ2VKoA==}
-    dependencies:
-      '@github/template-parts': 0.5.3
-      '@mux/mux-video': 0.8.4
-      '@mux/playback-core': 0.9.0
-      media-chrome: 0.9.0
     dev: true
 
   /@mux/mux-video/0.8.4:
@@ -2265,10 +2252,6 @@ packages:
 
   /mdurl/1.0.1:
     resolution: {integrity: sha512-/sKlQJCBYVY9Ers9hqzKou4H6V5UWc/M59TH2dvkt+84itfnq7uFOMLpOiOS4ujvHP4etln18fmIxA5R5fll0g==}
-    dev: true
-
-  /media-chrome/0.9.0:
-    resolution: {integrity: sha512-ZDyY5p78qaF2TmrnBYlMGVFsOBSwsvNuZVBioJTFzxVQesHCv6tOlG+NmwsNWxgkc8POKrxkIa1nDL88kL768g==}
     dev: true
 
   /meow/9.0.0:

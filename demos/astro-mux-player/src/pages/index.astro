@@ -2,7 +2,7 @@
 
 ---
 
-<html lang="en">
+<html lang="en-GB">
 
 <head>
 	<meta charset="utf-8" />
@@ -12,7 +12,10 @@
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 	<link rel="manifest" href="/manifest.webmanifest" />
 	<script>import '../components/mux-video.ts'</script>
+	<script defer src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1"></script>
 	<title>Mux Video Player in 🖖🏽 Astro</title>
+	<meta name="description"
+		content="Astro JS Mux Video: how you can add video to your site with the Mux HTML 5 Custom Elements video player. No framework needed!" />
 </head>
 
 <body>
@@ -20,9 +23,9 @@
 		<h1 class="heading">Mux Video Player in 🖖🏽 Astro</h1>
 		<figure>
 			<div class="video-container">
-				<mux-video playback-id={import.meta.env.PUBLIC_MUX_PLAYBACK_ID} autoplay controls loop width="688px"
-					height="387px" poster="/mux-video-player-poster.png" preload="none" primary-color="#31274a"
-					secondary-color="#ff5d01">
+				<mux-video stream-type="on-demand" playback-id={import.meta.env.PUBLIC_MUX_PLAYBACK_ID} forward-seek-offset="15"
+					backward-seek-offset="15" autoplay controls loop width="688px" height="387px"
+					poster="/mux-video-player-poster.png" preload="none" primary-color="#31274a" secondary-color="#ff5d01">
 				</mux-video>
 			</div>
 			<figcaption>VIDEO CREDIT: William Ehrendreich: <a href="https://www.videvo.net/profile/williamehrendreich/"
