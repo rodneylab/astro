@@ -1,0 +1,58 @@
+---
+import Map from '$components/Map.svelte';
+import '$styles/fonts.css';
+import '$styles/global.css';
+import 'leaflet/dist/leaflet.css';
+
+const location = { latitude: 51.51089, longitude: -0.17563 };
+---
+
+<html lang="en-GB">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="icon" href="/favicon.ico" sizes="any" />
+	<link rel="icon" href="/icon.svg" type="image/svg+xml" />
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+	<link rel="manifest" href="/manifest.webmanifest" />
+	<title>Astro Location Map with Leaflet</title>
+	<meta name="description"
+		content="Astro JS Location Map: how you can use the Leaflet library to add a location map on your Astro site with Svelte. Handy for a contact page." />
+</head>
+
+<body>
+	<main class="container">
+		<h1>🚀 Astro Location Map with Leaflet</h1>
+		<section class="wrapper">
+			<h2>We are here:</h2>
+			<Map client:load {location} zoom={14} markerMarkup="<p>We are here!</p>" />
+		</section>
+	</main>
+</body>
+
+</html>
+
+<style>
+	.container {
+		background-color: var(--colour-light);
+		border-radius: var(--spacing-1);
+		padding: var(--spacing-8);
+		width: min(100% - var(--spacing-16), var(--max-width-wrapper));
+		margin: var(--spacing-16) auto;
+	}
+
+	.container h1 {
+		padding: var(--spacing-0) var(--spacing-8);
+	}
+
+	.wrapper {
+		display: grid;
+		place-items: center;
+		background-color: var(--colour-brand);
+		border: var(--spacing-px) solid var(--colour-alt);
+		border-radius: var(--spacing-px);
+		padding: var(--spacing-8) auto;
+		margin: var(--spacing-8);
+	}
+</style>

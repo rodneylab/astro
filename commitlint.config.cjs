@@ -9,6 +9,7 @@ module.exports = {
         'root',
         'astro-contact-form',
         'astro-js-favicon',
+        'astro-js-location-map',
         'astro-js-sass-styling',
         'astro-js-tutorial',
         'astro-mux-player',

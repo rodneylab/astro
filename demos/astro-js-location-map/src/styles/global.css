@@ -1,0 +1,28 @@
+:root {
+	--colour-dark: hsl(309 7% 17%);
+	--colour-theme: hsl(347 64% 49%);
+	--colour-brand: hsl(197 94% 58%);
+	--colour-alt: hsl(233 89% 60%);
+	--colour-light: hsl(1 63% 82%);
+
+	--shadow-color: 203deg 64% 40%;
+	--shadow-elevation-low: -1px 1px 1.6px hsl(var(--shadow-color) / 0.34),
+		-1.7px 1.7px 2.7px -1.2px hsl(var(--shadow-color) / 0.34),
+		-4px 4px 6.4px -2.5px hsl(var(--shadow-color) / 0.34);
+
+	--spacing-px: 1px;
+	--spacing-0: 0;
+	--spacing-1: 0.25rem;
+	--spacing-4: 1rem;
+	--spacing-8: 2rem;
+	--spacing-16: 4rem;
+	--spacing-12: 3rem;
+
+	--max-width-wrapper: 48rem;
+}
+
+html {
+	font-family: 'Roboto Serif';
+	color: var(--colour-dark);
+	background-color: var(--colour-theme);
+}

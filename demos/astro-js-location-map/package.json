@@ -1,0 +1,41 @@
+{
+	"name": "astro-js-location-map",
+	"version": "0.0.1",
+	"private": true,
+	"license": "BSD-3-Clause",
+	"description": "Astro JS Location Map: how you can use the Leaflet library to add a location map on your Astro site with Svelte. Handy for a contact page.",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro telemetry disable && astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"format": "prettier --ignore-path .prettierignore --write --plugin-search-dir=. .",
+		"lint:css": "stylelint \"src/**/*.{css,astro}\"",
+		"prettier:check": "prettier --check --plugin-search-dir=. ."
+	},
+	"devDependencies": {
+		"@astrojs/svelte": "^1.0.0",
+		"@types/leaflet": "^1.7.11",
+		"astro": "^1.0.1",
+		"leaflet": "^1.8.0",
+		"postcss": "^8.4.16",
+		"postcss-html": "^1.5.0",
+		"prettier": "^2.7.1",
+		"stylelint": "^14.9.1",
+		"stylelint-config-recommended": "^8.0.0",
+		"stylelint-config-standard": "^26.0.0",
+		"svelte": "^3.46.4",
+		"typescript": "^4.7.4"
+	},
+	"peerDependencies": {
+		"typescript": "^4.7.4"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/rodneylab/astro"
+	},
+	"bugs": {
+		"url": "https://github.com/rodneylab/astro/issues"
+	}
+}
