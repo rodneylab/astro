@@ -6,15 +6,22 @@ import Heading from '../components/Heading.astro';
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" href="/favicon.ico" sizes="any" />
+		<link rel="icon" href="/icon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="manifest" href="/manifest.webmanifest" />
 		<title>Astro Scroll to Anchor</title>
 	</head>
+
 	<body>
 		<main class="container">
 			<div class="wrapper">
 				<h1>
 					<Heading text="Astro Scroll to Anchor" id="astro-scroll-to-anchor" />
 				</h1>
-				<h2><Heading id="lorem-ipsum" text="Lorem ipsum" /></h2>
+				<h2>
+					<Heading id="lorem-ipsum" text="Lorem ipsum" />
+				</h2>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
 					ut labore et dolore magna aliqua. Suscipit adipiscing bibendum est ultricies integer quis.
@@ -27,7 +34,9 @@ import Heading from '../components/Heading.astro';
 					Ultrices dui sapien eget mi proin sed libero. Cursus metus aliquam eleifend mi in nulla
 					posuere sollicitudin.
 				</p>
-				<h2><Heading id="amet-porttitor" text="Amet porttitor" /></h2>
+				<h2>
+					<Heading id="amet-porttitor" text="Amet porttitor" />
+				</h2>
 				<p>
 					Amet porttitor eget dolor morbi. Ullamcorper eget nulla facilisi etiam dignissim diam quis
 					enim. Cras tincidunt lobortis feugiat vivamus at. Eleifend donec pretium vulputate sapien
@@ -41,7 +50,9 @@ import Heading from '../components/Heading.astro';
 					consectetur adipiscing elit duis. Ac turpis egestas integer eget aliquet nibh. In nibh
 					mauris cursus mattis.
 				</p>
-				<h2><Heading id="blandit-turpis" text="Blandit turpis" /></h2>
+				<h2>
+					<Heading id="blandit-turpis" text="Blandit turpis" />
+				</h2>
 				<p>
 					Blandit turpis cursus in hac habitasse platea. Egestas tellus rutrum tellus pellentesque
 					eu. In eu mi bibendum neque. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor.
@@ -55,7 +66,9 @@ import Heading from '../components/Heading.astro';
 					gravida neque convallis a cras. Enim nunc faucibus a pellentesque sit amet porttitor. Cras
 					fermentum odio eu feugiat pretium.
 				</p>
-				<h2><Heading id="arcu-dui" text="Arcu dui" /></h2>
+				<h2>
+					<Heading id="arcu-dui" text="Arcu dui" />
+				</h2>
 				<p>
 					Arcu dui vivamus arcu felis bibendum ut tristique. Congue eu consequat ac felis donec et
 					odio. Semper feugiat nibh sed pulvinar proin gravida hendrerit. Libero nunc consequat
@@ -68,7 +81,9 @@ import Heading from '../components/Heading.astro';
 					sagittis id consectetur purus ut faucibus pulvinar. Nullam ac tortor vitae purus faucibus
 					ornare suspendisse.
 				</p>
-				<h2><Heading id="tellus-in-hac" text="Tellus in hac" /></h2>
+				<h2>
+					<Heading id="tellus-in-hac" text="Tellus in hac" />
+				</h2>
 				<p>
 					Tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Dignissim
 					sodales ut eu sem integer vitae justo. Nunc vel risus commodo viverra. Nunc sed blandit
@@ -144,6 +159,7 @@ import Heading from '../components/Heading.astro';
 
 				scroll-behavior: smooth;
 			}
+
 			@media (prefers-reduced-motion: reduce) {
 				:global(html) {
 					scroll-behavior: auto;
@@ -159,6 +175,7 @@ import Heading from '../components/Heading.astro';
 				font-size: var(--font-size-6);
 				font-weight: var(--font-weight-black);
 			}
+
 			:global(h2) {
 				font-size: var(--font-size-5);
 				font-weight: var(--font-weight-bold);
