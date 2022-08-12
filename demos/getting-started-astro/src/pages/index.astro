@@ -1,8 +1,8 @@
 ---
 import ExampleReactComponent from '$components/exampleReactComponent.tsx';
 import ExampleSvelteComponent from '$components/exampleSvelteComponent.svelte';
-import { Markdown } from 'astro/components';
 import BaseLayout from '$layouts/BaseLayout.astro';
+import { Content as MarkdownVideoContent } from '$content/video.md';
 ---
 
 <html lang="en-GB">
@@ -93,13 +93,7 @@ import BaseLayout from '$layouts/BaseLayout.astro';
 				<ExampleReactComponent client:load />
 				<ExampleSvelteComponent client:load />
 				<section class="mdx-container">
-					<Markdown>
-						## Astro in 100 Seconds
-
-						<div class="video-container">
-						<iframe title="Astro in 100 Seconds" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dsTXcSeAZq8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
-						</div>
-					</Markdown>
+					<MarkdownVideoContent />
 				</section>
 			</main>
 		</BaseLayout>
