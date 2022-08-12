@@ -1,0 +1,47 @@
+:root {
+	--spacing-2: 0.5rem;
+	--spacing-6: 1.5rem;
+	--spacing-16: 4rem;
+
+	--font-size-8: 4.7683rem;
+	--font-size-10: 7.45rem;
+	--font-size-13: 14.5519rem;
+
+	--font-weight-normal: 400;
+	--font-weight-medium: 500;
+	--font-weight-bold: 700;
+
+	--max-width-full: 100%;
+	--max-width-wrapper: 64rem;
+
+	--line-height-relaxed: 1.75;
+
+	--colour-dark: hsl(315 7% 171); /* thunder */
+	--colour-theme: hsl(210 67% 43%); /* denim */
+	--colour-brand: hsl(286 66% 35%); /* seance */
+	--colour-light: hsl(60 100% 97%); /* ivory */
+}
+
+html {
+	font-family: 'Open Sans';
+	font-weight: var(--font-weight-normal);
+	line-height: var(--line-height-relaxed);
+	color: var(--colour-light);
+}
+
+h1 {
+	margin-bottom: var(--spacing-6);
+}
+
+p {
+	margin: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0);
+}
+
+a {
+	text-underline-offset: var(--spacing-2);
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+}

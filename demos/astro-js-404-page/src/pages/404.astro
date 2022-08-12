@@ -1,0 +1,62 @@
+---
+import '$styles/fonts.css';
+import '$styles/global.css';
+
+const { url } = Astro.request;
+const urlObject = new URL(url);
+const { pathname } = urlObject;
+---
+
+<html lang="en-GB">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.ico" sizes="any" />
+		<link rel="icon" href="/icon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="manifest" href="/manifest.webmanifest" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Astro JS 404 Page</title>
+		<meta name="description" content="Astro JS 404 page: how you can set up a page not found page on your Astro project, so visitors don't see your host's default 404 page." />
+	</head>
+
+	<body>
+		<main class="container">
+			<section class="content">
+				<h1>Page not found!</h1>
+				<p>
+					Path &ldquo;{pathname}&rdquo; not recognised&hellip; <a
+						aria-label="Return to home page"
+						href="/"
+						>Go home?
+					</a>
+				</p>
+			</section>
+		</main>
+		<style>
+			body {
+				background-color: var(--colour-brand);
+			}
+
+			.container {
+				display: grid;
+				place-items: center;
+			}
+
+			.content {
+				width: min(100% - var(--spacing-16), var(--max-width-wrapper));
+				padding: var(--spacing-16) auto;
+				font-size: var(--font-size-8);
+			}
+
+			.content h1 {
+				font-size: var(--font-size-10);
+				font-weight: var(--font-weight-bold);
+			}
+
+			.content a {
+				color: var(--color-light);
+				font-weight: var(--font-weight-medium);
+			}
+		</style>
+	</body>
+</html>

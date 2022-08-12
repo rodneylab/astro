@@ -1,0 +1,25 @@
+{
+	"name": "@example/minimal",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"format": "prettier --ignore-path .prettierignore --write --plugin-search-dir=. .",
+		"lint:css": "stylelint \"src/**/*.{css,astro}\"",
+		"prettier:check": "prettier --check --plugin-search-dir=. ."
+	},
+	"devDependencies": {
+		"astro": "^1.0.3",
+		"postcss": "^8.4.16",
+		"postcss-html": "^1.5.0",
+		"prettier": "^2.7.1",
+		"prettier-plugin-astro": "^0.5.0",
+		"stylelint": "^14.10.0",
+		"stylelint-config-recommended": "^9.0.0",
+		"stylelint-config-standard": "^27.0.0"
+	}
+}
