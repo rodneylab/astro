@@ -18,7 +18,7 @@ Code from Rodney Lab <a aria-label="Open Rodney Lab blog post on Temporal A P I 
 # Temporal API Time Zones
 
 ```
-pnpm init astro -- --template https://github.com/rodneylab/astro/tree/main/demos/temporal-api-time-zones
+pnpm create astro -- --template rodneylab/astro/tree/main/demos/temporal-api-time-zones
 ```
 
 ## 🧞 Commands
