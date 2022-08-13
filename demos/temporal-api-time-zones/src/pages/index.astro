@@ -14,10 +14,15 @@ const remoteDateTime = localDateTime.withTimeZone(remoteTimeZone);
 <html lang="en-GB">
   <head>
     <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
     <meta name="viewport" content="width=device-width" />
     <title>Temporal API: Time Zone Conversion</title>
     <meta name="description" content="Temporal API: Time Zone Conversion" />
   </head>
+
   <body>
     <main>
       <h1 class="heading">Temporal API: Time Zone Conversion</h1>
@@ -56,6 +61,7 @@ const remoteDateTime = localDateTime.withTimeZone(remoteTimeZone);
   .heading {
     text-align: center;
   }
+
   .container {
     display: flex;
     flex-direction: column;
@@ -78,6 +84,7 @@ const remoteDateTime = localDateTime.withTimeZone(remoteTimeZone);
     margin: var(--spacing-0) var(--spacing-12) var(--spacing-12);
     max-width: 100%;
   }
+
   .time-zone {
     font-size: var(--font-size-6);
     line-height: 58.8359px;
