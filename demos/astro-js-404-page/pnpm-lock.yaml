@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  astro: ^1.0.3
+  astro: ^1.0.5
   postcss: ^8.4.16
   postcss-html: ^1.5.0
   prettier: ^2.7.1
@@ -11,7 +11,7 @@ specifiers:
   stylelint-config-standard: ^27.0.0
 
 devDependencies:
-  astro: 1.0.3
+  astro: 1.0.5
   postcss: 8.4.16
   postcss-html: 1.5.0
   prettier: 2.7.1
@@ -34,8 +34,8 @@ packages:
     resolution: {integrity: sha512-8nvyxZTfCXLyRmYfTttpJT6EPhfBRg0/q4J/Jj3/pNPLzp+vs05ZdktsY6QxAREaOMAnNEtSqcrB4S5DsXOfRg==}
     dev: true
 
-  /@astrojs/compiler/0.23.1:
-    resolution: {integrity: sha512-KsoDrASGwTKZoWXbjy8SlIeoDv7y1OfBJtHVLuPuzhConA8e0SZpGzFqIuVRfG4bhisSTptZLDQZ7oxwgPv2jA==}
+  /@astrojs/compiler/0.23.3:
+    resolution: {integrity: sha512-eBWo0d3DoRDeg2Di1/5YJtOXh5eGFSjJMp1wVoVfoITHR4egdUGgsrDHZTzj0a25M/S9W5S6SpXCyNWcqi8jOA==}
     dev: true
 
   /@astrojs/language-server/0.20.3:
@@ -668,12 +668,12 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /astro/1.0.3:
-    resolution: {integrity: sha512-QaKFZIhraQaoWqg7s7wNCAuMI+r50UzmnlWhQAl7IMJ0RQ00IVwAi1sV7IMjf2h/iRT/b87xqN4aNlBDWf/qyg==}
+  /astro/1.0.5:
+    resolution: {integrity: sha512-+L45/SJfJ4yxQuRaaxXeIxf3BXGj80m7BIc9/7Cq5zFMxdvFLJ+4u6srntWY+4KlcrUcVBC/1mnhGbD80vYJQQ==}
     engines: {node: ^14.18.0 || >=16.12.0, npm: '>=6.14.0'}
     hasBin: true
     dependencies:
-      '@astrojs/compiler': 0.23.1
+      '@astrojs/compiler': 0.23.3
       '@astrojs/language-server': 0.20.3
       '@astrojs/markdown-remark': 1.0.0
       '@astrojs/telemetry': 1.0.0
