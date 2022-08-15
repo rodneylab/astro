@@ -18,7 +18,7 @@ Code from Rodney Lab <a aria-label="Open Rodney Lab video on J S favicon" href="
 # Astro JS Favicon
 
 ```
-pnpm init astro -- --template https://github.com/rodneylab/astro/tree/main/demos/astro-js-favicon
+pnpm create astro -- --template rodneylab/astro/tree/main/demos/astro-js-favicon
 ```
 
 ## 🧞 Commands
@@ -29,8 +29,8 @@ All commands are run from the root of the project, from a terminal:
 | :----------------------------- | :------------------------------------------- |
 | `pnpm install`                 | Installs dependencies                        |
 | `pnpm astro telemetry disable` | Disable data collection                      |
-| `pnpm run dev`                 | Starts local dev server at `localhost:3000`  |
-| `pnpm run build`               | Build your production site to `./dist/`      |
-| `pnpm run preview`             | Preview your build locally, before deploying |
+| `pnpm dev`                     | Starts local dev server at `localhost:3000`  |
+| `pnpm build`                   | Build your production site to `./dist/`      |
+| `pnpm preview`                 | Preview your build locally, before deploying |
 
 Feel free to jump into the [Rodney Lab matrix chat room](https://matrix.to/#/%23rodney:matrix.org).
