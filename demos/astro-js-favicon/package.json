@@ -1,27 +1,27 @@
 {
-  "name": "astro-js-favicon",
-  "version": "0.0.1",
-  "license": "BSD-3-Clause",
-  "description": "Astro JS favicon: short video on the 6 most important files for getting your app favicon appear in the major modern and legacy browsers.",
-  "private": true,
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro telemetry disable && astro build",
-    "preview": "astro preview",
-    "format": "prettier --write --plugin-search-dir=. .",
-    "prettier:check": "prettier --check --plugin-search-dir=. ."
-  },
-  "devDependencies": {
-    "astro": "1.0.0-rc.4",
-    "prettier": "^2.7.1",
-    "prettier-plugin-astro": "^0.2.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/rodneylab/astro"
-  },
-  "bugs": {
-    "url": "https://github.com/rodneylab/astro/issues"
-  }
+	"name": "astro-js-favicon",
+	"version": "0.0.1",
+	"license": "BSD-3-Clause",
+	"description": "Astro JS favicon: short video on the 6 most important files for getting your app favicon appear in the major modern and legacy browsers.",
+	"private": true,
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro telemetry disable && astro build",
+		"preview": "astro preview",
+		"format": "prettier --write --plugin-search-dir=. .",
+		"prettier:check": "prettier --check --plugin-search-dir=. ."
+	},
+	"devDependencies": {
+		"astro": "1.0.0-rc.4",
+		"prettier": "^2.7.1",
+		"prettier-plugin-astro": "^0.2.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/rodneylab/astro"
+	},
+	"bugs": {
+		"url": "https://github.com/rodneylab/astro/issues"
+	}
 }
