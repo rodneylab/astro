@@ -18,7 +18,7 @@ Code from Rodney Lab <a aria-label="Open Rodney Lab blog post on Astro JS Sass S
 # Astro JS Sass
 
 ```
-pnpm init astro -- --template https://github.com/rodneylab/astro/tree/main/demos/astro-js-sass-styling
+pnpm create astro -- --template rodneylab/astro/tree/main/demos/astro-js-sass-styling
 ```
 
 ## 🧞 Commands
