@@ -18,7 +18,7 @@ Code from Rodney Lab <a aria-label="Open Rodney Lab blog post on Astro JS Tutori
 # Astro JS Tutorial
 
 ```
-pnpm init astro -- --template https://github.com/rodneylab/astro/tree/main/demos/astro-js-tutorial
+pnpm create astro@latest -- --template https://github.com/rodneylab/astro/tree/main/demos/astro-js-tutorial
 ```
 
 ## 🧞 Commands
