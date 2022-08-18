@@ -18,7 +18,7 @@ Final code from Rodney Lab <a aria-label="Open Rodney Lab blog post on Astro Sel
 # Astro Self-Hosted Fonts
 
 ```
-pnpm init astro -- --template https://github.com/rodneylab/astro/tree/main/demos/astro-self-hosted-fonts
+pnpm create astro -- --template rodneylab/astro/tree/main/demos/astro-self-hosted-fonts
 ```
 
 ## 🧞 Commands
