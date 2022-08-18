@@ -1,23 +1,23 @@
 lockfileVersion: 5.4
 
 specifiers:
-  astro: ~1.0.0-rc.7
+  astro: ~1.0.6
   astro-icon: ^0.7.3
   autoprefixer: ^10.4.8
   postcss: ^8.4.16
   postcss-html: ^1.5.0
   prettier: ^2.7.1
-  prettier-plugin-astro: ^0.3.0
+  prettier-plugin-astro: ^0.5.0
   subfont: ^6.9.0
 
 devDependencies:
-  astro: 1.0.0-rc.7
+  astro: 1.0.6
   astro-icon: 0.7.3
   autoprefixer: 10.4.8_postcss@8.4.16
   postcss: 8.4.16
   postcss-html: 1.5.0
   prettier: 2.7.1
-  prettier-plugin-astro: 0.3.0
+  prettier-plugin-astro: 0.5.0
   subfont: 6.9.0
 
 packages:
@@ -34,8 +34,8 @@ packages:
     resolution: {integrity: sha512-8nvyxZTfCXLyRmYfTttpJT6EPhfBRg0/q4J/Jj3/pNPLzp+vs05ZdktsY6QxAREaOMAnNEtSqcrB4S5DsXOfRg==}
     dev: true
 
-  /@astrojs/compiler/0.23.1:
-    resolution: {integrity: sha512-KsoDrASGwTKZoWXbjy8SlIeoDv7y1OfBJtHVLuPuzhConA8e0SZpGzFqIuVRfG4bhisSTptZLDQZ7oxwgPv2jA==}
+  /@astrojs/compiler/0.23.3:
+    resolution: {integrity: sha512-eBWo0d3DoRDeg2Di1/5YJtOXh5eGFSjJMp1wVoVfoITHR4egdUGgsrDHZTzj0a25M/S9W5S6SpXCyNWcqi8jOA==}
     dev: true
 
   /@astrojs/language-server/0.20.3:
@@ -54,11 +54,11 @@ packages:
       vscode-uri: 3.0.3
     dev: true
 
-  /@astrojs/markdown-remark/0.14.1:
-    resolution: {integrity: sha512-u072l5Nvb7GGMIBXmm65+IakPoF3nQ0ICIrDyFolznUB6e51AEa0ZGdpZa1jiT5fugR1gZgFPPJGcwWlSadZJA==}
+  /@astrojs/markdown-remark/1.0.0:
+    resolution: {integrity: sha512-yQIMvVjSMs4ZQHffT2nBgXiqVHKOwIgd6xC0o5XkcbXxyspxjRGpHyiAp/WKEdKsUeXwjVuL8b+6lhAYByd+lw==}
     dependencies:
       '@astrojs/micromark-extension-mdx-jsx': 1.0.3
-      '@astrojs/prism': 0.7.0
+      '@astrojs/prism': 1.0.1
       acorn: 8.8.0
       acorn-jsx: 5.3.2_acorn@8.8.0
       github-slugger: 1.4.0
@@ -96,15 +96,15 @@ packages:
       vfile-message: 3.1.2
     dev: true
 
-  /@astrojs/prism/0.7.0:
-    resolution: {integrity: sha512-5gh4BL9BlgCKBru0crQI3Y7GQCCC389wLBy+0yPnfss/pA0rVgCupRnGcs3oinsRopymOlNblEDfJXdTbCWEtg==}
+  /@astrojs/prism/1.0.1:
+    resolution: {integrity: sha512-HxEFslvbv+cfOs51q/C7aMVFuW3EAGg0d1xXU/0e/QeScDzfrp5Ra4SOb8mV082SgENVjtVvet4zR84t3at4VQ==}
     engines: {node: ^14.18.0 || >=16.12.0}
     dependencies:
       prismjs: 1.28.0
     dev: true
 
-  /@astrojs/telemetry/0.4.1:
-    resolution: {integrity: sha512-xssM9IxVQGQHPNfzNlmbaQyevnD5CjSFNEszdYEoJRgsN0yzkxjgGzzVZ4Toq+7gwM5oSO2/oxNWVbP9loHEKg==}
+  /@astrojs/telemetry/1.0.0:
+    resolution: {integrity: sha512-a8edSHK2CpWrGubLp2RR2D/uC9Paa614hQM/lS4In2lhmcCjaQA9ZyYT6l44peuDwUNt1V82DqXk3TFiDBWM8g==}
     engines: {node: ^14.18.0 || >=16.12.0}
     dependencies:
       ci-info: 3.3.2
@@ -119,8 +119,8 @@ packages:
       - supports-color
     dev: true
 
-  /@astrojs/webapi/0.12.0:
-    resolution: {integrity: sha512-rie5SYbvXVykKYBsNFnkUtDe7/0mGmrvj7Gg5pOKV34Cg/CrCJbvUSwH2oyCG2OLGtN2ttUOLvSgnVq3eipCsQ==}
+  /@astrojs/webapi/1.0.0:
+    resolution: {integrity: sha512-+klQ75oQbRdAMEbvAgrKE14hxh6GVHsQWZE4j/eJ2qhnvMSu7pw13MVQtFaAV96+pUkcYSjwWd1k+Oxoxkuo3g==}
     dependencies:
       node-fetch: 3.2.10
     dev: true
@@ -788,16 +788,16 @@ packages:
       svgo: 2.8.0
     dev: true
 
-  /astro/1.0.0-rc.7:
-    resolution: {integrity: sha512-FXUvSO2A40m7A7rMf3811yh5XA9X4qaJWlDg4m6TL9PkTIFfp9nyAl3EuX7r8rPmNTJ7EYevV0bDLk8ETWtN9w==}
+  /astro/1.0.6:
+    resolution: {integrity: sha512-QAkdkzP3PbauiO4YnOgVTWY6z26heKruoXW9TnN8Bbmwtf7DUFIchi6CFSAVYSONX8XtRnj+p6fCkk06OWfJ4w==}
     engines: {node: ^14.18.0 || >=16.12.0, npm: '>=6.14.0'}
     hasBin: true
     dependencies:
-      '@astrojs/compiler': 0.23.1
+      '@astrojs/compiler': 0.23.3
       '@astrojs/language-server': 0.20.3
-      '@astrojs/markdown-remark': 0.14.1
-      '@astrojs/telemetry': 0.4.1
-      '@astrojs/webapi': 0.12.0
+      '@astrojs/markdown-remark': 1.0.0
+      '@astrojs/telemetry': 1.0.0
+      '@astrojs/webapi': 1.0.0
       '@babel/core': 7.18.10
       '@babel/generator': 7.18.12
       '@babel/parser': 7.18.11
@@ -845,7 +845,7 @@ packages:
       tsconfig-resolver: 3.0.1
       unist-util-visit: 4.1.0
       vfile: 5.3.4
-      vite: 3.0.4
+      vite: 3.0.5
       yargs-parser: 21.1.1
       zod: 3.17.10
     transitivePeerDependencies:
@@ -4296,8 +4296,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier-plugin-astro/0.3.0:
-    resolution: {integrity: sha512-ApEy5U3FPdylBa72L8k7W/h/zgegAyuHppDu9geVwFHzaaEQpaRCrT3Wt0nc6tNcbDaOgotBfcaUzMr0Cw6a8w==}
+  /prettier-plugin-astro/0.5.0:
+    resolution: {integrity: sha512-wBDZs0hlPWQDc7P7VmGe8pImci6F434Wd/otfLJwvCSXRb9J7AhmAigXhm5WPgCJuBA509Ovo/Ed+LAgZy4KWg==}
     engines: {node: ^14.15.0 || >=16.0.0, npm: '>=6.14.0'}
     dependencies:
       '@astrojs/compiler': 0.19.0
@@ -5438,8 +5438,8 @@ packages:
       vfile-message: 3.1.2
     dev: true
 
-  /vite/3.0.4:
-    resolution: {integrity: sha512-NU304nqnBeOx2MkQnskBQxVsa0pRAH5FphokTGmyy8M3oxbvw7qAXts2GORxs+h/2vKsD+osMhZ7An6yK6F1dA==}
+  /vite/3.0.5:
+    resolution: {integrity: sha512-bRvrt9Tw8EGW4jj64aYFTnVg134E8hgDxyl/eEHnxiGqYk7/pTPss6CWlurqPOUzqvEoZkZ58Ws+Iu8MB87iMA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
