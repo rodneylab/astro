@@ -11,6 +11,7 @@ module.exports = {
         'astro-js-404-page',
         'astro-js-favicon',
         'astro-js-location-map',
+        'astro-js-non-html-route',
         'astro-js-sass-styling',
         'astro-js-tutorial',
         'astro-mux-player',

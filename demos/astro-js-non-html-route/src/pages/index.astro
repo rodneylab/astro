@@ -1,0 +1,95 @@
+---
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" href="/favicon.ico" sizes="any" />
+		<link rel="icon" href="/icon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="manifest" href="/manifest.webmanifest" />
+		<title>Astro</title>
+	</head>
+
+	<body>
+		<main class="wrapper">
+			<h1>Astro JS non-HTML Routes</h1>
+			<ul>
+				<li><a aria-label="Open P D F file" href="/pdf-resource.pdf">PDF file Route</a></li>
+				<li><a aria-label="Open J S O N file" href="/json-resource.json">JSON file Route</a></li>
+			</ul>
+		</main>
+		<style>
+			/* source-code-pro-regular - latin */
+			@font-face {
+				font-family: Source Code Pro;
+				font-style: normal;
+				font-weight: normal;
+				src: local(''), url('/fonts/source-code-pro-v21-latin-regular.woff2') format('woff2'),
+					/* Chrome 26+, Opera 23+, Firefox 39+ */
+						url('/fonts/source-code-pro-v21-latin-regular.woff') format('woff');
+				/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+			}
+
+			/* source-code-pro-700 - latin */
+			@font-face {
+				font-family: Source Code Pro;
+				font-style: normal;
+				font-weight: bold;
+				src: local(''), url('/fonts/source-code-pro-v21-latin-700.woff2') format('woff2'),
+					/* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/source-code-pro-v21-latin-700.woff')
+						format('woff');
+				/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+			}
+
+			:root {
+				--spacing-1: 0.25rem;
+				--spacing-4: 1rem;
+				--spacing-6: 1.5rem;
+				--spacing-12: 3rem;
+				--spacing-18: 4.5rem;
+				--max-width-wrapper: 38rem;
+
+				--font-family: 'Source Code Pro';
+
+				--font-size-3: 1.563rem;
+				--font-size-4: 1.953rem;
+
+				--line-height-relaxed: 1.75;
+
+				--colour-dark: hsl(32deg 75% 8%);
+				--colour-brand: hsl(50deg 87% 73%);
+				--colour-theme: hsl(354deg 78% 88%);
+			}
+
+			html {
+				background-color: var(--colour-dark);
+				color: var(--colour-theme);
+				font-family: var(--font-family);
+				font-size: var(--font-size-3);
+				line-height: var(--line-height-relaxed);
+			}
+
+			h1 {
+				color: var(--colour-brand);
+				margin: var(--spacing-12) 0 var(--spacing-6);
+				font-size: var(--font-size-4);
+			}
+
+			a {
+				color: var(--colour-theme);
+				text-underline-offset: var(--spacing-1);
+			}
+
+			li {
+				margin-bottom: var(--spacing-4);
+			}
+
+			.wrapper {
+				width: min(100% - var(--spacing-12), var(--max-width-wrapper));
+				margin: var(--spacing-18) auto;
+			}
+		</style>
+	</body>
+</html>
