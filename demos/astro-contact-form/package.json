@@ -15,22 +15,22 @@
 		"lint:css": "stylelint \"src/**/*.{astro,css,svelte}\""
 	},
 	"devDependencies": {
-		"@astrojs/svelte": "^0.5.1",
-		"astro": "^1.0.0-beta.64",
+		"@astrojs/svelte": "^1.0.0",
+		"astro": "^1.0.7",
 		"axios": "^0.27.2",
 		"postcss-html": "^1.5.0",
 		"prettier": "^2.7.1",
-		"prettier-plugin-astro": "^0.2.0",
-		"stylelint": "^14.9.1",
-		"stylelint-config-recommended": "^8.0.0",
-		"stylelint-config-standard": "^26.0.0",
+		"prettier-plugin-astro": "^0.5.1",
+		"stylelint": "^14.11.0",
+		"stylelint-config-recommended": "^9.0.0",
+		"stylelint-config-standard": "^28.0.0",
 		"svelte": "^3.49.0",
-		"svelte-check": "^2.8.0",
+		"svelte-check": "^2.8.1",
 		"typescript": "^4.7.4",
-		"vite": "^3.0.4"
+		"vite": "^3.0.9"
 	},
 	"dependencies": {
-		"@netlify/functions": "^1.0.0"
+		"@netlify/functions": "^1.2.0"
 	},
 	"repository": {
 		"type": "git",
