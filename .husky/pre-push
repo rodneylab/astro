@@ -1,2 +1,5 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
+
+pnpm --filter astro-contact-form check
+pnpm --filter astro-contact-form check:svelte
