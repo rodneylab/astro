@@ -3,246 +3,247 @@ import ContactForm from '$components/ContactForm.svelte';
 ---
 
 <html lang="en-GB">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Astro Contact Form: using Netlify Serverless Functions</title>
+	</head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>Astro Contact Form: using Netlify Serverless Functions</title>
-</head>
+	<body>
+		<header class="header-container">
+			<h1>Astro Landing Page: using Serverless Functions</h1>
+		</header>
+		<main class="main-container">
+			<section class="card">
+				<h2>New book is launching soon:</h2>
+				<ul>
+					<li>Why you should be using NewTech</li>
+					<li>How to leverage latest NewTech features,</li>
+					<li>10 Step plan for your business</li>
+				</ul>
+			</section>
+			<section class="card card-alt">
+				<h2>Find out more</h2>
+				<ContactForm client:load />
+			</section>
+		</main>
+		<style>
+			/* hind-regular - latin */
+			@font-face {
+				font-family: Hind;
+				font-style: normal;
+				font-weight: var(--font-weight-normal);
+				src: local(''), url('/fonts/hind-v15-latin-regular.woff2') format('woff2'),
+					url('/fonts/hind-v15-latin-regular.woff') format('woff');
+			}
 
-<body>
-  <header class="header-container">
-    <h1>Astro Landing Page: using Serverless Functions</h1>
-  </header>
-  <main class="main-container">
-    <section class="card">
-      <h2>New book is launching soon:</h2>
-      <ul>
-        <li>Why you should be using NewTech</li>
-        <li>How to leverage latest NewTech features,</li>
-        <li>10 Step plan for your business</li>
-      </ul>
-    </section>
-    <section class="card card-alt">
-      <h2>Find out more</h2>
-      <ContactForm client:load />
-    </section>
-  </main>
-</body>
+			/* hind-700 - latin */
+			@font-face {
+				font-family: Hind;
+				font-style: normal;
+				font-weight: var(--font-weight-bold);
+				src: local(''), url('/fonts/hind-v15-latin-700.woff2') format('woff2'),
+					url('/fonts/hind-v15-latin-700.woff') format('woff');
+			}
 
+			:global(html) {
+				background-color: var(--colour-light);
+				font-family: var(--font-body);
+				accent-color: var(--colour-brand);
+			}
+
+			:global(body) {
+				margin: 0;
+				font-weight: var(--font-weight-normal);
+			}
+
+			:global(h1) {
+				font-size: var(--font-size-6);
+				font-weight: var(--font-weight-bold);
+			}
+
+			:global(h2) {
+				font-size: var(--font-size-5);
+				font-weight: var(--font-weight-bold);
+			}
+
+			:global(form) {
+				display: flex;
+				flex-direction: column;
+				width: min(32rem, 100%);
+				margin-left: auto;
+				margin-right: auto;
+				color: var(--colour-dark);
+			}
+
+			:global(textarea) {
+				padding: var(--spacing-2) var(--spacing-0);
+				resize: none;
+			}
+
+			:global(button) {
+				background-color: var(--color-brand);
+				background-image: var(--colour-brand-gradient);
+				border: var(--spacing-px-2) solid var(--colour-light);
+				border-radius: var(--spacing-2);
+				padding: var(--spacing-2) var(--spacing-6);
+				font-size: var(--font-size-3);
+				font-weight: var(--font-weight-bold);
+				color: var(--colour-light);
+				cursor: pointer;
+			}
+
+			:global(h1, h2) {
+				font-family: var(--font-heading);
+			}
+
+			:global(input, textarea) {
+				width: 100%;
+				text-indent: var(--spacing-2);
+				padding: var(--spacing-1) var(--spacing-0);
+				margin: var(--spacing-0) var(--spacing-0) var(--spacing-5);
+				border: var(--spacing-px) solid var(--colour-theme);
+				border-radius: var(--spacing-1);
+				font-size: var(--font-size-3);
+				background-color: var(--colour-light);
+			}
+
+			:global(.screen-reader-text) {
+				border: 0;
+				clip: rect(1px, 1px, 1px, 1px);
+				clip-path: inset(50%);
+				height: 1px;
+				margin: -1px;
+				width: 1px;
+				overflow: hidden;
+				position: absolute !important;
+				word-wrap: normal !important;
+			}
+
+			:global(.error-text) {
+				color: var(--colour-brand);
+			}
+
+			:global(:root) {
+				--colour-theme: hsl(334 43% 17%);
+				/* dark purple */
+				--colour-brand: hsl(332 97% 43%);
+				/* dogwood rose */
+				--colour-alt: hsl(201 11% 41%);
+				/* cadet */
+				--colour-light: hsl(0 0% 99%);
+				/* cultured */
+				--colour-dark: hsl(245 100% 15%);
+				/* midnight blue */
+
+				--colour-brand-gradient: linear-gradient(
+					45deg,
+					hsl(332deg 97% 36%) 0%,
+					hsl(332deg 97% 37%) 21%,
+					hsl(332deg 97% 38%) 30%,
+					hsl(332deg 97% 38%) 39%,
+					hsl(332deg 97% 39%) 46%,
+					hsl(332deg 97% 40%) 54%,
+					hsl(332deg 97% 41%) 61%,
+					hsl(332deg 97% 42%) 69%,
+					hsl(332deg 97% 42%) 79%,
+					hsl(332deg 97% 43%) 100%
+				);
+				--colour-alt-gradient: linear-gradient(
+					45deg,
+					hsl(204deg 11% 44%) 0%,
+					hsl(204deg 11% 46%) 21%,
+					hsl(204deg 10% 48%) 30%,
+					hsl(204deg 10% 49%) 39%,
+					hsl(204deg 10% 51%) 46%,
+					hsl(204deg 10% 53%) 54%,
+					hsl(204deg 10% 55%) 61%,
+					hsl(204deg 10% 56%) 69%,
+					hsl(204deg 10% 58%) 79%,
+					hsl(205deg 11% 60%) 100%
+				);
+
+				--spacing-0: 0;
+				--spacing-px: 1px;
+				--spacing-px-2: 2px;
+				--spacing-1: 0.25rem;
+				--spacing-2: 0.5rem;
+				--spacing-4: 1rem;
+				--spacing-5: 1.25rem;
+				--spacing-6: 1.5rem;
+				--spacing-12: 3rem;
+				--spacing-18: 4.5rem;
+				--max-width-wrapper: 48rem;
+
+				--font-size-root: 16px;
+				--font-size-3: 1.563rem;
+				--font-size-5: 2.441rem;
+				--font-size-6: 3.052rem;
+
+				--font-weight-normal: 400;
+				--font-weight-bold: 700;
+
+				--font-heading: 'Hind';
+				--font-body: 'Hind';
+
+				/* CREDIT: https://www.joshwcomeau.com/shadow-palette/ */
+				--shadow-color: 0deg 0% 58%;
+				--shadow-elevation-medium: -1px 1px 1.4px hsl(var(--shadow-color) / 0.51),
+					-2.7px 2.7px 3.7px -1.2px hsl(var(--shadow-color) / 0.43),
+					-7.6px 7.6px 10.5px -2.3px hsl(var(--shadow-color) / 0.36),
+					-20px 20px 27.6px -3.5px hsl(var(--shadow-color) / 0.29);
+			}
+
+			:global(input:focus, textarea:focus) {
+				border-color: var(--colour-brand);
+			}
+
+			.header-container {
+				display: grid;
+				background-color: var(--colour-alt);
+				background-image: var(--colour-alt-gradient);
+				box-shadow: var(--shadow-elevation-medium);
+				color: var(--colour-light);
+				height: var(--spacing-24);
+				place-content: center;
+			}
+
+			.main-container {
+				display: flex;
+				flex-direction: column;
+				color: var(--colour-light);
+				width: min(100% - var(--spacing-12), var(--max-width-wrapper));
+				margin: var(--spacing-18) auto;
+				padding: var(--spacing-12);
+				font-size: var(--font-size-3);
+			}
+
+			.main-content {
+				display: flex;
+				flex-direction: column;
+				margin: var(--spacing-6);
+				padding: var(--spacing-2) var(--spacing-12) var(--spacing-6);
+				background-color: var(--colour-light);
+				border-radius: var(--spacing-1);
+				color: var(--colour-dark);
+			}
+
+			.card {
+				border: var(--spacing-px-2) solid var(--colour-theme);
+				box-shadow: var(--shadow-elevation-medium);
+				background-color: var(--colour-theme);
+				background-image: var(--colour-brand-gradient);
+				padding: var(--spacing-0) var(--spacing-6) var(--spacing-6);
+				margin: var(--spacing-0) var(--spacing-0) var(--spacing-12);
+				border-radius: var(--spacing-2);
+			}
+
+			.card-alt {
+				border-color: var(--colour-dark);
+				background-color: var(--colour-alt);
+				background-image: var(--colour-alt-gradient);
+				color: var(--colour-light);
+			}
+		</style>
+	</body>
 </html>
-
-<style>
-  /* hind-regular - latin */
-  @font-face {
-    font-family: Hind;
-    font-style: normal;
-    font-weight: var(--font-weight-normal);
-    src: local(''), url('/fonts/hind-v15-latin-regular.woff2') format('woff2'),
-      url('/fonts/hind-v15-latin-regular.woff') format('woff');
-  }
-
-  /* hind-700 - latin */
-  @font-face {
-    font-family: Hind;
-    font-style: normal;
-    font-weight: var(--font-weight-bold);
-    src: local(''), url('/fonts/hind-v15-latin-700.woff2') format('woff2'),
-      url('/fonts/hind-v15-latin-700.woff') format('woff');
-  }
-
-  :global(html) {
-    background-color: var(--colour-light);
-    font-family: var(--font-body);
-    accent-color: var(--colour-brand);
-  }
-
-  :global(body) {
-    margin: 0;
-    font-weight: var(--font-weight-normal);
-  }
-
-  :global(h1) {
-    font-size: var(--font-size-6);
-    font-weight: var(--font-weight-bold);
-  }
-
-  :global(h2) {
-    font-size: var(--font-size-5);
-    font-weight: var(--font-weight-bold);
-  }
-
-  :global(form) {
-    display: flex;
-    flex-direction: column;
-    width: min(32rem, 100%);
-    margin-left: auto;
-    margin-right: auto;
-    color: var(--colour-dark);
-  }
-
-  :global(textarea) {
-    padding: var(--spacing-2) var(--spacing-0);
-    resize: none;
-  }
-
-  :global(button) {
-    background-color: var(--color-brand);
-    background-image: var(--colour-brand-gradient);
-    border: var(--spacing-px-2) solid var(--colour-light);
-    border-radius: var(--spacing-2);
-    padding: var(--spacing-2) var(--spacing-6);
-    font-size: var(--font-size-3);
-    font-weight: var(--font-weight-bold);
-    color: var(--colour-light);
-    cursor: pointer;
-  }
-
-  :global(h1, h2) {
-    font-family: var(--font-heading);
-  }
-
-  :global(input, textarea) {
-    width: 100%;
-    text-indent: var(--spacing-2);
-    padding: var(--spacing-1) var(--spacing-0);
-    margin: var(--spacing-0) var(--spacing-0) var(--spacing-5);
-    border: var(--spacing-px) solid var(--colour-theme);
-    border-radius: var(--spacing-1);
-    font-size: var(--font-size-3);
-    background-color: var(--colour-light);
-  }
-
-  :global(.screen-reader-text) {
-    border: 0;
-    clip: rect(1px, 1px, 1px, 1px);
-    clip-path: inset(50%);
-    height: 1px;
-    margin: -1px;
-    width: 1px;
-    overflow: hidden;
-    position: absolute !important;
-    word-wrap: normal !important;
-  }
-
-  :global(.error-text) {
-    color: var(--colour-brand);
-  }
-
-  :global(:root) {
-    --colour-theme: hsl(334 43% 17%);
-    /* dark purple */
-    --colour-brand: hsl(332 97% 43%);
-    /* dogwood rose */
-    --colour-alt: hsl(201 11% 41%);
-    /* cadet */
-    --colour-light: hsl(0 0% 99%);
-    /* cultured */
-    --colour-dark: hsl(245 100% 15%);
-    /* midnight blue */
-
-    --colour-brand-gradient: linear-gradient(45deg,
-        hsl(332deg 97% 36%) 0%,
-        hsl(332deg 97% 37%) 21%,
-        hsl(332deg 97% 38%) 30%,
-        hsl(332deg 97% 38%) 39%,
-        hsl(332deg 97% 39%) 46%,
-        hsl(332deg 97% 40%) 54%,
-        hsl(332deg 97% 41%) 61%,
-        hsl(332deg 97% 42%) 69%,
-        hsl(332deg 97% 42%) 79%,
-        hsl(332deg 97% 43%) 100%);
-    --colour-alt-gradient: linear-gradient(45deg,
-        hsl(204deg 11% 44%) 0%,
-        hsl(204deg 11% 46%) 21%,
-        hsl(204deg 10% 48%) 30%,
-        hsl(204deg 10% 49%) 39%,
-        hsl(204deg 10% 51%) 46%,
-        hsl(204deg 10% 53%) 54%,
-        hsl(204deg 10% 55%) 61%,
-        hsl(204deg 10% 56%) 69%,
-        hsl(204deg 10% 58%) 79%,
-        hsl(205deg 11% 60%) 100%);
-
-    --spacing-0: 0;
-    --spacing-px: 1px;
-    --spacing-px-2: 2px;
-    --spacing-1: 0.25rem;
-    --spacing-2: 0.5rem;
-    --spacing-4: 1rem;
-    --spacing-5: 1.25rem;
-    --spacing-6: 1.5rem;
-    --spacing-12: 3rem;
-    --spacing-18: 4.5rem;
-    --max-width-wrapper: 48rem;
-
-    --font-size-root: 16px;
-    --font-size-3: 1.563rem;
-    --font-size-5: 2.441rem;
-    --font-size-6: 3.052rem;
-
-    --font-weight-normal: 400;
-    --font-weight-bold: 700;
-
-    --font-heading: 'Hind';
-    --font-body: 'Hind';
-
-    /* CREDIT: https://www.joshwcomeau.com/shadow-palette/ */
-    --shadow-color: 0deg 0% 58%;
-    --shadow-elevation-medium: -1px 1px 1.4px hsl(var(--shadow-color) / 0.51),
-      -2.7px 2.7px 3.7px -1.2px hsl(var(--shadow-color) / 0.43),
-      -7.6px 7.6px 10.5px -2.3px hsl(var(--shadow-color) / 0.36),
-      -20px 20px 27.6px -3.5px hsl(var(--shadow-color) / 0.29);
-  }
-
-  :global(input:focus, textarea:focus) {
-    border-color: var(--colour-brand);
-  }
-
-  .header-container {
-    display: grid;
-    background-color: var(--colour-alt);
-    background-image: var(--colour-alt-gradient);
-    box-shadow: var(--shadow-elevation-medium);
-    color: var(--colour-light);
-    height: var(--spacing-24);
-    place-content: center;
-  }
-
-  .main-container {
-    display: flex;
-    flex-direction: column;
-    color: var(--colour-light);
-    width: min(100% - var(--spacing-12), var(--max-width-wrapper));
-    margin: var(--spacing-18) auto;
-    padding: var(--spacing-12);
-    font-size: var(--font-size-3);
-  }
-
-  .main-content {
-    display: flex;
-    flex-direction: column;
-    margin: var(--spacing-6);
-    padding: var(--spacing-2) var(--spacing-12) var(--spacing-6);
-    background-color: var(--colour-light);
-    border-radius: var(--spacing-1);
-    color: var(--colour-dark);
-  }
-
-  .card {
-    border: var(--spacing-px-2) solid var(--colour-theme);
-    box-shadow: var(--shadow-elevation-medium);
-    background-color: var(--colour-theme);
-    background-image: var(--colour-brand-gradient);
-    padding: var(--spacing-0) var(--spacing-6) var(--spacing-6);
-    margin: var(--spacing-0) var(--spacing-0) var(--spacing-12);
-    border-radius: var(--spacing-2);
-  }
-
-  .card-alt {
-    border-color: var(--colour-dark);
-    background-color: var(--colour-alt);
-    background-image: var(--colour-alt-gradient);
-    color: var(--colour-light);
-  }
-</style>

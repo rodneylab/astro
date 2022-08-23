@@ -18,7 +18,7 @@ Code from Rodney Lab <a aria-label="Open Rodney Lab blog post on Landing page to
 # Astro Contact Form
 
 ```
-pnpm init astro -- --template https://github.com/rodneylab/astro/tree/main/demos/astro-contact-form
+pnpm create astro -- --template rodneylab/astro/tree/main/demos/astro-contact-form
 ```
 
 ## 🧞 Commands
