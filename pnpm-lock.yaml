@@ -119,10 +119,10 @@ packages:
       '@commitlint/execute-rule': 17.0.0
       '@commitlint/resolve-extends': 17.0.3
       '@commitlint/types': 17.0.0
-      '@types/node': 18.7.6
+      '@types/node': 18.7.11
       chalk: 4.1.2
       cosmiconfig: 7.0.1
-      cosmiconfig-typescript-loader: 2.0.2_z5yog5l5yqinvqran22gqy2vdi
+      cosmiconfig-typescript-loader: 2.0.2_yuzmdm4dwbtqx7oi4ad7vmtwja
       lodash: 4.17.21
       resolve-from: 5.0.0
       typescript: 4.7.4
@@ -240,8 +240,8 @@ packages:
     resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
     dev: true
 
-  /@types/node/18.7.6:
-    resolution: {integrity: sha512-EdxgKRXgYsNITy5mjjXjVE/CS8YENSdhiagGrLqjG0pvA2owgJ6i4l7wy/PFZGC0B1/H20lWKN7ONVDNYDZm7A==}
+  /@types/node/18.7.11:
+    resolution: {integrity: sha512-KZhFpSLlmK/sdocfSAjqPETTMd0ug6HIMIAwkwUpU79olnZdQtMxpQP+G1wDzCH7na+FltSIhbaZuKdwZ8RDrw==}
     dev: true
 
   /@types/normalize-package-data/2.4.1:
@@ -426,16 +426,16 @@ packages:
       through2: 4.0.2
     dev: true
 
-  /cosmiconfig-typescript-loader/2.0.2_z5yog5l5yqinvqran22gqy2vdi:
+  /cosmiconfig-typescript-loader/2.0.2_yuzmdm4dwbtqx7oi4ad7vmtwja:
     resolution: {integrity: sha512-KmE+bMjWMXJbkWCeY4FJX/npHuZPNr9XF9q9CIQ/bpFwi1qHfCmSiKarrCcRa0LO4fWjk93pVoeRtJAkTGcYNw==}
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
       '@types/node': '*'
       typescript: '>=3'
     dependencies:
-      '@types/node': 18.7.6
+      '@types/node': 18.7.11
       cosmiconfig: 7.0.1
-      ts-node: 10.9.1_z5yog5l5yqinvqran22gqy2vdi
+      ts-node: 10.9.1_yuzmdm4dwbtqx7oi4ad7vmtwja
       typescript: 4.7.4
     transitivePeerDependencies:
       - '@swc/core'
@@ -1136,7 +1136,7 @@ packages:
     resolution: {integrity: sha512-cOYcUWwhCuHCXi49RhFRCyJEK3iPj1Ziz9DpViV3tbZOwXD49QzIN3MpOLJNxh2qwq2lJJZaKMVw9qNi4jTC0w==}
     dependencies:
       spdx-expression-parse: 3.0.1
-      spdx-license-ids: 3.0.11
+      spdx-license-ids: 3.0.12
     dev: true
 
   /spdx-exceptions/2.3.0:
@@ -1147,11 +1147,11 @@ packages:
     resolution: {integrity: sha512-cbqHunsQWnJNE6KhVSMsMeH5H/L9EpymbzqTQ3uLwNCLZ1Q481oWaofqH7nO6V07xlXwY6PhQdQ2IedWx/ZK4Q==}
     dependencies:
       spdx-exceptions: 2.3.0
-      spdx-license-ids: 3.0.11
+      spdx-license-ids: 3.0.12
     dev: true
 
-  /spdx-license-ids/3.0.11:
-    resolution: {integrity: sha512-Ctl2BrFiM0X3MANYgj3CkygxhRmr9mi6xhejbdO960nF6EDJApTYpn0BQnDKlnNBULKiCN1n3w9EBkHK8ZWg+g==}
+  /spdx-license-ids/3.0.12:
+    resolution: {integrity: sha512-rr+VVSXtRhO4OHbXUiAF7xW3Bo9DuuF6C5jH+q/x15j2jniycgKbxU09Hr0WqlSLUs4i4ltHGXqTe7VHclYWyA==}
     dev: true
 
   /split2/3.2.2:
@@ -1233,7 +1233,7 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /ts-node/10.9.1_z5yog5l5yqinvqran22gqy2vdi:
+  /ts-node/10.9.1_yuzmdm4dwbtqx7oi4ad7vmtwja:
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
     peerDependencies:
@@ -1252,7 +1252,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.3
-      '@types/node': 18.7.6
+      '@types/node': 18.7.11
       acorn: 8.8.0
       acorn-walk: 8.2.0
       arg: 4.1.3

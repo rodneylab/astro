@@ -8,6 +8,7 @@
 		"build": "astro build",
 		"preview": "astro preview",
 		"astro": "astro",
+		"check": "astro check --fail-on-warnings",
 		"format": "prettier --ignore-path .prettierignore --write --plugin-search-dir=. .",
 		"lint:css": "stylelint \"src/**/*.{css,astro}\"",
 		"prettier:check": "prettier --check --plugin-search-dir=. ."
