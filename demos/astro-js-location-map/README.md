@@ -18,7 +18,7 @@ Demo on how to add a location map to your Astro site using Leaflet, Mapbox and O
 # Astro JS Location Map
 
 ```
-pnpm create astro -- --template https://github.com/rodneylab/astro/tree/main/demos/astro-js-location-map
+pnpm create astro -- --template rodneylab/astro/tree/main/demos/astro-js-location-map
 ```
 
 ## 🧞 Commands
