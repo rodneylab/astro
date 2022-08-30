@@ -8,6 +8,7 @@
 		"dev": "astro dev",
 		"start": "astro dev",
 		"build": "astro telemetry disable && astro build",
+		"check": "astro check --fail-on-warnings",
 		"preview": "astro preview",
 		"format": "prettier --write --plugin-search-dir=. .",
 		"lint:css": "stylelint \"src/**/*.{css,svelte}\"",
