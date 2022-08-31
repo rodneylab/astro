@@ -18,7 +18,7 @@ How to use the Mux HTML custom elements video player with Astro. This code from 
 # Astro Mux Player
 
 ```
-pnpm init astro -- --template https://github.com/rodneylab/astro/tree/main/demos/astro-mux-player
+pnpm init astro -- --template rodneylab/astro/tree/main/demos/astro-mux-player
 ```
 
 ## 🧞 Commands
