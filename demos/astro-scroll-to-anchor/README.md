@@ -18,7 +18,7 @@ Final code from Rodney Lab <a aria-label="Open Rodney Lab blog post on Astro Scr
 # Astro Scroll to Anchor
 
 ```
-pnpm init astro -- --template https://github.com/rodneylab/astro/tree/main/demos/astro-scroll-to-anchor
+pnpm init astro -- --template rodneylab/astro/tree/main/demos/astro-scroll-to-anchor
 ```
 
 ## 🧞 Commands
