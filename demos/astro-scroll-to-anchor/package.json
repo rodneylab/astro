@@ -8,6 +8,8 @@
 		"dev": "astro dev",
 		"start": "astro dev",
 		"build": "astro telemetry disable && astro build",
+		"check": "astro check --fail-on-warnings",
+		"lint:css": "stylelint \"src/**/*.{css,astro}\"",
 		"preview": "astro preview",
 		"format": "prettier --write --plugin-search-dir=. ."
 	},
@@ -18,7 +20,10 @@
 		"postcss": "^8.4.16",
 		"postcss-html": "^1.5.0",
 		"prettier": "^2.7.1",
-		"prettier-plugin-astro": "^0.5.4"
+		"prettier-plugin-astro": "^0.5.4",
+		"stylelint": "^14.11.0",
+		"stylelint-config-recommended": "^9.0.0",
+		"stylelint-config-standard": "^28.0.0"
 	},
 	"repository": {
 		"type": "git",
