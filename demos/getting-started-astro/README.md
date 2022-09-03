@@ -18,7 +18,7 @@ Playground code handy if you are just getting going in Astro and want to try our
 # Getting Started with Astro Playground
 
 ```
-pnpm init astro -- --template https://github.com/rodneylab/astro/tree/main/demos/getting-started-astro
+pnpm init astro -- --template rodneylab/astro/tree/main/demos/getting-started-astro
 ```
 
 ## 🧞 Commands
