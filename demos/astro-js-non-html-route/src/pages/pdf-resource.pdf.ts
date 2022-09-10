@@ -9,7 +9,7 @@ export const get: APIRoute = async function get() {
 		text.add('Example PDF');
 		const buffer = await doc.asBuffer();
 
-		return { body: buffer.toString() };
+		return { body: buffer.toString('binary'), encoding: 'binary' };
 	} catch (error: unknown) {
 		throw new Error(`Something went wrong in pdf-resource.pdf route!: ${error as string}`);
 	}
