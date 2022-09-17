@@ -1,11 +1,9 @@
 {
 	"compilerOptions": {
-		"moduleResolution": "node",
 		"baseUrl": ".",
 		"paths": {
-			"$components/*": ["src/components/*"],
-			"$content/*": ["src/content/*"],
-			"$styles/*": ["src/styles/*"]
+			"~*": ["src/*"]
 		}
-	}
+	},
+	"extends": "astro/tsconfigs/strict"
 }

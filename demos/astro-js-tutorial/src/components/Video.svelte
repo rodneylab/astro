@@ -1,5 +1,5 @@
 <script>
-	$: altColours = false;
+	let altColours = false;
 </script>
 
 <section class={`container${altColours ? ' container-alt' : ''}`}>
