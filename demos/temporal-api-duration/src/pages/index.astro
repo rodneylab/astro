@@ -1,120 +1,135 @@
 ---
-import albums from '$data/albums.json';
+import albums from '~data/albums.json';
 import { Temporal } from '@js-temporal/polyfill';
-import '$styles/fonts.css';
-import '$styles/global.css';
+import '~styles/fonts.css';
+import '~styles/global.css';
 
 const [{ title, artist, tracks }] = albums;
 const totalLength = tracks.reduce(
-  (accumulator, { length }) => accumulator.add(Temporal.Duration.from(length)),
-  new Temporal.Duration(),
+	(accumulator, { length }) => accumulator.add(Temporal.Duration.from(length)),
+	new Temporal.Duration(),
 );
 
 function stringFromDuration(iso8601Duration: string): string {
-  const { minutes, seconds } = Temporal.Duration.from(iso8601Duration);
-  return `${minutes}:${seconds.toString(10).padStart(2, '0')}`;
+	const { minutes, seconds } = Temporal.Duration.from(iso8601Duration);
+	return `${minutes}:${seconds.toString(10).padStart(2, '0')}`;
 }
 ---
 
-<html lang='en-GB'>
-  <head>
-    <meta charset='utf-8' />
-    <meta name='viewport' content='width=device-width' />
-    <meta charset='utf-8' />
-    <meta name='viewport' content='width=device-width' />
-    <link rel='icon' href='/favicon.ico' sizes='any' />
-    <link rel='icon' href='/icon.svg' type='image/svg+xml' />
-    <link rel='apple-touch-icon' href='/apple-touch-icon.png' />
-    <link rel='manifest' href='/manifest.webmanifest' />
-    <title>Temporal API Duration</title>
-    <meta
-      name='description'
-      content='Temporal API Duration: how you can use the new Temporal API to make working  with and manipulating durations and time periods easier.'
-    />
-  </head>
+<html lang="en-GB">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" href="/favicon.ico" sizes="any" />
+		<link rel="icon" href="/icon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="manifest" href="/manifest.webmanifest" />
+		<title>Temporal API Duration</title>
+		<meta
+			name="description"
+			content="Temporal API Duration: how you can use the new Temporal API to make working  with and manipulating durations and time periods easier."
+		/>
+	</head>
 
-  <body>
-    <main class='container'>
-      <h1 class='heading'>{artist} &mdash; {title}</h1>
-      <table>
-        <tbody>
-          <tr class='heading-row'>
-            <th>Track</th>
-            <th>Title</th>
-            <th>Length</th>
-          </tr>
-          {tracks.map(
-            ({ number, title, length }: { number: number, title: string, length: string }) => (
-              <tr>
-                <th class="track-col">{number}</th>
-                <td class="title-col">{title}</td>
-                <td class="length-col">{stringFromDuration(length)}</td>
-              </tr>
-            ),
-          )}
-        </tbody>
-      </table>
-      <p class='meta'>
-        Total length: {stringFromDuration(totalLength.toString())}
-      </p>
-    </main>
-  </body>
+	<body>
+		<main class="container">
+			<h1 class="heading">{artist} &mdash; {title}</h1>
+			<table>
+				<caption class="screen-reader-text">Track List</caption>
+				<tbody>
+					<tr class="heading-row">
+						<th>Track</th>
+						<th>Title</th>
+						<th>Length</th>
+					</tr>
+					{
+						tracks.map(
+							({ number, title, length }: { number: number; title: string; length: string }) => (
+								<tr>
+									<th class="track-col">{number}</th>
+									<td class="title-col">{title}</td>
+									<td class="length-col">{stringFromDuration(length)}</td>
+								</tr>
+							),
+						)
+					}
+				</tbody>
+			</table>
+			<p class="meta">
+				Total length: {stringFromDuration(totalLength.toString())}
+			</p>
+		</main>
+	</body>
 </html>
 
 <style>
-  .container {
-    display: flex;
-    flex-direction: column;
-    margin: var(--spacing-12) auto;
-    padding: var(--spacing-12);
-    background-color: var(--colour-alt);
-    border: var(--spacing-px-2) solid var(--colour-light);
-    border-radius: var(--spacing-4);
-    width: min(100% - var(--spacing-12), var(--max-width-wrapper));
-  }
+	.container {
+		display: flex;
+		flex-direction: column;
+		margin: var(--spacing-12) auto;
+		padding: var(--spacing-12);
+		background-color: var(--colour-alt);
+		border: var(--spacing-px-2) solid var(--colour-light);
+		border-radius: var(--spacing-4);
+		width: min(100% - var(--spacing-12), var(--max-width-wrapper));
+	}
 
-  .heading,
-  .meta {
-    margin-top: var(--spacing-0);
-    background-color: var(--colour-dark);
-    color: var(--colour-light);
-    padding: var(--spacing-4);
-    border-radius: var(--spacing-2);
-  }
+	.heading,
+	.meta {
+		margin-top: var(--spacing-0);
+		background-color: var(--colour-dark);
+		color: var(--colour-light);
+		padding: var(--spacing-4);
+		border-radius: var(--spacing-2);
+	}
 
-  .meta {
-    margin: var(--spacing-6) var(--spacing-0) var(--spacing-0);
-  }
+	.meta {
+		margin: var(--spacing-6) var(--spacing-0) var(--spacing-0);
+	}
 
-  .heading-row {
-    text-align: left;
-    font-style: italic;
-    font-size: var(--font-size-3);
-  }
+	.heading-row {
+		text-align: left;
+		font-style: italic;
+		font-size: var(--font-size-3);
+	}
 
-  table {
-    background-color: var(--colour-dark);
-    padding: var(--spacing-4);
-    border-radius: var(--spacing-2);
-    color: var(--colour-theme);
-  }
+	table {
+		background-color: var(--colour-dark);
+		padding: var(--spacing-4);
+		border-radius: var(--spacing-2);
+		color: var(--colour-theme);
+	}
 
-  td,
-  th {
-    padding-right: var(--spacing-4);
-    padding-bottom: var(--spacing-2);
-  }
+	td,
+	th {
+		padding-right: var(--spacing-4);
+		padding-bottom: var(--spacing-2);
+	}
 
-  .track-col,
-  .length-col {
-    text-align: right;
-  }
+	.track-col,
+	.length-col {
+		text-align: right;
+	}
 
-  .length-col {
-    font-variant-numeric: tabular-nums;
-  }
+	.length-col {
+		font-variant-numeric: tabular-nums;
+	}
 
-  .title-col {
-    text-align: left;
-  }
+	.title-col {
+		text-align: left;
+	}
+
+	.screen-reader-text {
+		border: 0;
+		clip: rect(1px, 1px, 1px, 1px);
+		clip-path: inset(50%);
+		height: 1px;
+		margin: -1px;
+		width: 1px;
+		overflow: hidden;
+		position: absolute !important;
+		word-wrap: normal !important;
+	}
 </style>
