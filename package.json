@@ -1,18 +1,18 @@
 {
-  "name": "astro/root",
-  "version": "0.0.1",
-  "private": true,
-  "workspaces": [
-    "demos/*"
-  ],
-  "scripts": {
-    "format": "prettier --write --plugin-search-dir=. .",
-    "prettier:check": "prettier --check --plugin-search-dir=. ."
-  },
-  "devDependencies": {
-    "@commitlint/config-conventional": "^17.1.0",
-    "commitlint": "^17.1.2",
-    "husky": "^8.0.1",
-    "prettier": "^2.7.1"
-  }
+	"name": "astro/root",
+	"version": "0.0.1",
+	"private": true,
+	"workspaces": [
+		"demos/*"
+	],
+	"scripts": {
+		"format": "prettier --write --plugin-search-dir=. .",
+		"prettier:check": "prettier --check --plugin-search-dir=. ."
+	},
+	"devDependencies": {
+		"@commitlint/config-conventional": "^17.1.0",
+		"commitlint": "^17.1.2",
+		"husky": "^8.0.1",
+		"prettier": "^2.7.1"
+	}
 }
