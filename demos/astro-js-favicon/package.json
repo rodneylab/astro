@@ -14,9 +14,9 @@
 		"prettier:check": "prettier --check --plugin-search-dir=. ."
 	},
 	"devDependencies": {
-		"astro": "1.2.2",
+		"astro": "1.5.2",
 		"prettier": "^2.7.1",
-		"prettier-plugin-astro": "^0.5.5"
+		"prettier-plugin-astro": "^0.6.0"
 	},
 	"repository": {
 		"type": "git",
@@ -24,5 +24,8 @@
 	},
 	"bugs": {
 		"url": "https://github.com/rodneylab/astro/issues"
+	},
+	"dependencies": {
+		"add": "^2.0.6"
 	}
 }
