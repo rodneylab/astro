@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@mux/mux-video': ^0.8.6
+  '@mux/mux-video': ^0.9.1
   astro: ^1.4.7
   postcss: ^8.4.17
   postcss-html: ^1.5.0
@@ -12,7 +12,7 @@ specifiers:
   stylelint-config-standard: ^28.0.0
 
 devDependencies:
-  '@mux/mux-video': 0.8.6
+  '@mux/mux-video': 0.9.1
   astro: 1.4.7
   postcss: 8.4.17
   postcss-html: 1.5.0
@@ -458,14 +458,14 @@ packages:
     resolution: {integrity: sha512-4/RWEeXDO6bocPONheFe6gX/oQdP/bEpv0oL4HqjPP5DCenBSt0mHgahppY49N0CpsaqffdwPq+TlX9CYOq2Dw==}
     dev: true
 
-  /@mux/mux-video/0.8.6:
-    resolution: {integrity: sha512-fyAswN8wdxPbtOHlMx0Qs1q8bVZXZCIliwtS0XIpbUMQkPmJ+7xw4zLdMHZjJIttcKszQawsMJPyna6LfKqgyA==}
+  /@mux/mux-video/0.9.1:
+    resolution: {integrity: sha512-Xrw3HG2qBSDQxcCqD0HRFmatQzaQ7tadE1QkF2/JBqcy4iJbPU3fqrJRwLTMGeEkOW1yi/E+17GLK97KIoowtg==}
     dependencies:
-      '@mux/playback-core': 0.11.0
+      '@mux/playback-core': 0.12.0
     dev: true
 
-  /@mux/playback-core/0.11.0:
-    resolution: {integrity: sha512-ByarSktAKJ9MU4Xsos+GQI5sbnejRsItGBd47RVfrvu6oZ40VeqT2U7TSSSz6vEGEZNr722Akrug8lVfVvQfnw==}
+  /@mux/playback-core/0.12.0:
+    resolution: {integrity: sha512-4ZyskFcYXDyK45jxLj8BCKF+XwyC7OK6BucNU7hZ1OK8LoMYEJvbUV59w/55tYphizGbm/7QfqVmclob++X1zw==}
     dependencies:
       hls.js: 1.2.3
       mux-embed: 4.13.4
