@@ -6,12 +6,12 @@ importers:
     specifiers:
       '@commitlint/config-conventional': ^17.2.0
       commitlint: ^17.2.0
-      husky: ^8.0.1
+      husky: ^8.0.2
       prettier: ^2.7.1
     devDependencies:
       '@commitlint/config-conventional': 17.2.0
       commitlint: 17.2.0
-      husky: 8.0.1
+      husky: 8.0.2
       prettier: 2.7.1
 
   demos/astro-contact-form:
@@ -930,7 +930,7 @@ packages:
       lodash: 4.17.21
       resolve-from: 5.0.0
       resolve-global: 1.0.0
-      yargs: 17.6.0
+      yargs: 17.6.2
     transitivePeerDependencies:
       - '@swc/core'
       - '@swc/wasm'
@@ -948,7 +948,7 @@ packages:
     engines: {node: '>=v14'}
     dependencies:
       '@commitlint/types': 17.0.0
-      ajv: 8.11.0
+      ajv: 8.11.2
     dev: true
 
   /@commitlint/ensure/17.0.0:
@@ -1000,8 +1000,8 @@ packages:
       '@commitlint/types': 17.0.0
       '@types/node': 14.18.33
       chalk: 4.1.2
-      cosmiconfig: 7.0.1
-      cosmiconfig-typescript-loader: 4.2.0_gbbg4brkmakf6m5nuj7scelzny
+      cosmiconfig: 7.1.0
+      cosmiconfig-typescript-loader: 4.2.0_zhrz2lclwdmp54iaqottwiuipu
       lodash: 4.17.21
       resolve-from: 5.0.0
       ts-node: 10.9.1_yodorn5kzjgomblrsstrk2spaa
@@ -1664,6 +1664,15 @@ packages:
 
   /ajv/8.11.0:
     resolution: {integrity: sha512-wGgprdCvMalC0BztXvitD2hC04YffAvtsUn93JbGXYLAtCUO4xd17mCCZQxUOItiBwZvJScWo8NIvQMQ71rdpg==}
+    dependencies:
+      fast-deep-equal: 3.1.3
+      json-schema-traverse: 1.0.0
+      require-from-string: 2.0.2
+      uri-js: 4.4.1
+    dev: true
+
+  /ajv/8.11.2:
+    resolution: {integrity: sha512-E4bfmKAhGiSTvMfL1Myyycaub+cUEU2/IvpylXkUu7CHBkBj1f/ikdzbD7YQ6FKUbixDxeYvB/xY4fvyroDlQg==}
     dependencies:
       fast-deep-equal: 3.1.3
       json-schema-traverse: 1.0.0
@@ -3775,7 +3784,7 @@ packages:
     resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
     dev: true
 
-  /cosmiconfig-typescript-loader/4.2.0_gbbg4brkmakf6m5nuj7scelzny:
+  /cosmiconfig-typescript-loader/4.2.0_zhrz2lclwdmp54iaqottwiuipu:
     resolution: {integrity: sha512-NkANeMnaHrlaSSlpKGyvn2R4rqUDeE/9E5YHx+b4nwo0R8dZyAqcih8/gxpCZvqWP9Vf6xuLpMSzSgdVEIM78g==}
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
@@ -3785,13 +3794,24 @@ packages:
       typescript: '>=3'
     dependencies:
       '@types/node': 14.18.33
-      cosmiconfig: 7.0.1
+      cosmiconfig: 7.1.0
       ts-node: 10.9.1_yodorn5kzjgomblrsstrk2spaa
       typescript: 4.8.4
     dev: true
 
   /cosmiconfig/7.0.1:
     resolution: {integrity: sha512-a1YWNUV2HwGimB7dU2s1wUMurNKjpx60HxBB6xUM8Re+2s1g1IIfJvFR0/iCF+XHdE0GMTKTuLR32UQff4TEyQ==}
+    engines: {node: '>=10'}
+    dependencies:
+      '@types/parse-json': 4.0.0
+      import-fresh: 3.3.0
+      parse-json: 5.2.0
+      path-type: 4.0.0
+      yaml: 1.10.2
+    dev: true
+
+  /cosmiconfig/7.1.0:
+    resolution: {integrity: sha512-AdmX6xUzdNASswsFtmwSt7Vj8po9IuqXm0UXz7QKPuEUmPB4XyjGfaAr2PSuELMwkRMVH1EpIkX5bTZGRB3eCA==}
     engines: {node: '>=10'}
     dependencies:
       '@types/parse-json': 4.0.0
@@ -6472,6 +6492,12 @@ packages:
 
   /husky/8.0.1:
     resolution: {integrity: sha512-xs7/chUH/CKdOCs7Zy0Aev9e/dKOMZf3K1Az1nar3tzlv0jfqnYtu235bstsWTmXOR0EfINrPa97yy4Lz6RiKw==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: true
+
+  /husky/8.0.2:
+    resolution: {integrity: sha512-Tkv80jtvbnkK3mYWxPZePGFpQ/tT3HNSs/sasF9P2YfkMezDl3ON37YN6jUUI4eTg5LcyVynlb6r4eyvOmspvg==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
@@ -13177,8 +13203,8 @@ packages:
       yargs-parser: 18.1.3
     dev: true
 
-  /yargs/17.6.0:
-    resolution: {integrity: sha512-8H/wTDqlSwoSnScvV2N/JHfLWOKuh5MVla9hqLjK3nsfyy6Y4kDSYSvkU5YCUEPOSnRXfIyx3Sq+B/IWudTo4g==}
+  /yargs/17.6.2:
+    resolution: {integrity: sha512-1/9UrdHjDZc0eOU0HxOHoS78C69UD3JRMvzlJ7S79S2nTaWRA/whGCTV8o9e/N/1Va9YIV7Q4sOxD8VV4pCWOw==}
     engines: {node: '>=12'}
     dependencies:
       cliui: 8.0.1
