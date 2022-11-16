@@ -382,29 +382,29 @@ importers:
 
   demos/temporal-api-time-zones:
     specifiers:
-      '@commitlint/config-conventional': ^17.1.0
+      '@commitlint/config-conventional': ^17.2.0
       '@js-temporal/polyfill': ^0.4.3
-      astro: ^1.5.1
-      husky: ^8.0.1
+      astro: ^1.6.8
+      husky: ^8.0.2
       postcss-html: ^1.5.0
       prettier: ^2.7.1
-      prettier-plugin-astro: ^0.6.0
-      stylelint: ^14.14.0
+      prettier-plugin-astro: ^0.7.0
+      stylelint: ^14.15.0
       stylelint-config-recommended: ^9.0.0
       stylelint-config-standard: ^29.0.0
-      vite: ^3.1.8
+      vite: ^3.2.4
     devDependencies:
       '@commitlint/config-conventional': 17.2.0
       '@js-temporal/polyfill': 0.4.3
-      astro: 1.6.2
-      husky: 8.0.1
+      astro: 1.6.8
+      husky: 8.0.2
       postcss-html: 1.5.0
       prettier: 2.7.1
-      prettier-plugin-astro: 0.6.0
-      stylelint: 14.14.0
-      stylelint-config-recommended: 9.0.0_stylelint@14.14.0
-      stylelint-config-standard: 29.0.0_stylelint@14.14.0
-      vite: 3.1.8
+      prettier-plugin-astro: 0.7.0
+      stylelint: 14.15.0
+      stylelint-config-recommended: 9.0.0_stylelint@14.15.0
+      stylelint-config-standard: 29.0.0_stylelint@14.15.0
+      vite: 3.2.4
 
 packages:
 
@@ -431,8 +431,8 @@ packages:
     resolution: {integrity: sha512-C9+91vsWiJspj/VkVp6UtSIrJGuj/Aia1KCEDzg2Ge27uSDCOl1QlUQuAAnAbGpFBF71uaYOUZOPCbptQeGbdQ==}
     dev: true
 
-  /@astrojs/compiler/0.29.15:
-    resolution: {integrity: sha512-vicPD8oOPNkcFZvz71Uz/nJcadovurUQ3L0yMZNPb6Nn6T1nHhlSHt5nAKaurB2pYU9DrxOFWZS2/RdV+JsWmQ==}
+  /@astrojs/compiler/0.29.16:
+    resolution: {integrity: sha512-1CCf+dktc8IQCdmsNNSIor3rcJE5OIirFnFtQWp1VUxqCacefqRRlsl9lH7JcKKpRvz1taL43yHYJP8dxNfVww==}
     dev: true
 
   /@astrojs/compiler/0.29.8:
@@ -2877,7 +2877,7 @@ packages:
     engines: {node: ^14.18.0 || >=16.12.0, npm: '>=6.14.0'}
     hasBin: true
     dependencies:
-      '@astrojs/compiler': 0.29.15
+      '@astrojs/compiler': 0.29.16
       '@astrojs/language-server': 0.28.3
       '@astrojs/markdown-remark': 1.1.3
       '@astrojs/telemetry': 1.0.1
@@ -2931,11 +2931,11 @@ packages:
       strip-ansi: 7.0.1
       supports-esm: 1.0.0
       tsconfig-resolver: 3.0.1
-      typescript: 4.8.4
+      typescript: 4.9.3
       unist-util-visit: 4.1.1
       vfile: 5.3.5
-      vite: 3.2.3
-      vitefu: 0.2.1_vite@3.2.3
+      vite: 3.2.4
+      vitefu: 0.2.1_vite@3.2.4
       yargs-parser: 21.1.1
       zod: 3.19.1
     transitivePeerDependencies:
@@ -7045,12 +7045,6 @@ packages:
     engines: {node: '>=12.20.0'}
     dev: true
 
-  /husky/8.0.1:
-    resolution: {integrity: sha512-xs7/chUH/CKdOCs7Zy0Aev9e/dKOMZf3K1Az1nar3tzlv0jfqnYtu235bstsWTmXOR0EfINrPa97yy4Lz6RiKw==}
-    engines: {node: '>=14'}
-    hasBin: true
-    dev: true
-
   /husky/8.0.2:
     resolution: {integrity: sha512-Tkv80jtvbnkK3mYWxPZePGFpQ/tT3HNSs/sasF9P2YfkMezDl3ON37YN6jUUI4eTg5LcyVynlb6r4eyvOmspvg==}
     engines: {node: '>=14'}
@@ -8280,8 +8274,8 @@ packages:
       warning-symbol: 0.1.0
     dev: true
 
-  /longest-streak/3.0.1:
-    resolution: {integrity: sha512-cHlYSUpL2s7Fb3394mYxwTYj8niTaNHUCLr0qdiCXQfSjfuA7CKofpX2uSwEfFDQ0EB7JcnMnm+GjbqqoinYYg==}
+  /longest-streak/3.1.0:
+    resolution: {integrity: sha512-9Ri+o0JYgehTaVBBDoMqIl8GXtbWg711O3srftcHhZ0dqnETqLaoIK0x17fUw9rFSlK/0NlsKe0Ahhyl5pXE2g==}
     dev: true
 
   /longest/1.0.1:
@@ -8592,7 +8586,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.10
       '@types/unist': 2.0.6
-      longest-streak: 3.0.1
+      longest-streak: 3.1.0
       mdast-util-to-string: 3.1.0
       micromark-util-decode-string: 1.0.2
       unist-util-visit: 4.1.1
@@ -10245,7 +10239,7 @@ packages:
     resolution: {integrity: sha512-ehCUx7MqHWvkHwUmxxAWLsL35pFaCTM5YXQ8xjG/1W6dY2yBhvEks+2aCfjeI5zmMrZNCXkiMQtpznSlLSLrxw==}
     engines: {node: ^14.15.0 || >=16.0.0, npm: '>=6.14.0'}
     dependencies:
-      '@astrojs/compiler': 0.29.15
+      '@astrojs/compiler': 0.29.16
       prettier: 2.7.1
       sass-formatter: 0.7.5
       synckit: 0.8.4
@@ -12855,6 +12849,12 @@ packages:
     hasBin: true
     dev: true
 
+  /typescript/4.9.3:
+    resolution: {integrity: sha512-CIfGzTelbKNEnLpLdGFgdyKhG23CKdKgQPOBc+OUNrkJ2vr+KSzsSV5kq5iWhEQbok+quxgGzrAtGWCyU7tHnA==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: true
+
   /uglify-js/3.17.4:
     resolution: {integrity: sha512-T9q82TJI9e/C1TAxYvfb16xO120tMVFZrGA3f9/P4424DNu6ypK103y0GPFVa17yotwSyZW5iYXgjYHkGrJW/g==}
     engines: {node: '>=0.8.0'}
@@ -13443,6 +13443,39 @@ packages:
       fsevents: 2.3.2
     dev: true
 
+  /vite/3.2.4:
+    resolution: {integrity: sha512-Z2X6SRAffOUYTa+sLy3NQ7nlHFU100xwanq1WDwqaiFiCe+25zdxP1TfCS5ojPV2oDDcXudHIoPnI1Z/66B7Yw==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    hasBin: true
+    peerDependencies:
+      '@types/node': '>= 14'
+      less: '*'
+      sass: '*'
+      stylus: '*'
+      sugarss: '*'
+      terser: ^5.4.0
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+      less:
+        optional: true
+      sass:
+        optional: true
+      stylus:
+        optional: true
+      sugarss:
+        optional: true
+      terser:
+        optional: true
+    dependencies:
+      esbuild: 0.15.14
+      postcss: 8.4.19
+      resolve: 1.22.1
+      rollup: 2.79.1
+    optionalDependencies:
+      fsevents: 2.3.2
+    dev: true
+
   /vitefu/0.1.0_vite@3.1.8:
     resolution: {integrity: sha512-5MQSHP9yr0HIve8q4XNb7QXfO1P4tzZDZP99qH0FM5ClcwYddeGXRDQ4TQYRUeXLjZ+vLecirHtGNpwFFUF7sw==}
     peerDependencies:
@@ -13478,7 +13511,7 @@ packages:
       vite: 3.2.3
     dev: true
 
-  /vitefu/0.2.1_vite@3.2.3:
+  /vitefu/0.2.1_vite@3.2.4:
     resolution: {integrity: sha512-clkvXTAeUf+XQKm3bhWUhT4pye+3acm6YCTGaWhxxIvZZ/QjnA3JA8Zud+z/mO5y5XYvJJhevs5Sjkv/FI8nRw==}
     peerDependencies:
       vite: ^3.0.0
@@ -13486,7 +13519,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 3.2.3
+      vite: 3.2.4
     dev: true
 
   /vscode-css-languageservice/6.1.1:
