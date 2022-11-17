@@ -17,6 +17,7 @@ module.exports = {
 				'astro-mux-player',
 				'astro-self-hosted-fonts',
 				'astro-scroll-to-anchor',
+				'astro-vanilla-extract',
 				'getting-started-astro',
 				'temporal-api-duration',
 				'temporal-api-time-zones',
