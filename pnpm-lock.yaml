@@ -49,23 +49,23 @@ importers:
 
   demos/astro-js-404-page:
     specifiers:
-      astro: ^1.5.2
-      postcss: ^8.4.18
+      astro: ^1.6.10
+      postcss: ^8.4.19
       postcss-html: ^1.5.0
-      prettier: ^2.7.1
-      prettier-plugin-astro: ^0.6.0
-      stylelint: ^14.14.0
+      prettier: ^2.8.0
+      prettier-plugin-astro: ^0.7.0
+      stylelint: ^14.15.0
       stylelint-config-recommended: ^9.0.0
       stylelint-config-standard: ^29.0.0
     devDependencies:
-      astro: 1.6.2
-      postcss: 8.4.18
+      astro: 1.6.10
+      postcss: 8.4.19
       postcss-html: 1.5.0
-      prettier: 2.7.1
-      prettier-plugin-astro: 0.6.0
-      stylelint: 14.14.0
-      stylelint-config-recommended: 9.0.0_stylelint@14.14.0
-      stylelint-config-standard: 29.0.0_stylelint@14.14.0
+      prettier: 2.8.0
+      prettier-plugin-astro: 0.7.0
+      stylelint: 14.15.0
+      stylelint-config-recommended: 9.0.0_stylelint@14.15.0
+      stylelint-config-standard: 29.0.0_stylelint@14.15.0
 
   demos/astro-js-favicon:
     specifiers:
@@ -502,10 +502,10 @@ packages:
     dependencies:
       '@vscode/emmet-helper': 2.8.4
       events: 3.3.0
-      prettier: 2.7.1
+      prettier: 2.8.0
       prettier-plugin-astro: 0.7.0
       source-map: 0.7.4
-      vscode-css-languageservice: 6.1.1
+      vscode-css-languageservice: 6.2.1
       vscode-html-languageservice: 5.0.2
       vscode-languageserver: 8.0.2
       vscode-languageserver-protocol: 3.17.2
@@ -523,7 +523,7 @@ packages:
       acorn-jsx: 5.3.2_acorn@8.8.1
       github-slugger: 1.5.0
       hast-util-to-html: 8.0.3
-      import-meta-resolve: 2.1.0
+      import-meta-resolve: 2.2.0
       mdast-util-from-markdown: 1.2.0
       mdast-util-mdx-expression: 1.3.1
       mdast-util-mdx-jsx: 1.2.0
@@ -763,7 +763,7 @@ packages:
     resolution: {integrity: sha512-SJVfZHp00f8VZsT1fsx1+6acJGUNt/84xZytV5znPzzNE8RXjlE0rv03llgTsEeUHYZc6uJah91jNojS7RldFg==}
     engines: {node: ^14.18.0 || >=16.12.0}
     dependencies:
-      ci-info: 3.6.1
+      ci-info: 3.6.2
       debug: 4.3.4
       dlv: 1.1.3
       dset: 3.1.2
@@ -2128,6 +2128,10 @@ packages:
       vscode-uri: 2.1.2
     dev: true
 
+  /@vscode/l10n/0.0.10:
+    resolution: {integrity: sha512-E1OCmDcDWa0Ya7vtSjp/XfHFGqYJfh+YPC1RkATU71fTac+j1JjCcB3qwSzmlKAighx2WxhLlfhS0RwAN++PFQ==}
+    dev: true
+
   /JSONStream/1.3.5:
     resolution: {integrity: sha512-E+iruNOY8VV9s4JEbe1aNEm6MiszPRr/UfcHMz0TQh1BXSxHK+ASV1R6W4HpjBhSeS+54PIsAMCBmwD06LLsqQ==}
     hasBin: true
@@ -3025,7 +3029,7 @@ packages:
       '@types/html-escaper': 3.0.0
       '@types/yargs-parser': 21.0.0
       boxen: 6.2.1
-      ci-info: 3.6.1
+      ci-info: 3.6.2
       common-ancestor-path: 1.0.1
       cookie: 0.5.0
       debug: 4.3.4
@@ -3039,7 +3043,7 @@ packages:
       gray-matter: 4.0.3
       html-entities: 2.3.3
       html-escaper: 3.0.3
-      import-meta-resolve: 2.1.0
+      import-meta-resolve: 2.2.0
       kleur: 4.1.5
       magic-string: 0.25.9
       mime: 3.0.0
@@ -3066,7 +3070,7 @@ packages:
       unist-util-visit: 4.1.1
       vfile: 5.3.6
       vite: 3.2.4
-      vitefu: 0.2.1_vite@3.2.4
+      vitefu: 0.2.2_vite@3.2.4
       yargs-parser: 21.1.1
       zod: 3.19.1
     transitivePeerDependencies:
@@ -4184,6 +4188,11 @@ packages:
 
   /ci-info/3.6.1:
     resolution: {integrity: sha512-up5ggbaDqOqJ4UqLKZ2naVkyqSJQgJi5lwD6b6mM748ysrghDBX0bx/qJTUHzw7zu6Mq4gycviSF5hJnwceD8w==}
+    engines: {node: '>=8'}
+    dev: true
+
+  /ci-info/3.6.2:
+    resolution: {integrity: sha512-lVZdhvbEudris15CLytp2u6Y0p5EKfztae9Fqa189MfNmln9F33XuH69v5fvNfiRN5/0eAUz2yJL3mo+nhaRKg==}
     engines: {node: '>=8'}
     dev: true
 
@@ -7747,6 +7756,10 @@ packages:
     resolution: {integrity: sha512-yG9pxkWJVTy4cmRsNWE3ztFdtFuYIV8G4N+cbCkO8b+qngkLyIUhxQFuZ0qJm67+0nUOxjMPT7nfksPKza1v2g==}
     dev: true
 
+  /import-meta-resolve/2.2.0:
+    resolution: {integrity: sha512-CpPOtiCHxP9HdtDM5F45tNiAe66Cqlv3f5uHoJjt+KlaLrUh9/Wz9vepADZ78SlqEo62aDWZtj9ydMGXV+CPnw==}
+    dev: true
+
   /imurmurhash/0.1.4:
     resolution: {integrity: sha512-JmXMZ6wuvDmLiHEml9ykzqO6lwFbof0GG4IkcGaENdCRDDmMVnny7s5HsIgHCbaq0w2MyPhDqkhTUgS2LU2PHA==}
     engines: {node: '>=0.8.19'}
@@ -11008,7 +11021,7 @@ packages:
     engines: {node: ^14.15.0 || >=16.0.0, npm: '>=6.14.0'}
     dependencies:
       '@astrojs/compiler': 0.27.2
-      prettier: 2.7.1
+      prettier: 2.8.0
       sass-formatter: 0.7.5
       synckit: 0.8.4
     dev: true
@@ -11018,7 +11031,7 @@ packages:
     engines: {node: ^14.15.0 || >=16.0.0, npm: '>=6.14.0'}
     dependencies:
       '@astrojs/compiler': 0.29.17
-      prettier: 2.7.1
+      prettier: 2.8.0
       sass-formatter: 0.7.5
       synckit: 0.8.4
     dev: true
@@ -14402,12 +14415,32 @@ packages:
     dependencies:
       vite: 3.2.4
 
+  /vitefu/0.2.2_vite@3.2.4:
+    resolution: {integrity: sha512-8CKEIWPm4B4DUDN+h+hVJa9pyNi7rzc5MYmbxhs1wcMakueGFNWB5/DL30USm9qU3xUPnL4/rrLEAwwFiD1tag==}
+    peerDependencies:
+      vite: ^3.0.0
+    peerDependenciesMeta:
+      vite:
+        optional: true
+    dependencies:
+      vite: 3.2.4
+    dev: true
+
   /vscode-css-languageservice/6.1.1:
     resolution: {integrity: sha512-7d2NCq2plT0njAKmGZ11uof95y2fwbgq8QuToE3kX9uYQfVmejHX2/lFGKbK5AV5+Ja0L80UZoU0QspwqMKMHA==}
     dependencies:
       vscode-languageserver-textdocument: 1.0.7
       vscode-languageserver-types: 3.17.2
       vscode-nls: 5.2.0
+      vscode-uri: 3.0.6
+    dev: true
+
+  /vscode-css-languageservice/6.2.1:
+    resolution: {integrity: sha512-FMaMjB2LQdkHjTCP2CWh2S94xuGsxSc8xr0H9nAACVd/iUDyZLoKFjwoB+mA3v0rpCH2U5vVCVwxyULy61CgqA==}
+    dependencies:
+      '@vscode/l10n': 0.0.10
+      vscode-languageserver-textdocument: 1.0.7
+      vscode-languageserver-types: 3.17.2
       vscode-uri: 3.0.6
     dev: true
 
