@@ -84,33 +84,33 @@ importers:
     specifiers:
       '@astrojs/svelte': ^1.0.2
       '@types/leaflet': ^1.9.0
-      astro: ^1.5.2
-      leaflet: ^1.9.2
-      postcss: ^8.4.18
+      astro: ^1.6.11
+      leaflet: ^1.9.3
+      postcss: ^8.4.19
       postcss-html: ^1.5.0
-      prettier: ^2.7.1
-      stylelint: ^14.14.0
+      prettier: ^2.8.0
+      stylelint: ^14.15.0
       stylelint-config-recommended: ^9.0.0
-      stylelint-config-standard: ^28.0.0
-      svelte: ^3.52.0
+      stylelint-config-standard: ^29.0.0
+      svelte: ^3.53.1
       svelte-check: ^2.9.2
-      typescript: ^4.8.4
-      vite: ^3.1.8
+      typescript: ^4.9.3
+      vite: ^3.2.4
     devDependencies:
-      '@astrojs/svelte': 1.0.2_4imu3rhb2m7yy42qj5lnbt4zzm
+      '@astrojs/svelte': 1.0.2_whj6elqu7lihyt7eudocgdiv64
       '@types/leaflet': 1.9.0
-      astro: 1.6.2
-      leaflet: 1.9.2
-      postcss: 8.4.18
+      astro: 1.6.11
+      leaflet: 1.9.3
+      postcss: 8.4.19
       postcss-html: 1.5.0
-      prettier: 2.7.1
-      stylelint: 14.14.0
-      stylelint-config-recommended: 9.0.0_stylelint@14.14.0
-      stylelint-config-standard: 28.0.0_stylelint@14.14.0
-      svelte: 3.52.0
-      svelte-check: 2.9.2_vidagnlh55bt6yxji7dk5y5wla
-      typescript: 4.8.4
-      vite: 3.1.8
+      prettier: 2.8.0
+      stylelint: 14.15.0
+      stylelint-config-recommended: 9.0.0_stylelint@14.15.0
+      stylelint-config-standard: 29.0.0_stylelint@14.15.0
+      svelte: 3.53.1
+      svelte-check: 2.9.2_mocwzvuqzrhb37u7s4hjvvzl3i
+      typescript: 4.9.3
+      vite: 3.2.4
 
   demos/astro-js-non-html-route:
     specifiers:
@@ -620,34 +620,6 @@ packages:
       - supports-color
     dev: true
 
-  /@astrojs/svelte/1.0.2_4imu3rhb2m7yy42qj5lnbt4zzm:
-    resolution: {integrity: sha512-cC3Pn475mOJdDM5IKMJ75hlah7jTWdVPkD7gUx+7ouJ/V9Q8H5OTmne+xG8zk2MquAHBL/ksmUS2pSzI9ByZkw==}
-    engines: {node: ^14.18.0 || >=16.12.0}
-    peerDependencies:
-      svelte: ^3.46.4
-    dependencies:
-      '@sveltejs/vite-plugin-svelte': 1.1.0_svelte@3.52.0+vite@3.1.8
-      postcss-load-config: 3.1.4_postcss@8.4.18
-      svelte: 3.52.0
-      svelte-preprocess: 4.10.7_xz754sowbrlngj2ktwvbot3xzu
-      svelte2tsx: 0.5.20_besnmoibwkhwtentvwuriss7pa
-    transitivePeerDependencies:
-      - '@babel/core'
-      - coffeescript
-      - diff-match-patch
-      - less
-      - node-sass
-      - postcss
-      - pug
-      - sass
-      - stylus
-      - sugarss
-      - supports-color
-      - ts-node
-      - typescript
-      - vite
-    dev: true
-
   /@astrojs/svelte/1.0.2_4rgu74t2n5aihruqie6ni6rao4:
     resolution: {integrity: sha512-cC3Pn475mOJdDM5IKMJ75hlah7jTWdVPkD7gUx+7ouJ/V9Q8H5OTmne+xG8zk2MquAHBL/ksmUS2pSzI9ByZkw==}
     engines: {node: ^14.18.0 || >=16.12.0}
@@ -759,11 +731,39 @@ packages:
       - vite
     dev: true
 
+  /@astrojs/svelte/1.0.2_whj6elqu7lihyt7eudocgdiv64:
+    resolution: {integrity: sha512-cC3Pn475mOJdDM5IKMJ75hlah7jTWdVPkD7gUx+7ouJ/V9Q8H5OTmne+xG8zk2MquAHBL/ksmUS2pSzI9ByZkw==}
+    engines: {node: ^14.18.0 || >=16.12.0}
+    peerDependencies:
+      svelte: ^3.46.4
+    dependencies:
+      '@sveltejs/vite-plugin-svelte': 1.3.1_svelte@3.53.1+vite@3.2.4
+      postcss-load-config: 3.1.4_postcss@8.4.19
+      svelte: 3.53.1
+      svelte-preprocess: 4.10.7_fk6yiouxkoeuwmuc7fxd2g6ie4
+      svelte2tsx: 0.5.20_7dvewpees4iyn2tkw2qzal77a4
+    transitivePeerDependencies:
+      - '@babel/core'
+      - coffeescript
+      - diff-match-patch
+      - less
+      - node-sass
+      - postcss
+      - pug
+      - sass
+      - stylus
+      - sugarss
+      - supports-color
+      - ts-node
+      - typescript
+      - vite
+    dev: true
+
   /@astrojs/telemetry/1.0.1:
     resolution: {integrity: sha512-SJVfZHp00f8VZsT1fsx1+6acJGUNt/84xZytV5znPzzNE8RXjlE0rv03llgTsEeUHYZc6uJah91jNojS7RldFg==}
     engines: {node: ^14.18.0 || >=16.12.0}
     dependencies:
-      ci-info: 3.6.2
+      ci-info: 3.7.0
       debug: 4.3.4
       dlv: 1.1.3
       dset: 3.1.2
@@ -1826,6 +1826,29 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
+  /@sveltejs/vite-plugin-svelte/1.3.1_svelte@3.53.1+vite@3.2.4:
+    resolution: {integrity: sha512-2Uu2sDdIR+XQWF7QWOVSF2jR9EU6Ciw1yWfYnfLYj8HIgnNxkh/8g22Fw2pBUI8QNyW/KxtqJUWBI+8ypamSrQ==}
+    engines: {node: ^14.18.0 || >= 16}
+    peerDependencies:
+      diff-match-patch: ^1.0.5
+      svelte: ^3.44.0
+      vite: ^3.0.0
+    peerDependenciesMeta:
+      diff-match-patch:
+        optional: true
+    dependencies:
+      debug: 4.3.4
+      deepmerge: 4.2.2
+      kleur: 4.1.5
+      magic-string: 0.26.7
+      svelte: 3.53.1
+      svelte-hmr: 0.15.1_svelte@3.53.1
+      vite: 3.2.4
+      vitefu: 0.2.2_vite@3.2.4
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /@swc/helpers/0.3.17:
     resolution: {integrity: sha512-tb7Iu+oZ+zWJZ3HJqwx8oNwSDIU440hmVMDPhpACWQWnrZHK99Bxs70gT1L2dnr5Hg50ZRWEFkQCAnOVVV0z1Q==}
     dependencies:
@@ -2518,8 +2541,8 @@ packages:
       ansi-wrap: 0.1.0
     dev: true
 
-  /anymatch/3.1.2:
-    resolution: {integrity: sha512-P43ePfOAIupkguHUycrc4qJ9kz8ZiuOUijaETwX7THt0Y/GNK7v0aa8rY816xWjZ7rJdA5XdMcpVFTKMq+RvWg==}
+  /anymatch/3.1.3:
+    resolution: {integrity: sha512-KMReFUr0B4t+D+OBkjR3KYqvocp2XaSzO55UcB6mgQMd3KbcE+mWTyvVV7D/zsdEbNnV6acZUutkiHQXvTr1Rw==}
     engines: {node: '>= 8'}
     dependencies:
       normalize-path: 3.0.0
@@ -2955,6 +2978,83 @@ packages:
       '@types/yargs-parser': 21.0.0
       boxen: 6.2.1
       ci-info: 3.6.2
+      common-ancestor-path: 1.0.1
+      cookie: 0.5.0
+      debug: 4.3.4
+      deepmerge-ts: 4.2.2
+      diff: 5.1.0
+      es-module-lexer: 0.10.5
+      esbuild: 0.14.54
+      execa: 6.1.0
+      fast-glob: 3.2.12
+      github-slugger: 1.5.0
+      gray-matter: 4.0.3
+      html-entities: 2.3.3
+      html-escaper: 3.0.3
+      import-meta-resolve: 2.2.0
+      kleur: 4.1.5
+      magic-string: 0.25.9
+      mime: 3.0.0
+      ora: 6.1.2
+      path-browserify: 1.0.1
+      path-to-regexp: 6.2.1
+      postcss: 8.4.19
+      postcss-load-config: 3.1.4_postcss@8.4.19
+      preferred-pm: 3.0.3
+      prompts: 2.4.2
+      recast: 0.20.5
+      rehype: 12.0.1
+      resolve: 1.22.1
+      rollup: 2.79.1
+      semver: 7.3.8
+      shiki: 0.11.1
+      sirv: 2.0.2
+      slash: 4.0.0
+      string-width: 5.1.2
+      strip-ansi: 7.0.1
+      supports-esm: 1.0.0
+      tsconfig-resolver: 3.0.1
+      typescript: 4.9.3
+      unist-util-visit: 4.1.1
+      vfile: 5.3.6
+      vite: 3.2.4
+      vitefu: 0.2.2_vite@3.2.4
+      yargs-parser: 21.1.1
+      zod: 3.19.1
+    transitivePeerDependencies:
+      - '@types/node'
+      - less
+      - sass
+      - stylus
+      - sugarss
+      - supports-color
+      - terser
+      - ts-node
+    dev: true
+
+  /astro/1.6.11:
+    resolution: {integrity: sha512-T0xb0U0FOrqXxl87x4mjpufhf0b47RMPIu8WWK+2ODrRZkPj1sr24alh3Y/PLSyiWSqoGZF7xzQ6hzt0jDCyVQ==}
+    engines: {node: ^14.18.0 || >=16.12.0, npm: '>=6.14.0'}
+    hasBin: true
+    dependencies:
+      '@astrojs/compiler': 0.29.17
+      '@astrojs/language-server': 0.28.3
+      '@astrojs/markdown-remark': 1.1.3
+      '@astrojs/telemetry': 1.0.1
+      '@astrojs/webapi': 1.1.1
+      '@babel/core': 7.20.2
+      '@babel/generator': 7.20.4
+      '@babel/parser': 7.20.3
+      '@babel/plugin-transform-react-jsx': 7.19.0_@babel+core@7.20.2
+      '@babel/traverse': 7.20.1
+      '@babel/types': 7.20.2
+      '@proload/core': 0.3.3
+      '@proload/plugin-tsm': 0.2.1_@proload+core@0.3.3
+      '@types/babel__core': 7.1.20
+      '@types/html-escaper': 3.0.0
+      '@types/yargs-parser': 21.0.0
+      boxen: 6.2.1
+      ci-info: 3.7.0
       common-ancestor-path: 1.0.1
       cookie: 0.5.0
       debug: 4.3.4
@@ -4092,7 +4192,7 @@ packages:
     resolution: {integrity: sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw==}
     engines: {node: '>= 8.10.0'}
     dependencies:
-      anymatch: 3.1.2
+      anymatch: 3.1.3
       braces: 3.0.2
       glob-parent: 5.1.2
       is-binary-path: 2.1.0
@@ -4118,6 +4218,11 @@ packages:
 
   /ci-info/3.6.2:
     resolution: {integrity: sha512-lVZdhvbEudris15CLytp2u6Y0p5EKfztae9Fqa189MfNmln9F33XuH69v5fvNfiRN5/0eAUz2yJL3mo+nhaRKg==}
+    engines: {node: '>=8'}
+    dev: true
+
+  /ci-info/3.7.0:
+    resolution: {integrity: sha512-2CpRNYmImPx+RXKLq6jko/L07phmS9I02TyqkcNU20GCF/GgaWvc58hPtjxDX8lPpkdwc9sNh72V9k00S7ezog==}
     engines: {node: '>=8'}
     dev: true
 
@@ -8538,8 +8643,8 @@ packages:
       readable-stream: 2.3.7
     dev: true
 
-  /leaflet/1.9.2:
-    resolution: {integrity: sha512-Kc77HQvWO+y9y2oIs3dn5h5sy2kr3j41ewdqCMEUA4N89lgfUUfOBy7wnnHEstDpefiGFObq12FdopGRMx4J7g==}
+  /leaflet/1.9.3:
+    resolution: {integrity: sha512-iB2cR9vAkDOu5l3HAay2obcUHZ7xwUBBjph8+PGtmW/2lYhbLizWtG7nTeYht36WfOslixQF9D/uSIzhZgGMfQ==}
     dev: true
 
   /levn/0.3.0:
@@ -12657,6 +12762,34 @@ packages:
       - sugarss
     dev: true
 
+  /svelte-check/2.9.2_mocwzvuqzrhb37u7s4hjvvzl3i:
+    resolution: {integrity: sha512-DRi8HhnCiqiGR2YF9ervPGvtoYrheE09cXieCTEqeTPOTJzfoa54Py8rovIBv4bH4n5HgZYIyTQ3DDLHQLl2uQ==}
+    hasBin: true
+    peerDependencies:
+      svelte: ^3.24.0
+    dependencies:
+      '@jridgewell/trace-mapping': 0.3.17
+      chokidar: 3.5.3
+      fast-glob: 3.2.12
+      import-fresh: 3.3.0
+      picocolors: 1.0.0
+      sade: 1.8.1
+      svelte: 3.53.1
+      svelte-preprocess: 4.10.7_mvbmsfnr3ibpjsbee6imjcb33m
+      typescript: 4.9.3
+    transitivePeerDependencies:
+      - '@babel/core'
+      - coffeescript
+      - less
+      - node-sass
+      - postcss
+      - postcss-load-config
+      - pug
+      - sass
+      - stylus
+      - sugarss
+    dev: true
+
   /svelte-check/2.9.2_svelte@3.53.1:
     resolution: {integrity: sha512-DRi8HhnCiqiGR2YF9ervPGvtoYrheE09cXieCTEqeTPOTJzfoa54Py8rovIBv4bH4n5HgZYIyTQ3DDLHQLl2uQ==}
     hasBin: true
@@ -12672,34 +12805,6 @@ packages:
       svelte: 3.53.1
       svelte-preprocess: 4.10.7_7dvewpees4iyn2tkw2qzal77a4
       typescript: 4.9.3
-    transitivePeerDependencies:
-      - '@babel/core'
-      - coffeescript
-      - less
-      - node-sass
-      - postcss
-      - postcss-load-config
-      - pug
-      - sass
-      - stylus
-      - sugarss
-    dev: true
-
-  /svelte-check/2.9.2_vidagnlh55bt6yxji7dk5y5wla:
-    resolution: {integrity: sha512-DRi8HhnCiqiGR2YF9ervPGvtoYrheE09cXieCTEqeTPOTJzfoa54Py8rovIBv4bH4n5HgZYIyTQ3DDLHQLl2uQ==}
-    hasBin: true
-    peerDependencies:
-      svelte: ^3.24.0
-    dependencies:
-      '@jridgewell/trace-mapping': 0.3.17
-      chokidar: 3.5.3
-      fast-glob: 3.2.12
-      import-fresh: 3.3.0
-      picocolors: 1.0.0
-      sade: 1.8.1
-      svelte: 3.52.0
-      svelte-preprocess: 4.10.7_thgq75zisbcmm7d6lsbrpbdhti
-      typescript: 4.8.4
     transitivePeerDependencies:
       - '@babel/core'
       - coffeescript
@@ -12844,6 +12949,59 @@ packages:
       typescript: 4.9.3
     dev: true
 
+  /svelte-preprocess/4.10.7_fk6yiouxkoeuwmuc7fxd2g6ie4:
+    resolution: {integrity: sha512-sNPBnqYD6FnmdBrUmBCaqS00RyCsCpj2BG58A1JBswNF7b0OKviwxqVrOL/CKyJrLSClrSeqQv5BXNg2RUbPOw==}
+    engines: {node: '>= 9.11.2'}
+    requiresBuild: true
+    peerDependencies:
+      '@babel/core': ^7.10.2
+      coffeescript: ^2.5.1
+      less: ^3.11.3 || ^4.0.0
+      node-sass: '*'
+      postcss: ^7 || ^8
+      postcss-load-config: ^2.1.0 || ^3.0.0 || ^4.0.0
+      pug: ^3.0.0
+      sass: ^1.26.8
+      stylus: ^0.55.0
+      sugarss: ^2.0.0
+      svelte: ^3.23.0
+      typescript: ^3.9.5 || ^4.0.0
+    peerDependenciesMeta:
+      '@babel/core':
+        optional: true
+      coffeescript:
+        optional: true
+      less:
+        optional: true
+      node-sass:
+        optional: true
+      postcss:
+        optional: true
+      postcss-load-config:
+        optional: true
+      pug:
+        optional: true
+      sass:
+        optional: true
+      stylus:
+        optional: true
+      sugarss:
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      '@types/pug': 2.0.6
+      '@types/sass': 1.43.1
+      detect-indent: 6.1.0
+      magic-string: 0.25.9
+      postcss: 8.4.19
+      postcss-load-config: 3.1.4_postcss@8.4.19
+      sorcery: 0.10.0
+      strip-indent: 3.0.0
+      svelte: 3.53.1
+      typescript: 4.9.3
+    dev: true
+
   /svelte-preprocess/4.10.7_knr6etdtm4je27pqqcgyux2t7a:
     resolution: {integrity: sha512-sNPBnqYD6FnmdBrUmBCaqS00RyCsCpj2BG58A1JBswNF7b0OKviwxqVrOL/CKyJrLSClrSeqQv5BXNg2RUbPOw==}
     engines: {node: '>= 9.11.2'}
@@ -12951,6 +13109,58 @@ packages:
       typescript: 4.8.4
     dev: true
 
+  /svelte-preprocess/4.10.7_mvbmsfnr3ibpjsbee6imjcb33m:
+    resolution: {integrity: sha512-sNPBnqYD6FnmdBrUmBCaqS00RyCsCpj2BG58A1JBswNF7b0OKviwxqVrOL/CKyJrLSClrSeqQv5BXNg2RUbPOw==}
+    engines: {node: '>= 9.11.2'}
+    requiresBuild: true
+    peerDependencies:
+      '@babel/core': ^7.10.2
+      coffeescript: ^2.5.1
+      less: ^3.11.3 || ^4.0.0
+      node-sass: '*'
+      postcss: ^7 || ^8
+      postcss-load-config: ^2.1.0 || ^3.0.0 || ^4.0.0
+      pug: ^3.0.0
+      sass: ^1.26.8
+      stylus: ^0.55.0
+      sugarss: ^2.0.0
+      svelte: ^3.23.0
+      typescript: ^3.9.5 || ^4.0.0
+    peerDependenciesMeta:
+      '@babel/core':
+        optional: true
+      coffeescript:
+        optional: true
+      less:
+        optional: true
+      node-sass:
+        optional: true
+      postcss:
+        optional: true
+      postcss-load-config:
+        optional: true
+      pug:
+        optional: true
+      sass:
+        optional: true
+      stylus:
+        optional: true
+      sugarss:
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      '@types/pug': 2.0.6
+      '@types/sass': 1.43.1
+      detect-indent: 6.1.0
+      magic-string: 0.25.9
+      postcss: 8.4.19
+      sorcery: 0.10.0
+      strip-indent: 3.0.0
+      svelte: 3.53.1
+      typescript: 4.9.3
+    dev: true
+
   /svelte-preprocess/4.10.7_r4jktsrezo7s43feljy6docjvu:
     resolution: {integrity: sha512-sNPBnqYD6FnmdBrUmBCaqS00RyCsCpj2BG58A1JBswNF7b0OKviwxqVrOL/CKyJrLSClrSeqQv5BXNg2RUbPOw==}
     engines: {node: '>= 9.11.2'}
@@ -13000,111 +13210,6 @@ packages:
       postcss: 8.4.18
       postcss-load-config: 3.1.4_postcss@8.4.18
       sass: 1.55.0
-      sorcery: 0.10.0
-      strip-indent: 3.0.0
-      svelte: 3.52.0
-      typescript: 4.8.4
-    dev: true
-
-  /svelte-preprocess/4.10.7_thgq75zisbcmm7d6lsbrpbdhti:
-    resolution: {integrity: sha512-sNPBnqYD6FnmdBrUmBCaqS00RyCsCpj2BG58A1JBswNF7b0OKviwxqVrOL/CKyJrLSClrSeqQv5BXNg2RUbPOw==}
-    engines: {node: '>= 9.11.2'}
-    requiresBuild: true
-    peerDependencies:
-      '@babel/core': ^7.10.2
-      coffeescript: ^2.5.1
-      less: ^3.11.3 || ^4.0.0
-      node-sass: '*'
-      postcss: ^7 || ^8
-      postcss-load-config: ^2.1.0 || ^3.0.0 || ^4.0.0
-      pug: ^3.0.0
-      sass: ^1.26.8
-      stylus: ^0.55.0
-      sugarss: ^2.0.0
-      svelte: ^3.23.0
-      typescript: ^3.9.5 || ^4.0.0
-    peerDependenciesMeta:
-      '@babel/core':
-        optional: true
-      coffeescript:
-        optional: true
-      less:
-        optional: true
-      node-sass:
-        optional: true
-      postcss:
-        optional: true
-      postcss-load-config:
-        optional: true
-      pug:
-        optional: true
-      sass:
-        optional: true
-      stylus:
-        optional: true
-      sugarss:
-        optional: true
-      typescript:
-        optional: true
-    dependencies:
-      '@types/pug': 2.0.6
-      '@types/sass': 1.43.1
-      detect-indent: 6.1.0
-      magic-string: 0.25.9
-      postcss: 8.4.18
-      sorcery: 0.10.0
-      strip-indent: 3.0.0
-      svelte: 3.52.0
-      typescript: 4.8.4
-    dev: true
-
-  /svelte-preprocess/4.10.7_xz754sowbrlngj2ktwvbot3xzu:
-    resolution: {integrity: sha512-sNPBnqYD6FnmdBrUmBCaqS00RyCsCpj2BG58A1JBswNF7b0OKviwxqVrOL/CKyJrLSClrSeqQv5BXNg2RUbPOw==}
-    engines: {node: '>= 9.11.2'}
-    requiresBuild: true
-    peerDependencies:
-      '@babel/core': ^7.10.2
-      coffeescript: ^2.5.1
-      less: ^3.11.3 || ^4.0.0
-      node-sass: '*'
-      postcss: ^7 || ^8
-      postcss-load-config: ^2.1.0 || ^3.0.0 || ^4.0.0
-      pug: ^3.0.0
-      sass: ^1.26.8
-      stylus: ^0.55.0
-      sugarss: ^2.0.0
-      svelte: ^3.23.0
-      typescript: ^3.9.5 || ^4.0.0
-    peerDependenciesMeta:
-      '@babel/core':
-        optional: true
-      coffeescript:
-        optional: true
-      less:
-        optional: true
-      node-sass:
-        optional: true
-      postcss:
-        optional: true
-      postcss-load-config:
-        optional: true
-      pug:
-        optional: true
-      sass:
-        optional: true
-      stylus:
-        optional: true
-      sugarss:
-        optional: true
-      typescript:
-        optional: true
-    dependencies:
-      '@types/pug': 2.0.6
-      '@types/sass': 1.43.1
-      detect-indent: 6.1.0
-      magic-string: 0.25.9
-      postcss: 8.4.18
-      postcss-load-config: 3.1.4_postcss@8.4.18
       sorcery: 0.10.0
       strip-indent: 3.0.0
       svelte: 3.52.0
