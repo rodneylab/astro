@@ -238,25 +238,25 @@ importers:
 
   demos/astro-mux-player:
     specifiers:
-      '@mux/mux-video': ^0.9.1
-      astro: ^1.6.2
-      postcss: ^8.4.18
+      '@mux/mux-video': ^0.11.0
+      astro: ^1.6.13
+      postcss: ^8.4.19
       postcss-html: ^1.5.0
-      prettier: ^2.7.1
+      prettier: ^2.8.1
       prettier-plugin-astro: ^0.7.0
-      stylelint: ^14.14.0
+      stylelint: ^14.16.0
       stylelint-config-recommended: ^9.0.0
       stylelint-config-standard: ^29.0.0
     devDependencies:
-      '@mux/mux-video': 0.9.1
-      astro: 1.6.2
-      postcss: 8.4.18
+      '@mux/mux-video': 0.11.0
+      astro: 1.6.13
+      postcss: 8.4.19
       postcss-html: 1.5.0
-      prettier: 2.7.1
+      prettier: 2.8.1
       prettier-plugin-astro: 0.7.0
-      stylelint: 14.14.0
-      stylelint-config-recommended: 9.0.0_stylelint@14.14.0
-      stylelint-config-standard: 29.0.0_stylelint@14.14.0
+      stylelint: 14.16.0
+      stylelint-config-recommended: 9.0.0_stylelint@14.16.0
+      stylelint-config-standard: 29.0.0_stylelint@14.16.0
 
   demos/astro-scroll-to-anchor:
     specifiers:
@@ -466,6 +466,10 @@ packages:
     resolution: {integrity: sha512-6ZbRGVunUMHxROD9Cleqkrfrj/kM9o43nLVwycdxCexCB5G372evy2ZM46LhaG/k5B5yC0PByNHTaGny0ll3iQ==}
     dev: true
 
+  /@astrojs/compiler/0.29.19:
+    resolution: {integrity: sha512-lvPpoOA6Fc1NpJrPT65ZOhhFieYkiBds9wzOhWX55lXMUpNPu5CUxqzgDAkNSTIoXHZxkxHfi+6EpFNnRZBBYQ==}
+    dev: true
+
   /@astrojs/compiler/0.29.8:
     resolution: {integrity: sha512-D4qKnSQcOF32LgskeGnzq35N30yrITgrSaQrt/EIPU6ItcgcUr/K1BG07JCZdc+4mbfWF6RFQc7yPP9pS8Sg8w==}
     dev: true
@@ -494,7 +498,7 @@ packages:
     dependencies:
       '@vscode/emmet-helper': 2.8.4
       events: 3.3.0
-      prettier: 2.8.0
+      prettier: 2.8.1
       prettier-plugin-astro: 0.7.0
       source-map: 0.7.4
       vscode-css-languageservice: 6.2.1
@@ -1699,17 +1703,17 @@ packages:
     resolution: {integrity: sha512-4/RWEeXDO6bocPONheFe6gX/oQdP/bEpv0oL4HqjPP5DCenBSt0mHgahppY49N0CpsaqffdwPq+TlX9CYOq2Dw==}
     dev: true
 
-  /@mux/mux-video/0.9.1:
-    resolution: {integrity: sha512-Xrw3HG2qBSDQxcCqD0HRFmatQzaQ7tadE1QkF2/JBqcy4iJbPU3fqrJRwLTMGeEkOW1yi/E+17GLK97KIoowtg==}
+  /@mux/mux-video/0.11.0:
+    resolution: {integrity: sha512-Se7ULA1NV/0riD8LBA3gc/wNcOE40WM51C51FeLEIKMNuObeFyWua+xVkX8WpNKfl44vommI4wbQeamkIxOwHA==}
     dependencies:
-      '@mux/playback-core': 0.12.0
+      '@mux/playback-core': 0.14.0
     dev: true
 
-  /@mux/playback-core/0.12.0:
-    resolution: {integrity: sha512-4ZyskFcYXDyK45jxLj8BCKF+XwyC7OK6BucNU7hZ1OK8LoMYEJvbUV59w/55tYphizGbm/7QfqVmclob++X1zw==}
+  /@mux/playback-core/0.14.0:
+    resolution: {integrity: sha512-sE2vMI704DF+bnWhGspy9LY8MYl/Rbh+h6x3AwXI9G6zRRr0noiQ2b2dIbPNKopKouVTI2impytY27nYpR97Rw==}
     dependencies:
       hls.js: 1.2.3
-      mux-embed: 4.13.4
+      mux-embed: 4.15.0
     dev: true
 
   /@netlify/functions/1.3.0:
@@ -3182,6 +3186,82 @@ packages:
       vfile: 5.3.6
       vite: 3.2.4_sass@1.56.1
       vitefu: 0.2.2_vite@3.2.4
+      yargs-parser: 21.1.1
+      zod: 3.19.1
+    transitivePeerDependencies:
+      - '@types/node'
+      - less
+      - sass
+      - stylus
+      - sugarss
+      - supports-color
+      - terser
+      - ts-node
+    dev: true
+
+  /astro/1.6.13:
+    resolution: {integrity: sha512-26Ip+7iCdHiK4FQokEWNYTcVDkJ76KLwlzUsuzLck8QBiUFQQUm9fs5nITHDI06k1EYfODYPH81xqZavXlC3Hg==}
+    engines: {node: ^14.18.0 || >=16.12.0, npm: '>=6.14.0'}
+    hasBin: true
+    dependencies:
+      '@astrojs/compiler': 0.29.19
+      '@astrojs/language-server': 0.28.3
+      '@astrojs/markdown-remark': 1.1.3
+      '@astrojs/telemetry': 1.0.1
+      '@astrojs/webapi': 1.1.1
+      '@babel/core': 7.20.5
+      '@babel/generator': 7.20.5
+      '@babel/parser': 7.20.5
+      '@babel/plugin-transform-react-jsx': 7.19.0_@babel+core@7.20.5
+      '@babel/traverse': 7.20.5
+      '@babel/types': 7.20.5
+      '@proload/core': 0.3.3
+      '@proload/plugin-tsm': 0.2.1_@proload+core@0.3.3
+      '@types/babel__core': 7.1.20
+      '@types/html-escaper': 3.0.0
+      '@types/yargs-parser': 21.0.0
+      boxen: 6.2.1
+      ci-info: 3.7.0
+      common-ancestor-path: 1.0.1
+      cookie: 0.5.0
+      debug: 4.3.4
+      deepmerge-ts: 4.2.2
+      diff: 5.1.0
+      es-module-lexer: 0.10.5
+      execa: 6.1.0
+      fast-glob: 3.2.12
+      github-slugger: 1.5.0
+      gray-matter: 4.0.3
+      html-entities: 2.3.3
+      html-escaper: 3.0.3
+      import-meta-resolve: 2.2.0
+      kleur: 4.1.5
+      magic-string: 0.25.9
+      mime: 3.0.0
+      ora: 6.1.2
+      path-browserify: 1.0.1
+      path-to-regexp: 6.2.1
+      postcss: 8.4.19
+      postcss-load-config: 3.1.4_postcss@8.4.19
+      preferred-pm: 3.0.3
+      prompts: 2.4.2
+      recast: 0.20.5
+      rehype: 12.0.1
+      resolve: 1.22.1
+      rollup: 2.79.1
+      semver: 7.3.8
+      shiki: 0.11.1
+      sirv: 2.0.2
+      slash: 4.0.0
+      string-width: 5.1.2
+      strip-ansi: 7.0.1
+      supports-esm: 1.0.0
+      tsconfig-resolver: 3.0.1
+      typescript: 4.9.4
+      unist-util-visit: 4.1.1
+      vfile: 5.3.6
+      vite: 3.2.5
+      vitefu: 0.2.2_vite@3.2.5
       yargs-parser: 21.1.1
       zod: 3.19.1
     transitivePeerDependencies:
@@ -9960,8 +10040,8 @@ packages:
     resolution: {integrity: sha512-EbrziT4s8cWPmzr47eYVW3wimS4HsvlnV5ri1xw1aR6JQo/OrJX5rkl32K/QQHdxeabJETtfeaROGhd8W7uBgg==}
     dev: true
 
-  /mux-embed/4.13.4:
-    resolution: {integrity: sha512-clOZenuOFO5xKXPdrfM2DstT9v2HSw0rwdoYUj6fbQqQbJNUBD16c8LnI1OcT6T0+iKeyDOeY3nFmwP8Zbtg6w==}
+  /mux-embed/4.15.0:
+    resolution: {integrity: sha512-eYlZmSkfc2xf+k2aWaPHLeh81wtPQsWxRMob0YoUyBCEX1iuJhPKpJE+9C8ASY+LrE+Z44K306rbg8a5oPCrjg==}
     dev: true
 
   /nanoid/3.3.4:
@@ -11147,8 +11227,8 @@ packages:
     resolution: {integrity: sha512-ehCUx7MqHWvkHwUmxxAWLsL35pFaCTM5YXQ8xjG/1W6dY2yBhvEks+2aCfjeI5zmMrZNCXkiMQtpznSlLSLrxw==}
     engines: {node: ^14.15.0 || >=16.0.0, npm: '>=6.14.0'}
     dependencies:
-      '@astrojs/compiler': 0.29.17
-      prettier: 2.8.0
+      '@astrojs/compiler': 0.29.19
+      prettier: 2.8.1
       sass-formatter: 0.7.5
       synckit: 0.8.4
     dev: true
