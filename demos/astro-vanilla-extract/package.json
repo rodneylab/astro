@@ -17,23 +17,23 @@
 		"prettier:check": "prettier --check --plugin-search-dir=. ."
 	},
 	"devDependencies": {
-		"@cloudflare/workers-types": "^3.18.0",
-		"@commitlint/config-conventional": "^17.2.0",
+		"@commitlint/config-conventional": "^17.3.0",
 		"@vanilla-extract/css": "^1.9.2",
 		"@vanilla-extract/vite-plugin": "^3.7.0",
-		"astro": "~1.6.7",
-		"commitlint": "^17.2.0",
+		"astro": "~1.8.0",
+		"commitlint": "^17.3.0",
 		"husky": "^8.0.2",
+		"imagetools-core": "^3.2.3",
 		"subfont": "^6.12.2",
-		"typescript": "^4.8.4",
-		"vite": "^3.2.4",
-		"vite-imagetools": "^4.0.11"
+		"typescript": "^4.9.4",
+		"vite": "^4.0.3",
+		"vite-imagetools": "^4.0.12"
 	},
 	"dependencies": {
 		"@astrojs/preact": "^1.2.0",
 		"@astrojs/svelte": "^1.0.2",
-		"preact": "^10.6.5",
-		"svelte": "^3.46.4"
+		"preact": "^10.11.3",
+		"svelte": "^3.55.0"
 	},
 	"repository": {
 		"type": "git",
@@ -41,5 +41,8 @@
 	},
 	"bugs": {
 		"url": "https://github.com/rodneylab/astro/issues"
+	},
+	"peerDependencies": {
+		"imagetools-core": "^3.2.3"
 	}
 }
