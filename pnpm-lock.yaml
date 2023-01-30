@@ -394,26 +394,26 @@ importers:
   demos/temporal-api-duration:
     specifiers:
       '@js-temporal/polyfill': ^0.4.3
-      astro: 1.9.0
-      postcss: ^8.4.20
+      astro: 2.0.2
+      postcss: ^8.4.21
       postcss-html: ^1.5.0
-      prettier: ^2.8.1
-      prettier-plugin-astro: ^0.7.2
+      prettier: ^2.8.3
+      prettier-plugin-astro: ^0.8.0
       stylelint: ^14.16.1
       stylelint-config-recommended: ^9.0.0
       stylelint-config-standard: ^29.0.0
-      subfont: ^6.12.2
+      subfont: ^6.12.4
     devDependencies:
       '@js-temporal/polyfill': 0.4.3
-      astro: 1.9.0
-      postcss: 8.4.20
+      astro: 2.0.2
+      postcss: 8.4.21
       postcss-html: 1.5.0
-      prettier: 2.8.1
-      prettier-plugin-astro: 0.7.2
+      prettier: 2.8.3
+      prettier-plugin-astro: 0.8.0
       stylelint: 14.16.1
       stylelint-config-recommended: 9.0.0_stylelint@14.16.1
       stylelint-config-standard: 29.0.0_stylelint@14.16.1
-      subfont: 6.12.2
+      subfont: 6.12.4
 
   demos/temporal-api-time-zones:
     specifiers:
@@ -1527,10 +1527,6 @@ packages:
       '@hapi/hoek': 8.5.1
     dev: true
 
-  /@hookun/parse-animation-shorthand/0.1.4:
-    resolution: {integrity: sha512-SL5XshO2hvsbgL1YoyTL95ayYLNBdZKXpla2UD7/Ehh2vDLDwYxHheGgJxW08hiVvLDfsWTXKWFd1Iw5xMQIXA==}
-    dev: true
-
   /@hookun/parse-animation-shorthand/0.1.5:
     resolution: {integrity: sha512-/fnwYK9Tgllhtv2EpwZZVbwhCokAoGtfEz23mZtjHMHvih4YeiAeUuVpyjGrTGf6j6ymgrCxGwUiAkAfDsmUjw==}
     dev: true
@@ -1579,7 +1575,7 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       jsbi: 4.3.0
-      tslib: 2.4.1
+      tslib: 2.5.0
     dev: true
 
   /@ljharb/has-package-exports-patterns/0.0.2:
@@ -1654,7 +1650,7 @@ packages:
   /@proload/core/0.3.3:
     resolution: {integrity: sha512-7dAFWsIK84C90AMl24+N/ProHKm4iw0akcnoKjRvbfHifJZBLhaDsDus1QJmhG12lXj4e/uB/8mB/0aduCW+NQ==}
     dependencies:
-      deepmerge: 4.2.2
+      deepmerge: 4.3.0
       escalade: 3.1.1
     dev: true
 
@@ -2653,85 +2649,6 @@ packages:
       node-fetch: 3.3.0
       resolve-pkg: 2.0.0
       svgo: 2.8.0
-    dev: true
-
-  /astro/1.9.0:
-    resolution: {integrity: sha512-wHHMOHgqBGV4L8ThjCeBuVHq0mGF1F515jRyp5ns0MzFcu2nFk1frlXBKZEfmMMM84cilq3HeimrRTLkIGxI8A==}
-    engines: {node: ^14.18.0 || >=16.12.0, npm: '>=6.14.0'}
-    hasBin: true
-    dependencies:
-      '@astrojs/compiler': 0.31.4
-      '@astrojs/language-server': 0.28.3
-      '@astrojs/markdown-remark': 1.2.0
-      '@astrojs/telemetry': 1.0.1
-      '@astrojs/webapi': 1.1.1
-      '@babel/core': 7.20.12
-      '@babel/generator': 7.20.7
-      '@babel/parser': 7.20.7
-      '@babel/plugin-transform-react-jsx': 7.20.7_@babel+core@7.20.12
-      '@babel/traverse': 7.20.12
-      '@babel/types': 7.20.7
-      '@proload/core': 0.3.3
-      '@proload/plugin-tsm': 0.2.1_@proload+core@0.3.3
-      '@types/babel__core': 7.1.20
-      '@types/html-escaper': 3.0.0
-      '@types/yargs-parser': 21.0.0
-      acorn: 8.8.1
-      boxen: 6.2.1
-      ci-info: 3.7.1
-      common-ancestor-path: 1.0.1
-      cookie: 0.5.0
-      debug: 4.3.4
-      deepmerge-ts: 4.2.2
-      devalue: 4.2.0
-      diff: 5.1.0
-      es-module-lexer: 1.1.0
-      estree-walker: 3.0.1
-      execa: 6.1.0
-      fast-glob: 3.2.12
-      github-slugger: 2.0.0
-      gray-matter: 4.0.3
-      html-entities: 2.3.3
-      html-escaper: 3.0.3
-      import-meta-resolve: 2.2.0
-      kleur: 4.1.5
-      magic-string: 0.27.0
-      mime: 3.0.0
-      ora: 6.1.2
-      path-browserify: 1.0.1
-      path-to-regexp: 6.2.1
-      postcss: 8.4.20
-      postcss-load-config: 3.1.4_postcss@8.4.20
-      preferred-pm: 3.0.3
-      prompts: 2.4.2
-      recast: 0.20.5
-      rehype: 12.0.1
-      resolve: 1.22.1
-      rollup: 2.79.1
-      semver: 7.3.8
-      shiki: 0.11.1
-      sirv: 2.0.2
-      slash: 4.0.0
-      string-width: 5.1.2
-      strip-ansi: 7.0.1
-      supports-esm: 1.0.0
-      tsconfig-resolver: 3.0.1
-      typescript: 4.9.4
-      unist-util-visit: 4.1.1
-      vfile: 5.3.6
-      vite: 3.2.5
-      vitefu: 0.2.4_vite@3.2.5
-      yargs-parser: 21.1.1
-      zod: 3.20.2
-    transitivePeerDependencies:
-      - '@types/node'
-      - less
-      - sass
-      - stylus
-      - sugarss
-      - supports-color
-      - terser
-      - ts-node
     dev: true
 
   /astro/1.9.1:
@@ -3864,13 +3781,9 @@ packages:
     resolution: {integrity: sha512-bsTwuIg/BZZK/vreVTYYbSWoe2F+71P7K5QGEX+pT250DZbfU1MQ5prOKpPR+LL6uWKK3KMwMCAS74QB3Um1uw==}
     dependencies:
       browserslist: 4.21.4
-      caniuse-lite: 1.0.30001448
+      caniuse-lite: 1.0.30001449
       lodash.memoize: 4.1.2
       lodash.uniq: 4.5.0
-    dev: true
-
-  /caniuse-lite/1.0.30001448:
-    resolution: {integrity: sha512-tq2YI+MJnooG96XpbTRYkBxLxklZPOdLmNIOdIhvf7SNJan6u5vCKum8iT7ZfCt70m1GPkuC7P3TtX6UuhupuA==}
     dev: true
 
   /caniuse-lite/1.0.30001449:
@@ -4661,6 +4574,11 @@ packages:
     resolution: {integrity: sha512-FJ3UgI4gIl+PHZm53knsuSFpE+nESMr7M4v9QcgB7S63Kj/6WqMiFQJpBBYz1Pt+66bZpP3Q7Lye0Oo9MPKEdg==}
     engines: {node: '>=0.10.0'}
 
+  /deepmerge/4.3.0:
+    resolution: {integrity: sha512-z2wJZXrmeHdvYJp/Ux55wIjqo81G5Bp4c+oELTW+7ar6SogWHajt5a9gO3s3IDaGSAXjDk0vlQKN3rms8ab3og==}
+    engines: {node: '>=0.10.0'}
+    dev: true
+
   /default-compare/1.0.0:
     resolution: {integrity: sha512-QWfXlM0EkAbqOCbD/6HjdwT19j7WCkMyiRhWilc4H9/5h/RzTF9gv5LYh1+CmDV5d1rki6KAWLtQale0xt20eQ==}
     engines: {node: '>=0.10.0'}
@@ -5404,10 +5322,6 @@ packages:
 
   /estree-walker/2.0.2:
     resolution: {integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==}
-    dev: true
-
-  /estree-walker/3.0.1:
-    resolution: {integrity: sha512-woY0RUD87WzMBUiZLx8NsYr23N5BKsOMZHhu2hoNRVh6NXGfoiT1KOL8G3UHlJAnEDGmfa5ubNA/AacfG+Kb0g==}
     dev: true
 
   /estree-walker/3.0.2:
@@ -8113,16 +8027,16 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /mdast-util-gfm-autolink-literal/1.0.2:
-    resolution: {integrity: sha512-FzopkOd4xTTBeGXhXSBU0OCDDh5lUj2rd+HQqG92Ld+jL4lpUfgX2AT2OHAVP9aEeDKp7G92fuooSZcYJA3cRg==}
+  /mdast-util-gfm-autolink-literal/1.0.3:
+    resolution: {integrity: sha512-My8KJ57FYEy2W2LyNom4n3E7hKTuQk/0SES0u16tjA9Z3oFkF4RrC/hPAPgjlSpezsOvI8ObcXcElo92wn5IGA==}
     dependencies:
       '@types/mdast': 3.0.10
       ccount: 2.0.1
       mdast-util-find-and-replace: 2.2.2
       micromark-util-character: 1.1.0
 
-  /mdast-util-gfm-footnote/1.0.1:
-    resolution: {integrity: sha512-p+PrYlkw9DeCRkTVw1duWqPRHX6Ywh2BNKJQcZbCwAuP/59B0Lk9kakuAd7KbQprVO4GzdW8eS5++A9PUSqIyw==}
+  /mdast-util-gfm-footnote/1.0.2:
+    resolution: {integrity: sha512-56D19KOGbE00uKVj3sgIykpwKL179QsVFwx/DCW0u/0+URsryacI4MAdNJl0dh+u2PSsD9FtxPFbHCzJ78qJFQ==}
     dependencies:
       '@types/mdast': 3.0.10
       mdast-util-to-markdown: 1.5.0
@@ -8144,8 +8058,8 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /mdast-util-gfm-task-list-item/1.0.1:
-    resolution: {integrity: sha512-KZ4KLmPdABXOsfnM6JHUIjxEvcx2ulk656Z/4Balw071/5qgnhz+H1uGtf2zIGnrnvDC8xR4Fj9uKbjAFGNIeA==}
+  /mdast-util-gfm-task-list-item/1.0.2:
+    resolution: {integrity: sha512-PFTA1gzfp1B1UaiJVyhJZA1rm0+Tzn690frc/L8vNX1Jop4STZgOE6bxUhnzdVSB+vm2GU1tIsuQcA9bxTQpMQ==}
     dependencies:
       '@types/mdast': 3.0.10
       mdast-util-to-markdown: 1.5.0
@@ -8154,11 +8068,11 @@ packages:
     resolution: {integrity: sha512-42yHBbfWIFisaAfV1eixlabbsa6q7vHeSPY+cg+BBjX51M8xhgMacqH9g6TftB/9+YkcI0ooV4ncfrJslzm/RQ==}
     dependencies:
       mdast-util-from-markdown: 1.3.0
-      mdast-util-gfm-autolink-literal: 1.0.2
-      mdast-util-gfm-footnote: 1.0.1
+      mdast-util-gfm-autolink-literal: 1.0.3
+      mdast-util-gfm-footnote: 1.0.2
       mdast-util-gfm-strikethrough: 1.0.2
       mdast-util-gfm-table: 1.0.6
-      mdast-util-gfm-task-list-item: 1.0.1
+      mdast-util-gfm-task-list-item: 1.0.2
       mdast-util-to-markdown: 1.5.0
     transitivePeerDependencies:
       - supports-color
@@ -11328,42 +11242,6 @@ packages:
       - supports-color
     dev: true
 
-  /subfont/6.12.2:
-    resolution: {integrity: sha512-Mt6Dt/P1+XeoCZvvNdpK86dURSOzAlBRLoS0tzMZgDqUQ1LikZNrT2MyAwuexWUkdg+dGIE7Pgen4kcfYQ8xyg==}
-    engines: {node: '>=10.0.0'}
-    hasBin: true
-    dependencies:
-      '@gustavnikolaj/async-main-wrap': 3.0.1
-      '@hookun/parse-animation-shorthand': 0.1.4
-      assetgraph: 7.10.0
-      browserslist: 4.21.4
-      css-font-parser: 2.0.0
-      css-font-weight-names: 0.2.1
-      css-list-helpers: 2.0.0
-      font-snapper: 1.2.0
-      font-tracer: 3.6.0
-      fontkit: 1.9.0
-      fontverter: 2.0.0
-      gettemporaryfilepath: 1.0.1
-      lines-and-columns: 1.2.4
-      lodash: 4.17.21
-      memoizesync: 1.1.1
-      postcss: 8.4.20
-      postcss-value-parser: 4.2.0
-      pretty-bytes: 5.6.0
-      puppeteer-core: 8.0.0
-      specificity: 0.4.1
-      subset-font: 1.7.1
-      urltools: 0.4.2
-      yargs: 15.4.1
-    transitivePeerDependencies:
-      - bufferutil
-      - canvas
-      - encoding
-      - supports-color
-      - utf-8-validate
-    dev: true
-
   /subfont/6.12.4:
     resolution: {integrity: sha512-os7YMW0rh4UAyw+n66+dPKg7V4meyGU/LNqlM8gqkEm5W4oLn98tn4NoQgfc7NGN2JYggSH8B2+Ig1cw9oOgcA==}
     engines: {node: '>=10.0.0'}
@@ -12281,10 +12159,6 @@ packages:
       resolve: 1.22.1
       strip-bom: 4.0.0
       type-fest: 0.13.1
-
-  /tslib/2.4.1:
-    resolution: {integrity: sha512-tGyy4dAjRIEwI7BzsB0lynWgOpfqjUdq91XXAlIWD2OwKBH7oCl/GZG/HT4BOHrTlPMOASlMQ7veyTqpmRcrNA==}
-    dev: true
 
   /tslib/2.5.0:
     resolution: {integrity: sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==}
