@@ -15,7 +15,7 @@
 
 Demo comment form showing how you can add a server-side form handler to an otherwise static Astro site. Also includes Cloudflare Turnstile Captcha code. This code from Rodney Lab accompanies the <a aria-label="article on Astro Hybrid Rendered Comment forms: open the Rodney Lab tutorial" href="https://rodneylab.com/astro-comment-form/">article on Astro Hybrid Rendered Comment forms</a>. If you have any questions, please drop a comment at the bottom of that page.
 
-# Astro vanilla-extract
+# Astro Prerender Comment Form
 
 ```
 pnpm create astro -- --template rodneylab/astro/tree/main/demos/astro-prerender-comment-form
