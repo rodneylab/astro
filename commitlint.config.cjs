@@ -12,6 +12,7 @@ module.exports = {
 				'astro-js-favicon',
 				'astro-js-location-map',
 				'astro-js-non-html-route',
+				'astro-prerender-comment-form',
 				'astro-js-sass-styling',
 				'astro-js-tutorial',
 				'astro-mux-player',

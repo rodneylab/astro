@@ -1,0 +1,37 @@
+{
+	"name": "astro-prerender-comment-form",
+	"type": "module",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro telemetry disable && astro build",
+		"preview": "astro preview",
+		"preview:cf": "wrangler pages dev ./dist",
+		"astro": "astro",
+		"check": "astro check --fail-on-warnings",
+		"lint:css": "stylelint \"src/**/*.{css,astro}\"",
+		"format": "prettier --write --plugin-search-dir=. ."
+	},
+	"dependencies": {
+		"@astrojs/cloudflare": "^6.1.1",
+		"@astrojs/svelte": "^2.0.1",
+		"astro": "^2.0.4",
+		"stylelint": "^14.16.1",
+		"stylelint-config-recommended": "^9.0.0",
+		"stylelint-config-standard": "^29.0.0",
+		"svelte": "^3.54.0"
+	},
+	"devDependencies": {
+		"postcss": "^8.4.21",
+		"postcss-html": "^1.5.0",
+		"typescript": "^4.9.4",
+		"vite": "^4.0.4",
+		"wrangler": "^2.9.0"
+	},
+	"peerDependencies": {
+		"typescript": "^4.9.4",
+		"vite": "^4.0.4"
+	}
+}
