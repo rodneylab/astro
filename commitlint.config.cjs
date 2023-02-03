@@ -8,6 +8,7 @@ module.exports = {
 				'demos',
 				'root',
 				'astro-contact-form',
+				'astro-cookies-api',
 				'astro-js-404-page',
 				'astro-js-favicon',
 				'astro-js-location-map',

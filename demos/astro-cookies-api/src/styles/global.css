@@ -1,0 +1,68 @@
+:root {
+	--spacing-2: 0.5rem;
+	--spacing-4: 1rem;
+	--spacing-12: 3rem;
+
+	--max-width-wrapper: 48rem;
+	--max-width-full: 100%;
+
+	--font-size-root: 16px;
+	--font-size-1: 1rem;
+	--font-size-2: 1.25rem;
+	--font-size-6: 3.052rem;
+
+	--font-weight-normal: 400;
+
+	--colour-dark: hsl(214 9% 15%); /* shark */
+	--colour-brand: hsl(50 94% 49%); /* corn */
+	--colour-theme: hsl(208 37% 48%); /* wedgewood */
+	--colour-light: hsl(120 100% 100%); /* sugar cane */
+	--colour-alt: hsl(36 21% 26%); /* judge grey */
+
+	--colour-light-alpha-90: hsl(100 100% 99% / 90%);
+
+	--font-family-body: Roboto;
+	--font-family-heading: 'Carrois Gothic', system-ui, '-apple-system', 'BlinkMacSystemFont',
+		'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', sans-serif, 'Apple Color Emoji',
+		'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+html {
+	font-family: var(--font-family-body);
+}
+
+body {
+	display: grid;
+	place-items: center;
+	background-color: var(--colour-brand);
+	padding: var(--spacing-12);
+	color: var(--colour-light);
+}
+
+main {
+	min-height: 100vh;
+	width: var(--max-width-wrapper);
+}
+
+figure {
+	margin-bottom: var(--spacing-12);
+	text-align: left;
+}
+
+figcaption {
+	font-size: var(--font-size-2);
+	padding: var(--spacing-4);
+	background-color: var(--colour-alt);
+}
+
+h1 {
+	font: var(--font-size-6) var(--font-family-heading);
+	width: var(--max-width-full);
+	text-align: center;
+	font-weight: var(--font-weight-normal);
+	color: var(--colour-dark);
+}
+
+a {
+	color: inherit;
+}

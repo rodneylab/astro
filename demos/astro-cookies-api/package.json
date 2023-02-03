@@ -1,0 +1,26 @@
+{
+	"name": "astro-cookies-api",
+	"type": "module",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro telemetry disable && astro build",
+		"preview": "astro preview",
+		"astro": "astro"
+	},
+	"dependencies": {
+		"@astrojs/svelte": "^2.0.1",
+		"astro": "^2.0.5",
+		"svelte": "^3.54.0"
+	},
+	"devDependencies": {
+		"cookie": "^0.5.0",
+		"typescript": "^4.9.4",
+		"vite": "^4.1.0"
+	},
+	"peerDependencies": {
+		"vite": "^4.1.0"
+	}
+}
