@@ -1,0 +1,66 @@
+---
+import QRCode from '~components/QRCode.svelte';
+import '~styles/fonts.css';
+import '~styles/global.css';
+
+const { request } = Astro;
+const { url: pageUrl } = request;
+const { searchParams } = new URL(pageUrl);
+const url = searchParams.get('url') ?? 'https://example.com';
+
+const title = 'Astro QR Code Generator with Svelte Actions';
+const description = 'Astro QR Code Generator with Svelte Actions';
+---
+
+<!DOCTYPE html>
+<html lang="en-GB">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" href="/favicon.ico" sizes="any" />
+		<link rel="icon" href="/icon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="manifest" href="/manifest.webmanifest" />
+		<title>{title}</title>
+		{description ? <meta name="description" content={description} /> : null}</head
+	>
+	<main>
+		<h1>Astro JS QR Code Generator</h1>
+		<form action="">
+			<h2>Enter a new URL:</h2>
+			<div class="inputs">
+				<label for="url" class="screen-reader-text">URL</label>
+				<input id="url" name="url" type="text" placeholder="https://example.com" value={url} />
+				<button type="submit">Generate</button>
+			</div>
+		</form>
+		<p class="current-url">{url}:</p>
+		<QRCode client:load url={url} />
+	</main>
+
+	<style>
+		h2 {
+			margin-bottom: var(--spacing-8);
+		}
+		.inputs {
+			flex-direction: row;
+		}
+		input {
+			flex: 1 0 0;
+			width: 100%;
+		}
+
+		@media screen and (min-width: 48rem) {
+			input {
+				width: 30rem;
+			}
+		}
+		.current-url {
+			font-family: var(--font-family-monospace);
+			max-width: var(--max-width-full);
+			word-break: break-all;
+		}
+	</style>
+
+
+</html>

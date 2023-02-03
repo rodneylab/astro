@@ -17,6 +17,7 @@ module.exports = {
 				'astro-js-sass-styling',
 				'astro-js-tutorial',
 				'astro-mux-player',
+				'astro-qr-code-generator',
 				'astro-self-hosted-fonts',
 				'astro-scroll-to-anchor',
 				'astro-vanilla-extract',

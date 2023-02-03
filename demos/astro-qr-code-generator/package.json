@@ -1,0 +1,31 @@
+{
+	"name": "astro-qr-code-generator",
+	"type": "module",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro telemetry disable && astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"check": "astro check --fail-on-warnings",
+		"lint:css": "stylelint \"src/**/*.{css,astro}\"",
+		"format": "prettier --write --plugin-search-dir=. ."
+	},
+	"dependencies": {
+		"@astrojs/netlify": "^2.1.1",
+		"@astrojs/svelte": "^2.0.1",
+		"astro": "^2.0.6",
+		"svelte": "^3.55.1"
+	},
+	"devDependencies": {
+		"@types/qrcode": "^1.5.0",
+		"postcss": "^8.4.21",
+		"postcss-html": "^1.5.0",
+		"qrcode": "^1.5.1",
+		"stylelint": "^14.16.1",
+		"typescript": "^4.9.4",
+		"vite": "^4.1.1"
+	}
+}
