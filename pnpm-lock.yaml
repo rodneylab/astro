@@ -257,25 +257,25 @@ importers:
 
   demos/astro-mux-player:
     specifiers:
-      '@mux/mux-video': ^0.12.0
-      astro: ^1.9.2
+      '@mux/mux-video': ^0.14.0
+      astro: ^2.0.12
       postcss: ^8.4.21
       postcss-html: ^1.5.0
-      prettier: ^2.8.3
-      prettier-plugin-astro: ^0.7.2
-      stylelint: ^14.16.1
-      stylelint-config-recommended: ^9.0.0
-      stylelint-config-standard: ^29.0.0
+      prettier: ^2.8.4
+      prettier-plugin-astro: ^0.8.0
+      stylelint: ^15.1.0
+      stylelint-config-recommended: ^10.0.1
+      stylelint-config-standard: ^30.0.1
     devDependencies:
-      '@mux/mux-video': 0.12.0
-      astro: 1.9.2
+      '@mux/mux-video': 0.14.0
+      astro: 2.0.12
       postcss: 8.4.21
       postcss-html: 1.5.0
-      prettier: 2.8.3
-      prettier-plugin-astro: 0.7.2
-      stylelint: 14.16.1
-      stylelint-config-recommended: 9.0.0_stylelint@14.16.1
-      stylelint-config-standard: 29.0.0_stylelint@14.16.1
+      prettier: 2.8.4
+      prettier-plugin-astro: 0.8.0
+      stylelint: 15.1.0
+      stylelint-config-recommended: 10.0.1_stylelint@15.1.0
+      stylelint-config-standard: 30.0.1_stylelint@15.1.0
 
   demos/astro-prerender-comment-form:
     specifiers:
@@ -644,6 +644,29 @@ packages:
     dependencies:
       '@astrojs/prism': 2.0.0
       astro: 2.0.11
+      github-slugger: 1.5.0
+      import-meta-resolve: 2.2.1
+      rehype-raw: 6.1.1
+      rehype-stringify: 9.0.3
+      remark-gfm: 3.0.1
+      remark-parse: 10.0.1
+      remark-rehype: 10.1.0
+      remark-smartypants: 2.0.0
+      shiki: 0.11.1
+      unified: 10.1.2
+      unist-util-visit: 4.1.2
+      vfile: 5.3.7
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@astrojs/markdown-remark/2.0.1_astro@2.0.12:
+    resolution: {integrity: sha512-xQF1rXGJN18m+zZucwRRtmNehuhPMMhZhi6HWKrtpEAKnHSPk8lqf1GXgKH7/Sypglu8ivdECZ+EGs6kOYVasQ==}
+    peerDependencies:
+      astro: ^2.0.2
+    dependencies:
+      '@astrojs/prism': 2.0.0
+      astro: 2.0.12
       github-slugger: 1.5.0
       import-meta-resolve: 2.2.1
       rehype-raw: 6.1.1
@@ -2003,17 +2026,17 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@mux/mux-video/0.12.0:
-    resolution: {integrity: sha512-Nr5McFX0fxV+qnIKOf554wNm2f1YdIy8fJxg48E69QBnMxN8dhWAZrsuFm/UJwFyDpsl7T/CbCDp6JmOwgBEUg==}
+  /@mux/mux-video/0.14.0:
+    resolution: {integrity: sha512-LdxO031LSvHG+pj52F81Cr7ABF0GJjGaf67ztO4VsoRyVuOnt3OZCdYrxmaiThJ/IqV7ri7KHwJYmnR7WTzJdw==}
     dependencies:
-      '@mux/playback-core': 0.15.0
+      '@mux/playback-core': 0.17.0
     dev: true
 
-  /@mux/playback-core/0.15.0:
-    resolution: {integrity: sha512-xBYd4ci8RYFGJUUAw3uX/DH4UUTzwb2FPePK8L5U+Q7SSPjQp/KiHzElJwEaAXT2Cv1H2s794nOblPTXHER/bw==}
+  /@mux/playback-core/0.17.0:
+    resolution: {integrity: sha512-/zwffhjt69KSwHrp2vdL/CrYYdpEE74RApomM92mPcOJ+IKoE23j9wjJCR3RwYLgixm3LQL4k3FiEuLO/xKO6g==}
     dependencies:
-      hls.js: 1.2.3
-      mux-embed: 4.18.0
+      hls.js: 1.3.1
+      mux-embed: 4.20.0
     dev: true
 
   /@netlify/functions/1.4.0:
@@ -3422,6 +3445,73 @@ packages:
       - terser
     dev: true
 
+  /astro/2.0.12:
+    resolution: {integrity: sha512-qtAqPSfvUuA94Lt38ErB+pe1JrPzMsdxhLLxmbMA44JLriFAjkKA60mZf+woaYxe9l8Gc0KQ0oKa4rE4ucrA8A==}
+    engines: {node: '>=16.12.0', npm: '>=6.14.0'}
+    hasBin: true
+    dependencies:
+      '@astrojs/compiler': 1.1.0
+      '@astrojs/language-server': 0.28.3
+      '@astrojs/markdown-remark': 2.0.1_astro@2.0.12
+      '@astrojs/telemetry': 2.0.0
+      '@astrojs/webapi': 2.0.0
+      '@babel/core': 7.20.12
+      '@babel/generator': 7.20.14
+      '@babel/parser': 7.20.15
+      '@babel/plugin-transform-react-jsx': 7.20.13_@babel+core@7.20.12
+      '@babel/traverse': 7.20.13
+      '@babel/types': 7.20.7
+      '@types/babel__core': 7.20.0
+      '@types/yargs-parser': 21.0.0
+      acorn: 8.8.2
+      boxen: 6.2.1
+      ci-info: 3.8.0
+      common-ancestor-path: 1.0.1
+      cookie: 0.5.0
+      debug: 4.3.4
+      deepmerge-ts: 4.3.0
+      devalue: 4.3.0
+      diff: 5.1.0
+      es-module-lexer: 1.1.1
+      estree-walker: 3.0.3
+      execa: 6.1.0
+      fast-glob: 3.2.12
+      github-slugger: 2.0.0
+      gray-matter: 4.0.3
+      html-escaper: 3.0.3
+      kleur: 4.1.5
+      magic-string: 0.27.0
+      mime: 3.0.0
+      ora: 6.1.2
+      path-to-regexp: 6.2.1
+      preferred-pm: 3.0.3
+      prompts: 2.4.2
+      rehype: 12.0.1
+      semver: 7.3.8
+      server-destroy: 1.0.1
+      shiki: 0.11.1
+      slash: 4.0.0
+      string-width: 5.1.2
+      strip-ansi: 7.0.1
+      supports-esm: 1.0.0
+      tsconfig-resolver: 3.0.1
+      typescript: 4.9.5
+      unist-util-visit: 4.1.2
+      vfile: 5.3.7
+      vite: 4.1.1
+      vitefu: 0.2.4_vite@4.1.1
+      yargs-parser: 21.1.1
+      zod: 3.20.6
+    transitivePeerDependencies:
+      - '@types/node'
+      - less
+      - sass
+      - stylus
+      - sugarss
+      - supports-color
+      - terser
+    dev: true
+
   /astro/2.0.2:
     resolution: {integrity: sha512-47N1jLWNxSri7kWfIfgcEnQJZWTvd0gXhNC3P2ZHiiurl4nOxFC5ULsW5MDDTjTzQ1S7y1RoaL9XxYm+Rury7w==}
     engines: {node: '>=16.12.0', npm: '>=6.14.0'}
@@ -4420,7 +4510,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001452
-      electron-to-chromium: 1.4.296
+      electron-to-chromium: 1.4.298
       node-releases: 2.0.10
       update-browserslist-db: 1.0.10_browserslist@4.21.5
 
@@ -5608,8 +5698,8 @@ packages:
     resolution: {integrity: sha512-M8WEXFuKXMYMVr45fo8mq0wUrrJHheiKZf6BArTKk9ZBYCKJEOU5H8cdWgDT+qCVZf7Na4lVUaZsA+h6uA9+PA==}
     dev: true
 
-  /electron-to-chromium/1.4.296:
-    resolution: {integrity: sha512-i/6Q+Y9bluDa2a0NbMvdtG5TuS/1Fr3TKK8L+7UUL9QjRS5iFJzCC3r70xjyOnLiYG8qGV4/mMpe6HuAbdJW4w==}
+  /electron-to-chromium/1.4.298:
+    resolution: {integrity: sha512-dJZurgxDeaqn90VmS23Xz+QPQQl84BxnlAfwCDFNjfEhqO2yLMDkeaDoJ1yPXAbmiqTi+hd5TpB5zi1N4hwBuQ==}
 
   /emmet/2.3.6:
     resolution: {integrity: sha512-pLS4PBPDdxuUAmw7Me7+TcHbykTsBKN/S9XJbUOMFQrNv9MoshzyMFK/R57JBm94/6HSL4vHnDeEmxlC82NQ4A==}
@@ -7417,8 +7507,8 @@ packages:
       lodash.bind: 3.1.0
     dev: true
 
-  /hls.js/1.2.3:
-    resolution: {integrity: sha512-CC/vHi82ldiiydIhliNI3whlcepRXxI2jdpd/KKb6lyEv+74e7lXs4cGk5PHfTLxZMKOj6+m5LX9VAbvV/r7AQ==}
+  /hls.js/1.3.1:
+    resolution: {integrity: sha512-6f4Qyrfj9sNUWMzNFKruqeD2KdisOwQ1GQJqnWAgMQ1hequlFK7e2dmF9qQD3mF/RI76hvztCMBptlPb+HcDow==}
     dev: true
 
   /homedir-polyfill/1.0.3:
@@ -9647,8 +9737,8 @@ packages:
     resolution: {integrity: sha512-EbrziT4s8cWPmzr47eYVW3wimS4HsvlnV5ri1xw1aR6JQo/OrJX5rkl32K/QQHdxeabJETtfeaROGhd8W7uBgg==}
     dev: true
 
-  /mux-embed/4.18.0:
-    resolution: {integrity: sha512-9tgHLg8plmJAOiOzG2Tvi1MO7LO44DaC4V9W67kxrfzqco37UmreiKBwvrykncW4VUwU7+nectz8AUjcYBCz4g==}
+  /mux-embed/4.20.0:
+    resolution: {integrity: sha512-V1wGoVs8xpEAmF5a3204F6uN47/gvjxOk2HiJbdIakmndDMfnVeuS0kXRsmOfh4EbktzbSoNr6PgkNxBM/H5hg==}
     dev: true
 
   /nanoid/3.3.4:
