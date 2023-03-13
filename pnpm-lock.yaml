@@ -89,13 +89,13 @@ importers:
   demos/astro-js-favicon:
     specifiers:
       add: ^2.0.6
-      astro: 2.0.9
+      astro: 2.1.2
       prettier: ^2.8.4
       prettier-plugin-astro: ^0.8.0
     dependencies:
       add: 2.0.6
     devDependencies:
-      astro: 2.0.9
+      astro: 2.1.2
       prettier: 2.8.4
       prettier-plugin-astro: 0.8.0
 
@@ -722,29 +722,6 @@ packages:
       unified: 10.1.2
       unist-util-visit: 4.1.2
       vfile: 5.3.7
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
-  /@astrojs/markdown-remark/2.0.1_astro@2.0.9:
-    resolution: {integrity: sha512-xQF1rXGJN18m+zZucwRRtmNehuhPMMhZhi6HWKrtpEAKnHSPk8lqf1GXgKH7/Sypglu8ivdECZ+EGs6kOYVasQ==}
-    peerDependencies:
-      astro: ^2.0.2
-    dependencies:
-      '@astrojs/prism': 2.0.0
-      astro: 2.0.9
-      github-slugger: 1.5.0
-      import-meta-resolve: 2.2.1
-      rehype-raw: 6.1.1
-      rehype-stringify: 9.0.3
-      remark-gfm: 3.0.1
-      remark-parse: 10.0.1
-      remark-rehype: 10.1.0
-      remark-smartypants: 2.0.0
-      shiki: 0.11.1
-      unified: 10.1.2
-      unist-util-visit: 4.1.2
-      vfile: 5.3.6
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -3925,73 +3902,6 @@ packages:
       - terser
     dev: true
 
-  /astro/2.0.9:
-    resolution: {integrity: sha512-awZEZ61kiMNJMda+dUunz87DSWV0eV72P4ulpEsNpA6im2WysZ3svm+wlOP2XfLwsA/MDpOyAYWFxvh2PZK5ug==}
-    engines: {node: '>=16.12.0', npm: '>=6.14.0'}
-    hasBin: true
-    dependencies:
-      '@astrojs/compiler': 1.1.0
-      '@astrojs/language-server': 0.28.3
-      '@astrojs/markdown-remark': 2.0.1_astro@2.0.9
-      '@astrojs/telemetry': 2.0.0
-      '@astrojs/webapi': 2.0.0
-      '@babel/core': 7.20.12
-      '@babel/generator': 7.20.14
-      '@babel/parser': 7.20.15
-      '@babel/plugin-transform-react-jsx': 7.20.13_@babel+core@7.20.12
-      '@babel/traverse': 7.20.13
-      '@babel/types': 7.20.7
-      '@types/babel__core': 7.20.0
-      '@types/yargs-parser': 21.0.0
-      acorn: 8.8.2
-      boxen: 6.2.1
-      ci-info: 3.7.1
-      common-ancestor-path: 1.0.1
-      cookie: 0.5.0
-      debug: 4.3.4
-      deepmerge-ts: 4.3.0
-      devalue: 4.2.3
-      diff: 5.1.0
-      es-module-lexer: 1.1.1
-      estree-walker: 3.0.3
-      execa: 6.1.0
-      fast-glob: 3.2.12
-      github-slugger: 2.0.0
-      gray-matter: 4.0.3
-      html-escaper: 3.0.3
-      kleur: 4.1.5
-      magic-string: 0.27.0
-      mime: 3.0.0
-      ora: 6.1.2
-      path-to-regexp: 6.2.1
-      preferred-pm: 3.0.3
-      prompts: 2.4.2
-      rehype: 12.0.1
-      semver: 7.3.8
-      server-destroy: 1.0.1
-      shiki: 0.11.1
-      slash: 4.0.0
-      string-width: 5.1.2
-      strip-ansi: 7.0.1
-      supports-esm: 1.0.0
-      tsconfig-resolver: 3.0.1
-      typescript: 4.9.5
-      unist-util-visit: 4.1.2
-      vfile: 5.3.6
-      vite: 4.1.1
-      vitefu: 0.2.4_vite@4.1.1
-      yargs-parser: 21.1.1
-      zod: 3.20.3
-    transitivePeerDependencies:
-      - '@types/node'
-      - less
-      - sass
-      - stylus
-      - sugarss
-      - supports-color
-      - terser
-    dev: true
-
   /astro/2.1.2:
     resolution: {integrity: sha512-qxBIPHfFJhwNOxI2E96XrGrUM6lGkDRkDY8iqEJNFWPGP+t5yY5SWb8H+OdYUGopexy1GGjoY7SYQCzFBkt7iw==}
     engines: {node: '>=16.12.0', npm: '>=6.14.0'}
@@ -4908,11 +4818,6 @@ packages:
     resolution: {integrity: sha512-jJ0bqzaylmJtVnNgzTeSOs8DPavpbYgEr/b0YL8/2GO3xJEhInFmhKMUnEJQjZumK7KXGFhUy89PrsJWlakBVg==}
     dev: true
 
-  /ci-info/3.7.1:
-    resolution: {integrity: sha512-4jYS4MOAaCIStSRwiuxc4B8MYhIe676yO1sYGzARnjXkWpmzZMMYxY6zu8WYWDhSuth5zhrQ1rhNSibyyvv4/w==}
-    engines: {node: '>=8'}
-    dev: true
-
   /ci-info/3.8.0:
     resolution: {integrity: sha512-eXTggHWSooYhq49F2opQhuHWgzucfF2YgODK4e1566GQs5BIfP30B0oenwBJHfWxAs2fyPB1s7Mg949zLf61Yw==}
     engines: {node: '>=8'}
@@ -5721,10 +5626,6 @@ packages:
   /detect-libc/2.0.1:
     resolution: {integrity: sha512-463v3ZeIrcWtdgIg6vI6XUncguvr2TnGl4SzDXinkt9mSLpBJKXT3mW6xT3VQdDN11+WVs29pgvivTc4Lp8v+w==}
     engines: {node: '>=8'}
-    dev: true
-
-  /devalue/4.2.3:
-    resolution: {integrity: sha512-JG6Q248aN0pgFL57e3zqTVeFraBe+5W2ugvv1mLXsJP6YYIYJhRZhAl7QP8haJrqob6X10F9NEkuCvNILZTPeQ==}
     dev: true
 
   /devalue/4.3.0:
@@ -13479,15 +13380,6 @@ packages:
       '@types/unist': 2.0.6
       unist-util-stringify-position: 3.0.3
 
-  /vfile/5.3.6:
-    resolution: {integrity: sha512-ADBsmerdGBs2WYckrLBEmuETSPyTD4TuLxTrw0DvjirxW1ra4ZwkbzG8ndsv3Q57smvHxo677MHaQrY9yxH8cA==}
-    dependencies:
-      '@types/unist': 2.0.6
-      is-buffer: 2.0.5
-      unist-util-stringify-position: 3.0.3
-      vfile-message: 3.1.4
-    dev: true
-
   /vfile/5.3.7:
     resolution: {integrity: sha512-r7qlzkgErKjobAmyNIkkSpizsFPYiUPuJb5pNW1RB4JcYVZhs4lIbVqk8XPk033CV/1z8ss5pkax8SuhGpcG8g==}
     dependencies:
@@ -14340,10 +14232,6 @@ packages:
       cookie: 0.4.2
       mustache: 4.2.0
       stack-trace: 0.0.10
-    dev: true
-
-  /zod/3.20.3:
-    resolution: {integrity: sha512-+MLeeUcLTlnzVo5xDn9+LVN9oX4esvgZ7qfZczBN+YVUvZBafIrPPVyG2WdjMWU2Qkb2ZAh2M8lpqf1wIoGqJQ==}
     dev: true
 
   /zod/3.20.6:
