@@ -14,17 +14,17 @@
 		"format": "prettier --write --plugin-search-dir=. ."
 	},
 	"devDependencies": {
-		"astro": "~2.0.14",
+		"astro": "~2.2.1",
 		"astro-icon": "^0.8.0",
-		"autoprefixer": "^10.4.13",
+		"autoprefixer": "^10.4.14",
 		"postcss": "^8.4.21",
 		"postcss-html": "^1.5.0",
-		"prettier": "^2.8.4",
+		"prettier": "^2.8.7",
 		"prettier-plugin-astro": "^0.8.0",
-		"stylelint": "^15.2.0",
-		"stylelint-config-recommended": "^10.0.1",
-		"stylelint-config-standard": "^30.0.1",
-		"subfont": "^6.12.4"
+		"stylelint": "^15.4.0",
+		"stylelint-config-recommended": "^11.0.0",
+		"stylelint-config-standard": "^32.0.0",
+		"subfont": "^7.0.0"
 	},
 	"repository": {
 		"type": "git",
@@ -32,5 +32,8 @@
 	},
 	"bugs": {
 		"url": "https://github.com/rodneylab/astro/issues"
+	},
+	"peerDependencies": {
+		"subfont": "^7.0.0"
 	}
 }
