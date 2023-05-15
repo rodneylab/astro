@@ -15,23 +15,23 @@
 		"prettier:check": "prettier --check --plugin-search-dir=. ."
 	},
 	"devDependencies": {
-		"@astrojs/react": "^2.1.0",
-		"@astrojs/svelte": "^2.1.0",
-		"@babel/core": "^7.21.3",
-		"astro": "2.1.7",
-		"postcss": "^8.4.21",
+		"@astrojs/react": "^2.1.3",
+		"@astrojs/svelte": "^2.1.1",
+		"@babel/core": "^7.21.8",
+		"astro": "2.4.5",
+		"postcss": "^8.4.23",
 		"postcss-html": "^1.5.0",
-		"prettier": "^2.8.7",
-		"prettier-plugin-astro": "^0.8.0",
+		"prettier": "^2.8.8",
+		"prettier-plugin-astro": "^0.8.1",
 		"prettier-plugin-svelte": "^2.10.0",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
-		"stylelint": "^15.3.0",
-		"stylelint-config-recommended": "^11.0.0",
-		"stylelint-config-standard": "^31.0.0",
-		"svelte": "^3.57.0",
-		"typescript": "^5.0.2",
-		"vite": "~4.2.1"
+		"stylelint": "^15.6.1",
+		"stylelint-config-recommended": "^12.0.0",
+		"stylelint-config-standard": "^33.0.0",
+		"svelte": "^3.59.1",
+		"typescript": "^5.0.4",
+		"vite": "~4.3.5"
 	},
 	"repository": {
 		"type": "git",
@@ -45,8 +45,8 @@
 		"vite": "2.9"
 	},
 	"dependencies": {
-		"@types/react": "^18.0.29",
-		"@types/react-dom": "^18.0.11",
+		"@types/react": "^18.2.6",
+		"@types/react-dom": "^18.2.4",
 		"add": "^2.0.6"
 	}
 }
