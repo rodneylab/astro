@@ -1,0 +1,44 @@
+---
+import '~styles/fonts.css';
+import '~styles/global.css';
+
+const { timestamp } = Astro.locals as { timestamp: string };
+---
+
+<html lang="en-GB">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.ico" sizes="any" />
+		<link rel="icon" href="/icon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="manifest" href="/manifest.webmanifest" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Astro JS Middleware</title>
+		<meta
+			name="description"
+			content="Astro JS 404 page: how you can set up a page not found page on your Astro project, so visitors don't see your host's default 404 page."
+		/>
+	</head>
+
+	<body>
+		<main class="container">
+			<section class="content">{timestamp}</section>
+		</main>
+		<style>
+			body {
+				background-color: var(--colour-theme);
+			}
+
+			.container {
+				display: grid;
+				place-content: center;
+				height: 100vh;
+			}
+
+			.content {
+				font-size: var(--font-size-8);
+				font-weight: var(--font-weight-bold);
+			}
+		</style>
+	</body>
+</html>

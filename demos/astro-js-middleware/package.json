@@ -1,0 +1,20 @@
+{
+	"name": "astro-js-middleware",
+	"type": "module",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro telemetry disable && astro build",
+		"preview": "astro preview",
+		"astro": "astro"
+	},
+	"dependencies": {
+		"@astrojs/cloudflare": "^6.2.2",
+		"astro": "^2.4.2"
+	},
+	"devDependencies": {
+		"msgpackr": "^1.9.1"
+	}
+}

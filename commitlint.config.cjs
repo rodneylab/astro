@@ -12,6 +12,7 @@ module.exports = {
 				'astro-js-404-page',
 				'astro-js-favicon',
 				'astro-js-location-map',
+				'astro-js-middleware',
 				'astro-js-non-html-route',
 				'astro-prerender-comment-form',
 				'astro-js-sass-styling',
