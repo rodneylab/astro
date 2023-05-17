@@ -231,6 +231,18 @@ importers:
       msgpackr:
         specifier: ^1.9.1
         version: 1.9.1
+      postcss-html:
+        specifier: ^1.5.0
+        version: 1.5.0
+      stylelint:
+        specifier: ^15.6.2
+        version: 15.6.2
+      stylelint-config-recommended:
+        specifier: ^12.0.0
+        version: 12.0.0(stylelint@15.6.2)
+      stylelint-config-standard:
+        specifier: ^33.0.0
+        version: 33.0.0(stylelint@15.6.2)
 
   demos/astro-js-non-html-route:
     devDependencies:
@@ -13501,7 +13513,6 @@ packages:
       stylelint: ^15.5.0
     dependencies:
       stylelint: 15.6.2
-    dev: false
 
   /stylelint-config-standard@32.0.0(stylelint@15.4.0):
     resolution: {integrity: sha512-UnGJxYDyYFrIE9CjDMZRkrNh2o4lOtO+MVZ9qG5b8yARfsWho0GMx4YvhHfsv8zKKgHeWX2wfeyxmuoqcaYZ4w==}
@@ -13546,7 +13557,6 @@ packages:
     dependencies:
       stylelint: 15.6.2
       stylelint-config-recommended: 12.0.0(stylelint@15.6.2)
-    dev: false
 
   /stylelint-scss@4.7.0(stylelint@15.6.1):
     resolution: {integrity: sha512-TSUgIeS0H3jqDZnby1UO1Qv3poi1N8wUYIJY6D1tuUq2MN3lwp/rITVo0wD+1SWTmRm0tNmGO0b7nKInnqF6Hg==}
@@ -13813,7 +13823,6 @@ packages:
       write-file-atomic: 5.0.1
     transitivePeerDependencies:
       - supports-color
-    dev: false
 
   /subfont@7.0.0(typescript@5.0.4):
     resolution: {integrity: sha512-PZMsxNF2loy9Z7NWkjCQIgsJzBAbKGO/lPAJ+DXGNLVVGh+kfurRTCT3LQu2w+Q9g9IZc6PFZ5amagef9AODZg==}
