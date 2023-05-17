@@ -1,0 +1,29 @@
+{
+	"name": "astro-capsize-font-fallbacks",
+	"type": "module",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro telemetry disable && astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"check": "astro check --fail-on-warnings",
+		"format": "prettier --write --plugin-search-dir=. .",
+		"lint:css": "stylelint \"src/**/*.{css,astro}\""
+	},
+	"dependencies": {
+		"@capsizecss/core": "^3.1.0",
+		"@capsizecss/metrics": "^1.1.1",
+		"astro": "^2.4.2",
+		"just-kebab-case": "^4.2.0",
+		"postcss-html": "^1.5.0",
+		"stylelint": "^15.6.2",
+		"stylelint-config-recommended": "^12.0.0",
+		"stylelint-config-standard": "^33.0.0"
+	},
+	"devDependencies": {
+		"vite-node": "^0.31.0"
+	}
+}

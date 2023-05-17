@@ -7,6 +7,7 @@ module.exports = {
 			[
 				'demos',
 				'root',
+				'astro-capsize-font-fallbacks',
 				'astro-contact-form',
 				'astro-cookies-api',
 				'astro-js-404-page',

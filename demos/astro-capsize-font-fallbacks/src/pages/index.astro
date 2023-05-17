@@ -1,0 +1,69 @@
+---
+import '~styles/fonts.css';
+import '~styles/global.css';
+
+import '~styles/font-fallbacks.css';
+---
+
+<html lang="en-GB">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.ico" sizes="any" />
+		<link rel="icon" href="/icon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="manifest" href="/manifest.webmanifest" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Astro JS Middleware</title>
+		<meta
+			name="description"
+			content="Astro JS 404 page: how you can set up a page not found page on your Astro project, so visitors don't see your host's default 404 page."
+		/>
+	</head>
+
+	<body>
+		<main class="container">
+			<h1>🌟 Twinkle, Twinkle, Little Star</h1>
+			<p>
+				Twinkle, twinkle, little star,<br />
+				How I wonder what you are! <br />
+				Up above the world so high, <br />
+				Like a diamond in the sky.
+			</p>
+			<p>
+				When the blazing sun is gone, <br />
+				When he nothing shines upon,<br />
+				Then you show your little light,<br />
+				Twinkle, twinkle, all the night. <br />
+			</p>
+			<p>
+				Then the trav'ller in the dark, <br />
+				Thanks you for your tiny spark, <br />
+				He could not see which way to go, <br />
+				If you did not twinkle so.
+			</p>
+			<p>
+				In the dark blue sky you keep, <br />
+				And often thro' my curtains peep, <br />
+				For you never shut your eye, <br />
+				Till the sun is in the sky. <br />
+			</p>
+			<p>
+				'Tis your bright and tiny spark, <br />
+				Lights the trav'ller in the dark, <br />
+				Tho' I know not what you are, <br />
+				Twinkle, twinkle, little star.
+			</p>
+		</main>
+		<style>
+			.container {
+				display: grid;
+				place-content: center;
+				min-height: 100vh;
+				width: 24rem;
+				max-width: 100%;
+				padding-block: var(--spacing-8);
+				margin-inline: auto;
+			}
+		</style>
+	</body>
+</html>
