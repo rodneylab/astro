@@ -15,6 +15,7 @@ module.exports = {
 				'astro-js-location-map',
 				'astro-js-middleware',
 				'astro-js-non-html-route',
+				'astro-postcss',
 				'astro-prerender-comment-form',
 				'astro-js-sass-styling',
 				'astro-js-tutorial',
