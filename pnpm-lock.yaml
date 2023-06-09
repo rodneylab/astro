@@ -412,14 +412,14 @@ importers:
   demos/astro-mux-player:
     devDependencies:
       '@mux/mux-video':
-        specifier: ^0.15.2
-        version: 0.15.2
+        specifier: ^0.15.3
+        version: 0.15.3
       astro:
-        specifier: ^2.4.5
-        version: 2.4.5(@types/node@18.15.10)
+        specifier: ^2.6.1
+        version: 2.6.1(@types/node@18.15.10)
       postcss:
-        specifier: ^8.4.23
-        version: 8.4.23
+        specifier: ^8.4.24
+        version: 8.4.24
       postcss-html:
         specifier: ^1.5.0
         version: 1.5.0
@@ -427,17 +427,17 @@ importers:
         specifier: ^2.8.8
         version: 2.8.8
       prettier-plugin-astro:
-        specifier: ^0.8.1
-        version: 0.8.1
+        specifier: ^0.10.0
+        version: 0.10.0
       stylelint:
-        specifier: ^15.6.1
-        version: 15.6.1
+        specifier: ^15.7.0
+        version: 15.7.0
       stylelint-config-recommended:
         specifier: ^12.0.0
-        version: 12.0.0(stylelint@15.6.1)
+        version: 12.0.0(stylelint@15.7.0)
       stylelint-config-standard:
         specifier: ^33.0.0
-        version: 33.0.0(stylelint@15.6.1)
+        version: 33.0.0(stylelint@15.7.0)
 
   demos/astro-postcss:
     dependencies:
@@ -854,6 +854,9 @@ packages:
   /@astrojs/compiler@1.5.0:
     resolution: {integrity: sha512-k04X/7nlMklU0HQUScxbCTf5n8/Vr+0U0bawb9QWulWxd6qJf3FmBrNATgTYiltjB4pc5HBqmmttAfFi7m4lLg==}
 
+  /@astrojs/compiler@1.5.1:
+    resolution: {integrity: sha512-iIGKu/uzB8sJ5VveQf0eHrVPPFEcrvSlp4qShYMOuY2aMmK2RVXQlX9dUjtmBQ+NAokfIOb7fwCutvH+p13l+g==}
+
   /@astrojs/internal-helpers@0.1.0:
     resolution: {integrity: sha512-OSwvoFkTqVowiyP+codQeQZWoq/HOwY32x17NxDglWoCx2sdyXzplDZoVV4/3odmSEY6/A+48WMl5qkjmP1CXw==}
     dev: true
@@ -1022,6 +1025,7 @@ packages:
       vfile: 5.3.7
     transitivePeerDependencies:
       - supports-color
+    dev: false
 
   /@astrojs/markdown-remark@2.2.1(astro@2.5.0):
     resolution: {integrity: sha512-VF0HRv4GpC1XEMLnsKf6jth7JSmlt9qpqP0josQgA2eSpCIAC/Et+y94mgdBIZVBYH/yFnMoIxgKVe93xfO2GA==}
@@ -3639,17 +3643,18 @@ packages:
     dev: true
     optional: true
 
-  /@mux/mux-video@0.15.2:
-    resolution: {integrity: sha512-uYaQtA529WyVKKMO8aBy6bDFQAzdyT7LwzeMmh3ZIJL+lpCrWhUKHZMsqPvcRVtdlPTEV/yO1ERNNdo4f8J2gg==}
+  /@mux/mux-video@0.15.3:
+    resolution: {integrity: sha512-GWAfmIN1IVA4dSa/uM4LViCzC0qpMTig28aQJN8A2pT+8otPTsDqT8mYDTPXh5H8phtyTt/nCyKXujSsIJu1QA==}
     dependencies:
-      '@mux/playback-core': 0.18.1
+      '@mux/playback-core': 0.18.2
       castable-video: 0.5.2
+      custom-media-element: 0.2.0
     dev: true
 
-  /@mux/playback-core@0.18.1:
-    resolution: {integrity: sha512-apBkbf341UgEPT2UcaSK3jyk1gxud2uW+aT6o4ZQI+PUUSsq2eWMejBD2CSzRR589mwfWH7bOa0oxEZnBuduww==}
+  /@mux/playback-core@0.18.2:
+    resolution: {integrity: sha512-7wqktSkZ7MLO9ViBYfx9yryz7GfyCXUNimuz7jAF3dcoETOMAtt/X5UJvUQDwxs8ZceJAhoa4Nv66Ws8m1Wp+A==}
     dependencies:
-      hls.js: 1.4.1
+      hls.js: 1.4.3
       mux-embed: 4.25.1
     dev: true
 
@@ -5183,6 +5188,7 @@ packages:
       - sugarss
       - supports-color
       - terser
+    dev: false
 
   /astro@2.5.0(@types/node@18.15.10):
     resolution: {integrity: sha512-dZZuK2vEpfinbVALthUW31NOVUFPobgyi0+2PR3FH3diy6X9HBw1PLbS5wRsWOKaEXRbzxBkXc39Rbm0yRzKaA==}
@@ -5646,7 +5652,7 @@ packages:
       sharp:
         optional: true
     dependencies:
-      '@astrojs/compiler': 1.5.0
+      '@astrojs/compiler': 1.5.1
       '@astrojs/internal-helpers': 0.1.0
       '@astrojs/language-server': 1.0.8
       '@astrojs/markdown-remark': 2.2.1(astro@2.6.1)
@@ -7246,6 +7252,10 @@ packages:
 
   /csstype@3.1.2:
     resolution: {integrity: sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==}
+
+  /custom-media-element@0.2.0:
+    resolution: {integrity: sha512-N++UzR1COFip4DrtZkS99VDCcQvVCJmbqI7qaxZtHWKdAv/RUYIOnmJbP/HHk2un0PjvtFNKHfNLiFsd9BmnMQ==}
+    dev: true
 
   /cwd@0.10.0:
     resolution: {integrity: sha512-YGZxdTTL9lmLkCUTpg4j0zQ7IhRB5ZmqNBbGCl3Tg6MP/d5/6sY7L5mmTjzbc6JKgVZYiqTQTNhPFsbXNGlRaA==}
@@ -9364,8 +9374,8 @@ packages:
       lodash.bind: 3.1.0
     dev: true
 
-  /hls.js@1.4.1:
-    resolution: {integrity: sha512-7/RBLhnmWbEVj/UxkqBK3rcqr/a2QAbSdjdp74iRKaPLosJoPwLw9mcjl5EOv6jutd0yHL8yGH3pSuUjNzRMyA==}
+  /hls.js@1.4.3:
+    resolution: {integrity: sha512-EE1MjIYDNO+ynbmCpAWfhUwQpyG8gUcKKuGDGgYgfRmW/g+inQUQ8sVVVY5WZaCxEGxDMGLbXhXGepkmDIMvdw==}
     dev: true
 
   /homedir-polyfill@1.0.3:
@@ -12881,15 +12891,6 @@ packages:
       postcss: 8.4.21
     dev: true
 
-  /postcss-safe-parser@6.0.0(postcss@8.4.23):
-    resolution: {integrity: sha512-FARHN8pwH+WiS2OPCxJI8FuRJpTVnn6ZNFiqAM2aeW2LwTHWWmWgIyKC6cUo0L8aeKiF/14MNvnpls6R2PBeMQ==}
-    engines: {node: '>=12.0'}
-    peerDependencies:
-      postcss: ^8.3.3
-    dependencies:
-      postcss: 8.4.23
-    dev: true
-
   /postcss-safe-parser@6.0.0(postcss@8.4.24):
     resolution: {integrity: sha512-FARHN8pwH+WiS2OPCxJI8FuRJpTVnn6ZNFiqAM2aeW2LwTHWWmWgIyKC6cUo0L8aeKiF/14MNvnpls6R2PBeMQ==}
     engines: {node: '>=12.0'}
@@ -13056,7 +13057,7 @@ packages:
     resolution: {integrity: sha512-dPzop0gKZyVGpTDQmfy+e7FKXC9JT3mlpfYA2diOVz+Ui+QR1U4G/s+OesKl2Hib2JJOtAYJs/l+ovgT0ljlFA==}
     engines: {node: ^14.15.0 || >=16.0.0, pnpm: '>=7.14.0'}
     dependencies:
-      '@astrojs/compiler': 1.5.0
+      '@astrojs/compiler': 1.5.1
       prettier: 2.8.8
       sass-formatter: 0.7.6
     dev: true
@@ -13084,7 +13085,7 @@ packages:
     resolution: {integrity: sha512-lJ/mG/Lz/ccSwNtwqpFS126mtMVzFVyYv0ddTF9wqwrEG4seECjKDAyw/oGv915rAcJi8jr89990nqfpmG+qdg==}
     engines: {node: ^14.15.0 || >=16.0.0, pnpm: '>=7.14.0'}
     dependencies:
-      '@astrojs/compiler': 1.5.0
+      '@astrojs/compiler': 1.5.1
       prettier: 2.8.8
       sass-formatter: 0.7.6
       synckit: 0.8.5
@@ -14618,14 +14619,6 @@ packages:
       stylelint: 15.5.0
     dev: true
 
-  /stylelint-config-recommended@12.0.0(stylelint@15.6.1):
-    resolution: {integrity: sha512-x6x8QNARrGO2sG6iURkzqL+Dp+4bJorPMMRNPScdvaUK8PsynriOcMW7AFDKqkWAS5wbue/u8fUT/4ynzcmqdQ==}
-    peerDependencies:
-      stylelint: ^15.5.0
-    dependencies:
-      stylelint: 15.6.1
-    dev: true
-
   /stylelint-config-recommended@12.0.0(stylelint@15.6.2):
     resolution: {integrity: sha512-x6x8QNARrGO2sG6iURkzqL+Dp+4bJorPMMRNPScdvaUK8PsynriOcMW7AFDKqkWAS5wbue/u8fUT/4ynzcmqdQ==}
     peerDependencies:
@@ -14665,15 +14658,6 @@ packages:
     dependencies:
       stylelint: 15.5.0
       stylelint-config-recommended: 12.0.0(stylelint@15.5.0)
-    dev: true
-
-  /stylelint-config-standard@33.0.0(stylelint@15.6.1):
-    resolution: {integrity: sha512-eyxnLWoXImUn77+ODIuW9qXBDNM+ALN68L3wT1lN2oNspZ7D9NVGlNHb2QCUn4xDug6VZLsh0tF8NyoYzkgTzg==}
-    peerDependencies:
-      stylelint: ^15.5.0
-    dependencies:
-      stylelint: 15.6.1
-      stylelint-config-recommended: 12.0.0(stylelint@15.6.1)
     dev: true
 
   /stylelint-config-standard@33.0.0(stylelint@15.6.2):
@@ -14853,57 +14837,6 @@ packages:
       postcss-resolve-nested-selector: 0.1.1
       postcss-safe-parser: 6.0.0(postcss@8.4.24)
       postcss-selector-parser: 6.0.12
-      postcss-value-parser: 4.2.0
-      resolve-from: 5.0.0
-      string-width: 4.2.3
-      strip-ansi: 6.0.1
-      style-search: 0.1.0
-      supports-hyperlinks: 3.0.0
-      svg-tags: 1.0.0
-      table: 6.8.1
-      v8-compile-cache: 2.3.0
-      write-file-atomic: 5.0.1
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
-  /stylelint@15.6.1:
-    resolution: {integrity: sha512-d8icFBlVl93Elf3Z5ABQNOCe4nx69is3D/NZhDLAie1eyYnpxfeKe7pCfqzT5W4F8vxHCLSDfV8nKNJzogvV2Q==}
-    engines: {node: ^14.13.1 || >=16.0.0}
-    hasBin: true
-    dependencies:
-      '@csstools/css-parser-algorithms': 2.1.1(@csstools/css-tokenizer@2.1.1)
-      '@csstools/css-tokenizer': 2.1.1
-      '@csstools/media-query-list-parser': 2.0.4(@csstools/css-parser-algorithms@2.1.1)(@csstools/css-tokenizer@2.1.1)
-      '@csstools/selector-specificity': 2.2.0(postcss-selector-parser@6.0.13)
-      balanced-match: 2.0.0
-      colord: 2.9.3
-      cosmiconfig: 8.1.3
-      css-functions-list: 3.1.0
-      css-tree: 2.3.1
-      debug: 4.3.4
-      fast-glob: 3.2.12
-      fastest-levenshtein: 1.0.16
-      file-entry-cache: 6.0.1
-      global-modules: 2.0.0
-      globby: 11.1.0
-      globjoin: 0.1.4
-      html-tags: 3.3.1
-      ignore: 5.2.4
-      import-lazy: 4.0.0
-      imurmurhash: 0.1.4
-      is-plain-object: 5.0.0
-      known-css-properties: 0.27.0
-      mathml-tag-names: 2.1.3
-      meow: 9.0.0
-      micromatch: 4.0.5
-      normalize-path: 3.0.0
-      picocolors: 1.0.0
-      postcss: 8.4.23
-      postcss-media-query-parser: 0.2.3
-      postcss-resolve-nested-selector: 0.1.1
-      postcss-safe-parser: 6.0.0(postcss@8.4.23)
-      postcss-selector-parser: 6.0.13
       postcss-value-parser: 4.2.0
       resolve-from: 5.0.0
       string-width: 4.2.3
