@@ -1,7 +1,7 @@
 <script lang="ts">
-	import bannerSrcsetAvif from '~assets/newsletter-banner.jpg?w=1216;608;312&format=avif&srcset';
-	import bannerSrcsetWebp from '~assets/newsletter-banner.jpg?w=1216;608;312&format=webp&srcset';
-	import bannerSrcset from '~assets/newsletter-banner.jpg?w=1216;608;312&srcset';
+	import bannerSrcsetAvif from '~assets/newsletter-banner.jpg?w=1216;608;312&format=avif&as=srcset';
+	import bannerSrcsetWebp from '~assets/newsletter-banner.jpg?w=1216;608;312&format=webp&as=srcset';
+	import bannerSrcset from '~assets/newsletter-banner.jpg?w=1216;608;312&as=srcset';
 	import bannerSrc from '~assets/newsletter-banner.jpg?w=608';
 
 	const width = 608;
