@@ -8,17 +8,18 @@
 		"start": "astro dev",
 		"build": "astro telemetry disable && astro build",
 		"preview": "astro preview",
-		"astro": "astro"
+		"astro": "astro",
+		"lint:css": "stylelint \"src/**/*.{astro,css,svelte}\""
 	},
 	"dependencies": {
-		"@astrojs/svelte": "^2.2.0",
-		"astro": "^2.5.3",
-		"svelte": "^3.59.1"
+		"@astrojs/svelte": "^3.1.0",
+		"astro": "^2.8.0",
+		"svelte": "^4.0.5"
 	},
 	"devDependencies": {
 		"cookie": "^0.5.0",
-		"typescript": "^5.0.4",
-		"vite": "^4.3.8"
+		"typescript": "^5.1.6",
+		"vite": "^4.4.2"
 	},
 	"peerDependencies": {
 		"vite": "^4.1.0"
