@@ -10,13 +10,13 @@
 		"build": "astro telemetry disable && astro build",
 		"preview": "astro preview",
 		"check": "astro check --fail-on-warnings",
-		"format": "prettier --write --plugin-search-dir=. .",
-		"prettier:check": "prettier --check --plugin-search-dir=. ."
+		"format": "prettier --write --plugin=prettier-plugin-astro .",
+		"prettier:check": "prettier --check ---plugin=prettier-plugin-astro ."
 	},
 	"devDependencies": {
-		"astro": "2.5.5",
-		"prettier": "^2.8.8",
-		"prettier-plugin-astro": "^0.9.0"
+		"astro": "2.8.1",
+		"prettier": "^3.0.0",
+		"prettier-plugin-astro": "^0.11.0"
 	},
 	"repository": {
 		"type": "git",
