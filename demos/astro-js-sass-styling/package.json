@@ -10,9 +10,9 @@
 		"build": "astro telemetry disable && astro build",
 		"check": "astro check --fail-on-warnings",
 		"preview": "astro preview",
-		"format": "prettier --write --plugin-search-dir=. .",
+		"format": "prettier --write --plugin=prettier-plugin-astro --plugin=prettier-plugin-svelte .",
 		"lint:scss": "stylelint \"src/**/*.{astro,scss,svelte}\"",
-		"prettier:check": "prettier --check --plugin-search-dir=. ."
+		"prettier:check": "prettier --check --plugin=prettier-plugin-astro --plugin=prettier-plugin-svelte ."
 	},
 	"devDependencies": {
 		"@astrojs/react": "^2.2.1",
