@@ -2,9 +2,7 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-	experimental: {
-		inlineStylesheets: 'auto',
-	},
+	inlineStylesheets: 'auto',
 	preview: {
 		port: 3001,
 	},
