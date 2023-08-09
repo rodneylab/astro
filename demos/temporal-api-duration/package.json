@@ -9,20 +9,20 @@
 		"start": "astro dev",
 		"build": "pnpm astro telemetry disable && astro build && subfont -ir --root dist",
 		"preview": "astro preview",
-		"format": "prettier --ignore-path .prettierignore --write --plugin-search-dir=. .",
+		"format": "prettier --ignore-path .prettierignore --write --plugin=prettier-plugin-astro .",
 		"lint:css": "stylelint \"src/**/*.{css,astro}\"",
 		"check": "astro check --fail-on-warnings"
 	},
 	"devDependencies": {
 		"@js-temporal/polyfill": "^0.4.4",
-		"astro": "2.7.1",
-		"postcss": "^8.4.24",
+		"astro": "2.10.3",
+		"postcss": "^8.4.27",
 		"postcss-html": "^1.5.0",
-		"prettier": "^2.8.8",
-		"prettier-plugin-astro": "^0.10.0",
-		"stylelint": "^15.9.0",
-		"stylelint-config-recommended": "^12.0.0",
-		"stylelint-config-standard": "^33.0.0",
+		"prettier": "^3.0.1",
+		"prettier-plugin-astro": "^0.11.0",
+		"stylelint": "^15.10.2",
+		"stylelint-config-recommended": "^13.0.0",
+		"stylelint-config-standard": "^34.0.0",
 		"subfont": "^7.1.1"
 	},
 	"repository": {
