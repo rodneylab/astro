@@ -10,15 +10,15 @@
 		"preview": "astro preview",
 		"astro": "astro",
 		"check": "astro check --fail-on-warnings",
-		"format": "prettier --write --plugin-search-dir=. .",
+		"format": "prettier --write --plugin=prettier-plugin-astro .",
 		"lint:css": "stylelint \"src/**/*.{css,astro}\""
 	},
 	"dependencies": {
 		"@capsizecss/core": "^3.1.1",
 		"@capsizecss/metrics": "^1.2.0",
-		"astro": "^2.10.9",
+		"astro": "^2.10.12",
 		"postcss-html": "^1.5.0",
-		"stylelint": "^15.10.2",
+		"stylelint": "^15.10.3",
 		"stylelint-config-recommended": "^13.0.0",
 		"stylelint-config-standard": "^34.0.0"
 	},
