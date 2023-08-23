@@ -11,26 +11,26 @@
 		"preview": "astro preview",
 		"check": "astro check --fail-on-warnings",
 		"check:svelte": "svelte-check",
-		"format": "prettier --write --plugin-search-dir=. .",
+		"format": "prettier --write --plugin=prettier-plugin-astro .",
 		"lint:css": "stylelint \"src/**/*.{astro,css,svelte}\""
 	},
 	"devDependencies": {
-		"@astrojs/svelte": "^3.1.0",
-		"astro": "^2.8.0",
+		"@astrojs/svelte": "^3.1.1",
+		"astro": "^2.10.12",
 		"axios": "^1.4.0",
 		"postcss-html": "^1.5.0",
-		"prettier": "^2.8.8",
-		"prettier-plugin-astro": "^0.10.0",
-		"stylelint": "^15.10.1",
+		"prettier": "^3.0.2",
+		"prettier-plugin-astro": "^0.12.0",
+		"stylelint": "^15.10.3",
 		"stylelint-config-recommended": "^13.0.0",
 		"stylelint-config-standard": "^34.0.0",
-		"svelte": "^4.0.5",
-		"svelte-check": "^3.4.5",
+		"svelte": "^4.2.0",
+		"svelte-check": "^3.5.0",
 		"typescript": "^5.1.6",
-		"vite": "^4.4.2"
+		"vite": "^4.4.9"
 	},
 	"dependencies": {
-		"@netlify/functions": "^1.6.0"
+		"@netlify/functions": "^2.0.1"
 	},
 	"repository": {
 		"type": "git",

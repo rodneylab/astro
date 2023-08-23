@@ -58,8 +58,8 @@ importers:
   demos/astro-contact-form:
     dependencies:
       '@netlify/functions':
-        specifier: ^1.6.0
-        version: 1.6.0
+        specifier: ^2.0.1
+        version: 2.0.1
     devDependencies:
       '@astrojs/svelte':
         specifier: ^3.1.1
@@ -77,8 +77,8 @@ importers:
         specifier: ^3.0.2
         version: 3.0.2
       prettier-plugin-astro:
-        specifier: ^0.11.1
-        version: 0.11.1
+        specifier: ^0.12.0
+        version: 0.12.0
       stylelint:
         specifier: ^15.10.3
         version: 15.10.3
@@ -4047,6 +4047,27 @@ packages:
     engines: {node: '>=14.0.0'}
     dependencies:
       is-promise: 4.0.0
+    dev: false
+
+  /@netlify/functions@2.0.1:
+    resolution: {integrity: sha512-YrgCmz078II0LKknXKj5NbtGBuzek1JC+ZYi4xHcLhZD+HIGlerlmkhnVydWVPoA7fdd2IeSUd9CFFL7bY+y5Q==}
+    engines: {node: '>=14.0.0'}
+    dependencies:
+      '@netlify/serverless-functions-api': 1.7.1
+      is-promise: 4.0.0
+    dev: false
+
+  /@netlify/node-cookies@0.1.0:
+    resolution: {integrity: sha512-OAs1xG+FfLX0LoRASpqzVntVV/RpYkgpI0VrUnw2u0Q1qiZUzcPffxRK8HF3gc4GjuhG5ahOEMJ9bswBiZPq0g==}
+    engines: {node: ^14.16.0 || >=16.0.0}
+    dev: false
+
+  /@netlify/serverless-functions-api@1.7.1:
+    resolution: {integrity: sha512-vF9g62n+BFfBXtWtmVBJ5debyMERVDtuLlMlKDPYBp6QjEuJnaggxczLlRofZ2mtsBXs7mAlna6gIcBswFLJJQ==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    dependencies:
+      '@netlify/node-cookies': 0.1.0
+      urlpattern-polyfill: 8.0.2
     dev: false
 
   /@nodelib/fs.scandir@2.1.5:
@@ -14141,15 +14162,6 @@ packages:
       sass-formatter: 0.7.7
     dev: true
 
-  /prettier-plugin-astro@0.11.1:
-    resolution: {integrity: sha512-28sf624jQz9uP4hkQiRPRVuG1/4XJpnS6DfoXPgeDAeQ+eQ1o21bpioUbxze57y2EN+BCHeEw6x3a1MhM08Liw==}
-    engines: {node: ^14.15.0 || >=16.0.0}
-    dependencies:
-      '@astrojs/compiler': 1.8.2
-      prettier: 3.0.2
-      sass-formatter: 0.7.7
-    dev: true
-
   /prettier-plugin-astro@0.12.0:
     resolution: {integrity: sha512-8E+9YQR6/5CPZJs8XsfBw579zrwZkc0Wb7x0fRVm/51JC8Iys4lBw4ecV8fHwpbQnzve86TUa4fJ08BJzqfWnA==}
     engines: {node: ^14.15.0 || >=16.0.0}
@@ -17283,6 +17295,10 @@ packages:
   /urlpattern-polyfill@4.0.3:
     resolution: {integrity: sha512-DOE84vZT2fEcl9gqCUTcnAw5ZY5Id55ikUcziSUntuEFL3pRvavg5kwDmTEUJkeCHInTlV/HexFomgYnzO5kdQ==}
     dev: true
+
+  /urlpattern-polyfill@8.0.2:
+    resolution: {integrity: sha512-Qp95D4TPJl1kC9SKigDcqgyM2VDVO4RiJc2d4qe5GrYm+zbIQCWWKAFaJNQ4BhdFeDGwBmAxqJBwWSJDb9T3BQ==}
+    dev: false
 
   /urltools@0.4.2:
     resolution: {integrity: sha512-nsAASNzc1+n8MZuQ335Oa9z8KOCtDNfiQzFOAYCiu+IPZQVD0FH6n9hP/NKygKxs5nmRYnj8ftYKgyNcJKlgUw==}
