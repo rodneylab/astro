@@ -9,6 +9,7 @@
 		"build": "astro telemetry disable && astro build",
 		"preview": "astro preview",
 		"astro": "astro",
+		"format": "prettier --write --plugin=prettier-plugin-astro .",
 		"lint:css": "stylelint \"src/**/*.{astro,css,svelte}\""
 	},
 	"dependencies": {
