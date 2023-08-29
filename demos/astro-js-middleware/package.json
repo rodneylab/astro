@@ -10,18 +10,18 @@
 		"preview": "astro preview",
 		"astro": "astro",
 		"check": "astro check --fail-on-warnings",
-		"format": "prettier --write --plugin-search-dir=. .",
+		"format": "prettier --write --plugin=prettier-plugin-astro .",
 		"lint:css": "stylelint \"src/**/*.{css,astro}\""
 	},
 	"dependencies": {
-		"@astrojs/cloudflare": "^6.3.0",
-		"astro": "^2.5.6"
+		"@astrojs/cloudflare": "^6.8.1",
+		"astro": "^2.10.14"
 	},
 	"devDependencies": {
-		"msgpackr": "^1.9.2",
+		"msgpackr": "^1.9.7",
 		"postcss-html": "^1.5.0",
-		"stylelint": "^15.6.2",
-		"stylelint-config-recommended": "^12.0.0",
-		"stylelint-config-standard": "^33.0.0"
+		"stylelint": "^15.10.3",
+		"stylelint-config-recommended": "^13.0.0",
+		"stylelint-config-standard": "^34.0.0"
 	}
 }
