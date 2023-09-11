@@ -8,7 +8,5 @@ import netlify from '@astrojs/netlify/functions';
 export default defineConfig({
 	integrations: [svelte()],
 	output: 'server',
-	preview: { port: 3001 },
-	server: { port: 3001 },
 	adapter: netlify(),
 });
