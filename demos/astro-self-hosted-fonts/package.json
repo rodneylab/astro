@@ -11,20 +11,22 @@
 		"check": "astro check --fail-on-warnings",
 		"lint:css": "stylelint \"src/**/*.{css,astro}\"",
 		"preview": "astro preview",
-		"format": "prettier --write -plugin=prettier-plugin-astro ."
+		"format": "prettier --write --plugin=prettier-plugin-astro ."
 	},
 	"devDependencies": {
-		"astro": "~2.10.1",
+		"@astrojs/check": "^0.2.0",
+		"astro": "~3.0.13",
 		"astro-icon": "^0.8.1",
-		"autoprefixer": "^10.4.14",
-		"postcss": "^8.4.27",
+		"autoprefixer": "^10.4.15",
+		"postcss": "^8.4.29",
 		"postcss-html": "^1.5.0",
-		"prettier": "^3.0.1",
-		"prettier-plugin-astro": "^0.11.0",
-		"stylelint": "^15.10.2",
+		"prettier": "^3.0.3",
+		"prettier-plugin-astro": "^0.12.0",
+		"stylelint": "^15.10.3",
 		"stylelint-config-recommended": "^13.0.0",
 		"stylelint-config-standard": "^34.0.0",
-		"subfont": "^7.1.1"
+		"subfont": "^7.1.1",
+		"typescript": "^5.2.2"
 	},
 	"repository": {
 		"type": "git",
