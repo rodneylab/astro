@@ -1,6 +1,6 @@
 /// <reference types="astro/client" />
 
-declare namespace svelte.JSX {
+namespace svelte.JSX {
 	interface HTMLProps<T> {
 		fetchpriority?: 'auto' | 'high' | 'low';
 	}
