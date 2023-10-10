@@ -13,21 +13,19 @@
 		"lint:css": "stylelint \"src/**/*.{astro,css,svelte}\""
 	},
 	"dependencies": {
-		"@astrojs/svelte": "^3.1.1",
-		"astro": "^2.10.13",
-		"postcss": "^8.4.28",
+		"@astrojs/check": "^0.2.0",
+		"@astrojs/svelte": "^4.0.3",
+		"astro": "^3.2.3",
+		"postcss": "^8.4.31",
 		"postcss-html": "^1.5.0",
 		"stylelint": "^15.10.3",
 		"stylelint-config-recommended": "^13.0.0",
 		"stylelint-config-standard": "^34.0.0",
-		"svelte": "^4.2.0"
+		"svelte": "^4.2.1"
 	},
 	"devDependencies": {
 		"cookie": "^0.5.0",
-		"typescript": "^5.1.6",
-		"vite": "^4.4.9"
-	},
-	"peerDependencies": {
-		"vite": "^4.1.0"
+		"typescript": "^5.2.2",
+		"vite": "^4.4.11"
 	}
 }
