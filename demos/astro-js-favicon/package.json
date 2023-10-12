@@ -11,12 +11,12 @@
 		"preview": "astro preview",
 		"check": "astro check --fail-on-warnings",
 		"format": "prettier --write --plugin=prettier-plugin-astro .",
-		"prettier:check": "prettier --check ---plugin=prettier-plugin-astro ."
+		"prettier:check": "prettier --check --plugin=prettier-plugin-astro ."
 	},
 	"devDependencies": {
-		"astro": "2.8.1",
-		"prettier": "^3.0.2",
-		"prettier-plugin-astro": "^0.11.1"
+		"astro": "3.2.4",
+		"prettier": "^3.0.3",
+		"prettier-plugin-astro": "^0.12.0"
 	},
 	"repository": {
 		"type": "git",
@@ -26,6 +26,7 @@
 		"url": "https://github.com/rodneylab/astro/issues"
 	},
 	"dependencies": {
-		"add": "^2.0.6"
+		"@astrojs/check": "^0.2.0",
+		"typescript": "^5.2.2"
 	}
 }
