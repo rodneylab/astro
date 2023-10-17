@@ -1,7 +1,3 @@
-import markerIconRetinaURL from 'leaflet/dist/images/marker-icon-2x.png';
-import markerIconURL from 'leaflet/dist/images/marker-icon.png';
-import markerShadowURL from 'leaflet/dist/images/marker-shadow.png';
-
 export function setMap(
 	mapElement: HTMLElement,
 	{
@@ -20,12 +16,12 @@ export function setMap(
 		} = await import('leaflet');
 
 		const markerIcon = leafletIcon({
+			iconUrl: '/marker-icon.png',
 			iconSize: [25, 41],
 			iconAnchor: [10, 41],
 			popupAnchor: [2, -40],
-			iconUrl: markerIconURL,
-			iconRetinaUrl: markerIconRetinaURL,
-			shadowUrl: markerShadowURL,
+			iconRetinaUrl: '/marker-icon-2x.png',
+			shadowUrl: '/marker-shadow.png',
 		});
 
 		const map = leafletMap(mapElement).setView([latitude, longitude], zoom);
