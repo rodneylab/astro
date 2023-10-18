@@ -14,14 +14,16 @@
 		"lint:css": "stylelint \"src/**/*.{css,astro}\""
 	},
 	"dependencies": {
-		"@astrojs/cloudflare": "^6.8.1",
-		"astro": "^2.10.14"
+		"@astrojs/cloudflare": "^7.5.4",
+		"astro": "^3.3.2"
 	},
 	"devDependencies": {
-		"msgpackr": "^1.9.7",
+		"@astrojs/check": "^0.2.1",
+		"msgpackr": "^1.9.9",
 		"postcss-html": "^1.5.0",
-		"stylelint": "^15.10.3",
+		"stylelint": "^15.11.0",
 		"stylelint-config-recommended": "^13.0.0",
-		"stylelint-config-standard": "^34.0.0"
+		"stylelint-config-standard": "^34.0.0",
+		"typescript": "^5.2.2"
 	}
 }

@@ -22,7 +22,7 @@ export const onRequest: MiddlewareHandler<Response> = async function onRequest(
 		},
 	};
 
-	await fetch('https://in.logtail.com', {
+	await fetch('https://in.logs.betterstack.com', {
 		method: 'POST',
 		headers: {
 			Authorization: `Bearer ${logtailSourceToken}`,
