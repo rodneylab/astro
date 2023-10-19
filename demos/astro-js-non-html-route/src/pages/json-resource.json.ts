@@ -1,13 +1,18 @@
 import type { APIRoute } from 'astro';
 
-export const get: APIRoute = async function get() {
+export const GET: APIRoute = async function GET() {
 	try {
 		const astroResources = [
 			{ name: 'docs', url: 'https://docs.astro.build/en/getting-started/' },
 			{ name: 'discord', url: 'https://docs.astro.build/chat' },
 		];
 
-		return { body: JSON.stringify(astroResources) };
+		return {
+			body: JSON.stringify(astroResources),
+			headers: {
+				'Content-Type': 'application/json',
+			},
+		};
 	} catch (error) {
 		throw new Error('Something went wrong in json-resource.json route!');
 	}
