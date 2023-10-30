@@ -9,11 +9,11 @@ importers:
   .:
     devDependencies:
       '@commitlint/config-conventional':
-        specifier: ^18.0.0
-        version: 18.0.0
+        specifier: ^18.1.0
+        version: 18.1.0
       commitlint:
-        specifier: ^18.0.0
-        version: 18.0.0
+        specifier: ^18.2.0
+        version: 18.2.0(typescript@5.2.2)
       husky:
         specifier: ^8.0.3
         version: 8.0.3
@@ -24,8 +24,8 @@ importers:
         specifier: ^3.0.3
         version: 3.0.3
       prettier-plugin-astro:
-        specifier: ^0.12.0
-        version: 0.12.0
+        specifier: ^0.12.1
+        version: 0.12.1
 
   demos/astro-capsize-font-fallbacks:
     dependencies:
@@ -37,7 +37,7 @@ importers:
         version: 1.2.0
       astro:
         specifier: ^3.2.2
-        version: 3.2.2(@types/node@18.18.6)
+        version: 3.2.2(@types/node@18.18.7)
       postcss-html:
         specifier: ^1.5.0
         version: 1.5.0
@@ -53,13 +53,13 @@ importers:
     devDependencies:
       '@astrojs/check':
         specifier: ^0.2.0
-        version: 0.2.0(prettier-plugin-astro@0.12.0)(prettier@3.0.3)(typescript@5.2.2)
+        version: 0.2.0(prettier-plugin-astro@0.12.1)(prettier@3.0.3)(typescript@5.2.2)
       typescript:
         specifier: ^5.2.2
         version: 5.2.2
       vite-node:
         specifier: ^0.34.6
-        version: 0.34.6(@types/node@18.18.6)
+        version: 0.34.6(@types/node@18.18.7)
 
   demos/astro-contact-form:
     dependencies:
@@ -75,7 +75,7 @@ importers:
         version: 4.0.3(astro@3.2.3)(svelte@4.2.1)(typescript@5.2.2)(vite@4.4.11)
       astro:
         specifier: ^3.2.3
-        version: 3.2.3(@types/node@18.18.6)
+        version: 3.2.3(@types/node@18.18.7)
       axios:
         specifier: ^1.5.1
         version: 1.5.1
@@ -108,19 +108,19 @@ importers:
         version: 5.2.2
       vite:
         specifier: ^4.4.11
-        version: 4.4.11(@types/node@18.18.6)
+        version: 4.4.11(@types/node@18.18.7)
 
   demos/astro-cookies-api:
     dependencies:
       '@astrojs/check':
         specifier: ^0.2.0
-        version: 0.2.0(prettier-plugin-astro@0.12.0)(prettier@3.0.3)(typescript@5.2.2)
+        version: 0.2.0(prettier-plugin-astro@0.12.1)(prettier@3.0.3)(typescript@5.2.2)
       '@astrojs/svelte':
         specifier: ^4.0.3
         version: 4.0.3(astro@3.2.3)(svelte@4.2.1)(typescript@5.2.2)(vite@4.4.11)
       astro:
         specifier: ^3.2.3
-        version: 3.2.3(@types/node@18.18.6)
+        version: 3.2.3(@types/node@18.18.7)
       postcss:
         specifier: ^8.4.31
         version: 8.4.31
@@ -148,7 +148,7 @@ importers:
         version: 5.2.2
       vite:
         specifier: ^4.4.11
-        version: 4.4.11(@types/node@18.18.6)
+        version: 4.4.11(@types/node@18.18.7)
 
   demos/astro-js-404-page:
     devDependencies:
@@ -157,7 +157,7 @@ importers:
         version: 0.2.0(prettier-plugin-astro@0.12.0)(prettier@3.0.3)(typescript@5.2.2)
       astro:
         specifier: ^3.2.4
-        version: 3.2.4(@types/node@18.18.6)
+        version: 3.2.4(@types/node@18.18.7)
       postcss:
         specifier: ^8.4.31
         version: 8.4.31
@@ -194,7 +194,7 @@ importers:
     devDependencies:
       astro:
         specifier: 3.2.4
-        version: 3.2.4(@types/node@18.18.6)
+        version: 3.2.4(@types/node@18.18.7)
       prettier:
         specifier: ^3.0.3
         version: 3.0.3
@@ -206,7 +206,7 @@ importers:
     devDependencies:
       '@astrojs/check':
         specifier: ^0.2.1
-        version: 0.2.1(prettier-plugin-astro@0.12.0)(prettier@3.0.3)(typescript@5.2.2)
+        version: 0.2.1(prettier-plugin-astro@0.12.1)(prettier@3.0.3)(typescript@5.2.2)
       '@astrojs/svelte':
         specifier: ^4.0.3
         version: 4.0.3(astro@3.3.1)(svelte@4.2.1)(typescript@5.2.2)(vite@4.4.11)
@@ -215,7 +215,7 @@ importers:
         version: 1.9.6
       astro:
         specifier: ^3.3.1
-        version: 3.3.1(@types/node@18.18.6)(typescript@5.2.2)
+        version: 3.3.1(@types/node@18.18.7)(typescript@5.2.2)
       leaflet:
         specifier: ^1.9.4
         version: 1.9.4
@@ -248,20 +248,20 @@ importers:
         version: 5.2.2
       vite:
         specifier: ^4.4.11
-        version: 4.4.11(@types/node@18.18.6)
+        version: 4.4.11(@types/node@18.18.7)
 
   demos/astro-js-middleware:
     dependencies:
       '@astrojs/cloudflare':
         specifier: ^7.5.4
-        version: 7.5.4(@types/node@18.18.6)(astro@3.3.2)
+        version: 7.5.4(@types/node@18.18.7)(astro@3.3.2)
       astro:
         specifier: ^3.3.2
-        version: 3.3.2(@types/node@18.18.6)(typescript@5.2.2)
+        version: 3.3.2(@types/node@18.18.7)(typescript@5.2.2)
     devDependencies:
       '@astrojs/check':
         specifier: ^0.2.1
-        version: 0.2.1(prettier-plugin-astro@0.12.0)(prettier@3.0.3)(typescript@5.2.2)
+        version: 0.2.1(prettier-plugin-astro@0.12.1)(prettier@3.0.3)(typescript@5.2.2)
       msgpackr:
         specifier: ^1.9.9
         version: 1.9.9
@@ -294,7 +294,7 @@ importers:
         version: 0.13.1
       astro:
         specifier: ^3.3.2
-        version: 3.3.2(@types/node@18.18.6)(typescript@5.2.2)
+        version: 3.3.2(@types/node@18.18.7)(typescript@5.2.2)
       blob-stream:
         specifier: ^0.1.3
         version: 0.1.3
@@ -352,7 +352,7 @@ importers:
         version: 18.2.14
       astro:
         specifier: 3.3.2
-        version: 3.3.2(@types/node@18.18.6)(sass@1.69.4)(typescript@5.2.2)
+        version: 3.3.2(@types/node@18.18.7)(sass@1.69.4)(typescript@5.2.2)
       postcss:
         specifier: ^8.4.31
         version: 8.4.31
@@ -400,7 +400,7 @@ importers:
         version: 0.7.4
       vite:
         specifier: ^4.5.0
-        version: 4.5.0(@types/node@18.18.6)(sass@1.69.4)
+        version: 4.5.0(@types/node@18.18.7)(sass@1.69.4)
 
   demos/astro-js-tutorial:
     devDependencies:
@@ -421,7 +421,7 @@ importers:
         version: 18.2.14
       astro:
         specifier: 3.3.3
-        version: 3.3.3(@types/node@18.18.6)(typescript@5.2.2)
+        version: 3.3.3(@types/node@18.18.7)(typescript@5.2.2)
       postcss:
         specifier: ^8.4.31
         version: 8.4.31
@@ -460,7 +460,7 @@ importers:
         version: 5.2.2
       vite:
         specifier: ~4.5.0
-        version: 4.5.0(@types/node@18.18.6)(sass@1.69.4)
+        version: 4.5.0(@types/node@18.18.7)(sass@1.69.4)
 
   demos/astro-mux-player:
     devDependencies:
@@ -472,7 +472,7 @@ importers:
         version: 0.16.5
       astro:
         specifier: ^3.3.3
-        version: 3.3.3(@types/node@18.18.6)(typescript@5.2.2)
+        version: 3.3.3(@types/node@18.18.7)(typescript@5.2.2)
       postcss:
         specifier: ^8.4.31
         version: 8.4.31
@@ -502,7 +502,7 @@ importers:
     dependencies:
       '@astrojs/check':
         specifier: ^0.2.1
-        version: 0.2.1(prettier-plugin-astro@0.12.0)(prettier@3.0.3)(typescript@5.2.2)
+        version: 0.2.1(prettier-plugin-astro@0.12.1)(prettier@3.0.3)(typescript@5.2.2)
       '@capsizecss/core':
         specifier: ^3.1.1
         version: 3.1.1
@@ -511,7 +511,7 @@ importers:
         version: 1.2.0
       astro:
         specifier: ^3.3.4
-        version: 3.3.4(@types/node@18.18.6)(typescript@5.2.2)
+        version: 3.3.4(@types/node@18.18.7)(typescript@5.2.2)
       postcss-html:
         specifier: ^1.5.0
         version: 1.5.0
@@ -539,7 +539,7 @@ importers:
         version: 9.2.0(postcss@8.4.31)
       vite-node:
         specifier: ^0.34.6
-        version: 0.34.6(@types/node@18.18.6)
+        version: 0.34.6(@types/node@18.18.7)
 
   demos/astro-prerender-comment-form:
     dependencies:
@@ -551,7 +551,7 @@ importers:
         version: 4.0.1(astro@3.0.10)(svelte@4.2.0)(typescript@5.2.2)(vite@4.4.9)
       astro:
         specifier: ^3.0.10
-        version: 3.0.10(@types/node@18.18.6)
+        version: 3.0.10(@types/node@18.18.7)
       stylelint:
         specifier: ^15.10.3
         version: 15.10.3(typescript@5.2.2)
@@ -567,7 +567,7 @@ importers:
     devDependencies:
       '@astrojs/check':
         specifier: ^0.2.0
-        version: 0.2.0(prettier-plugin-astro@0.12.0)(prettier@3.0.3)(typescript@5.2.2)
+        version: 0.2.0(prettier-plugin-astro@0.12.1)(prettier@3.0.3)(typescript@5.2.2)
       postcss:
         specifier: ^8.4.29
         version: 8.4.29
@@ -579,7 +579,7 @@ importers:
         version: 5.2.2
       vite:
         specifier: ^4.4.9
-        version: 4.4.9(@types/node@18.18.6)
+        version: 4.4.9(@types/node@18.18.7)
       wrangler:
         specifier: ^2.20.1
         version: 2.20.1
@@ -594,7 +594,7 @@ importers:
         version: 4.0.2(astro@3.0.12)(svelte@4.2.0)(typescript@5.2.2)(vite@4.4.9)
       astro:
         specifier: ^3.0.12
-        version: 3.0.12(@types/node@18.18.6)
+        version: 3.0.12(@types/node@18.18.7)
       svelte:
         specifier: ^4.2.0
         version: 4.2.0
@@ -619,7 +619,7 @@ importers:
         version: 5.2.2
       vite:
         specifier: ^4.4.9
-        version: 4.4.9(@types/node@18.18.6)
+        version: 4.4.9(@types/node@18.18.7)
 
   demos/astro-scroll-to-anchor:
     devDependencies:
@@ -628,7 +628,7 @@ importers:
         version: 0.2.0(prettier-plugin-astro@0.12.0)(prettier@3.0.3)(typescript@5.2.2)
       astro:
         specifier: ~3.0.12
-        version: 3.0.12(@types/node@18.18.6)
+        version: 3.0.12(@types/node@18.18.7)
       astro-icon:
         specifier: ^0.8.1
         version: 0.8.1
@@ -667,7 +667,7 @@ importers:
         version: 0.2.0(prettier-plugin-astro@0.12.0)(prettier@3.0.3)(typescript@5.2.2)
       astro:
         specifier: ~3.0.13
-        version: 3.0.13(@types/node@18.18.6)
+        version: 3.0.13(@types/node@18.18.7)
       astro-icon:
         specifier: ^0.8.1
         version: 0.8.1
@@ -767,7 +767,7 @@ importers:
         version: 18.2.7
       astro:
         specifier: ^3.1.3
-        version: 3.1.3(@types/node@18.18.6)
+        version: 3.1.3(@types/node@18.18.7)
       autoprefixer:
         specifier: ^10.4.16
         version: 10.4.16(postcss@8.4.30)
@@ -815,7 +815,7 @@ importers:
         version: 5.2.2
       vite:
         specifier: ^4.4.9
-        version: 4.4.9(@types/node@18.18.6)
+        version: 4.4.9(@types/node@18.18.7)
 
   demos/temporal-api-duration:
     devDependencies:
@@ -827,7 +827,7 @@ importers:
         version: 0.4.4
       astro:
         specifier: 3.1.4
-        version: 3.1.4(@types/node@18.18.6)
+        version: 3.1.4(@types/node@18.18.7)
       postcss:
         specifier: ^8.4.30
         version: 8.4.30
@@ -869,7 +869,7 @@ importers:
         version: 0.4.4
       astro:
         specifier: ^3.2.0
-        version: 3.2.0(@types/node@18.18.6)
+        version: 3.2.0(@types/node@18.18.7)
       husky:
         specifier: ^8.0.3
         version: 8.0.3
@@ -896,7 +896,7 @@ importers:
         version: 5.2.2
       vite:
         specifier: ^4.4.9
-        version: 4.4.9(@types/node@18.18.6)
+        version: 4.4.9(@types/node@18.18.7)
 
 packages:
 
@@ -923,6 +923,22 @@ packages:
       - prettier
       - prettier-plugin-astro
 
+  /@astrojs/check@0.2.0(prettier-plugin-astro@0.12.1)(prettier@3.0.3)(typescript@5.2.2):
+    resolution: {integrity: sha512-QS8TBRNrxBNEKm9hsP4xI+ao2XJ5JZfMZ1GpHqM7HCGPwWe5oWSPtDXGM8zutZ6kH3ilK0k1euqkzxrhcTP1Cg==}
+    hasBin: true
+    peerDependencies:
+      typescript: ^5.0.0
+    dependencies:
+      '@astrojs/language-server': 2.3.3(prettier-plugin-astro@0.12.1)(prettier@3.0.3)(typescript@5.2.2)
+      chokidar: 3.5.3
+      fast-glob: 3.3.1
+      kleur: 4.1.5
+      typescript: 5.2.2
+      yargs: 17.7.2
+    transitivePeerDependencies:
+      - prettier
+      - prettier-plugin-astro
+
   /@astrojs/check@0.2.1(prettier-plugin-astro@0.12.0)(prettier@3.0.3)(typescript@5.2.2):
     resolution: {integrity: sha512-s85uBS/qjnqsKAeM0VKNWKvNaqvR06ZJupEwr2oT5/6Bti7qB5Vd8KekWIRAu2/WqOXHMFaDJz5D+qSizFnq5g==}
     hasBin: true
@@ -930,6 +946,23 @@ packages:
       typescript: ^5.0.0
     dependencies:
       '@astrojs/language-server': 2.4.1(prettier-plugin-astro@0.12.0)(prettier@3.0.3)(typescript@5.2.2)
+      chokidar: 3.5.3
+      fast-glob: 3.3.1
+      kleur: 4.1.5
+      typescript: 5.2.2
+      yargs: 17.7.2
+    transitivePeerDependencies:
+      - prettier
+      - prettier-plugin-astro
+    dev: true
+
+  /@astrojs/check@0.2.1(prettier-plugin-astro@0.12.1)(prettier@3.0.3)(typescript@5.2.2):
+    resolution: {integrity: sha512-s85uBS/qjnqsKAeM0VKNWKvNaqvR06ZJupEwr2oT5/6Bti7qB5Vd8KekWIRAu2/WqOXHMFaDJz5D+qSizFnq5g==}
+    hasBin: true
+    peerDependencies:
+      typescript: ^5.0.0
+    dependencies:
+      '@astrojs/language-server': 2.4.1(prettier-plugin-astro@0.12.1)(prettier@3.0.3)(typescript@5.2.2)
       chokidar: 3.5.3
       fast-glob: 3.3.1
       kleur: 4.1.5
@@ -946,12 +979,12 @@ packages:
     dependencies:
       '@astrojs/underscore-redirects': 0.3.0
       '@cloudflare/workers-types': 4.20230904.0
-      astro: 3.0.10(@types/node@18.18.6)
+      astro: 3.0.10(@types/node@18.18.7)
       esbuild: 0.19.2
       tiny-glob: 0.2.9
     dev: false
 
-  /@astrojs/cloudflare@7.5.4(@types/node@18.18.6)(astro@3.3.2):
+  /@astrojs/cloudflare@7.5.4(@types/node@18.18.7)(astro@3.3.2):
     resolution: {integrity: sha512-AOe686LoUFvj4xbqxQLHPmXNuf7c2gnwFFQSDWVabxZqoANJW7EjUK+Hb6OVD+RAbhIybUGB1LmImKgYrblEUg==}
     peerDependencies:
       astro: ^3.3.0
@@ -959,13 +992,13 @@ packages:
       '@astrojs/underscore-redirects': 0.3.0
       '@cloudflare/workers-types': 4.20231016.0
       '@iarna/toml': 2.2.5
-      astro: 3.3.2(@types/node@18.18.6)(typescript@5.2.2)
+      astro: 3.3.2(@types/node@18.18.7)(typescript@5.2.2)
       dotenv: 16.3.1
       esbuild: 0.19.4
       find-up: 6.3.0
       miniflare: 3.20231010.0
       tiny-glob: 0.2.9
-      vite: 4.5.0(@types/node@18.18.6)
+      vite: 4.5.0(@types/node@18.18.7)
     transitivePeerDependencies:
       - '@types/node'
       - bufferutil
@@ -1039,6 +1072,41 @@ packages:
     transitivePeerDependencies:
       - typescript
 
+  /@astrojs/language-server@2.3.3(prettier-plugin-astro@0.12.1)(prettier@3.0.3)(typescript@5.2.2):
+    resolution: {integrity: sha512-ObIjAdjKJFHsKCmaFHc6tbpomMkX1580UbxbgnCr6zEpIZuQobH/zlKwIaSDcmQOQtt8ICs921AYTM+kOg8p6w==}
+    hasBin: true
+    peerDependencies:
+      prettier: ^3.0.0
+      prettier-plugin-astro: '>=0.11.0'
+    peerDependenciesMeta:
+      prettier:
+        optional: true
+      prettier-plugin-astro:
+        optional: true
+    dependencies:
+      '@astrojs/compiler': 1.5.7
+      '@jridgewell/sourcemap-codec': 1.4.15
+      '@volar/kit': 1.10.1(typescript@5.2.2)
+      '@volar/language-core': 1.10.1
+      '@volar/language-server': 1.10.1
+      '@volar/language-service': 1.10.1
+      '@volar/source-map': 1.10.1
+      '@volar/typescript': 1.10.1
+      fast-glob: 3.3.1
+      muggle-string: 0.3.1
+      prettier: 3.0.3
+      prettier-plugin-astro: 0.12.1
+      volar-service-css: 0.0.13(@volar/language-service@1.10.1)
+      volar-service-emmet: 0.0.13(@volar/language-service@1.10.1)
+      volar-service-html: 0.0.13(@volar/language-service@1.10.1)
+      volar-service-prettier: 0.0.13(@volar/language-service@1.10.1)(prettier@3.0.3)
+      volar-service-typescript: 0.0.13(@volar/language-service@1.10.1)(@volar/typescript@1.10.1)
+      volar-service-typescript-twoslash-queries: 0.0.13(@volar/language-service@1.10.1)
+      vscode-html-languageservice: 5.1.0
+      vscode-uri: 3.0.8
+    transitivePeerDependencies:
+      - typescript
+
   /@astrojs/language-server@2.4.1(prettier-plugin-astro@0.12.0)(prettier@3.0.3)(typescript@5.2.2):
     resolution: {integrity: sha512-+yHvvcLcyfr1kq2UsQ4/b84EhQo3450MZGRhIA+aw7/1BrJVjWiyOrBi4nVLVyBq8i4a5qIU+MsYu3HdS7kWwQ==}
     hasBin: true
@@ -1073,6 +1141,42 @@ packages:
       vscode-uri: 3.0.8
     transitivePeerDependencies:
       - typescript
+    dev: true
+
+  /@astrojs/language-server@2.4.1(prettier-plugin-astro@0.12.1)(prettier@3.0.3)(typescript@5.2.2):
+    resolution: {integrity: sha512-+yHvvcLcyfr1kq2UsQ4/b84EhQo3450MZGRhIA+aw7/1BrJVjWiyOrBi4nVLVyBq8i4a5qIU+MsYu3HdS7kWwQ==}
+    hasBin: true
+    peerDependencies:
+      prettier: ^3.0.0
+      prettier-plugin-astro: '>=0.11.0'
+    peerDependenciesMeta:
+      prettier:
+        optional: true
+      prettier-plugin-astro:
+        optional: true
+    dependencies:
+      '@astrojs/compiler': 1.5.7
+      '@jridgewell/sourcemap-codec': 1.4.15
+      '@volar/kit': 1.10.4(typescript@5.2.2)
+      '@volar/language-core': 1.10.4
+      '@volar/language-server': 1.10.4
+      '@volar/language-service': 1.10.4
+      '@volar/source-map': 1.10.4
+      '@volar/typescript': 1.10.4
+      fast-glob: 3.3.1
+      muggle-string: 0.3.1
+      prettier: 3.0.3
+      prettier-plugin-astro: 0.12.1
+      volar-service-css: 0.0.14(@volar/language-service@1.10.4)
+      volar-service-emmet: 0.0.14(@volar/language-service@1.10.4)
+      volar-service-html: 0.0.14(@volar/language-service@1.10.4)
+      volar-service-prettier: 0.0.14(@volar/language-service@1.10.4)(prettier@3.0.3)
+      volar-service-typescript: 0.0.14(@volar/language-service@1.10.4)(@volar/typescript@1.10.4)
+      volar-service-typescript-twoslash-queries: 0.0.14(@volar/language-service@1.10.4)
+      vscode-html-languageservice: 5.1.1
+      vscode-uri: 3.0.8
+    transitivePeerDependencies:
+      - typescript
 
   /@astrojs/markdown-remark@3.0.0(astro@3.0.10):
     resolution: {integrity: sha512-s8I49Je4++ImgYAgwL32HgN8m6we2qz3RtBpN4AjObMODPwDylmzUHZksD8Toy31q/P59ED3MuwphqOGm9l03w==}
@@ -1080,7 +1184,7 @@ packages:
       astro: ^3.0.0
     dependencies:
       '@astrojs/prism': 3.0.0
-      astro: 3.0.10(@types/node@18.18.6)
+      astro: 3.0.10(@types/node@18.18.7)
       github-slugger: 2.0.0
       import-meta-resolve: 3.0.0
       rehype-raw: 6.1.1
@@ -1103,7 +1207,7 @@ packages:
       astro: ^3.0.11
     dependencies:
       '@astrojs/prism': 3.0.0
-      astro: 3.0.12(@types/node@18.18.6)
+      astro: 3.0.12(@types/node@18.18.7)
       github-slugger: 2.0.0
       import-meta-resolve: 3.0.0
       rehype-raw: 6.1.1
@@ -1125,7 +1229,7 @@ packages:
       astro: ^3.0.11
     dependencies:
       '@astrojs/prism': 3.0.0
-      astro: 3.0.13(@types/node@18.18.6)
+      astro: 3.0.13(@types/node@18.18.7)
       github-slugger: 2.0.0
       import-meta-resolve: 3.0.0
       rehype-raw: 6.1.1
@@ -1171,7 +1275,7 @@ packages:
       astro: ^3.1.0
     dependencies:
       '@astrojs/prism': 3.0.0
-      astro: 3.1.3(@types/node@18.18.6)
+      astro: 3.1.3(@types/node@18.18.7)
       github-slugger: 2.0.0
       import-meta-resolve: 3.0.0
       mdast-util-definitions: 6.0.0
@@ -1195,7 +1299,7 @@ packages:
       astro: ^3.1.0
     dependencies:
       '@astrojs/prism': 3.0.0
-      astro: 3.1.4(@types/node@18.18.6)
+      astro: 3.1.4(@types/node@18.18.7)
       github-slugger: 2.0.0
       import-meta-resolve: 3.0.0
       mdast-util-definitions: 6.0.0
@@ -1219,7 +1323,7 @@ packages:
       astro: ^3.1.0
     dependencies:
       '@astrojs/prism': 3.0.0
-      astro: 3.2.0(@types/node@18.18.6)
+      astro: 3.2.0(@types/node@18.18.7)
       github-slugger: 2.0.0
       import-meta-resolve: 3.0.0
       mdast-util-definitions: 6.0.0
@@ -1243,7 +1347,7 @@ packages:
       astro: ^3.1.0
     dependencies:
       '@astrojs/prism': 3.0.0
-      astro: 3.2.2(@types/node@18.18.6)
+      astro: 3.2.2(@types/node@18.18.7)
       github-slugger: 2.0.0
       import-meta-resolve: 3.0.0
       mdast-util-definitions: 6.0.0
@@ -1267,7 +1371,7 @@ packages:
       astro: ^3.2.3
     dependencies:
       '@astrojs/prism': 3.0.0
-      astro: 3.2.3(@types/node@18.18.6)
+      astro: 3.2.3(@types/node@18.18.7)
       github-slugger: 2.0.0
       import-meta-resolve: 3.0.0
       mdast-util-definitions: 6.0.0
@@ -1290,7 +1394,7 @@ packages:
       astro: ^3.2.3
     dependencies:
       '@astrojs/prism': 3.0.0
-      astro: 3.2.4(@types/node@18.18.6)
+      astro: 3.2.4(@types/node@18.18.7)
       github-slugger: 2.0.0
       import-meta-resolve: 3.0.0
       mdast-util-definitions: 6.0.0
@@ -1314,7 +1418,7 @@ packages:
       astro: ^3.3.0
     dependencies:
       '@astrojs/prism': 3.0.0
-      astro: 3.3.1(@types/node@18.18.6)(typescript@5.2.2)
+      astro: 3.3.1(@types/node@18.18.7)(typescript@5.2.2)
       github-slugger: 2.0.0
       import-meta-resolve: 3.0.0
       mdast-util-definitions: 6.0.0
@@ -1338,7 +1442,7 @@ packages:
       astro: ^3.3.0
     dependencies:
       '@astrojs/prism': 3.0.0
-      astro: 3.3.2(@types/node@18.18.6)(typescript@5.2.2)
+      astro: 3.3.2(@types/node@18.18.7)(typescript@5.2.2)
       github-slugger: 2.0.0
       import-meta-resolve: 3.0.0
       mdast-util-definitions: 6.0.0
@@ -1361,7 +1465,7 @@ packages:
       astro: ^3.3.0
     dependencies:
       '@astrojs/prism': 3.0.0
-      astro: 3.3.3(@types/node@18.18.6)(typescript@5.2.2)
+      astro: 3.3.3(@types/node@18.18.7)(typescript@5.2.2)
       github-slugger: 2.0.0
       import-meta-resolve: 3.0.0
       mdast-util-definitions: 6.0.0
@@ -1385,7 +1489,7 @@ packages:
       astro: ^3.3.0
     dependencies:
       '@astrojs/prism': 3.0.0
-      astro: 3.3.4(@types/node@18.18.6)(typescript@5.2.2)
+      astro: 3.3.4(@types/node@18.18.7)(typescript@5.2.2)
       github-slugger: 2.0.0
       import-meta-resolve: 3.0.0
       mdast-util-definitions: 6.0.0
@@ -1410,7 +1514,7 @@ packages:
     dependencies:
       '@astrojs/underscore-redirects': 0.3.0
       '@netlify/functions': 2.2.1
-      astro: 3.0.12(@types/node@18.18.6)
+      astro: 3.0.12(@types/node@18.18.7)
       esbuild: 0.19.2
     dev: false
 
@@ -1507,7 +1611,7 @@ packages:
       svelte: ^3.55.0 || ^4.0.0
     dependencies:
       '@sveltejs/vite-plugin-svelte': 2.4.5(svelte@4.2.0)(vite@4.4.9)
-      astro: 3.0.10(@types/node@18.18.6)
+      astro: 3.0.10(@types/node@18.18.7)
       svelte: 4.2.0
       svelte2tsx: 0.6.21(svelte@4.2.0)(typescript@5.2.2)
     transitivePeerDependencies:
@@ -1524,7 +1628,7 @@ packages:
       svelte: ^3.55.0 || ^4.0.0
     dependencies:
       '@sveltejs/vite-plugin-svelte': 2.4.5(svelte@4.2.0)(vite@4.4.9)
-      astro: 3.0.12(@types/node@18.18.6)
+      astro: 3.0.12(@types/node@18.18.7)
       svelte: 4.2.0
       svelte2tsx: 0.6.21(svelte@4.2.0)(typescript@5.2.2)
     transitivePeerDependencies:
@@ -1558,7 +1662,7 @@ packages:
       svelte: ^3.55.0 || ^4.0.0
     dependencies:
       '@sveltejs/vite-plugin-svelte': 2.4.5(svelte@4.2.1)(vite@4.4.9)
-      astro: 3.1.3(@types/node@18.18.6)
+      astro: 3.1.3(@types/node@18.18.7)
       svelte: 4.2.1
       svelte2tsx: 0.6.21(svelte@4.2.1)(typescript@5.2.2)
     transitivePeerDependencies:
@@ -1575,7 +1679,7 @@ packages:
       svelte: ^3.55.0 || ^4.0.0
     dependencies:
       '@sveltejs/vite-plugin-svelte': 2.4.6(svelte@4.2.1)(vite@4.4.11)
-      astro: 3.2.3(@types/node@18.18.6)
+      astro: 3.2.3(@types/node@18.18.7)
       svelte: 4.2.1
       svelte2tsx: 0.6.23(svelte@4.2.1)(typescript@5.2.2)
     transitivePeerDependencies:
@@ -1591,7 +1695,7 @@ packages:
       svelte: ^3.55.0 || ^4.0.0
     dependencies:
       '@sveltejs/vite-plugin-svelte': 2.4.6(svelte@4.2.1)(vite@4.4.11)
-      astro: 3.3.1(@types/node@18.18.6)(typescript@5.2.2)
+      astro: 3.3.1(@types/node@18.18.7)(typescript@5.2.2)
       svelte: 4.2.1
       svelte2tsx: 0.6.23(svelte@4.2.1)(typescript@5.2.2)
     transitivePeerDependencies:
@@ -1608,7 +1712,7 @@ packages:
       svelte: ^3.55.0 || ^4.0.0
     dependencies:
       '@sveltejs/vite-plugin-svelte': 2.4.6(svelte@4.2.2)(vite@4.5.0)
-      astro: 3.3.2(@types/node@18.18.6)(sass@1.69.4)(typescript@5.2.2)
+      astro: 3.3.2(@types/node@18.18.7)(sass@1.69.4)(typescript@5.2.2)
       svelte: 4.2.2
       svelte2tsx: 0.6.23(svelte@4.2.2)(typescript@5.2.2)
     transitivePeerDependencies:
@@ -1625,7 +1729,7 @@ packages:
       svelte: ^3.55.0 || ^4.0.0
     dependencies:
       '@sveltejs/vite-plugin-svelte': 2.4.6(svelte@4.2.2)(vite@4.5.0)
-      astro: 3.3.3(@types/node@18.18.6)(typescript@5.2.2)
+      astro: 3.3.3(@types/node@18.18.7)(typescript@5.2.2)
       svelte: 4.2.2
       svelte2tsx: 0.6.23(svelte@4.2.2)(typescript@5.2.2)
     transitivePeerDependencies:
@@ -2292,24 +2396,23 @@ packages:
       - '@swc/wasm'
     dev: true
 
-  /@commitlint/cli@18.0.0:
-    resolution: {integrity: sha512-0HuJB7VfxSqia0r+mZ9VLgTc5gPaRDiQtloLfwCBp63PvpFn2sZsidiZBbym3jDC6+P47HSuIdRRg3/JsCcBwA==}
+  /@commitlint/cli@18.2.0(typescript@5.2.2):
+    resolution: {integrity: sha512-F/DCG791kMFmWg5eIdogakuGeg4OiI2kD430ed1a1Hh3epvrJdeIAgcGADAMIOmF+m0S1+VlIYUKG2dvQQ1Izw==}
     engines: {node: '>=v18'}
     hasBin: true
     dependencies:
-      '@commitlint/format': 18.0.0
-      '@commitlint/lint': 18.0.0
-      '@commitlint/load': 18.0.0
-      '@commitlint/read': 18.0.0
-      '@commitlint/types': 18.0.0
+      '@commitlint/format': 18.1.0
+      '@commitlint/lint': 18.1.0
+      '@commitlint/load': 18.2.0(typescript@5.2.2)
+      '@commitlint/read': 18.1.0
+      '@commitlint/types': 18.1.0
       execa: 5.1.1
       lodash.isfunction: 3.0.9
       resolve-from: 5.0.0
       resolve-global: 1.0.0
       yargs: 17.7.2
     transitivePeerDependencies:
-      - '@swc/core'
-      - '@swc/wasm'
+      - typescript
     dev: true
 
   /@commitlint/config-conventional@17.7.0:
@@ -2319,8 +2422,8 @@ packages:
       conventional-changelog-conventionalcommits: 6.1.0
     dev: true
 
-  /@commitlint/config-conventional@18.0.0:
-    resolution: {integrity: sha512-XZW3MDwhMWwr7pf+jO5F18ohBwrJ8mt+1OPhkVyO8bYrY0dKPE5tPpdXlDt+JCFurl4VnUDPmu6xZ4/cKCH7cA==}
+  /@commitlint/config-conventional@18.1.0:
+    resolution: {integrity: sha512-8vvvtV3GOLEMHeKc8PjRL1lfP1Y4B6BG0WroFd9PJeRiOc3nFX1J0wlJenLURzl9Qus6YXVGWf+a/ZlbCKT3AA==}
     engines: {node: '>=v18'}
     dependencies:
       conventional-changelog-conventionalcommits: 7.0.2
@@ -2334,11 +2437,11 @@ packages:
       ajv: 8.12.0
     dev: true
 
-  /@commitlint/config-validator@18.0.0:
-    resolution: {integrity: sha512-PlXy5QZzQeMgQM7jb0odIhxsI6GWcbGgfy+Hkz5ap31KES/oJgtEvgD8pjg0Z9Ri296bT6zK3ts6brS0MAcMgg==}
+  /@commitlint/config-validator@18.1.0:
+    resolution: {integrity: sha512-kbHkIuItXn93o2NmTdwi5Mk1ujyuSIysRE/XHtrcps/27GuUKEIqBJp6TdJ4Sq+ze59RlzYSHMKuDKZbfg9+uQ==}
     engines: {node: '>=v18'}
     dependencies:
-      '@commitlint/types': 18.0.0
+      '@commitlint/types': 18.1.0
       ajv: 8.12.0
     dev: true
 
@@ -2354,11 +2457,11 @@ packages:
       lodash.upperfirst: 4.3.1
     dev: true
 
-  /@commitlint/ensure@18.0.0:
-    resolution: {integrity: sha512-AhzK4ybWGVmO7lwC33dGujS0k2IZDNFiew80M1H2R5Ou7Qkqq7sbuMZoof+yjOQcqltYP4IHLd0YECZoGermvQ==}
+  /@commitlint/ensure@18.1.0:
+    resolution: {integrity: sha512-CkPzJ9UBumIo54VDcpmBlaVX81J++wzEhN3DJH9+6PaLeiIG+gkSx8t7C2gfwG7PaiW4HzQtdQlBN5ab+c4vFQ==}
     engines: {node: '>=v18'}
     dependencies:
-      '@commitlint/types': 18.0.0
+      '@commitlint/types': 18.1.0
       lodash.camelcase: 4.3.0
       lodash.kebabcase: 4.1.1
       lodash.snakecase: 4.1.1
@@ -2371,8 +2474,8 @@ packages:
     engines: {node: '>=v14'}
     dev: true
 
-  /@commitlint/execute-rule@18.0.0:
-    resolution: {integrity: sha512-eNUSaHajb+g3sgZeIrfc6cXNnKIkYN2SXtDVXuiE+hOa055T0bLdZK29gSd945JCztxPVwdOkPLDeLg3NfDubg==}
+  /@commitlint/execute-rule@18.1.0:
+    resolution: {integrity: sha512-w3Vt4K+O7+nSr9/gFSEfZ1exKUOPSlJaRpnk7Y+XowEhvwT7AIk1HNANH+gETf0zGZ020+hfiMW/Ome+SNCUsg==}
     engines: {node: '>=v18'}
     dev: true
 
@@ -2384,11 +2487,11 @@ packages:
       chalk: 4.1.2
     dev: true
 
-  /@commitlint/format@18.0.0:
-    resolution: {integrity: sha512-etvUmOufihecdNm0r5+rCetrO2Yj7fSkJ4f0k8xOzqrrNdID9G/6iK14i/ufISBLSSy0XzsiiV+Rn9TX/cg46Q==}
+  /@commitlint/format@18.1.0:
+    resolution: {integrity: sha512-So/w217tGWMZZb1yXcUFNF2qFLyYtSVqbnGoMbX8a+JKcG4oB11Gc1adS0ssUOMivtiNpaLtkSHFynyiwtJtiQ==}
     engines: {node: '>=v18'}
     dependencies:
-      '@commitlint/types': 18.0.0
+      '@commitlint/types': 18.1.0
       chalk: 4.1.2
     dev: true
 
@@ -2400,11 +2503,11 @@ packages:
       semver: 7.5.4
     dev: true
 
-  /@commitlint/is-ignored@18.0.0:
-    resolution: {integrity: sha512-fAUOF4GlKTmreE5hxhLlVUcXd1aIexxn+edocbMSwOa4dcm8OoHbsLcDB/rhwXIK+jzK4DybCMCx1VaTeRC4SQ==}
+  /@commitlint/is-ignored@18.1.0:
+    resolution: {integrity: sha512-fa1fY93J/Nx2GH6r6WOLdBOiL7x9Uc1N7wcpmaJ1C5Qs6P+rPSUTkofe2IOhSJIJoboHfAH6W0ru4xtK689t0Q==}
     engines: {node: '>=v18'}
     dependencies:
-      '@commitlint/types': 18.0.0
+      '@commitlint/types': 18.1.0
       semver: 7.5.4
     dev: true
 
@@ -2418,14 +2521,14 @@ packages:
       '@commitlint/types': 17.4.4
     dev: true
 
-  /@commitlint/lint@18.0.0:
-    resolution: {integrity: sha512-Vqg6sIPm7nELu/U4lEzKMdLYaELgwSySGZzKc2YjJxdJWyiQo0b1hfCpxXsWGdNBOt0+CM4eBAGoX/Kjq5AYNA==}
+  /@commitlint/lint@18.1.0:
+    resolution: {integrity: sha512-LGB3eI5UYu5LLayibNrRM4bSbowr1z9uyqvp0c7+0KaSJi+xHxy/QEhb6fy4bMAtbXEvygY0sUu9HxSWg41rVQ==}
     engines: {node: '>=v18'}
     dependencies:
-      '@commitlint/is-ignored': 18.0.0
-      '@commitlint/parse': 18.0.0
-      '@commitlint/rules': 18.0.0
-      '@commitlint/types': 18.0.0
+      '@commitlint/is-ignored': 18.1.0
+      '@commitlint/parse': 18.1.0
+      '@commitlint/rules': 18.1.0
+      '@commitlint/types': 18.1.0
     dev: true
 
   /@commitlint/load@17.7.1:
@@ -2451,27 +2554,24 @@ packages:
       - '@swc/wasm'
     dev: true
 
-  /@commitlint/load@18.0.0:
-    resolution: {integrity: sha512-ocvMSkzNZCJ4yV673xjd4Y7sFVG/mg7S6yvL5ioM0OIG2XTbcCdzpmq+BeJcIwsRYU9g/b688yh7RDzGlbai6w==}
+  /@commitlint/load@18.2.0(typescript@5.2.2):
+    resolution: {integrity: sha512-xjX3d3CRlOALwImhOsmLYZh14/+gW/KxsY7+bPKrzmGuFailf9K7ckhB071oYZVJdACnpY4hDYiosFyOC+MpAA==}
     engines: {node: '>=v18'}
     dependencies:
-      '@commitlint/config-validator': 18.0.0
-      '@commitlint/execute-rule': 18.0.0
-      '@commitlint/resolve-extends': 18.0.0
-      '@commitlint/types': 18.0.0
-      '@types/node': 18.18.6
+      '@commitlint/config-validator': 18.1.0
+      '@commitlint/execute-rule': 18.1.0
+      '@commitlint/resolve-extends': 18.1.0
+      '@commitlint/types': 18.1.0
+      '@types/node': 18.18.7
       chalk: 4.1.2
       cosmiconfig: 8.3.6(typescript@5.2.2)
-      cosmiconfig-typescript-loader: 4.4.0(@types/node@18.18.6)(cosmiconfig@8.3.6)(ts-node@10.9.1)(typescript@5.2.2)
+      cosmiconfig-typescript-loader: 5.0.0(@types/node@18.18.7)(cosmiconfig@8.3.6)(typescript@5.2.2)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
       resolve-from: 5.0.0
-      ts-node: 10.9.1(@types/node@18.18.6)(typescript@5.2.2)
-      typescript: 5.2.2
     transitivePeerDependencies:
-      - '@swc/core'
-      - '@swc/wasm'
+      - typescript
     dev: true
 
   /@commitlint/message@17.4.2:
@@ -2479,8 +2579,8 @@ packages:
     engines: {node: '>=v14'}
     dev: true
 
-  /@commitlint/message@18.0.0:
-    resolution: {integrity: sha512-FJmEBn81RMEZrG1E1BxmjNoe/Rz918IeIGJRe5YXxM7IXboFhKS69rHPttNjKwSS038t6GUsRUJrAWqZnA6nCw==}
+  /@commitlint/message@18.1.0:
+    resolution: {integrity: sha512-8dT/jJg73wf3o2Mut/fqEDTpBYSIEVtX5PWyuY/0uviEYeheZAczFo/VMIkeGzhJJn1IrcvAwWsvJ1lVGY2I/w==}
     engines: {node: '>=v18'}
     dev: true
 
@@ -2493,11 +2593,11 @@ packages:
       conventional-commits-parser: 4.0.0
     dev: true
 
-  /@commitlint/parse@18.0.0:
-    resolution: {integrity: sha512-qbZYOCpIZzfFzV35s5ei3JkBG/8KUOyGYluAeaYIcYC9z0uKXEVK6O2F2P/KLvbTkgZ4Q9OOLDrrtoWzPb2pjg==}
+  /@commitlint/parse@18.1.0:
+    resolution: {integrity: sha512-23yv8uBweXWYn8bXk4PjHIsmVA+RkbqPh2h7irupBo2LthVlzMRc4LM6UStasScJ4OlXYYaWOmuP7jcExUF50Q==}
     engines: {node: '>=v18'}
     dependencies:
-      '@commitlint/types': 18.0.0
+      '@commitlint/types': 18.1.0
       conventional-changelog-angular: 6.0.0
       conventional-commits-parser: 5.0.0
     dev: true
@@ -2513,12 +2613,12 @@ packages:
       minimist: 1.2.8
     dev: true
 
-  /@commitlint/read@18.0.0:
-    resolution: {integrity: sha512-VclRvG+ZvHOjYP4rmKPfNwS7eSI5m68D/CPtT2do/D4EBljmLBwqCYVL1I/3y2E6Fbub1GfYoXiRHThd1cVlag==}
+  /@commitlint/read@18.1.0:
+    resolution: {integrity: sha512-rzfzoKUwxmvYO81tI5o1371Nwt3vhcQR36oTNfupPdU1jgSL3nzBIS3B93LcZh3IYKbCIMyMPN5WZ10BXdeoUg==}
     engines: {node: '>=v18'}
     dependencies:
-      '@commitlint/top-level': 18.0.0
-      '@commitlint/types': 18.0.0
+      '@commitlint/top-level': 18.1.0
+      '@commitlint/types': 18.1.0
       fs-extra: 11.1.1
       git-raw-commits: 2.0.11
       minimist: 1.2.8
@@ -2536,12 +2636,12 @@ packages:
       resolve-global: 1.0.0
     dev: true
 
-  /@commitlint/resolve-extends@18.0.0:
-    resolution: {integrity: sha512-MD9+6GSiWvqgdJtfos+1gqz+zmy2vV7TbUVz2ETZzpfECgmUZSZSYzyivivBAQK6feS71KxmMLL8+YFF9+FFRQ==}
+  /@commitlint/resolve-extends@18.1.0:
+    resolution: {integrity: sha512-3mZpzOEJkELt7BbaZp6+bofJyxViyObebagFn0A7IHaLARhPkWTivXdjvZHS12nAORftv88Yhbh8eCPKfSvB7g==}
     engines: {node: '>=v18'}
     dependencies:
-      '@commitlint/config-validator': 18.0.0
-      '@commitlint/types': 18.0.0
+      '@commitlint/config-validator': 18.1.0
+      '@commitlint/types': 18.1.0
       import-fresh: 3.3.0
       lodash.mergewith: 4.6.2
       resolve-from: 5.0.0
@@ -2559,14 +2659,14 @@ packages:
       execa: 5.1.1
     dev: true
 
-  /@commitlint/rules@18.0.0:
-    resolution: {integrity: sha512-J7xjMKC4H1hfZR8fmPPuV35wS8Vgy3YX9xIpfPJhsDnRk2BL/dyZjNEXPdvlbpvkNgkfIWi0A0IDtW1dDoViag==}
+  /@commitlint/rules@18.1.0:
+    resolution: {integrity: sha512-VJNQ674CRv4znI0DbsjZLVnn647J+BTxHGcrDIsYv7c99gW7TUGeIe5kL80G7l8+5+N0se8v9yn+Prr8xEy6Yw==}
     engines: {node: '>=v18'}
     dependencies:
-      '@commitlint/ensure': 18.0.0
-      '@commitlint/message': 18.0.0
-      '@commitlint/to-lines': 18.0.0
-      '@commitlint/types': 18.0.0
+      '@commitlint/ensure': 18.1.0
+      '@commitlint/message': 18.1.0
+      '@commitlint/to-lines': 18.1.0
+      '@commitlint/types': 18.1.0
       execa: 5.1.1
     dev: true
 
@@ -2575,8 +2675,8 @@ packages:
     engines: {node: '>=v14'}
     dev: true
 
-  /@commitlint/to-lines@18.0.0:
-    resolution: {integrity: sha512-HwwBvzXX+3x7XYvBrEKy69S9w/clUEL0gMwkXTtg5awUpvEvzmTz1FBE/5WIiUICyOGdH1NhV1WgKb7UwOnI4A==}
+  /@commitlint/to-lines@18.1.0:
+    resolution: {integrity: sha512-aHIoSDjG0ckxPLYDpODUeSLbEKmF6Jrs1B5JIssbbE9eemBtXtjm9yzdiAx9ZXcwoHlhbTp2fbndDb3YjlvJag==}
     engines: {node: '>=v18'}
     dev: true
 
@@ -2587,8 +2687,8 @@ packages:
       find-up: 5.0.0
     dev: true
 
-  /@commitlint/top-level@18.0.0:
-    resolution: {integrity: sha512-6+jjZhe9pF7ioD9IR2HChteTh95KPXa7GUUV52e0YhEsFArkCnyhzSL72ko1c2Xad0sWNBL0e76mifi20wD/Bg==}
+  /@commitlint/top-level@18.1.0:
+    resolution: {integrity: sha512-1/USHlolIxJlsfLKecSXH+6PDojIvnzaJGPYwF7MtnTuuXCNQ4izkeqDsRuNMe9nU2VIKpK9OT8Q412kGNmgGw==}
     engines: {node: '>=v18'}
     dependencies:
       find-up: 5.0.0
@@ -2601,8 +2701,8 @@ packages:
       chalk: 4.1.2
     dev: true
 
-  /@commitlint/types@18.0.0:
-    resolution: {integrity: sha512-FDzAdSm7kIir0NW0bZLENdrEgf/9Ihs1AAqE9DK9R+dRFby4ookkxPMaz7elZmG+e5rBl7hGrWJzJINqG9cDDg==}
+  /@commitlint/types@18.1.0:
+    resolution: {integrity: sha512-65vGxZmbs+2OVwEItxhp3Ul7X2m2LyLfifYI/NdPwRqblmuES2w2aIRhIjb7cwUIBHHSTT8WXj4ixVHQibmvLQ==}
     engines: {node: '>=v18'}
     dependencies:
       chalk: 4.1.2
@@ -4798,7 +4898,7 @@ packages:
       '@sveltejs/vite-plugin-svelte': 2.4.5(svelte@4.2.0)(vite@4.4.9)
       debug: 4.3.4
       svelte: 4.2.0
-      vite: 4.4.9(@types/node@18.18.6)
+      vite: 4.4.9(@types/node@18.18.7)
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -4814,7 +4914,7 @@ packages:
       '@sveltejs/vite-plugin-svelte': 2.4.5(svelte@4.2.1)(vite@4.4.9)
       debug: 4.3.4
       svelte: 4.2.1
-      vite: 4.4.9(@types/node@18.18.6)
+      vite: 4.4.9(@types/node@18.18.7)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -4830,7 +4930,7 @@ packages:
       '@sveltejs/vite-plugin-svelte': 2.4.6(svelte@4.2.1)(vite@4.4.11)
       debug: 4.3.4
       svelte: 4.2.1
-      vite: 4.4.11(@types/node@18.18.6)
+      vite: 4.4.11(@types/node@18.18.7)
     transitivePeerDependencies:
       - supports-color
 
@@ -4845,7 +4945,7 @@ packages:
       '@sveltejs/vite-plugin-svelte': 2.4.6(svelte@4.2.2)(vite@4.5.0)
       debug: 4.3.4
       svelte: 4.2.2
-      vite: 4.5.0(@types/node@18.18.6)(sass@1.69.4)
+      vite: 4.5.0(@types/node@18.18.7)(sass@1.69.4)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -4864,7 +4964,7 @@ packages:
       magic-string: 0.30.3
       svelte: 4.2.0
       svelte-hmr: 0.15.3(svelte@4.2.0)
-      vite: 4.4.9(@types/node@18.18.6)
+      vite: 4.4.9(@types/node@18.18.7)
       vitefu: 0.2.4(vite@4.4.9)
     transitivePeerDependencies:
       - supports-color
@@ -4884,7 +4984,7 @@ packages:
       magic-string: 0.30.3
       svelte: 4.2.1
       svelte-hmr: 0.15.3(svelte@4.2.1)
-      vite: 4.4.9(@types/node@18.18.6)
+      vite: 4.4.9(@types/node@18.18.7)
       vitefu: 0.2.4(vite@4.4.9)
     transitivePeerDependencies:
       - supports-color
@@ -4904,7 +5004,7 @@ packages:
       magic-string: 0.30.5
       svelte: 4.2.1
       svelte-hmr: 0.15.3(svelte@4.2.1)
-      vite: 4.4.11(@types/node@18.18.6)
+      vite: 4.4.11(@types/node@18.18.7)
       vitefu: 0.2.5(vite@4.4.11)
     transitivePeerDependencies:
       - supports-color
@@ -4923,7 +5023,7 @@ packages:
       magic-string: 0.30.5
       svelte: 4.2.2
       svelte-hmr: 0.15.3(svelte@4.2.2)
-      vite: 4.5.0(@types/node@18.18.6)(sass@1.69.4)
+      vite: 4.5.0(@types/node@18.18.7)(sass@1.69.4)
       vitefu: 0.2.5(vite@4.5.0)
     transitivePeerDependencies:
       - supports-color
@@ -5121,8 +5221,10 @@ packages:
     dependencies:
       '@types/unist': 2.0.8
 
-  /@types/node@18.18.6:
-    resolution: {integrity: sha512-wf3Vz+jCmOQ2HV1YUJuCWdL64adYxumkrxtc+H1VUQlnQI04+5HtH+qZCOE21lBE7gIrt+CwX2Wv8Acrw5Ak6w==}
+  /@types/node@18.18.7:
+    resolution: {integrity: sha512-bw+lEsxis6eqJYW8Ql6+yTqkE6RuFtsQPSe5JxXbqYRFQEER5aJA9a5UH9igqDWm3X4iLHIKOHlnAXLM4mi7uQ==}
+    dependencies:
+      undici-types: 5.26.5
 
   /@types/node@20.4.7:
     resolution: {integrity: sha512-bUBrPjEry2QUTsnuEjzjbS7voGWCc30W0qzgMf90GPeDGFRakvrz47ju+oqDAKCXLUCe39u57/ORMl/O/04/9g==}
@@ -5334,7 +5436,7 @@ packages:
       '@babel/plugin-transform-react-jsx-self': 7.22.5(@babel/core@7.23.0)
       '@babel/plugin-transform-react-jsx-source': 7.22.5(@babel/core@7.23.0)
       react-refresh: 0.14.0
-      vite: 4.4.9(@types/node@18.18.6)
+      vite: 4.4.9(@types/node@18.18.7)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -5350,7 +5452,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.22.5(@babel/core@7.23.2)
       '@types/babel__core': 7.20.3
       react-refresh: 0.14.0
-      vite: 4.5.0(@types/node@18.18.6)(sass@1.69.4)
+      vite: 4.5.0(@types/node@18.18.7)(sass@1.69.4)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -6112,7 +6214,7 @@ packages:
       svgo: 2.8.0
     dev: true
 
-  /astro@3.0.10(@types/node@18.18.6):
+  /astro@3.0.10(@types/node@18.18.7):
     resolution: {integrity: sha512-LxLlFksTUn3B3Xi3KBirRBg1QI8t2lvOijfODor1OSpAnlEZUzToyLxbdzR2dBVLF5reAoi7LJNKsQouPnMXlg==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
@@ -6167,7 +6269,7 @@ packages:
       undici: 5.23.0
       unist-util-visit: 4.1.2
       vfile: 5.3.7
-      vite: 4.5.0(@types/node@18.18.6)
+      vite: 4.5.0(@types/node@18.18.7)
       vitefu: 0.2.4(vite@4.5.0)
       which-pm: 2.1.1
       yargs-parser: 21.1.1
@@ -6185,7 +6287,7 @@ packages:
       - terser
     dev: false
 
-  /astro@3.0.12(@types/node@18.18.6):
+  /astro@3.0.12(@types/node@18.18.7):
     resolution: {integrity: sha512-nDLI9OGEjYIX90a1Md1orqyurPxqXTWTy7Sm3ZsWl5dpzSjcUXo3VB/GTvNjAMS9sE40BOxhay7/hnnQuI8p7A==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
@@ -6240,7 +6342,7 @@ packages:
       undici: 5.24.0
       unist-util-visit: 4.1.2
       vfile: 5.3.7
-      vite: 4.5.0(@types/node@18.18.6)
+      vite: 4.5.0(@types/node@18.18.7)
       vitefu: 0.2.4(vite@4.5.0)
       which-pm: 2.1.1
       yargs-parser: 21.1.1
@@ -6257,7 +6359,7 @@ packages:
       - supports-color
       - terser
 
-  /astro@3.0.13(@types/node@18.18.6):
+  /astro@3.0.13(@types/node@18.18.7):
     resolution: {integrity: sha512-oZcDcoLsWG7SeltkJ33T/L5tcrsDDe5FLW9FxG1Z1NIwqOE321URLJVuse1WADGwBpMIVkWNibqv4wK2rxEnjw==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
@@ -6312,7 +6414,7 @@ packages:
       undici: 5.24.0
       unist-util-visit: 4.1.2
       vfile: 5.3.7
-      vite: 4.5.0(@types/node@18.18.6)
+      vite: 4.5.0(@types/node@18.18.7)
       vitefu: 0.2.4(vite@4.5.0)
       which-pm: 2.1.1
       yargs-parser: 21.1.1
@@ -6403,7 +6505,7 @@ packages:
       - supports-color
       - terser
 
-  /astro@3.1.3(@types/node@18.18.6):
+  /astro@3.1.3(@types/node@18.18.7):
     resolution: {integrity: sha512-l76kWE0MJKzUZE8TzhIWafvJ+3nYwFfSiG9c6edNLZ3ZtVsuuuatATmg+gaAXY1zN6bh3WSwJgmAWTsWlZNFtw==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
@@ -6459,7 +6561,7 @@ packages:
       undici: 5.25.2
       unist-util-visit: 4.1.2
       vfile: 5.3.7
-      vite: 4.5.0(@types/node@18.18.6)
+      vite: 4.5.0(@types/node@18.18.7)
       vitefu: 0.2.4(vite@4.5.0)
       which-pm: 2.1.1
       yargs-parser: 21.1.1
@@ -6477,7 +6579,7 @@ packages:
       - terser
     dev: true
 
-  /astro@3.1.4(@types/node@18.18.6):
+  /astro@3.1.4(@types/node@18.18.7):
     resolution: {integrity: sha512-MKGJXHkkYK4QpqYHydPu+eeLBGU3cHx9Xdrtk6RFvu3dVkxuJsYm6L+lgIeH0hrTF9qlaDih/KbNnTKrCXdidw==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
@@ -6533,7 +6635,7 @@ packages:
       undici: 5.25.2
       unist-util-visit: 4.1.2
       vfile: 5.3.7
-      vite: 4.5.0(@types/node@18.18.6)
+      vite: 4.5.0(@types/node@18.18.7)
       vitefu: 0.2.4(vite@4.5.0)
       which-pm: 2.1.1
       yargs-parser: 21.1.1
@@ -6551,7 +6653,7 @@ packages:
       - terser
     dev: true
 
-  /astro@3.2.0(@types/node@18.18.6):
+  /astro@3.2.0(@types/node@18.18.7):
     resolution: {integrity: sha512-sDQnSFV46ZzNkVU6co5f8wilZFmGiWsqnIVoMhd5/XPU76iZdA40WqFyBOhGaji7hGuqbcjN8MGobMg53lsoUg==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
@@ -6607,7 +6709,7 @@ packages:
       undici: 5.25.2
       unist-util-visit: 4.1.2
       vfile: 5.3.7
-      vite: 4.5.0(@types/node@18.18.6)
+      vite: 4.5.0(@types/node@18.18.7)
       vitefu: 0.2.4(vite@4.5.0)
       which-pm: 2.1.1
       yargs-parser: 21.1.1
@@ -6625,7 +6727,7 @@ packages:
       - terser
     dev: true
 
-  /astro@3.2.2(@types/node@18.18.6):
+  /astro@3.2.2(@types/node@18.18.7):
     resolution: {integrity: sha512-vLOOGyD2g1HRkCQAFHmHUrVAbMI5sgUqKignBMtXNantgEq1P17sL2cvH0Yy2ibNN9DHZ/4TknXmwHAig8PJNg==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
@@ -6681,7 +6783,7 @@ packages:
       undici: 5.25.2
       unist-util-visit: 4.1.2
       vfile: 5.3.7
-      vite: 4.5.0(@types/node@18.18.6)
+      vite: 4.5.0(@types/node@18.18.7)
       vitefu: 0.2.4(vite@4.5.0)
       which-pm: 2.1.1
       yargs-parser: 21.1.1
@@ -6699,7 +6801,7 @@ packages:
       - terser
     dev: false
 
-  /astro@3.2.3(@types/node@18.18.6):
+  /astro@3.2.3(@types/node@18.18.7):
     resolution: {integrity: sha512-1epnxQhTbfzgdmLP1yu51E8zjIOKYxZyA8hMTD4S2E+F5gMp/D81H4hekPbbq89GDxNJiHDRNZDHtS5vrU5E5w==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
@@ -6754,7 +6856,7 @@ packages:
       tsconfig-resolver: 3.0.1
       unist-util-visit: 4.1.2
       vfile: 5.3.7
-      vite: 4.5.0(@types/node@18.18.6)
+      vite: 4.5.0(@types/node@18.18.7)
       vitefu: 0.2.4(vite@4.5.0)
       which-pm: 2.1.1
       yargs-parser: 21.1.1
@@ -6771,7 +6873,7 @@ packages:
       - supports-color
       - terser
 
-  /astro@3.2.4(@types/node@18.18.6):
+  /astro@3.2.4(@types/node@18.18.7):
     resolution: {integrity: sha512-e95Yz6tYG6Q2SEOCzujqCHq9/HOB2z085KP1K36kGuGtu0qaa3mmnz3R9FpKM/W5SbmrNgUv4QaP207EUkMp5Q==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
@@ -6826,7 +6928,7 @@ packages:
       tsconfig-resolver: 3.0.1
       unist-util-visit: 4.1.2
       vfile: 5.3.7
-      vite: 4.5.0(@types/node@18.18.6)
+      vite: 4.5.0(@types/node@18.18.7)
       vitefu: 0.2.4(vite@4.5.0)
       which-pm: 2.1.1
       yargs-parser: 21.1.1
@@ -6844,7 +6946,7 @@ packages:
       - terser
     dev: true
 
-  /astro@3.3.1(@types/node@18.18.6)(typescript@5.2.2):
+  /astro@3.3.1(@types/node@18.18.7)(typescript@5.2.2):
     resolution: {integrity: sha512-PzXJN8IIjQrxf+D39utnBtxscdqizwslOKoXXGtVFCA66IPh37HzGts0VLtB/kSf8ouTojk5JBQWbevDiW53VQ==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
@@ -6900,7 +7002,7 @@ packages:
       tsconfck: 3.0.0(typescript@5.2.2)
       unist-util-visit: 4.1.2
       vfile: 5.3.7
-      vite: 4.5.0(@types/node@18.18.6)
+      vite: 4.5.0(@types/node@18.18.7)
       vitefu: 0.2.5(vite@4.5.0)
       which-pm: 2.1.1
       yargs-parser: 21.1.1
@@ -6919,7 +7021,7 @@ packages:
       - typescript
     dev: true
 
-  /astro@3.3.2(@types/node@18.18.6)(sass@1.69.4)(typescript@5.2.2):
+  /astro@3.3.2(@types/node@18.18.7)(sass@1.69.4)(typescript@5.2.2):
     resolution: {integrity: sha512-uyimGY0p1gYXKAZe3/RCfbqNbuwpEvPkTKF5TE63Glb9ZgeLUBXu+ZlsG4LIMxCQ40p5F0D5+zuNJdH+om2PQQ==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
@@ -6975,7 +7077,7 @@ packages:
       tsconfck: 3.0.0(typescript@5.2.2)
       unist-util-visit: 4.1.2
       vfile: 5.3.7
-      vite: 4.5.0(@types/node@18.18.6)(sass@1.69.4)
+      vite: 4.5.0(@types/node@18.18.7)(sass@1.69.4)
       vitefu: 0.2.5(vite@4.5.0)
       which-pm: 2.1.1
       yargs-parser: 21.1.1
@@ -6994,7 +7096,7 @@ packages:
       - typescript
     dev: true
 
-  /astro@3.3.2(@types/node@18.18.6)(typescript@5.2.2):
+  /astro@3.3.2(@types/node@18.18.7)(typescript@5.2.2):
     resolution: {integrity: sha512-uyimGY0p1gYXKAZe3/RCfbqNbuwpEvPkTKF5TE63Glb9ZgeLUBXu+ZlsG4LIMxCQ40p5F0D5+zuNJdH+om2PQQ==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
@@ -7050,7 +7152,7 @@ packages:
       tsconfck: 3.0.0(typescript@5.2.2)
       unist-util-visit: 4.1.2
       vfile: 5.3.7
-      vite: 4.5.0(@types/node@18.18.6)
+      vite: 4.5.0(@types/node@18.18.7)
       vitefu: 0.2.5(vite@4.5.0)
       which-pm: 2.1.1
       yargs-parser: 21.1.1
@@ -7068,7 +7170,7 @@ packages:
       - terser
       - typescript
 
-  /astro@3.3.3(@types/node@18.18.6)(typescript@5.2.2):
+  /astro@3.3.3(@types/node@18.18.7)(typescript@5.2.2):
     resolution: {integrity: sha512-FZkv5nJfa2KADzwo8m6fytWzzhO3Uw/EOvxmBT2E1OW/dWUgIKbZd59TY3816gZl3le5Ct5amSAkaxcQghbUZA==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
@@ -7124,7 +7226,7 @@ packages:
       tsconfck: 3.0.0(typescript@5.2.2)
       unist-util-visit: 4.1.2
       vfile: 5.3.7
-      vite: 4.5.0(@types/node@18.18.6)
+      vite: 4.5.0(@types/node@18.18.7)
       vitefu: 0.2.5(vite@4.5.0)
       which-pm: 2.1.1
       yargs-parser: 21.1.1
@@ -7143,7 +7245,7 @@ packages:
       - typescript
     dev: true
 
-  /astro@3.3.4(@types/node@18.18.6)(typescript@5.2.2):
+  /astro@3.3.4(@types/node@18.18.7)(typescript@5.2.2):
     resolution: {integrity: sha512-1yy1p8/QpACpToK2bYFxbbPug7+HeUW+IGvkIss2KQDv4pwDk19UbfQrS8aMHtW3nvR7PpBYL/H/Dprcqxy40A==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
@@ -7199,7 +7301,7 @@ packages:
       tsconfck: 3.0.0(typescript@5.2.2)
       unist-util-visit: 4.1.2
       vfile: 5.3.7
-      vite: 4.5.0(@types/node@18.18.6)
+      vite: 4.5.0(@types/node@18.18.7)
       vitefu: 0.2.5(vite@4.5.0)
       which-pm: 2.1.1
       yargs-parser: 21.1.1
@@ -8373,16 +8475,15 @@ packages:
       - '@swc/wasm'
     dev: true
 
-  /commitlint@18.0.0:
-    resolution: {integrity: sha512-5fw/JvGockBSOllMIjt4xl3BWctZA/0lu9XrdCOX76viC7X/hqBz08OkFXrFk0/GdgyEXy5hSwbE+KtIvmYOHw==}
+  /commitlint@18.2.0(typescript@5.2.2):
+    resolution: {integrity: sha512-abrXPEhNjw1FUCn+oT1HDG1Z4g8mlbzrpHrwO8ECj6Bwtkmoa8MaKuvwOltv6IRkj/ybjEBcBDmRe8r9gVGRJQ==}
     engines: {node: '>=v18'}
     hasBin: true
     dependencies:
-      '@commitlint/cli': 18.0.0
-      '@commitlint/types': 18.0.0
+      '@commitlint/cli': 18.2.0(typescript@5.2.2)
+      '@commitlint/types': 18.1.0
     transitivePeerDependencies:
-      - '@swc/core'
-      - '@swc/wasm'
+      - typescript
     dev: true
 
   /common-ancestor-path@1.0.1:
@@ -8535,21 +8636,6 @@ packages:
     resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
     dev: true
 
-  /cosmiconfig-typescript-loader@4.4.0(@types/node@18.18.6)(cosmiconfig@8.3.6)(ts-node@10.9.1)(typescript@5.2.2):
-    resolution: {integrity: sha512-BabizFdC3wBHhbI4kJh0VkQP9GkBfoHPydD0COMce1nJ1kJAB3F2TmJ/I7diULBKtmEWSwEbuN/KDtgnmUUVmw==}
-    engines: {node: '>=v14.21.3'}
-    peerDependencies:
-      '@types/node': '*'
-      cosmiconfig: '>=7'
-      ts-node: '>=10'
-      typescript: '>=4'
-    dependencies:
-      '@types/node': 18.18.6
-      cosmiconfig: 8.3.6(typescript@5.2.2)
-      ts-node: 10.9.1(@types/node@18.18.6)(typescript@5.2.2)
-      typescript: 5.2.2
-    dev: true
-
   /cosmiconfig-typescript-loader@4.4.0(@types/node@20.4.7)(cosmiconfig@8.3.6)(ts-node@10.9.1)(typescript@5.2.2):
     resolution: {integrity: sha512-BabizFdC3wBHhbI4kJh0VkQP9GkBfoHPydD0COMce1nJ1kJAB3F2TmJ/I7diULBKtmEWSwEbuN/KDtgnmUUVmw==}
     engines: {node: '>=v14.21.3'}
@@ -8562,6 +8648,20 @@ packages:
       '@types/node': 20.4.7
       cosmiconfig: 8.3.6(typescript@5.2.2)
       ts-node: 10.9.1(@types/node@20.4.7)(typescript@5.2.2)
+      typescript: 5.2.2
+    dev: true
+
+  /cosmiconfig-typescript-loader@5.0.0(@types/node@18.18.7)(cosmiconfig@8.3.6)(typescript@5.2.2):
+    resolution: {integrity: sha512-+8cK7jRAReYkMwMiG+bxhcNKiHJDM6bR9FD/nGBXOWdMLuYawjF5cGrtLilJ+LGd3ZjCXnJjR5DkfWPoIVlqJA==}
+    engines: {node: '>=v16'}
+    peerDependencies:
+      '@types/node': '*'
+      cosmiconfig: '>=8.2'
+      typescript: '>=4'
+    dependencies:
+      '@types/node': 18.18.7
+      cosmiconfig: 8.3.6(typescript@5.2.2)
+      jiti: 1.20.0
       typescript: 5.2.2
     dev: true
 
@@ -11775,6 +11875,11 @@ packages:
     resolution: {integrity: sha512-JVAfqNPTvNq3sB/VHQJAFxN/sPgKnsKrCwyRt15zwNCdrMMJDdcEOdubuy+DuJYYdm0ox1J4uzEuYKkN+9yhVg==}
     dev: true
 
+  /jiti@1.20.0:
+    resolution: {integrity: sha512-3TV69ZbrvV6U5DfQimop50jE9Dl6J8O1ja1dvBbMba/sZ3YBEQqJ2VZRoQPVnhlzjNtU1vaXRZVrVjU4qtm8yA==}
+    hasBin: true
+    dev: true
+
   /js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
 
@@ -14862,6 +14967,14 @@ packages:
       prettier: 3.0.3
       sass-formatter: 0.7.8
 
+  /prettier-plugin-astro@0.12.1:
+    resolution: {integrity: sha512-1mlNIU/cV+25oB4z5wXzOz2fSDcawG3MsVUwgw2i8VSy7voLSENMSpR1juu3U5MAVUo3owuyax11QuylbpuqOQ==}
+    engines: {node: ^14.15.0 || >=16.0.0}
+    dependencies:
+      '@astrojs/compiler': 1.8.2
+      prettier: 3.0.3
+      sass-formatter: 0.7.8
+
   /prettier-plugin-svelte@3.0.3(prettier@3.0.3)(svelte@4.2.1):
     resolution: {integrity: sha512-dLhieh4obJEK1hnZ6koxF+tMUrZbV5YGvRpf2+OADyanjya5j0z1Llo8iGwiHmFWZVG/hLEw/AJD5chXd9r3XA==}
     peerDependencies:
@@ -17259,37 +17372,6 @@ packages:
   /trough@2.1.0:
     resolution: {integrity: sha512-AqTiAOLcj85xS7vQ8QkAV41hPDIJ71XJB4RCUrzo/1GM2CQwhkJGaf9Hgr7BOugMRpgGUrqRg/DrBDl4H40+8g==}
 
-  /ts-node@10.9.1(@types/node@18.18.6)(typescript@5.2.2):
-    resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
-    hasBin: true
-    peerDependencies:
-      '@swc/core': '>=1.2.50'
-      '@swc/wasm': '>=1.2.50'
-      '@types/node': '*'
-      typescript: '>=2.7'
-    peerDependenciesMeta:
-      '@swc/core':
-        optional: true
-      '@swc/wasm':
-        optional: true
-    dependencies:
-      '@cspotcode/source-map-support': 0.8.1
-      '@tsconfig/node10': 1.0.9
-      '@tsconfig/node12': 1.0.11
-      '@tsconfig/node14': 1.0.3
-      '@tsconfig/node16': 1.0.4
-      '@types/node': 18.18.6
-      acorn: 8.10.0
-      acorn-walk: 8.2.0
-      arg: 4.1.3
-      create-require: 1.1.1
-      diff: 4.0.2
-      make-error: 1.3.6
-      typescript: 5.2.2
-      v8-compile-cache-lib: 3.0.1
-      yn: 3.1.1
-    dev: true
-
   /ts-node@10.9.1(@types/node@20.4.7)(typescript@5.2.2):
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
@@ -17460,6 +17542,9 @@ packages:
   /undici-types@5.25.3:
     resolution: {integrity: sha512-Ga1jfYwRn7+cP9v8auvEXN1rX3sWqlayd4HP7OKk4mZWylEmu3KzXDUGrQUN6Ol7qo1gPvB2e5gX6udnyEPgdA==}
     dev: true
+
+  /undici-types@5.26.5:
+    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
 
   /undici@5.20.0:
     resolution: {integrity: sha512-J3j60dYzuo6Eevbawwp1sdg16k5Tf768bxYK4TUJRH7cBM4kFCbf3mOnM/0E3vQYXvpxITbbWmBafaDbxLDz3g==}
@@ -17975,7 +18060,7 @@ packages:
       - terser
     dev: true
 
-  /vite-node@0.34.6(@types/node@18.18.6):
+  /vite-node@0.34.6(@types/node@18.18.7):
     resolution: {integrity: sha512-nlBMJ9x6n7/Amaz6F3zJ97EBwR2FkzhBRxF5e+jE6LA3yi6Wtc2lyTij1OnDMIr34v5g/tVQtsVAzhT0jc5ygA==}
     engines: {node: '>=v14.18.0'}
     hasBin: true
@@ -17985,7 +18070,7 @@ packages:
       mlly: 1.4.2
       pathe: 1.1.1
       picocolors: 1.0.0
-      vite: 4.5.0(@types/node@18.18.6)
+      vite: 4.5.0(@types/node@18.18.7)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -17997,7 +18082,7 @@ packages:
       - terser
     dev: true
 
-  /vite@4.4.11(@types/node@18.18.6):
+  /vite@4.4.11(@types/node@18.18.7):
     resolution: {integrity: sha512-ksNZJlkcU9b0lBwAGZGGaZHCMqHsc8OpgtoYhsQ4/I2v5cnpmmmqe5pM4nv/4Hn6G/2GhTdj0DhZh2e+Er1q5A==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -18025,14 +18110,14 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 18.18.6
+      '@types/node': 18.18.7
       esbuild: 0.18.20
       postcss: 8.4.31
       rollup: 3.29.4
     optionalDependencies:
       fsevents: 2.3.3
 
-  /vite@4.4.9(@types/node@18.18.6):
+  /vite@4.4.9(@types/node@18.18.7):
     resolution: {integrity: sha512-2mbUn2LlUmNASWwSCNSJ/EG2HuSRTnVNaydp6vMCm5VIqJsjMfbIWtbH2kDuwUVW5mMUKKZvGPX/rqeqVvv1XA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -18060,7 +18145,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 18.18.6
+      '@types/node': 18.18.7
       esbuild: 0.18.20
       postcss: 8.4.29
       rollup: 3.29.1
@@ -18102,7 +18187,7 @@ packages:
     optionalDependencies:
       fsevents: 2.3.3
 
-  /vite@4.5.0(@types/node@18.18.6):
+  /vite@4.5.0(@types/node@18.18.7):
     resolution: {integrity: sha512-ulr8rNLA6rkyFAlVWw2q5YJ91v098AFQ2R0PRFwPzREXOUJQPtFUG0t+/ZikhaOCDqFoDhN6/v8Sq0o4araFAw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -18130,14 +18215,14 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 18.18.6
+      '@types/node': 18.18.7
       esbuild: 0.18.20
       postcss: 8.4.31
       rollup: 3.29.4
     optionalDependencies:
       fsevents: 2.3.3
 
-  /vite@4.5.0(@types/node@18.18.6)(sass@1.69.4):
+  /vite@4.5.0(@types/node@18.18.7)(sass@1.69.4):
     resolution: {integrity: sha512-ulr8rNLA6rkyFAlVWw2q5YJ91v098AFQ2R0PRFwPzREXOUJQPtFUG0t+/ZikhaOCDqFoDhN6/v8Sq0o4araFAw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -18165,7 +18250,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 18.18.6
+      '@types/node': 18.18.7
       esbuild: 0.18.20
       postcss: 8.4.31
       rollup: 3.29.4
@@ -18217,7 +18302,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 4.4.9(@types/node@18.18.6)
+      vite: 4.4.9(@types/node@18.18.7)
 
   /vitefu@0.2.4(vite@4.5.0):
     resolution: {integrity: sha512-fanAXjSaf9xXtOOeno8wZXIhgia+CZury481LsDaV++lSvcU2R9Ch2bPh3PYFyoHW+w9LqAeYRISVQjUIew14g==}
@@ -18227,7 +18312,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 4.5.0(@types/node@18.18.6)
+      vite: 4.5.0(@types/node@18.18.7)
 
   /vitefu@0.2.5(vite@4.4.11):
     resolution: {integrity: sha512-SgHtMLoqaeeGnd2evZ849ZbACbnwQCIwRH57t18FxcXoZop0uQu0uzlIhJBlF/eWVzuce0sHeqPcDo+evVcg8Q==}
@@ -18237,7 +18322,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 4.4.11(@types/node@18.18.6)
+      vite: 4.4.11(@types/node@18.18.7)
 
   /vitefu@0.2.5(vite@4.5.0):
     resolution: {integrity: sha512-SgHtMLoqaeeGnd2evZ849ZbACbnwQCIwRH57t18FxcXoZop0uQu0uzlIhJBlF/eWVzuce0sHeqPcDo+evVcg8Q==}
@@ -18247,7 +18332,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 4.5.0(@types/node@18.18.6)
+      vite: 4.5.0(@types/node@18.18.7)
 
   /volar-service-css@0.0.13(@volar/language-service@1.10.1):
     resolution: {integrity: sha512-WAuo7oDYgTQ1cr45EqTGoPGtClj0f5PZDQARgQveXKu0CQgyXn8Bs7c4EjDR0fNLhiG3moBEs2uSUGxjSKghxw==}
