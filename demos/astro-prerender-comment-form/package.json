@@ -15,20 +15,20 @@
 		"format": "prettier --write --plugin=prettier-plugin-astro ."
 	},
 	"dependencies": {
-		"@astrojs/cloudflare": "^7.0.2",
-		"@astrojs/svelte": "^4.0.1",
-		"astro": "^3.0.10",
-		"stylelint": "^15.10.3",
+		"@astrojs/cloudflare": "^7.6.3",
+		"@astrojs/svelte": "^4.0.3",
+		"astro": "^3.4.0",
+		"stylelint": "^15.11.0",
 		"stylelint-config-recommended": "^13.0.0",
 		"stylelint-config-standard": "^34.0.0",
-		"svelte": "^4.2.0"
+		"svelte": "^4.2.2"
 	},
 	"devDependencies": {
-		"@astrojs/check": "^0.2.0",
-		"postcss": "^8.4.29",
+		"@astrojs/check": "^0.3.0",
+		"postcss": "^8.4.31",
 		"postcss-html": "^1.5.0",
 		"typescript": "^5.2.2",
-		"vite": "^4.4.9",
+		"vite": "^4.5.0",
 		"wrangler": "^2.20.1"
 	}
 }

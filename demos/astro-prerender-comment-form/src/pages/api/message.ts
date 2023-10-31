@@ -3,7 +3,7 @@ import type { APIRoute } from 'astro';
 const siteUrl = import.meta.env.PUBLIC_SITE_URL;
 const turnstileSecret = import.meta.env.TURNSTILE_SECRETKEY;
 
-export const post: APIRoute = async function post({ redirect, request }) {
+export const POST: APIRoute = async function POST({ redirect, request }) {
 	try {
 		const form = await request.formData();
 		const name = form.get('name');
