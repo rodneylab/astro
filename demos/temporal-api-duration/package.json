@@ -14,16 +14,18 @@
 		"check": "astro check --fail-on-warnings"
 	},
 	"devDependencies": {
+		"@astrojs/check": "^0.3.1",
 		"@js-temporal/polyfill": "^0.4.4",
-		"astro": "3.1.4",
-		"postcss": "^8.4.30",
+		"astro": "3.4.4",
+		"postcss": "^8.4.31",
 		"postcss-html": "^1.5.0",
 		"prettier": "^3.0.3",
-		"prettier-plugin-astro": "^0.12.0",
-		"stylelint": "^15.10.3",
+		"prettier-plugin-astro": "^0.12.1",
+		"stylelint": "^15.11.0",
 		"stylelint-config-recommended": "^13.0.0",
 		"stylelint-config-standard": "^34.0.0",
-		"subfont": "^7.1.1"
+		"subfont": "^7.1.1",
+		"typescript": "^5.2.2"
 	},
 	"repository": {
 		"type": "git",
@@ -31,9 +33,5 @@
 	},
 	"bugs": {
 		"url": "https://github.com/rodneylab/astro/issues"
-	},
-	"dependencies": {
-		"@astrojs/check": "^0.2.0",
-		"typescript": "^5.2.2"
 	}
 }
