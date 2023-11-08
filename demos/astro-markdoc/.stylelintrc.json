@@ -1,0 +1,29 @@
+{
+	"extends": "stylelint-config-recommended",
+	"plugins": ["stylelint-gamut"],
+	"rules": {
+		"color-named": "never",
+		"gamut/color-no-out-gamut-range": true,
+		"function-disallowed-list": ["rgba", "hsla", "rgb", "hsl"],
+		"color-function-notation": "modern",
+		"color-no-hex": true,
+		"font-family-name-quotes": "always-where-required",
+		"font-weight-notation": "named-where-possible",
+		"function-url-no-scheme-relative": true,
+		"function-url-quotes": "always",
+		"value-keyword-case": "lower",
+		"unit-disallowed-list": [],
+		"no-descending-specificity": true,
+		"no-duplicate-selectors": true,
+		"font-family-no-missing-generic-family-keyword": null,
+		"property-no-unknown": [
+			true,
+			{
+				"ignoreProperties": ["/^lost-/"]
+			}
+		]
+	},
+	"ignoreFiles": ["node_modules/*"],
+	"customSyntax": "postcss-html",
+	"defaultSeverity": "error"
+}

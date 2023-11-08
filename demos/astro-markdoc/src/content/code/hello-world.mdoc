@@ -1,0 +1,55 @@
+---
+{
+  'title': 'Markdoc Introduction with 🚀 Astro and starry-night Code Highlighting',
+  'description': 'Astro Markdoc 📚 trying Stripe’s customizable, readable, declarative Markdown extension designed for 🖋️ creating documentation content.',
+  'date': '2023-11-02',
+}
+---
+
+# {% $frontmatter.title %}
+
+![Vincent Van Gogh’s Starry Night](/starry-night.jpg)
+
+## Markdoc Features
+
+Some principal Markdoc features are:
+
+- syntax for nodes is similar to Markdown so nothing to learn for creating headings, bold or italic text, links, images or lists;
+- templates accept tags, which you can map to Astro components when you need more control; and
+- front matter metadata is accessible within your Markdoc templates as variables, this might be a document title.
+
+Unlike Markdown, Markdoc **does not accept HTML** within template files by default. The Astro configuration _does_ let you override this, though.
+
+## 🖥️ Fenced Code Block Examples
+
+### CSS
+
+```css
+.box {
+	border: solid 5px red;
+}
+```
+
+### Elixir
+
+```elixir
+"hello" <> " world"
+```
+
+### Javascript
+
+```javascript
+console_log('Hello world!');
+```
+
+### Python
+
+```python
+print('Hello world!')
+```
+
+### Rust
+
+```rust
+println!("Hello world!");
+```

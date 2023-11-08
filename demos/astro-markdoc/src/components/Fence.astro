@@ -1,0 +1,38 @@
+---
+import { common, createStarryNight } from '@wooorm/starry-night';
+import sourceElixir from '@wooorm/starry-night/source.elixir';
+import textElixir from '@wooorm/starry-night/text.elixir';
+import { toHtml } from 'hast-util-to-html';
+
+import '@wooorm/starry-night/style/both';
+
+// Fine for highlighting code in more common languages,
+// const starryNight = await createStarryNight(common);
+
+// Alternatively, import any less common languages (as above) to use them thus:
+const starryNight = await createStarryNight([...common, sourceElixir, textElixir]);
+
+interface Props {
+	content: string;
+	language: string;
+}
+
+const { content, language } = Astro.props as Props;
+const scope = starryNight.flagToScope(language);
+const codeHtml = toHtml(starryNight.highlight(content.trim(), scope!));
+---
+
+<pre>
+<code set:html={codeHtml} />
+</pre>
+
+<style>
+	pre {
+		background-color: var(--colour-surface-alt);
+		padding-block: var(--spacing-4);
+		padding-inline: var(--spacing-4);
+		overflow: auto;
+		font-size: 85%;
+		border-radius: var(--spacing-2);
+	}
+</style>

@@ -1,0 +1,30 @@
+---
+import '~styles/custom-properties.css';
+import '~styles/fonts.css';
+import '~styles/global.css';
+
+import '~styles/font-fallbacks.css';
+
+const { description, title, url } = Astro.props;
+---
+
+<html lang="en-GB">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" href="/favicon.ico" sizes="any" />
+		<link rel="icon" href="/icon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="manifest" href="/manifest.webmanifest" />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<meta
+			name="robots"
+			content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+		/>
+		<link rel="canonical" href={url} />
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>

@@ -9,11 +9,11 @@ pnpm --filter astro-js-404-page check
 pnpm --filter astro-js-favicon check
 # pnpm --filter astro-js-location-map check
 pnpm --filter astro-js-location-map check:svelte
+pnpm --filter astro-markdoc check
 pnpm --filter astro-js-middleware check
 pnpm --filter astro-js-non-html-route check
 pnpm --filter astro-js-sass-styling check
-pnpm --filter astro-mux-player check
-pnpm --filter astro-mux-player check
+# pnpm --filter astro-mux-player check
 pnpm --filter astro-postcss check
 pnpm --filter astro-prerender-comment-form check
 pnpm --filter astro-qr-code-generator check

@@ -1,0 +1,46 @@
+{
+	"name": "astro-markdoc",
+	"type": "module",
+	"version": "0.0.1",
+	"license": "BSD-3-Clause",
+	"description": "Astro Markdoc 📚 trying Stripe’s customizable, readable, declarative Markdown extension designed for 🖋️ creating documentation content.",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro check && astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"check": "astro check --fail-on-warnings",
+		"format": "prettier --write --plugin=prettier-plugin-astro .",
+		"lint:css": "stylelint \"src/**/*.{astro,css,svelte}\"",
+		"prettier:check": "prettier --check --plugin=prettier-plugin-astro ."
+	},
+	"dependencies": {
+		"@astrojs/check": "^0.3.1",
+		"@astrojs/markdoc": "^0.7.1",
+		"@wooorm/starry-night": "^3.1.0",
+		"astro": "^3.4.3",
+		"hast-util-to-html": "^9.0.0",
+		"typescript": "^5.2.2"
+	},
+	"devDependencies": {
+		"@capsizecss/core": "^3.1.1",
+		"@capsizecss/metrics": "^1.2.0",
+		"@commitlint/config-conventional": "^18.1.0",
+		"commitlint": "^18.2.0",
+		"husky": "^8.0.3",
+		"postcss": "^8.4.31",
+		"postcss-html": "^1.5.0",
+		"stylelint": "^15.11.0",
+		"stylelint-config-recommended": "^13.0.0",
+		"stylelint-gamut": "^1.3.3",
+		"vite-node": "^0.34.6"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/rodneylab/astro"
+	},
+	"bugs": {
+		"url": "https://github.com/rodneylab/astro/issues"
+	}
+}
