@@ -1,0 +1,36 @@
+{
+	"name": "astro-related-content",
+	"type": "module",
+	"version": "0.0.1",
+	"license": "BSD-3-Clause",
+	"description": "Astro Related Content: adding “you might also like…” style related content to your Astro blog or documentation site with references 💡.",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro check && astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"check": "astro check --fail-on-warnings",
+		"format": "prettier --write --plugin=prettier-plugin-astro .",
+		"lint:css": "stylelint \"src/**/*.{astro,css,svelte}\"",
+		"prettier:check": "prettier --check --plugin=prettier-plugin-astro ."
+	},
+	"dependencies": {
+		"@astrojs/check": "^0.3.1",
+		"@astrojs/rss": "^3.0.0",
+		"@astrojs/svelte": "^4.0.3",
+		"@iconify/svelte": "^3.1.4",
+		"@rodneylab/picpack": "^0.0.4",
+		"astro": "^3.4.3",
+		"stylelint": "^15.11.0",
+		"svelte": "^4.0.0",
+		"typescript": "^5.2.2"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/rodneylab/astro"
+	},
+	"bugs": {
+		"url": "https://github.com/rodneylab/astro/issues"
+	}
+}

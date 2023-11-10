@@ -1,0 +1,65 @@
+/* lora-regular - latin */
+@font-face {
+	font-family: 'Lora';
+	font-style: normal;
+	font-weight: normal;
+	src:
+		local(''),
+		url('/fonts/lora-v23-latin-regular.woff2') format('woff2')
+			/* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/lora-v23-latin-regular.woff');
+}
+
+/* lora-700 - latin */
+@font-face {
+	font-family: 'Lora';
+	font-style: normal;
+	font-weight: bold;
+	src:
+		local(''),
+		url('/fonts/lora-v23-latin-700.woff2') format('woff2');
+	/* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+
+/* lora-700italic - latin */
+@font-face {
+	font-family: 'Lora';
+	font-style: italic;
+	font-weight: bold;
+	src:
+		local(''),
+		url('/fonts/lora-v23-latin-700italic.woff2') format('woff2');
+	/* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+
+/* source-sans-pro-regular - latin */
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	font-weight: normal;
+	src:
+		local(''),
+		url('/fonts/source-sans-pro-v19-latin-regular.woff2') format('woff2');
+	/* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+
+/* source-sans-pro-700 - latin */
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	font-weight: bold;
+	src:
+		local(''),
+		url('/fonts/source-sans-pro-v19-latin-700.woff2') format('woff2');
+	/* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+
+/* source-sans-pro-900italic - latin */
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: italic;
+	font-weight: 900;
+	src:
+		local(''),
+		url('/fonts/source-sans-pro-v19-latin-900italic.woff2') format('woff2');
+	/* Chrome 26+, Opera 23+, Firefox 39+ */
+}
