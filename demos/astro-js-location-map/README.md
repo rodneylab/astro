@@ -29,7 +29,7 @@ All commands are run from the root of the project, from a terminal:
 | :----------------------------- | :------------------------------------------- |
 | `pnpm install`                 | Installs dependencies                        |
 | `pnpm astro telemetry disable` | Disable data collection                      |
-| `pnpm dev`                     | Starts local dev server at `localhost:3000`  |
+| `pnpm dev`                     | Starts local dev server at `localhost:4321`  |
 | `pnpm build`                   | Build your production site to `./dist/`      |
 | `pnpm preview`                 | Preview your build locally, before deploying |
 
