@@ -1,10 +1,13 @@
+import icon from 'astro-icon';
 import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-	vite: {
-		ssr: {
-			external: ['svgo'],
-		},
-	},
+	integrations: [
+		icon({
+			include: {
+				'heroicons-solid': ['link'],
+			},
+		}),
+	],
 });

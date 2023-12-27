@@ -14,18 +14,18 @@
 		"format": "prettier --write --plugin=prettier-plugin-astro ."
 	},
 	"devDependencies": {
-		"@astrojs/check": "^0.3.0",
-		"astro": "~3.4.2",
-		"astro-icon": "^0.8.1",
+		"@astrojs/check": "^0.3.4",
+		"astro": "~4.0.7",
+		"astro-icon": "^1.0.0",
 		"autoprefixer": "^10.4.16",
-		"postcss": "^8.4.31",
+		"postcss": "^8.4.32",
 		"postcss-html": "^1.5.0",
-		"prettier": "^3.0.3",
-		"prettier-plugin-astro": "^0.12.1",
-		"stylelint": "^15.11.0",
-		"stylelint-config-recommended": "^13.0.0",
-		"stylelint-config-standard": "^34.0.0",
-		"typescript": "^5.2.2"
+		"prettier": "^3.1.1",
+		"prettier-plugin-astro": "^0.12.2",
+		"stylelint": "^16.1.0",
+		"stylelint-config-recommended": "^14.0.0",
+		"stylelint-config-standard": "^36.0.0",
+		"typescript": "^5.3.3"
 	},
 	"repository": {
 		"type": "git",
@@ -33,5 +33,8 @@
 	},
 	"bugs": {
 		"url": "https://github.com/rodneylab/astro/issues"
+	},
+	"dependencies": {
+		"@iconify-json/heroicons-solid": "^1.1.11"
 	}
 }
