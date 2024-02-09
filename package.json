@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"format": "prettier --write --plugin=prettier-plugin-astro .",
-		"prettier:check": "prettier --check --plugin=prettier-plugin-astro ."
+		"check:formatting": "prettier --check --plugin=prettier-plugin-astro ."
 	},
 	"devDependencies": {
 		"@commitlint/config-conventional": "^18.6.0",
