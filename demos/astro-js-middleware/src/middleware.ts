@@ -1,9 +1,9 @@
-import type { defineMiddleware } from 'astro:middleware';
+import { defineMiddleware } from 'astro:middleware';
 import { pack } from 'msgpackr';
 
 const logtailSourceToken = import.meta.env.LOGTAIL_SOURCE_TOKEN;
 
-export const onRequest = defineMiddleware(({ locals, request }, next) => {
+export const onRequest = defineMiddleware(async ({ locals, request }, next) => {
 	const { url } = request;
 	const { pathname } = new URL(url);
 	const timestamp = new Date().toISOString();
