@@ -4,7 +4,8 @@
 	"private": true,
 	"scripts": {
 		"format": "prettier --write --plugin=prettier-plugin-astro .",
-		"check:formatting": "prettier --check --plugin=prettier-plugin-astro ."
+		"check:formatting": "prettier --check --plugin=prettier-plugin-astro .",
+		"prepare": "husky"
 	},
 	"devDependencies": {
 		"@commitlint/config-conventional": "^19.1.0",
