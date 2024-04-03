@@ -7,12 +7,11 @@ export const GET: APIRoute = async function GET() {
 			{ name: 'discord', url: 'https://docs.astro.build/chat' },
 		];
 
-		return {
-			body: JSON.stringify(astroResources),
+		return new Response(JSON.stringify(astroResources), {
 			headers: {
 				'Content-Type': 'application/json',
 			},
-		};
+		});
 	} catch (error) {
 		throw new Error('Something went wrong in json-resource.json route!');
 	}
