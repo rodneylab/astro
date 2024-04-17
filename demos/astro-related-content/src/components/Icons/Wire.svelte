@@ -1,5 +1,5 @@
 <script>
-  import Icon, { addCollection } from '@iconify/svelte/dist/OfflineIcon.svelte';
+  import Icon, { addCollection } from '@iconify/svelte';
   export let label = 'Wire app icon';
   export let colour = 'inherit';
   export let ariaHidden = false;

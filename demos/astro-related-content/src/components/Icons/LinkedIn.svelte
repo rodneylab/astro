@@ -1,5 +1,5 @@
 <script>
-  import Icon, { addCollection } from '@iconify/svelte/dist/OfflineIcon.svelte';
+  import Icon, { addCollection } from '@iconify/svelte';
   export let label = 'Linked in icon';
   export let colour = 'inherit';
   export let ariaHidden = false;
