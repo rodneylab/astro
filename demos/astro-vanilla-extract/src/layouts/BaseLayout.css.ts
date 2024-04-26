@@ -1,5 +1,5 @@
 import { style } from '@vanilla-extract/css';
-import { theme } from '~/styles/themes.css';
+import { theme } from '../styles/themes.css';
 
 export const container = style({
 	display: 'flex',

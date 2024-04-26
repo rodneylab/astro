@@ -3,7 +3,7 @@
 	import { button } from '~components/Button.css';
 	import theme from '~shared/stores/theme';
 	import { screenReaderText } from '~styles/global.css';
-	import { darkThemeClass, lightThemeClass } from '~styles/themes.css';
+	import { darkThemeClass, lightThemeClass } from '../styles/themes.css';
 	import MoonIcon from './MoonIcon.svelte';
 	import SunIcon from './SunIcon.svelte';
 
