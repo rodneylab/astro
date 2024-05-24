@@ -12,7 +12,6 @@ export const ReactExample = function ReactExample() {
 					height="315"
 					src="https://www.youtube-nocookie.com/embed/PJ0QSJpJn2U"
 					title="Should you Stop Using React"
-					frameBorder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 					allowFullScreen
 				/>
