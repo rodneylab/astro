@@ -25,8 +25,8 @@ importers:
         specifier: ^1.7.0
         version: 1.7.0
       prettier:
-        specifier: ^3.3.0
-        version: 3.3.0
+        specifier: ^3.3.1
+        version: 3.3.1
       prettier-plugin-astro:
         specifier: ^0.14.0
         version: 0.14.0
@@ -57,7 +57,7 @@ importers:
     devDependencies:
       '@astrojs/check':
         specifier: ^0.6.0
-        version: 0.6.0(prettier-plugin-astro@0.14.0)(prettier@3.3.0)(typescript@5.4.5)
+        version: 0.6.0(prettier-plugin-astro@0.14.0)(prettier@3.3.1)(typescript@5.4.5)
       typescript:
         specifier: ^5.4.5
         version: 5.4.5
@@ -118,7 +118,7 @@ importers:
     dependencies:
       '@astrojs/check':
         specifier: ^0.6.0
-        version: 0.6.0(prettier-plugin-astro@0.14.0)(prettier@3.3.0)(typescript@5.4.5)
+        version: 0.6.0(prettier-plugin-astro@0.14.0)(prettier@3.3.1)(typescript@5.4.5)
       '@astrojs/svelte':
         specifier: ^5.4.0
         version: 5.4.0(astro@4.8.3(@types/node@20.14.1)(sass@1.77.2)(terser@5.31.0)(typescript@5.4.5))(svelte@4.2.17)(typescript@5.4.5)(vite@5.2.11(@types/node@20.14.1)(sass@1.77.2)(terser@5.31.0))
@@ -265,7 +265,7 @@ importers:
     devDependencies:
       '@astrojs/check':
         specifier: ^0.7.0
-        version: 0.7.0(prettier-plugin-astro@0.14.0)(prettier@3.3.0)(typescript@5.4.5)
+        version: 0.7.0(prettier-plugin-astro@0.14.0)(prettier@3.3.1)(typescript@5.4.5)
       msgpackr:
         specifier: ^1.10.2
         version: 1.10.2
@@ -470,7 +470,7 @@ importers:
     dependencies:
       '@astrojs/check':
         specifier: ^0.7.0
-        version: 0.7.0(prettier-plugin-astro@0.14.0)(prettier@3.3.0)(typescript@5.4.5)
+        version: 0.7.0(prettier-plugin-astro@0.14.0)(prettier@3.3.1)(typescript@5.4.5)
       '@astrojs/markdoc':
         specifier: ^0.11.0
         version: 0.11.0(@types/react@18.3.3)(astro@4.9.2(@types/node@20.14.1)(sass@1.77.2)(terser@5.31.0)(typescript@5.4.5))(react@18.3.1)
@@ -561,7 +561,7 @@ importers:
     dependencies:
       '@astrojs/check':
         specifier: ^0.7.0
-        version: 0.7.0(prettier-plugin-astro@0.14.0)(prettier@3.3.0)(typescript@5.4.5)
+        version: 0.7.0(prettier-plugin-astro@0.14.0)(prettier@3.3.1)(typescript@5.4.5)
       '@capsizecss/core':
         specifier: ^4.1.2
         version: 4.1.2
@@ -626,7 +626,7 @@ importers:
     devDependencies:
       '@astrojs/check':
         specifier: ^0.7.0
-        version: 0.7.0(prettier-plugin-astro@0.14.0)(prettier@3.3.0)(typescript@5.4.5)
+        version: 0.7.0(prettier-plugin-astro@0.14.0)(prettier@3.3.1)(typescript@5.4.5)
       postcss:
         specifier: ^8.4.38
         version: 8.4.38
@@ -647,7 +647,7 @@ importers:
     dependencies:
       '@astrojs/check':
         specifier: ^0.7.0
-        version: 0.7.0(prettier-plugin-astro@0.14.0)(prettier@3.3.0)(typescript@5.4.5)
+        version: 0.7.0(prettier-plugin-astro@0.14.0)(prettier@3.3.1)(typescript@5.4.5)
       '@astrojs/netlify':
         specifier: ^5.2.1
         version: 5.2.1(@opentelemetry/api@1.8.0)(astro@4.9.2(@types/node@20.14.1)(sass@1.77.2)(terser@5.31.0)(typescript@5.4.5))
@@ -687,7 +687,7 @@ importers:
     dependencies:
       '@astrojs/check':
         specifier: ^0.7.0
-        version: 0.7.0(prettier-plugin-astro@0.14.0)(prettier@3.3.0)(typescript@5.4.5)
+        version: 0.7.0(prettier-plugin-astro@0.14.0)(prettier@3.3.1)(typescript@5.4.5)
       '@astrojs/rss':
         specifier: ^4.0.6
         version: 4.0.6
@@ -799,7 +799,7 @@ importers:
     dependencies:
       '@astrojs/check':
         specifier: ^0.5.10
-        version: 0.5.10(prettier-plugin-astro@0.14.0)(prettier@3.3.0)(typescript@5.4.5)
+        version: 0.5.10(prettier-plugin-astro@0.14.0)(prettier@3.3.1)(typescript@5.4.5)
       '@astrojs/preact':
         specifier: ^3.2.0
         version: 3.2.0(@babel/core@7.24.5)(preact@10.20.2)(vite@5.2.10(@types/node@20.14.1)(sass@1.77.2)(terser@5.31.0))
@@ -7947,6 +7947,11 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
 
+  prettier@3.3.1:
+    resolution: {integrity: sha512-7CAwy5dRsxs8PHXT3twixW9/OEll8MLE0VRPCJyl7CkS6VHGPSlsVaWTiASPTyGyYRyApxlaWTzwUxVNrhcwDg==}
+    engines: {node: '>=14'}
+    hasBin: true
+
   pretty-bytes@5.6.0:
     resolution: {integrity: sha512-FFw039TmrBqFK8ma/7OL3sDz/VytdtJr044/QUJtH0wK9lb9jLq9tJyIxUwtQJHwar2BqtiA4iCWSwo9JLkzFg==}
     engines: {node: '>=6'}
@@ -9893,9 +9898,9 @@ snapshots:
       - prettier
       - prettier-plugin-astro
 
-  '@astrojs/check@0.5.10(prettier-plugin-astro@0.14.0)(prettier@3.3.0)(typescript@5.4.5)':
+  '@astrojs/check@0.5.10(prettier-plugin-astro@0.14.0)(prettier@3.3.1)(typescript@5.4.5)':
     dependencies:
-      '@astrojs/language-server': 2.10.0(prettier-plugin-astro@0.14.0)(prettier@3.3.0)(typescript@5.4.5)
+      '@astrojs/language-server': 2.10.0(prettier-plugin-astro@0.14.0)(prettier@3.3.1)(typescript@5.4.5)
       chokidar: 3.6.0
       fast-glob: 3.3.2
       kleur: 4.1.5
@@ -9917,9 +9922,9 @@ snapshots:
       - prettier
       - prettier-plugin-astro
 
-  '@astrojs/check@0.6.0(prettier-plugin-astro@0.14.0)(prettier@3.3.0)(typescript@5.4.5)':
+  '@astrojs/check@0.6.0(prettier-plugin-astro@0.14.0)(prettier@3.3.1)(typescript@5.4.5)':
     dependencies:
-      '@astrojs/language-server': 2.9.0(prettier-plugin-astro@0.14.0)(prettier@3.3.0)(typescript@5.4.5)
+      '@astrojs/language-server': 2.9.0(prettier-plugin-astro@0.14.0)(prettier@3.3.1)(typescript@5.4.5)
       chokidar: 3.6.0
       fast-glob: 3.3.2
       kleur: 4.1.5
@@ -9956,6 +9961,18 @@ snapshots:
   '@astrojs/check@0.7.0(prettier-plugin-astro@0.14.0)(prettier@3.3.0)(typescript@5.4.5)':
     dependencies:
       '@astrojs/language-server': 2.10.0(prettier-plugin-astro@0.14.0)(prettier@3.3.0)(typescript@5.4.5)
+      chokidar: 3.6.0
+      fast-glob: 3.3.2
+      kleur: 4.1.5
+      typescript: 5.4.5
+      yargs: 17.7.2
+    transitivePeerDependencies:
+      - prettier
+      - prettier-plugin-astro
+
+  '@astrojs/check@0.7.0(prettier-plugin-astro@0.14.0)(prettier@3.3.1)(typescript@5.4.5)':
+    dependencies:
+      '@astrojs/language-server': 2.10.0(prettier-plugin-astro@0.14.0)(prettier@3.3.1)(typescript@5.4.5)
       chokidar: 3.6.0
       fast-glob: 3.3.2
       kleur: 4.1.5
@@ -10081,6 +10098,30 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
+  '@astrojs/language-server@2.10.0(prettier-plugin-astro@0.14.0)(prettier@3.3.1)(typescript@5.4.5)':
+    dependencies:
+      '@astrojs/compiler': 2.8.0
+      '@jridgewell/sourcemap-codec': 1.4.15
+      '@volar/kit': 2.2.5(typescript@5.4.5)
+      '@volar/language-core': 2.2.5
+      '@volar/language-server': 2.2.5
+      '@volar/language-service': 2.2.5
+      '@volar/typescript': 2.2.5
+      fast-glob: 3.3.2
+      volar-service-css: 0.0.45(@volar/language-service@2.2.5)
+      volar-service-emmet: 0.0.45(@volar/language-service@2.2.5)
+      volar-service-html: 0.0.45(@volar/language-service@2.2.5)
+      volar-service-prettier: 0.0.45(@volar/language-service@2.2.5)(prettier@3.3.1)
+      volar-service-typescript: 0.0.45(@volar/language-service@2.2.5)
+      volar-service-typescript-twoslash-queries: 0.0.45(@volar/language-service@2.2.5)
+      vscode-html-languageservice: 5.2.0
+      vscode-uri: 3.0.8
+    optionalDependencies:
+      prettier: 3.3.1
+      prettier-plugin-astro: 0.14.0
+    transitivePeerDependencies:
+      - typescript
+
   '@astrojs/language-server@2.9.0(prettier-plugin-astro@0.13.0)(prettier@3.2.5)(typescript@5.4.5)':
     dependencies:
       '@astrojs/compiler': 2.8.0
@@ -10105,7 +10146,7 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  '@astrojs/language-server@2.9.0(prettier-plugin-astro@0.14.0)(prettier@3.3.0)(typescript@5.4.5)':
+  '@astrojs/language-server@2.9.0(prettier-plugin-astro@0.14.0)(prettier@3.3.1)(typescript@5.4.5)':
     dependencies:
       '@astrojs/compiler': 2.8.0
       '@jridgewell/sourcemap-codec': 1.4.15
@@ -10118,13 +10159,13 @@ snapshots:
       volar-service-css: 0.0.43(@volar/language-service@2.2.2)
       volar-service-emmet: 0.0.43(@volar/language-service@2.2.2)
       volar-service-html: 0.0.43(@volar/language-service@2.2.2)
-      volar-service-prettier: 0.0.43(@volar/language-service@2.2.2)(prettier@3.3.0)
+      volar-service-prettier: 0.0.43(@volar/language-service@2.2.2)(prettier@3.3.1)
       volar-service-typescript: 0.0.43(@volar/language-service@2.2.2)
       volar-service-typescript-twoslash-queries: 0.0.43(@volar/language-service@2.2.2)
       vscode-html-languageservice: 5.2.0
       vscode-uri: 3.0.8
     optionalDependencies:
-      prettier: 3.3.0
+      prettier: 3.3.1
       prettier-plugin-astro: 0.14.0
     transitivePeerDependencies:
       - typescript
@@ -18861,7 +18902,7 @@ snapshots:
   prettier-plugin-astro@0.14.0:
     dependencies:
       '@astrojs/compiler': 1.8.2
-      prettier: 3.3.0
+      prettier: 3.2.5
       sass-formatter: 0.7.9
 
   prettier-plugin-svelte@3.2.3(prettier@3.2.5)(svelte@4.2.15):
@@ -18877,6 +18918,8 @@ snapshots:
   prettier@3.2.5: {}
 
   prettier@3.3.0: {}
+
+  prettier@3.3.1: {}
 
   pretty-bytes@5.6.0: {}
 
@@ -21115,12 +21158,12 @@ snapshots:
       '@volar/language-service': 2.2.2
       prettier: 3.2.5
 
-  volar-service-prettier@0.0.43(@volar/language-service@2.2.2)(prettier@3.3.0):
+  volar-service-prettier@0.0.43(@volar/language-service@2.2.2)(prettier@3.3.1):
     dependencies:
       vscode-uri: 3.0.8
     optionalDependencies:
       '@volar/language-service': 2.2.2
-      prettier: 3.3.0
+      prettier: 3.3.1
 
   volar-service-prettier@0.0.45(@volar/language-service@2.2.5)(prettier@3.2.5):
     dependencies:
@@ -21135,6 +21178,13 @@ snapshots:
     optionalDependencies:
       '@volar/language-service': 2.2.5
       prettier: 3.3.0
+
+  volar-service-prettier@0.0.45(@volar/language-service@2.2.5)(prettier@3.3.1):
+    dependencies:
+      vscode-uri: 3.0.8
+    optionalDependencies:
+      '@volar/language-service': 2.2.5
+      prettier: 3.3.1
 
   volar-service-typescript-twoslash-queries@0.0.43(@volar/language-service@2.2.2):
     optionalDependencies:
