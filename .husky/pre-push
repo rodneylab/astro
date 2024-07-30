@@ -1,6 +1,3 @@
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
-
 pnpm --filter astro-capsize-font-fallbacks check
 pnpm --filter astro-contact-form check
 pnpm --filter astro-contact-form check:svelte
