@@ -1,5 +1,5 @@
 <script>
-	let altColours = false;
+	let altColours = $state(false);
 </script>
 
 <section class={`container${altColours ? ' container-alt' : ''}`}>
@@ -13,40 +13,40 @@
 			frameborder="0"
 			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 			allowfullscreen
-		/>
+		></iframe>
 	</div>
 	<button
 		class={`button${altColours ? ' button-alt' : ''}`}
-		on:click={() => {
+		onclick={() => {
 			altColours = !altColours;
 		}}><span class="screen-reader-text">Toggle colours</span></button
 	>
 </section>
 
 <style lang="scss">
-	@import '../styles/variables';
+@use '../styles/variables';
 
 	.container {
 		display: flex;
 		flex-direction: column;
-		background: hsl($colour-brand-hue $colour-brand-saturation $colour-brand-luminance);
+		background: hsl(variables.$colour-brand-hue variables.$colour-brand-saturation variables.$colour-brand-luminance);
 		align-items: center;
 		width: 100%;
-		padding: $spacing-8 $spacing-0;
-		color: hsl($colour-dark-text-hue $colour-dark-text-saturation $colour-dark-text-luminance);
+		padding: variables.$spacing-8 variables.$spacing-0;
+		color: hsl(variables.$colour-dark-text-hue variables.$colour-dark-text-saturation variables.$colour-dark-text-luminance);
 	}
 
 	.container-alt {
-		background: hsl($colour-secondary-hue $colour-secondary-saturation $colour-secondary-luminance);
+		background: hsl(variables.$colour-secondary-hue variables.$colour-secondary-saturation variables.$colour-secondary-luminance);
 
-		color: hsl($colour-light-text-hue $colour-light-text-saturation $colour-light-text-luminance);
+		color: hsl(variables.$colour-light-text-hue variables.$colour-light-text-saturation variables.$colour-light-text-luminance);
 	}
 
 	.button {
-		background: hsl($colour-secondary-hue $colour-secondary-saturation $colour-secondary-luminance);
+		background: hsl(variables.$colour-secondary-hue variables.$colour-secondary-saturation variables.$colour-secondary-luminance);
 	}
 
 	.button-alt {
-		background: hsl($colour-brand-hue $colour-brand-saturation $colour-brand-luminance);
+		background: hsl(variables.$colour-brand-hue variables.$colour-brand-saturation variables.$colour-brand-luminance);
 	}
 </style>
