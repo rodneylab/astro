@@ -1,36 +1,41 @@
 @charset "UTF-8";
 
-@import './fonts.scss';
-@import './variables.scss';
+@use 'fonts.scss';
+@use 'variables.scss';
 
 body {
-	margin: $spacing-0;
-	background: hsl($colour-dark-hue $colour-dark-saturation $colour-dark-luminance);
+	margin: variables.$spacing-0;
+	background: hsl(
+		variables.$colour-dark-hue variables.$colour-dark-saturation variables.$colour-dark-luminance
+	);
 	font-family: Roboto;
 	text-align: center;
 }
 
 h1 {
 	font-size: 3.815rem;
-	margin-bottom: $spacing-12;
+	margin-bottom: variables.$spacing-12;
 }
 
 h2 {
 	font-size: 1.802rem;
-	margin-bottom: $spacing-8;
+	margin-bottom: variables.$spacing-8;
 }
 
 p {
-	margin: $spacing-6 $spacing-6 $spacing-8;
+	margin: variables.$spacing-6 variables.$spacing-6 variables.$spacing-8;
 }
 
 button {
 	cursor: pointer;
-	margin: $spacing-6;
-	border: solid $spacing-px
-		hsl($colour-light-text-hue $colour-light-text-saturation $colour-light-text-luminance);
+	margin: variables.$spacing-6;
+	border: solid variables.$spacing-px
+		hsl(
+			variables.$colour-light-text-hue variables.$colour-light-text-saturation
+				variables.$colour-light-text-luminance
+		);
 	border-radius: 50%;
-	padding: $spacing-8;
+	padding: variables.$spacing-8;
 }
 
 .video-container {
@@ -38,7 +43,7 @@ button {
 	aspect-ratio: 16 / 9;
 	width: 100%;
 	max-width: 560px;
-	margin: $spacing-0 $spacing-6;
+	margin: variables.$spacing-0 variables.$spacing-6;
 }
 
 .video-container iframe {

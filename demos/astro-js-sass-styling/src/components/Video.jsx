@@ -15,7 +15,7 @@ export const ReactExample = function ReactExample() {
 					title="Should you Stop Using React"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 					allowFullScreen
-				/>
+				></iframe>
 			</div>
 			<button
 				className={`${styles.button}${altColours ? ` ${styles['button-alt']}` : ''}`}

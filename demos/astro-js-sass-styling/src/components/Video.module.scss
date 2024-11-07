@@ -1,27 +1,38 @@
-@import '../styles/variables';
+@use '../styles/variables';
 
 .container {
 	display: flex;
 	flex-direction: column;
-	background: hsl($colour-secondary-hue $colour-secondary-saturation $colour-secondary-luminance);
+	background: hsl(
+		variables.$colour-secondary-hue variables.$colour-secondary-saturation
+			variables.$colour-secondary-luminance
+	);
 	align-items: center;
 	width: 100%;
-	padding: $spacing-8 $spacing-0;
-	color: hsl($colour-light-text-hue $colour-light-text-saturation $colour-light-text-luminance);
+	padding: variables.$spacing-8 variables.$spacing-0;
+	color: hsl(
+		variables.$colour-light-text-hue variables.$colour-light-text-saturation
+			variables.$colour-light-text-luminance
+	);
 }
 
 .container-alt {
 	background: hsl(
-		$colour-alternative-hue $colour-alternative-saturation $colour-alternative-luminance
+		variables.$colour-alternative-hue variables.$colour-alternative-saturation
+			variables.$colour-alternative-luminance
 	);
 }
 
 .button {
 	background: hsl(
-		$colour-alternative-hue $colour-alternative-saturation $colour-alternative-luminance
+		variables.$colour-alternative-hue variables.$colour-alternative-saturation
+			variables.$colour-alternative-luminance
 	);
 }
 
 .button-alt {
-	background: hsl($colour-secondary-hue $colour-secondary-saturation $colour-secondary-luminance);
+	background: hsl(
+		variables.$colour-secondary-hue variables.$colour-secondary-saturation
+			variables.$colour-secondary-luminance
+	);
 }
