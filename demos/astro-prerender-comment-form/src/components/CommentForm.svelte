@@ -20,9 +20,9 @@
 		title="Email"
 	/>
 	<label for="email" class="screen-reader-text">Comment</label>
-	<textarea id="comment" name="comment" required placeholder="Your comment…" rows="5" />
+	<textarea id="comment" name="comment" required placeholder="Your comment…" rows="5" ></textarea>
 	<button type="submit">Submit</button>
-	<div class="cf-turnstile" data-sitekey={turnstileSiteKey} data-size="compact" />
+	<div class="cf-turnstile" data-sitekey={turnstileSiteKey} data-size="compact" ></div>
 </form>
 
 <style>
