@@ -1,7 +1,7 @@
 <script lang="ts">
 	import QRCode from 'qrcode';
 
-	export let url: string;
+	let { url }: { url: string } = $props();
 
 	function generateQRCode(canvasElement: HTMLCanvasElement, url: string) {
 		QRCode.toCanvas(canvasElement, url, function (error: unknown) {
@@ -22,7 +22,7 @@
 	}
 </script>
 
-<canvas use:useQRCodeCanvas={{ url }} />
+<canvas use:useQRCodeCanvas={{ url }}></canvas>
 
 <style>
 	canvas {
