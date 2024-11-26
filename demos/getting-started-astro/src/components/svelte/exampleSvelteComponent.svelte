@@ -1,5 +1,5 @@
 <script lang="ts">
-	let altColours = false;
+	let altColours = $state(false);
 </script>
 
 <section class={`container${altColours ? ' container-alt' : ''}`}>
@@ -13,11 +13,11 @@
 			frameborder="0"
 			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 			allowfullscreen
-		/>
+		></iframe>
 	</div>
 	<button
 		class={`button${altColours ? ' button-alt' : ''}`}
-		on:click={() => {
+		onclick={() => {
 			altColours = !altColours;
 		}}><span class="screen-reader-text">Toggle colours</span></button
 	>
