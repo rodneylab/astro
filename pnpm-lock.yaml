@@ -87,8 +87,8 @@ importers:
         specifier: ^1.7.0
         version: 1.7.0
       prettier:
-        specifier: ^3.3.3
-        version: 3.3.3
+        specifier: ^3.4.2
+        version: 3.4.2
       prettier-plugin-astro:
         specifier: ^0.14.1
         version: 0.14.1
@@ -108,8 +108,8 @@ importers:
         specifier: ^3.8.5
         version: 3.8.6(@babel/core@7.26.0)(postcss-load-config@4.0.2(postcss@8.4.49))(postcss@8.4.49)(sass@1.80.6)(svelte@4.2.19)
       typescript:
-        specifier: ^5.5.4
-        version: 5.5.4
+        specifier: ^5.7.2
+        version: 5.7.2
       vite:
         specifier: ^5.4.0
         version: 5.4.11(@types/node@22.9.3)(sass-embedded@1.80.6)(sass@1.80.6)(terser@5.36.0)
@@ -7347,6 +7347,46 @@ packages:
       yaml:
         optional: true
 
+  vite@6.0.2:
+    resolution: {integrity: sha512-XdQ+VsY2tJpBsKGs0wf3U/+azx8BBpYRHFAyKm5VeEZNOJZRB63q7Sc8Iup3k0TrN3KO6QgyzFf+opSbfY1y0g==}
+    engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
+    hasBin: true
+    peerDependencies:
+      '@types/node': ^18.0.0 || ^20.0.0 || >=22.0.0
+      jiti: '>=1.21.0'
+      less: '*'
+      lightningcss: ^1.21.0
+      sass: '*'
+      sass-embedded: '*'
+      stylus: '*'
+      sugarss: '*'
+      terser: ^5.16.0
+      tsx: ^4.8.1
+      yaml: ^2.4.2
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+      jiti:
+        optional: true
+      less:
+        optional: true
+      lightningcss:
+        optional: true
+      sass:
+        optional: true
+      sass-embedded:
+        optional: true
+      stylus:
+        optional: true
+      sugarss:
+        optional: true
+      terser:
+        optional: true
+      tsx:
+        optional: true
+      yaml:
+        optional: true
+
   vitefu@0.2.5:
     resolution: {integrity: sha512-SgHtMLoqaeeGnd2evZ849ZbACbnwQCIwRH57t18FxcXoZop0uQu0uzlIhJBlF/eWVzuce0sHeqPcDo+evVcg8Q==}
     peerDependencies:
@@ -14532,7 +14572,7 @@ snapshots:
   prettier-plugin-astro@0.14.1:
     dependencies:
       '@astrojs/compiler': 2.10.3
-      prettier: 3.3.3
+      prettier: 3.4.2
       sass-formatter: 0.7.9
 
   prettier-plugin-svelte@3.3.2(prettier@3.3.3)(svelte@5.7.1):
@@ -16308,9 +16348,9 @@ snapshots:
     optionalDependencies:
       vite: 5.4.11(@types/node@22.9.3)(sass-embedded@1.80.6)(sass@1.80.6)(terser@5.36.0)
 
-  vitefu@1.0.4(vite@6.0.1(@types/node@22.9.3)(jiti@1.21.6)(sass-embedded@1.80.6)(sass@1.80.6)(terser@5.36.0)(yaml@2.6.1)):
+  vitefu@1.0.4(vite@6.0.2(@types/node@22.9.3)(jiti@1.21.6)(sass-embedded@1.80.6)(sass@1.80.6)(terser@5.36.0)(yaml@2.6.1)):
     optionalDependencies:
-      vite: 6.0.1(@types/node@22.9.3)(jiti@1.21.6)(sass-embedded@1.80.6)(sass@1.80.6)(terser@5.36.0)(yaml@2.6.1)
+      vite: 6.0.2(@types/node@22.9.3)(jiti@1.21.6)(sass-embedded@1.80.6)(sass@1.80.6)(terser@5.36.0)(yaml@2.6.1)
 
   vitefu@1.0.4(vite@6.0.3(@types/node@22.9.3)(jiti@1.21.6)(sass-embedded@1.80.6)(sass@1.80.6)(terser@5.36.0)(yaml@2.6.1)):
     optionalDependencies:
