@@ -1,11 +1,12 @@
 <script lang="ts">
-	export let videoId = import.meta.env.PUBLIC_MUX_PLAYBACK_ID as string;
-	export let title = 'Raindrops in Super Slow Motion';
-	export let startTime = '0';
+let {
+ videoId = import.meta.env.PUBLIC_MUX_PLAYBACK_ID as string,
+ title = 'Raindrops in Super Slow Motion',
+startTime = '0'} = $props();
 
 	const siteUrl = import.meta.env.PUBLIC_SITE_URL;
 
-	let playerElement: HTMLMediaElement;
+	let playerElement: HTMLMediaElement=$state();
 
 	async function handlePause() {
 		const currentTime = Math.floor(playerElement.currentTime);
@@ -24,9 +25,9 @@
 		{title}
 		disable-cookies
 		start-time={startTime}
-		on:timeupdate={console.log(Math.floor(playerElement.currentTime))}
-		on:pause={handlePause}
-	/>
+		ontimeupdate={() => {console.log(Math.floor(playerElement.currentTime))}}
+		onpause={handlePause}
+	></mux-player>
 	<figcaption>
 		{title}. Credit: <a href="https://www.videvo.net/profile/Beachfront">Beachfront</a>
 	</figcaption>
