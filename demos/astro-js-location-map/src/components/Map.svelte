@@ -1,22 +1,25 @@
 <script lang="ts">
-	import { setMap } from '~shared/actions/map';
+  import { setMap } from "~shared/actions/map";
 
-	export let location: {
-		latitude: number;
-		longitude: number;
-	};
-	export let zoom: number = 19;
-	export let markerMarkup: string = '';
+  let {
+    location,
+    zoom = 19,
+    markerMarkup = "",
+  }: {
+    location: { latitude: number; longitude: number };
+    zoom: number;
+    markerMarkup: string;
+  } = $props();
 
-	const { latitude, longitude } = location;
+  const { latitude, longitude } = location;
 </script>
 
-<figure use:setMap={{ latitude, longitude, zoom, markerMarkup }} />
+<figure use:setMap={{ latitude, longitude, zoom, markerMarkup }}></figure>
 
 <style>
-	figure {
-		width: 38rem;
-		height: 21rem;
-		box-shadow: var(--shadow-elevation-low);
-	}
+  figure {
+    width: 38rem;
+    height: 21rem;
+    box-shadow: var(--shadow-elevation-low);
+  }
 </style>
