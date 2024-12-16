@@ -1,43 +1,43 @@
 {
-	"name": "astro-js-location-map",
-	"version": "0.0.1",
-	"private": true,
-	"license": "BSD-3-Clause",
-	"description": "Astro JS Location Map: how you can use the Leaflet library to add a location map on your Astro site with Svelte. Handy for a contact page.",
-	"scripts": {
-		"dev": "astro dev",
-		"start": "astro dev",
-		"build": "astro telemetry disable && astro build",
-		"preview": "astro preview",
-		"astro": "astro",
-		"check": "astro check --fail-on-warnings",
-		"check:svelte": "svelte-check",
-		"format": "prettier --ignore-path .prettierignore --write --plugin=prettier-plugin-astro .",
-		"lint:css": "stylelint \"src/**/*.{css,astro}\"",
-		"prettier:check": "prettier --check --plugin=prettier-plugin-astro ."
-	},
-	"devDependencies": {
-		"@astrojs/check": "^0.9.3",
-		"@astrojs/svelte": "^5.7.0",
-		"@types/leaflet": "^1.9.12",
-		"astro": "^4.14.5",
-		"leaflet": "^1.9.4",
-		"postcss": "^8.4.41",
-		"postcss-html": "^1.7.0",
-		"prettier": "^3.3.3",
-		"stylelint": "^16.8.2",
-		"stylelint-config-recommended": "^14.0.1",
-		"stylelint-config-standard": "^36.0.1",
-		"svelte": "^4.2.18",
-		"svelte-check": "^3.8.6",
-		"typescript": "^5.5.4",
-		"vite": "^5.4.2"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/rodneylab/astro"
-	},
-	"bugs": {
-		"url": "https://github.com/rodneylab/astro/issues"
-	}
+  "name": "astro-js-location-map",
+  "version": "0.0.1",
+  "private": true,
+  "license": "BSD-3-Clause",
+  "description": "Astro JS Location Map: how you can use the Leaflet library to add a location map on your Astro site with Svelte. Handy for a contact page.",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro telemetry disable && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check": "astro check --fail-on-warnings",
+    "check:svelte": "svelte-check",
+    "format": "prettier --ignore-path .prettierignore --write --plugin=prettier-plugin-astro .",
+    "lint:css": "stylelint \"src/**/*.{css,astro}\"",
+    "prettier:check": "prettier --check --plugin=prettier-plugin-astro ."
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/svelte": "^7.0.1",
+    "@types/leaflet": "^1.9.15",
+    "astro": "^5.0.5",
+    "leaflet": "^1.9.4",
+    "postcss": "^8.4.49",
+    "postcss-html": "^1.7.0",
+    "prettier": "^3.4.2",
+    "stylelint": "^16.12.0",
+    "stylelint-config-recommended": "^14.0.1",
+    "stylelint-config-standard": "^36.0.1",
+    "svelte": "^5.14.0",
+    "svelte-check": "^4.1.1",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rodneylab/astro"
+  },
+  "bugs": {
+    "url": "https://github.com/rodneylab/astro/issues"
+  }
 }
