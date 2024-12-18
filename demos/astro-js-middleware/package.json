@@ -1,29 +1,29 @@
 {
-	"name": "astro-js-middleware",
-	"type": "module",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-		"dev": "astro dev",
-		"start": "astro dev",
-		"build": "astro telemetry disable && astro build",
-		"preview": "astro preview",
-		"astro": "astro",
-		"check": "astro check --fail-on-warnings",
-		"format": "prettier --write --plugin=prettier-plugin-astro .",
-		"lint:css": "stylelint \"src/**/*.{css,astro}\""
-	},
-	"dependencies": {
-		"@astrojs/cloudflare": "^11.0.4",
-		"astro": "^4.14.5"
-	},
-	"devDependencies": {
-		"@astrojs/check": "^0.9.3",
-		"msgpackr": "^1.11.0",
-		"postcss-html": "^1.7.0",
-		"stylelint": "^16.8.2",
-		"stylelint-config-recommended": "^14.0.1",
-		"stylelint-config-standard": "^36.0.1",
-		"typescript": "^5.5.4"
-	}
+  "name": "astro-js-middleware",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro telemetry disable && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check": "astro check --fail-on-warnings",
+    "format": "prettier --write --plugin=prettier-plugin-astro .",
+    "lint:css": "stylelint \"src/**/*.{css,astro}\""
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "^12.1.0",
+    "astro": "^5.0.9"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.3",
+    "msgpackr": "^1.11.0",
+    "postcss-html": "^1.7.0",
+    "stylelint": "^16.12.0",
+    "stylelint-config-recommended": "^14.0.1",
+    "stylelint-config-standard": "^36.0.1",
+    "typescript": "^5.7.2"
+  }
 }
