@@ -1,44 +1,44 @@
 ---
-import '~styles/fonts.css';
-import '~styles/global.css';
+import "~styles/fonts.css";
+import "~styles/global.css";
 
 const { timestamp } = Astro.locals as { timestamp: string };
 ---
 
 <html lang="en-GB">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="/favicon.ico" sizes="any" />
-		<link rel="icon" href="/icon.svg" type="image/svg+xml" />
-		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-		<link rel="manifest" href="/manifest.webmanifest" />
-		<meta name="viewport" content="width=device-width" />
-		<title>Astro JS Middleware</title>
-		<meta
-			name="description"
-			content="Astro JS Middleware Example 📝 how you can intercept HTTP requests for logging, modifying content and from your  🚀 Astro JS project code."
-		/>
-	</head>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Astro JS Middleware</title>
+    <meta
+      name="description"
+      content="Astro JS Middleware Example 📝 how you can intercept HTTP requests for logging, modifying content and from your  🚀 Astro JS project code."
+    />
+  </head>
 
-	<body>
-		<main class="container">
-			<section class="content">{timestamp}</section>
-		</main>
-		<style>
-			body {
-				background-color: var(--colour-theme);
-			}
+  <body>
+    <main class="container">
+      <section class="content">{timestamp}</section>
+    </main>
+    <style>
+      body {
+        background-color: var(--colour-theme);
+      }
 
-			.container {
-				display: grid;
-				place-content: center;
-				height: 100vh;
-			}
+      .container {
+        display: grid;
+        place-content: center;
+        height: 100vh;
+      }
 
-			.content {
-				font-size: var(--font-size-8);
-				font-weight: var(--font-weight-bold);
-			}
-		</style>
-	</body>
+      .content {
+        font-size: var(--font-size-8);
+        font-weight: var(--font-weight-bold);
+      }
+    </style>
+  </body>
 </html>
