@@ -1,51 +1,51 @@
 {
-	"name": "astro-js-sass-styling",
-	"version": "0.0.1",
-	"license": "BSD-3-Clause",
-	"description": "Astro JS Sass styling: how you can add SCSS or Sass styling in Astro JS — covering global styles, scoped styles and styled components.",
-	"private": true,
-	"scripts": {
-		"dev": "astro dev",
-		"start": "astro dev",
-		"build": "astro telemetry disable && astro build",
-		"check": "astro check --fail-on-warnings",
-		"preview": "astro preview",
-		"format": "prettier --write --plugin=prettier-plugin-astro --plugin=prettier-plugin-svelte .",
-		"lint:scss": "stylelint \"src/**/*.{astro,scss,svelte}\"",
-		"prettier:check": "prettier --check --plugin=prettier-plugin-astro --plugin=prettier-plugin-svelte ."
-	},
-	"devDependencies": {
-		"@astrojs/check": "^0.9.4",
-		"@astrojs/react": "^3.6.2",
-		"@astrojs/svelte": "^5.7.3",
-		"@types/react": "^18.3.12",
-		"@types/react-dom": "^18.3.1",
-		"astro": "4.16.10",
-		"postcss": "^8.4.47",
-		"postcss-html": "^1.7.0",
-		"prettier": "^3.3.3",
-		"prettier-plugin-astro": "^0.14.1",
-		"prettier-plugin-svelte": "^3.2.7",
-		"react": "^18.3.1",
-		"react-dom": "^18.3.1",
-		"sass": "^1.80.6",
-		"stylelint": "^16.10.0",
-		"stylelint-config-recommended": "^14.0.1",
-		"stylelint-config-recommended-scss": "^14.1.0",
-		"stylelint-config-standard": "^36.0.1",
-		"svelte": "^5.1.11",
-		"typescript": "^5.6.3",
-		"vite": "^5.4.10"
-	},
-	"dependencies": {
-		"@babel/core": "^7.26.0",
-		"sass-migrator": "^2.2.1"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/rodneylab/astro"
-	},
-	"bugs": {
-		"url": "https://github.com/rodneylab/astro/issues"
-	}
+  "name": "astro-js-sass-styling",
+  "version": "0.0.1",
+  "license": "BSD-3-Clause",
+  "description": "Astro JS Sass styling: how you can add SCSS or Sass styling in Astro JS — covering global styles, scoped styles and styled components.",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro telemetry disable && astro build",
+    "check": "astro check --fail-on-warnings",
+    "preview": "astro preview",
+    "format": "prettier --write --plugin=prettier-plugin-astro --plugin=prettier-plugin-svelte .",
+    "lint:scss": "stylelint \"src/**/*.{astro,scss,svelte}\"",
+    "prettier:check": "prettier --check --plugin=prettier-plugin-astro --plugin=prettier-plugin-svelte ."
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/react": "^4.1.1",
+    "@astrojs/svelte": "^7.0.1",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "astro": "5.1.0",
+    "postcss": "^8.4.49",
+    "postcss-html": "^1.7.0",
+    "prettier": "^3.4.2",
+    "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-svelte": "^3.3.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "sass": "^1.83.0",
+    "stylelint": "^16.12.0",
+    "stylelint-config-recommended": "^14.0.1",
+    "stylelint-config-recommended-scss": "^14.1.0",
+    "stylelint-config-standard": "^36.0.1",
+    "svelte": "^5.15.0",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.4"
+  },
+  "dependencies": {
+    "@babel/core": "^7.26.0",
+    "sass-migrator": "^2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rodneylab/astro"
+  },
+  "bugs": {
+    "url": "https://github.com/rodneylab/astro/issues"
+  }
 }

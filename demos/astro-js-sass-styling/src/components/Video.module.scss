@@ -1,38 +1,36 @@
-@use '../styles/variables';
-
 .container {
-	display: flex;
-	flex-direction: column;
-	background: hsl(
-		variables.$colour-secondary-hue variables.$colour-secondary-saturation
-			variables.$colour-secondary-luminance
-	);
-	align-items: center;
-	width: 100%;
-	padding: variables.$spacing-8 variables.$spacing-0;
-	color: hsl(
-		variables.$colour-light-text-hue variables.$colour-light-text-saturation
-			variables.$colour-light-text-luminance
-	);
+  display: flex;
+  flex-direction: column;
+  background: hsl(
+    variables.$colour-secondary-hue variables.$colour-secondary-saturation
+      variables.$colour-secondary-luminance
+  );
+  align-items: center;
+  width: 100%;
+  padding: variables.$spacing-8 variables.$spacing-0;
+  color: hsl(
+    variables.$colour-light-text-hue variables.$colour-light-text-saturation
+      variables.$colour-light-text-luminance
+  );
 }
 
 .container-alt {
-	background: hsl(
-		variables.$colour-alternative-hue variables.$colour-alternative-saturation
-			variables.$colour-alternative-luminance
-	);
+  background: hsl(
+    variables.$colour-alternative-hue variables.$colour-alternative-saturation
+      variables.$colour-alternative-luminance
+  );
 }
 
 .button {
-	background: hsl(
-		variables.$colour-alternative-hue variables.$colour-alternative-saturation
-			variables.$colour-alternative-luminance
-	);
+  background: hsl(
+    variables.$colour-alternative-hue variables.$colour-alternative-saturation
+      variables.$colour-alternative-luminance
+  );
 }
 
 .button-alt {
-	background: hsl(
-		variables.$colour-secondary-hue variables.$colour-secondary-saturation
-			variables.$colour-secondary-luminance
-	);
+  background: hsl(
+    variables.$colour-secondary-hue variables.$colour-secondary-saturation
+      variables.$colour-secondary-luminance
+  );
 }
