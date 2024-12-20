@@ -1,68 +1,72 @@
 ---
-import '~styles/styles.scss';
-import ReactVideo from '~components/Video.jsx';
-import SvelteVideo from '~components/Video.svelte';
-import { Content as MarkdownVideoContent } from '~content/video.md';
+import "~styles/styles.scss";
+import ReactVideo from "~components/react/Video.jsx";
+import SvelteVideo from "~components/svelte/Video.svelte";
+import { Content as MarkdownVideoContent } from "~content/video.md";
 ---
 
 <html lang="en-GB">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="/favicon.png" />
-		<meta name="viewport" content="width=device-width" />
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
 
-		<title>RodneyLab Minimal Astro Example</title>
-	</head>
+    <title>RodneyLab Minimal Astro Example</title>
+  </head>
 
-	<body>
-		<main class="container">
-			<h1>Astro JS Tutorial Site</h1>
-			<p>This demo is not endorsed by Ben Awad, just thought the video content was fitting!</p>
-			<ReactVideo client:load />
-			<SvelteVideo client:load />
-			<section class="mdx-container">
-				<MarkdownVideoContent />
-			</section>
-		</main>
-		<style lang="scss">
-			@use '../styles/variables';
+  <body>
+    <main class="container">
+      <h1>Astro JS Tutorial Site</h1>
+      <p>
+        This demo is not endorsed by Ben Awad, just thought the video content
+        was fitting!
+      </p>
+      <ReactVideo client:load />
+      <SvelteVideo client:load />
+      <section class="mdx-container">
+        <MarkdownVideoContent />
+      </section>
+    </main>
+    <style lang="scss">
+      .container {
+        display: flex;
+        flex-direction: column;
+        background: hsl(
+          variables.$colour-dark-hue variables.$colour-dark-saturation
+            variables.$colour-dark-luminance
+        );
+        color: hsl(
+          variables.$colour-light-text-hue
+            variables.$colour-light-text-saturation
+            variables.$colour-light-text-luminance
+        );
+        padding: variables.$spacing-8 variables.$spacing-0 variables.$spacing-32;
+      }
 
-			.container {
-				display: flex;
-				flex-direction: column;
-				background: hsl(
-					variables.$colour-dark-hue variables.$colour-dark-saturation
-						variables.$colour-dark-luminance
-				);
-				color: hsl(
-					variables.$colour-light-text-hue variables.$colour-light-text-saturation
-						variables.$colour-light-text-luminance
-				);
-				padding: variables.$spacing-8 variables.$spacing-0 variables.$spacing-32;
-			}
+      .container a {
+        color: hsl(
+          variables.$colour-secondary-hue variables.$colour-secondary-saturation
+            variables.$colour-secondary-luminance
+        );
+      }
 
-			.container a {
-				color: hsl(
-					variables.$colour-secondary-hue variables.$colour-secondary-saturation
-						variables.$colour-secondary-luminance
-				);
-			}
-
-			.mdx-container {
-				display: flex;
-				flex-direction: column;
-				background: hsl(
-					variables.$colour-alternative-hue variables.$colour-alternative-saturation
-						variables.$colour-alternative-luminance
-				);
-				align-items: center;
-				width: 100%;
-				padding: variables.$spacing-8 variables.$spacing-0 variables.$spacing-12;
-				color: hsl(
-					variables.$colour-light-text-hue variables.$colour-light-text-saturation
-						variables.$colour-light-text-luminance
-				);
-			}
-		</style>
-	</body>
+      .mdx-container {
+        display: flex;
+        flex-direction: column;
+        background: hsl(
+          variables.$colour-alternative-hue
+            variables.$colour-alternative-saturation
+            variables.$colour-alternative-luminance
+        );
+        align-items: center;
+        width: 100%;
+        padding: variables.$spacing-8 variables.$spacing-0 variables.$spacing-12;
+        color: hsl(
+          variables.$colour-light-text-hue
+            variables.$colour-light-text-saturation
+            variables.$colour-light-text-luminance
+        );
+      }
+    </style>
+  </body>
 </html>
