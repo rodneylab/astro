@@ -2,7 +2,7 @@
 	let altColours = $state(false);
 </script>
 
-<section class={`container${altColours ? ' container-alt' : ''}`}>
+<section class="container" class:container-alt={altColours}>
 	<h2>Svelte Component</h2>
 	<div class="video-container">
 		<iframe
@@ -16,7 +16,8 @@
 		></iframe>
 	</div>
 	<button
-		class={`button${altColours ? ' button-alt' : ''}`}
+		class="button"
+		class:button-alt={altColours}
 		onclick={() => {
 			altColours = !altColours;
 		}}><span class="screen-reader-text">Toggle colours</span></button
