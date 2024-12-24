@@ -1,52 +1,52 @@
 :root {
-	/* widths */
-	--max-width-full: 100%;
-	--max-width-wrapper: 48rem;
+  /* widths */
+  --max-width-full: 100%;
+  --max-width-wrapper: 48rem;
 
-	/* spacing */
-	--spacing-0: 0;
-	--spacing-1: 0.25rem;
-	--spacing-2: 0.5rem;
-	--spacing-4: 1rem;
-	--spacing-6: 1.5rem;
-	--spacing-8: 2rem;
-	--spacing-12: 3rem;
-	--spacing-24: 6rem;
+  /* spacing */
+  --spacing-0: 0;
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-4: 1rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-12: 3rem;
+  --spacing-24: 6rem;
 
-	/* fonts */
-	--font-family: 'Inter', 'Arial', 'Roboto', sans-serif;
+  /* fonts */
+  --font-family: "Inter", "Arial", "Roboto", sans-serif;
 
-	--font-weight-normal: 400;
-	--font-weight-bold: 700;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
 
-	/* font sizes */
-	--font-size-root: 16px;
-	--font-size-0: 0.8rem;
-	--font-size-1: 1rem;
-	--font-size-2: 1.25rem;
-	--font-size-3: 1.563rem;
-	--font-size-4: 1.953rem;
-	--font-size-5: 2.441rem;
-	--font-size-6: 3.052rem;
-	--font-size-7: 3.815rem;
+  /* font sizes */
+  --font-size-root: 16px;
+  --font-size-0: 0.8rem;
+  --font-size-1: 1rem;
+  --font-size-2: 1.25rem;
+  --font-size-3: 1.563rem;
+  --font-size-4: 1.953rem;
+  --font-size-5: 2.441rem;
+  --font-size-6: 3.052rem;
+  --font-size-7: 3.815rem;
 
-	/* line height */
-	--line-height-none: 1;
-	--line-height-tight: 1.3;
-	--line-height-normal: 1.5;
-	--line-height-relaxed: 1.75;
+  /* line height */
+  --line-height-none: 1;
+  --line-height-tight: 1.3;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
 
-	--colour-surface: oklch(100% 0 0);
-	--colour-surface-alt: oklch(97.82% 0.003 247.86);
-	--colour-text: oklch(25.52% 0.01 260.7);
-	--colour-text-alt: oklch(54.1% 0.175 261.94);
+  --colour-surface: oklch(100% 0 0);
+  --colour-surface-alt: oklch(97.82% 0.003 247.86);
+  --colour-text: oklch(25.52% 0.01 260.7);
+  --colour-text-alt: oklch(54.1% 0.175 261.94);
 }
 
 @media (prefers-color-scheme: dark) {
-	:root {
-		--colour-surface: oklch(17.67% 0.011 260.64);
-		--colour-surface-alt: oklch(22.07% 0.013 258.37);
-		--colour-text: oklch(94.3% 0.009 242.84);
-		--colour-text-alt: oklch(61.99% 0.177 262.82);
-	}
+  :root {
+    --colour-surface: oklch(17.67% 0.011 260.64);
+    --colour-surface-alt: oklch(22.07% 0.013 258.37);
+    --colour-text: oklch(94.3% 0.009 242.84);
+    --colour-text-alt: oklch(61.99% 0.177 262.82);
+  }
 }
