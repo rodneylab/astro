@@ -1,32 +1,32 @@
 ---
-import { getCollection } from 'astro:content';
-import BaseLayout from '~layouts/BaseLayout.astro';
+import { getCollection } from "astro:content";
+import BaseLayout from "~layouts/BaseLayout.astro";
 
 const { href: url } = Astro.url;
-const codeEntries = await getCollection('code');
+const codeEntries = await getCollection("code");
 ---
 
 <BaseLayout
-	title="Markdoc Introduction Home Page"
-	description="Markdoc Introduction: see code examples and some basic Markdoc usage"
-	{url}
+  title="Markdoc Introduction Home Page"
+  description="Markdoc Introduction: see code examples and some basic Markdoc usage"
+  {url}
 >
-	<main>
-		<h1>Markdoc Introduction Home Page</h1>
-		<p>Pages that use the Markdoc template:</p>
-		<ul>
-			{
-				codeEntries
-					.sort(
-						({ data: { date: dateA } }, { data: { date: dateB } }) =>
-							new Date(dateB).valueOf() - new Date(dateA).valueOf(),
-					)
-					.map(({ data: { title }, slug }) => (
-						<li>
-							<a href={`/${slug}`}>{title}</a>
-						</li>
-					))
-			}
-		</ul>
-	</main>
+  <main>
+    <h1>Markdoc Introduction Home Page</h1>
+    <p>Pages that use the Markdoc template:</p>
+    <ul>
+      {
+        codeEntries
+          .sort(
+            ({ data: { date: dateA } }, { data: { date: dateB } }) =>
+              new Date(dateB).valueOf() - new Date(dateA).valueOf(),
+          )
+          .map(({ data: { title }, slug }) => (
+            <li>
+              <a href={`/${slug}`}>{title}</a>
+            </li>
+          ))
+      }
+    </ul>
+  </main>
 </BaseLayout>

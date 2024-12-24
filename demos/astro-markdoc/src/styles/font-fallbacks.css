@@ -1,20 +1,21 @@
 /* This file is generated using capsize. Run `pnpm vite-node capsize-font-fallbacks.ts` to refresh. */
 
 :root {
-	--font-family: Inter, 'Inter Fallback: Arial', 'Inter Fallback: Roboto', sans-serif;
+  --font-family: Inter, "Inter Fallback: Arial", "Inter Fallback: Roboto",
+    sans-serif;
 }
 
 @font-face {
-	font-family: 'Inter Fallback: Arial';
-	src: local('Arial');
-	ascent-override: 90.199%;
-	descent-override: 22.4836%;
-	size-adjust: 107.4014%;
+  font-family: "Inter Fallback: Arial";
+  src: local("Arial");
+  ascent-override: 90.199%;
+  descent-override: 22.4836%;
+  size-adjust: 107.4014%;
 }
 @font-face {
-	font-family: 'Inter Fallback: Roboto';
-	src: local('Roboto');
-	ascent-override: 90.2987%;
-	descent-override: 22.5085%;
-	size-adjust: 107.2828%;
+  font-family: "Inter Fallback: Roboto";
+  src: local("Roboto");
+  ascent-override: 90.2987%;
+  descent-override: 22.5085%;
+  size-adjust: 107.2828%;
 }
