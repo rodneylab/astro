@@ -1,56 +1,57 @@
 @custom-media --desktop-device screen and (width >= 1024px);
 
 :root {
-	--spacing-0: 0;
-	--spacing-2: 0.5rem;
-	--spacing-4: 1rem;
-	--spacing-6: 1.5rem;
-	--spacing-12: 3rem;
-	--spacing-16: 4rem;
+  --spacing-0: 0;
+  --spacing-2: 0.5rem;
+  --spacing-4: 1rem;
+  --spacing-6: 1.5rem;
+  --spacing-12: 3rem;
+  --spacing-16: 4rem;
 
-	--font-size-root: 16px;
-	--font-size-2: 1.25rem;
-	--font-size-4: 1.953rem;
+  --font-size-root: 16px;
+  --font-size-2: 1.25rem;
+  --font-size-4: 1.953rem;
 
-	--font-weight-normal: 400;
-	--font-weight-bold: 700;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
 
-	--max-width-full: 100%;
-	--max-width-wrapper: 64rem;
+  --max-width-full: 100%;
+  --max-width-wrapper: 64rem;
 
-	--line-height-relaxed: 1.75;
+  --line-height-relaxed: 1.75;
 
-	--colour-dark: hsl(225 5% 17%); /* shark */
-	--colour-theme: hsl(39 92% 59%); /* saffron */
+  --colour-dark: hsl(225 5% 17%); /* shark */
+  --colour-theme: hsl(39 92% 59%); /* saffron */
 
-	--font-family: 'Open Sans', sans-serif;
+  --font-family: "Open Sans", sans-serif;
 }
 
 *,
 :after,
 :before {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	font: var(--font-weight-normal) var(--font-size-2) / var(--line-height-relaxed) var(--font-family);
-	color: var(--colour-theme);
-	background: var(--colour-dark);
+  font: var(--font-weight-normal) var(--font-size-2) /
+    var(--line-height-relaxed) var(--font-family);
+  color: var(--colour-theme);
+  background: var(--colour-dark);
 }
 
 @media (--desktop-device) {
-	body {
-		background: var(--colour-theme);
-		color: var(--colour-dark);
-	}
+  body {
+    background: var(--colour-theme);
+    color: var(--colour-dark);
+  }
 }
 
 h1 {
-	font-size: var(--font-size-4);
-	margin-block: var(--spacing-12) var(--spacing-6);
+  font-size: var(--font-size-4);
+  margin-block: var(--spacing-12) var(--spacing-6);
 }
 
 p {
-	margin-block: var(--spacing-0) var(--spacing-6);
-	line-height: var(--line-height-relaxed);
+  margin-block: var(--spacing-0) var(--spacing-6);
+  line-height: var(--line-height-relaxed);
 }
