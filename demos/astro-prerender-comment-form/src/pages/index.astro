@@ -1,20 +1,20 @@
 ---
-import CommentForm from '~/components/CommentForm.svelte';
-import Layout from '~layouts/Layout.astro';
+import CommentForm from "~/components/CommentForm.svelte";
+import Layout from "~layouts/Layout.astro";
 
 export const prerender = true;
 ---
 
 <Layout title="Comment" description="Leave a comment for us">
-	<main>
-		<h1>Drop your comment here&hellip;</h1>
-		<CommentForm client:load />
-	</main>
+  <main>
+    <h1>Drop your comment here&hellip;</h1>
+    <CommentForm client:load />
+  </main>
 </Layout>
 
 <style>
-	h1 {
-		margin-bottom: var(--spacing-6);
-		font-size: var(--font-size-3);
-	}
+  h1 {
+    margin-bottom: var(--spacing-6);
+    font-size: var(--font-size-3);
+  }
 </style>
