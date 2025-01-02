@@ -1,36 +1,37 @@
 {
-	"name": "astro-related-content",
-	"type": "module",
-	"version": "0.0.1",
-	"license": "BSD-3-Clause",
-	"description": "Astro Related Content: adding “you might also like…” style related content to your Astro blog or documentation site with references 💡.",
-	"scripts": {
-		"dev": "astro dev",
-		"start": "astro dev",
-		"build": "astro check && astro build",
-		"preview": "astro preview",
-		"astro": "astro",
-		"check": "astro check --fail-on-warnings",
-		"format": "prettier --write --plugin=prettier-plugin-astro .",
-		"lint:css": "stylelint \"src/**/*.{astro,css,svelte}\"",
-		"prettier:check": "prettier --check --plugin=prettier-plugin-astro ."
-	},
-	"dependencies": {
-		"@astrojs/check": "^0.9.4",
-		"@astrojs/rss": "^4.0.9",
-		"@astrojs/svelte": "^6.0.1",
-		"@iconify/svelte": "^3.1.6",
-		"@rodneylab/picpack": "^0.1.1",
-		"astro": "^4.16.13",
-		"stylelint": "^16.10.0",
-		"svelte": "^5.2.5",
-		"typescript": "^5.6.3"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/rodneylab/astro"
-	},
-	"bugs": {
-		"url": "https://github.com/rodneylab/astro/issues"
-	}
+  "name": "astro-related-content",
+  "type": "module",
+  "version": "0.0.1",
+  "license": "BSD-3-Clause",
+  "description": "Astro Related Content: adding “you might also like…” style related content to your Astro blog or documentation site with references 💡.",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check": "astro check --fail-on-warnings",
+    "format": "prettier --write --plugin=prettier-plugin-astro .",
+    "lint:css": "stylelint \"src/**/*.{astro,css,svelte}\"",
+    "prettier:check": "prettier --check --plugin=prettier-plugin-astro ."
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/rss": "^4.0.10",
+    "@astrojs/svelte": "^7.0.2",
+    "@rodneylab/picpack": "^0.1.1",
+    "astro": "^5.1.1",
+    "stylelint": "^16.12.0",
+    "svelte": "^5.16.0",
+    "svgo": "^3.3.2",
+    "typescript": "^5.7.2",
+    "vite-node": "^2.1.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rodneylab/astro"
+  },
+  "bugs": {
+    "url": "https://github.com/rodneylab/astro/issues"
+  }
 }
