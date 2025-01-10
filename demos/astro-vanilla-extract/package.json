@@ -1,45 +1,46 @@
 {
-	"name": "astro-vanilla-extract",
-	"type": "module",
-	"version": "0.0.1",
-	"private": true,
-	"license": "BSD-3-Clause",
-	"description": "Astro vanilla-extract: how to set up vanilla-extract in your Astro project for zero runtime overhead styling, theming, contracts and more.",
-	"scripts": {
-		"dev": "astro dev",
-		"start": "astro dev",
-		"build": "astro telemetry disable && astro build && subfont -ir --root dist",
-		"preview": "astro preview",
-		"astro": "astro",
-		"check": "astro check",
-		"lint:css": "stylelint \"src/**/*.{css,svelte}\"",
-		"format": "prettier --plugin=prettier-plugin-astro . --write .",
-		"prettier:check": "prettier --check --plugin=prettier-plugin-astro ."
-	},
-	"devDependencies": {
-		"@commitlint/config-conventional": "^19.6.0",
-		"@vanilla-extract/css": "^1.16.1",
-		"@vanilla-extract/vite-plugin": "^4.0.18",
-		"astro": "~4.16.14",
-		"commitlint": "^19.6.0",
-		"husky": "^9.1.7",
-		"subfont": "^7.2.1",
-		"typescript": "^5.7.2",
-		"vite": "^5.4.11",
-		"vite-imagetools": "^7.0.4"
-	},
-	"dependencies": {
-		"@astrojs/check": "^0.9.4",
-		"@astrojs/preact": "^3.5.4",
-		"@astrojs/svelte": "^6.0.2",
-		"preact": "^10.25.0",
-		"svelte": "^5.2.7"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/rodneylab/astro/tree/main/demos/astro-vanilla-extract"
-	},
-	"bugs": {
-		"url": "https://github.com/rodneylab/astro/issues"
-	}
+  "name": "astro-vanilla-extract",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "license": "BSD-3-Clause",
+  "description": "Astro vanilla-extract: how to set up vanilla-extract in your Astro project for zero runtime overhead styling, theming, contracts and more.",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro telemetry disable && astro build && subfont -ir --root dist",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check": "astro check",
+    "lint:css": "stylelint \"src/**/*.{css,svelte}\"",
+    "format": "prettier --plugin=prettier-plugin-astro . --write .",
+    "prettier:check": "prettier --check --plugin=prettier-plugin-astro --plugin=prettier-plugin-svelte ."
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^19.6.0",
+    "@vanilla-extract/css": "^1.17.0",
+    "@vanilla-extract/vite-plugin": "^4.0.19",
+    "astro": "~4.16.17",
+    "commitlint": "^19.6.1",
+    "husky": "^9.1.7",
+    "prettier-plugin-svelte": "^3.3.2",
+    "subfont": "^7.2.1",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.7",
+    "vite-imagetools": "^7.0.5"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/preact": "^4.0.1",
+    "@astrojs/svelte": "^7.0.3",
+    "preact": "^10.25.4",
+    "svelte": "^5.17.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rodneylab/astro/tree/main/demos/astro-vanilla-extract"
+  },
+  "bugs": {
+    "url": "https://github.com/rodneylab/astro/issues"
+  }
 }

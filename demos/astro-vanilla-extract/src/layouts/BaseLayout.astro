@@ -1,53 +1,59 @@
 ---
-import { container, contentWrapper, footer, intro, wrapper } from '~layouts/BaseLayout.css';
-import Banner from '~components/Banner.svelte';
-import Button from '~components/Button.svelte';
-import '~styles/fonts.css';
-import '~styles/global.css';
-import { lightThemeClass } from '../styles/themes.css';
+import {
+  container,
+  contentWrapper,
+  footer,
+  intro,
+  wrapper,
+} from "~layouts/BaseLayout.css";
+import Banner from "~components/Banner.svelte";
+import Button from "~components/Button.svelte";
+import "~styles/fonts.css";
+import "~styles/global.css";
+import { lightThemeClass } from "../styles/themes.css";
 
 export interface Props {
-	frontmatter: {
-		description: string;
-		title: string;
-	};
+  frontmatter: {
+    description: string;
+    title: string;
+  };
 }
 
 const {
-	frontmatter: { description, title },
+  frontmatter: { description, title },
 } = Astro.props as Props;
 ---
 
 <html lang="en-GB">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" href="/favicon.ico" sizes="any" />
-		<link rel="icon" href="/icon.svg" type="image/svg+xml" />
-		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-		<link rel="manifest" href="/manifest.webmanifest" />
-		<title>Newsletter</title>
-		<meta name="description" content={description} />
-	</head>
-	<body class:list={[container, lightThemeClass]}>
-		<Button client:load />
-		<div class:list={[wrapper]}>
-			<main class:list={[contentWrapper]}>
-				<h1>{title}</h1>
-				<Banner />
-				<p class:list={[intro]}>Here&rsquo;s the latest news&hellip;</p>
-				<hr />
-				<slot />
-			</main>
-			<footer class:list={[contentWrapper, footer]}>
-				<hr />
-				<p>You can <a href="#">unsubscribe here</a>.</p>
-				<p>
-					If someone forwarded this newsletter to you and you <a href="#"
-						>like it, you can subscribe</a
-					> (and then forward to your own friends)!
-				</p>
-			</footer>
-		</div>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <title>Newsletter</title>
+    <meta name="description" content={description} />
+  </head>
+  <body class:list={[container, lightThemeClass]}>
+    <Button client:load />
+    <div class:list={[wrapper]}>
+      <main class:list={[contentWrapper]}>
+        <h1>{title}</h1>
+        <Banner />
+        <p class:list={[intro]}>Here&rsquo;s the latest news&hellip;</p>
+        <hr />
+        <slot />
+      </main>
+      <footer class:list={[contentWrapper, footer]}>
+        <hr />
+        <p>You can <a href="#">unsubscribe here</a>.</p>
+        <p>
+          If someone forwarded this newsletter to you and you <a href="#"
+            >like it, you can subscribe</a
+          > (and then forward to your own friends)!
+        </p>
+      </footer>
+    </div>
+  </body>
 </html>
