@@ -1,7 +1,7 @@
 ---
-description: 'Astro vanilla-extract: how to set up vanilla-extract in your Astro project for zero runtime overhead styling, theming, contracts and more.'
-layout: '~layouts/BaseLayout.astro'
-title: 'Newsletter: 16-Nov-2022 — Issue #1'
+description: "Astro vanilla-extract: how to set up vanilla-extract in your Astro project for zero runtime overhead styling, theming, contracts and more."
+layout: "~layouts/BaseLayout.astro"
+title: "Newsletter: 16-Nov-2022 — Issue #1"
 ---
 
 ## Pick of the month &mdash; Directus
