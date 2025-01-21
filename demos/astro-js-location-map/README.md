@@ -13,6 +13,9 @@
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/rodneylab/astro/tree/main/demos/astro-js-location-map)
 
+[![Open in Codeanywhere](https://codeanywhere.com/img/open-in-codeanywhere-btn.svg)](https://app.codeanywhere.com/#https://github.com/rodneylab/astro/tree/main/demos/astro-js-location-map)
+
+
 Demo on how to add a location map to your Astro site using Leaflet, Mapbox and OpenStreetMap in a Svelte action. This code from Rodney Lab accompanies the <a aria-label="Open Rodney Lab blog post on Astro JS Tutorial" href="https://rodneylab.com/astro-js-location-map/">article on Astro JS location map</a>. If you have any questions, please drop a comment at the bottom of that page.
 
 # Astro JS Location Map
