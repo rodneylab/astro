@@ -1,20 +1,21 @@
 /* This file is generated using capsize. Run `vite-node capsize-font-fallbacks.ts` to refresh. */
 
 :root {
-	--font-family: 'Open Sans', 'Open Sans Fallback: Arial', 'Open Sans Fallback: Roboto', sans-serif;
+  --font-family: "Open Sans", "Open Sans Fallback: Arial",
+    "Open Sans Fallback: Roboto", sans-serif;
 }
 
 @font-face {
-	font-family: 'Open Sans Fallback: Arial';
-	src: local('Arial');
-	ascent-override: 101.1768%;
-	descent-override: 27.7323%;
-	size-adjust: 105.6416%;
+  font-family: "Open Sans Fallback: Arial";
+  src: local("Arial");
+  ascent-override: 101.1768%;
+  descent-override: 27.7323%;
+  size-adjust: 105.6416%;
 }
 @font-face {
-	font-family: 'Open Sans Fallback: Roboto';
-	src: local('Roboto');
-	ascent-override: 101.2887%;
-	descent-override: 27.763%;
-	size-adjust: 105.5249%;
+  font-family: "Open Sans Fallback: Roboto";
+  src: local("Roboto");
+  ascent-override: 101.2887%;
+  descent-override: 27.763%;
+  size-adjust: 105.5249%;
 }

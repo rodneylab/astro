@@ -1,30 +1,30 @@
 {
-	"name": "astro-capsize-font-fallbacks",
-	"type": "module",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-		"dev": "astro dev",
-		"start": "astro dev",
-		"build": "astro telemetry disable && astro build",
-		"preview": "astro preview",
-		"astro": "astro",
-		"check": "astro check --fail-on-warnings",
-		"format": "prettier --write --plugin=prettier-plugin-astro .",
-		"lint:css": "stylelint \"src/**/*.{css,astro}\""
-	},
-	"dependencies": {
-		"@capsizecss/core": "^4.1.2",
-		"@capsizecss/metrics": "^3.4.0",
-		"astro": "^5.0.0",
-		"postcss-html": "^1.7.0",
-		"stylelint": "^16.11.0",
-		"stylelint-config-recommended": "^14.0.1",
-		"stylelint-config-standard": "^36.0.1"
-	},
-	"devDependencies": {
-		"@astrojs/check": "^0.9.4",
-		"typescript": "^5.7.2",
-		"vite-node": "^2.1.8"
-	}
+  "name": "astro-capsize-font-fallbacks",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro telemetry disable && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check": "astro check --fail-on-warnings",
+    "format": "prettier --write --plugin=prettier-plugin-astro .",
+    "lint:css": "stylelint \"src/**/*.{css,astro}\""
+  },
+  "dependencies": {
+    "@capsizecss/core": "^4.1.2",
+    "@capsizecss/metrics": "^3.4.0",
+    "astro": "^5.1.9",
+    "postcss-html": "^1.8.0",
+    "stylelint": "^16.13.2",
+    "stylelint-config-recommended": "^15.0.0",
+    "stylelint-config-standard": "^37.0.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.4",
+    "typescript": "^5.7.3",
+    "vite-node": "^3.0.4"
+  }
 }
