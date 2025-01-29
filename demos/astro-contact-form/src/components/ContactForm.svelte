@@ -1,17 +1,18 @@
 <script>
-	let botField = '';
-	let name = '';
-	let email = '';
-	let message = '';
+	let botField = $state('');
+	let name = $state('');
+	let email = $state('');
+	let message = $state('');
 
-	let serverState;
-	$: submitting = false;
+	let serverState = $state('');
+	let submitting = $state(false);
 
 	function handleServerResponse(ok, msg) {
 		serverState = { ok, msg };
 	}
 
-	const handleSubmit = async () => {
+	const handleSubmit = async (event) => {
+		event.preventDefault();
 		console.log({ email, name, message });
 		try {
 			submitting = true;
@@ -41,7 +42,7 @@
 	};
 </script>
 
-<form on:submit|preventDefault={handleSubmit} class="form-container">
+<form onsubmit={handleSubmit} class="form-container">
 	<input aria-hidden="true" type="hidden" name="bot-field" bind:value={botField} />
 	<div>
 		<span class="screen-reader-text"><label for="name">Name</label></span>
@@ -68,7 +69,7 @@
 			placeholder="Write your message here..."
 			title="Message"
 			type="text"
-		/>
+		></textarea>
 	</div>
 	<div class="button-container">
 		<button type="submit" disabled={submitting}> Send</button>
