@@ -1,25 +1,25 @@
 ---
-import '~styles/fonts.css';
-import '~styles/global.css';
-import Video from '~components/Video.svelte';
+import "~styles/fonts.css";
+import "~styles/global.css";
+import Video from "~components/Video.svelte";
 
-const startTime = Astro.cookies.get('start-time')?.value ?? '0';
+const startTime = Astro.cookies.get("start-time")?.value ?? "0";
 
-const title = 'Astro Cookies API';
-const description = 'Astro Cookies API: mux video position save example';
+const title = "Astro Cookies API";
+const description = "Astro Cookies API: mux video position save example";
 ---
 
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width" />
-	<link rel="icon" href="/favicon.ico" sizes="any" />
-	<link rel="icon" href="/icon.svg" type="image/svg+xml" />
-	<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-	<link rel="manifest" href="/manifest.webmanifest" />
-	<title>{title}</title>
-	{description ? <meta name="description" content={description} /> : null}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <title>{title}</title>
+  {description ? <meta name="description" content={description} /> : null}
 </head>
 <main>
-	<h1>Astro Cookies API 🍪</h1>
-	<Video client:load {startTime} />
+  <h1>Astro Cookies API 🍪</h1>
+  <Video client:load {startTime} />
 </main>
