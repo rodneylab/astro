@@ -33,13 +33,15 @@
 	--colour-light: hsl(205 100% 97%); /* alice blue */
 
 	--shadow-colour-theme: 259deg 58% 36%;
-	--shadow-colour-theme-elevation-medium: -1px 1px 1.4px hsl(var(--shadow-colour-theme) / 0.51),
+	--shadow-colour-theme-elevation-medium:
+		-1px 1px 1.4px hsl(var(--shadow-colour-theme) / 0.51),
 		-2.7px 2.7px 3.7px -1.2px hsl(var(--shadow-colour-theme) / 0.43),
 		-7.6px 7.6px 10.5px -2.3px hsl(var(--shadow-colour-theme) / 0.36),
 		-20px 20px 27.6px -3.5px hsl(var(--shadow-colour-theme) / 0.29);
 
 	--shadow-colour-alt: 192deg 63% 45%;
-	--shadow-colour-alt-elevation-medium: -1px 1px 1.4px hsl(var(--shadow-colour-alt) / 0.51),
+	--shadow-colour-alt-elevation-medium:
+		-1px 1px 1.4px hsl(var(--shadow-colour-alt) / 0.51),
 		-2.7px 2.7px 3.7px -1.2px hsl(var(--shadow-colour-alt) / 0.43),
 		-7.6px 7.6px 10.5px -2.3px hsl(var(--shadow-colour-alt) / 0.36),
 		-20px 20px 27.6px -3.5px hsl(var(--shadow-colour-alt) / 0.29);
