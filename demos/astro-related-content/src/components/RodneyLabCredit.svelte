@@ -38,14 +38,14 @@
     font-weight: var(--font-weight-normal);
     src:
       local(""),
-      url("/fonts/lato-v22-latin-regular.woff2") format("woff2")
-        /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("/fonts/lato-v22-latin-regular.woff2") format("woff2"),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
         url("/fonts/lato-v22-latin-regular.woff");
   }
 
   .container {
-    display: "flex";
-    align-items: "center";
+    display: flex;
+    align-items: center;
     color: oklch(25.58% 0.054 239.31);
     font-family: Lato;
   }
