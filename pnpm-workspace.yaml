@@ -1,2 +1,9 @@
 packages:
-  - "demos/*"
+  - demos/*
+onlyBuiltDependencies:
+  - "@parcel/watcher"
+  - core-js
+  - esbuild
+  - msgpackr-extract
+  - sharp
+  - workerd
