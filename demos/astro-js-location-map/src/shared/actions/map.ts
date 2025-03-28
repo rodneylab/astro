@@ -1,3 +1,5 @@
+import type { TileLayerOptions } from "leaflet";
+
 export function setMap(
   mapElement: HTMLElement,
   {
@@ -29,19 +31,20 @@ export function setMap(
       shadowUrl: "/marker-shadow.png",
     });
 
+    const tileLayerOptions: TileLayerOptions & { accessToken: string } = {
+      attribution:
+        'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+      maxZoom: 19,
+      id: "mapbox/streets-v11",
+      tileSize: 512,
+      zoomOffset: -1,
+      accessToken: import.meta.env.PUBLIC_MAPBOX_ACCESS_TOKEN,
+      detectRetina: true,
+    };
     const map = leafletMap(mapElement).setView([latitude, longitude], zoom);
     tileLayer(
       "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}{r}?access_token={accessToken}",
-      {
-        attribution:
-          'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-        maxZoom: 19,
-        id: "mapbox/streets-v11",
-        tileSize: 512,
-        zoomOffset: -1,
-        accessToken: import.meta.env.PUBLIC_MAPBOX_ACCESS_TOKEN,
-        detectRetina: true,
-      },
+      tileLayerOptions,
     ).addTo(map);
 
     if (markerMarkup !== "") {
