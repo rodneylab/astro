@@ -555,13 +555,13 @@ importers:
     devDependencies:
       '@astrojs/check':
         specifier: ^0.9.4
-        version: 0.9.4(prettier-plugin-astro@0.14.1)(prettier@3.5.1)(typescript@5.7.3)
+        version: 0.9.4(prettier-plugin-astro@0.14.1)(prettier@3.5.3)(typescript@5.8.3)
       '@mux/mux-video':
-        specifier: ^0.24.3
-        version: 0.24.3
+        specifier: ^0.25.0
+        version: 0.25.0
       astro:
-        specifier: ^5.3.0
-        version: 5.3.0(@netlify/blobs@8.1.1)(@types/node@22.14.0)(jiti@2.4.2)(rollup@4.39.0)(sass-embedded@1.86.3)(sass@1.83.0)(terser@5.37.0)(typescript@5.7.3)(yaml@2.7.1)
+        specifier: ^5.6.1
+        version: 5.6.1(@netlify/blobs@8.1.1)(@types/node@22.14.0)(jiti@2.4.2)(rollup@4.39.0)(sass-embedded@1.86.3)(sass@1.83.0)(terser@5.37.0)(typescript@5.8.3)(yaml@2.7.1)
       postcss:
         specifier: ^8.5.3
         version: 8.5.3
@@ -569,23 +569,23 @@ importers:
         specifier: ^1.8.0
         version: 1.8.0
       prettier:
-        specifier: ^3.5.1
-        version: 3.5.1
+        specifier: ^3.5.3
+        version: 3.5.3
       prettier-plugin-astro:
         specifier: ^0.14.1
         version: 0.14.1
       stylelint:
-        specifier: ^16.14.1
-        version: 16.14.1(typescript@5.7.3)
+        specifier: ^16.18.0
+        version: 16.18.0(typescript@5.8.3)
       stylelint-config-recommended:
-        specifier: ^15.0.0
-        version: 15.0.0(stylelint@16.14.1(typescript@5.7.3))
+        specifier: ^16.0.0
+        version: 16.0.0(stylelint@16.18.0(typescript@5.8.3))
       stylelint-config-standard:
-        specifier: ^37.0.0
-        version: 37.0.0(stylelint@16.14.1(typescript@5.7.3))
+        specifier: ^38.0.0
+        version: 38.0.0(stylelint@16.18.0(typescript@5.8.3))
       typescript:
-        specifier: ^5.7.3
-        version: 5.7.3
+        specifier: ^5.8.3
+        version: 5.8.3
 
   demos/astro-postcss:
     dependencies:
@@ -2916,11 +2916,11 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@mux/mux-video@0.24.3':
-    resolution: {integrity: sha512-HM5oasXfmYVfmsTMv1lZIW/OkHEQMJwavrl1gI4p13bdlmmUu2CNARiTv/tYATJ9+NkYHlU3RsteHXx7tK7+vg==}
+  '@mux/mux-video@0.25.0':
+    resolution: {integrity: sha512-22S990FXEbipca9wZbs8BSMMd3wVSxl/CP8jWS6QhY3L6yUi/dCW41DaCx7WCTbudO0IK566XuCROA1mIDi79g==}
 
-  '@mux/playback-core@0.28.3':
-    resolution: {integrity: sha512-QID2zp76szCTiXZp5LLYwDZV68HgflOoF10Vmp6P81FqKHonHVrQ0svNGqW6fMZLH2Ymf/Qc6kHSnwWTucgQqA==}
+  '@mux/playback-core@0.28.6':
+    resolution: {integrity: sha512-XB9FCfqA93MB20DQ2zOVS7NxEcQb8nAGoReEwCLvndjBkd3xDbUHsn2R9aPyGLUpJHm/Zqz3kNSaF8gOMpTIXQ==}
 
   '@netlify/blobs@8.1.1':
     resolution: {integrity: sha512-7Dg3PzArvQ0Owq4wpkLECC9iaDBOxuWUN2uwbQtUF6tZssyez2QN+eO0CjuIhhZUivbw+X9bwsyiEjWkdJnv/A==}
@@ -4292,8 +4292,8 @@ packages:
   capitalize@2.0.4:
     resolution: {integrity: sha512-wcSyiFqXRYyCoqu0o0ekXzJAKCLMkqWS5QWGlgTJFJKwRmI6pzcN2hBl5VPq9RzLW5Uf4FF/V/lcFfjCtVak2w==}
 
-  castable-video@1.1.4:
-    resolution: {integrity: sha512-EBQJ04ShZFi1CGKXhBui6UYFJf+6C6wNIa12J2/NSu+ca/XeF5gkXUwHQ8uSKVCpvFYS2RRRB2zf29R0OYz8Iw==}
+  castable-video@1.1.5:
+    resolution: {integrity: sha512-u2RtHbYm9A2sJ/8ooW3x5uvVxVpgMkYrT/0hrsHrVlov5nrO6tSHNOiNKst4oR9Q6l5KoC3Ijfybz0E8OqSKPg==}
 
   ccount@2.0.1:
     resolution: {integrity: sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg==}
@@ -6318,8 +6318,8 @@ packages:
     resolution: {integrity: sha512-71ippSywq5Yb7/tVYyGbkBggbU8H3u5Rz56fH60jGFgr8uHwxs+aSKeqmluIVzM0m0kB7xQjKS6qPfd0b2ZoqQ==}
     hasBin: true
 
-  mux-embed@5.7.0:
-    resolution: {integrity: sha512-Kjb1fYwWO1OcrLzntMo4FtbIn8mFMYmsnTHJMZLYwviTuri7CcgW5EPmufM1RQQ6yKuCG+LDkOjZpN0jfbRNpQ==}
+  mux-embed@5.9.0:
+    resolution: {integrity: sha512-wmunL3uoPhma/tWy8PrDPZkvJpXvSFBwbD3KkC4PG8Ztjfb1X3hRJwGUAQyRz7z99b/ovLm2UTTitrkvStjH4w==}
 
   nanoid@3.3.8:
     resolution: {integrity: sha512-WNLf5Sd8oZxOm+TzppcYk8gVOgP+l58xNy58D0nbUnOxOWRWvlcCV4kUF7ltmI6PsrLl/BgKEyS4mqsGChFN0w==}
@@ -7072,11 +7072,6 @@ packages:
   prettier@2.8.7:
     resolution: {integrity: sha512-yPngTo3aXUUmyuTjeTUT75txrf+aMh9FiD7q9ZE/i6r0bPb22g4FsE6Y338PQX1bmfy08i9QQCB7/rcUAVntfw==}
     engines: {node: '>=10.13.0'}
-    hasBin: true
-
-  prettier@3.5.1:
-    resolution: {integrity: sha512-hPpFQvHwL3Qv5AdRvBFMhnKo4tYxp0ReXiPn2bxkiohEX6mBeBwEpBSQTkD458RaaDKQMYSp4hX4UtfUTA5wDw==}
-    engines: {node: '>=14'}
     hasBin: true
 
   prettier@3.5.3:
@@ -9112,17 +9107,6 @@ snapshots:
 
   '@antfu/utils@8.1.1': {}
 
-  '@astrojs/check@0.9.4(prettier-plugin-astro@0.14.1)(prettier@3.5.1)(typescript@5.7.3)':
-    dependencies:
-      '@astrojs/language-server': 2.15.4(prettier-plugin-astro@0.14.1)(prettier@3.5.1)(typescript@5.7.3)
-      chokidar: 4.0.3
-      kleur: 4.1.5
-      typescript: 5.7.3
-      yargs: 17.7.2
-    transitivePeerDependencies:
-      - prettier
-      - prettier-plugin-astro
-
   '@astrojs/check@0.9.4(prettier-plugin-astro@0.14.1)(prettier@3.5.3)(typescript@5.7.3)':
     dependencies:
       '@astrojs/language-server': 2.15.4(prettier-plugin-astro@0.14.1)(prettier@3.5.3)(typescript@5.7.3)
@@ -9223,32 +9207,6 @@ snapshots:
   '@astrojs/internal-helpers@0.6.0': {}
 
   '@astrojs/internal-helpers@0.6.1': {}
-
-  '@astrojs/language-server@2.15.4(prettier-plugin-astro@0.14.1)(prettier@3.5.1)(typescript@5.7.3)':
-    dependencies:
-      '@astrojs/compiler': 2.11.0
-      '@astrojs/yaml2ts': 0.2.2
-      '@jridgewell/sourcemap-codec': 1.5.0
-      '@volar/kit': 2.4.12(typescript@5.7.3)
-      '@volar/language-core': 2.4.12
-      '@volar/language-server': 2.4.12
-      '@volar/language-service': 2.4.12
-      fast-glob: 3.3.3
-      muggle-string: 0.4.1
-      volar-service-css: 0.0.62(@volar/language-service@2.4.12)
-      volar-service-emmet: 0.0.62(@volar/language-service@2.4.12)
-      volar-service-html: 0.0.62(@volar/language-service@2.4.12)
-      volar-service-prettier: 0.0.62(@volar/language-service@2.4.12)(prettier@3.5.1)
-      volar-service-typescript: 0.0.62(@volar/language-service@2.4.12)
-      volar-service-typescript-twoslash-queries: 0.0.62(@volar/language-service@2.4.12)
-      volar-service-yaml: 0.0.62(@volar/language-service@2.4.12)
-      vscode-html-languageservice: 5.3.3
-      vscode-uri: 3.1.0
-    optionalDependencies:
-      prettier: 3.5.1
-      prettier-plugin-astro: 0.14.1
-    transitivePeerDependencies:
-      - typescript
 
   '@astrojs/language-server@2.15.4(prettier-plugin-astro@0.14.1)(prettier@3.5.3)(typescript@5.7.3)':
     dependencies:
@@ -11183,17 +11141,17 @@ snapshots:
   '@msgpackr-extract/msgpackr-extract-win32-x64@3.0.3':
     optional: true
 
-  '@mux/mux-video@0.24.3':
+  '@mux/mux-video@0.25.0':
     dependencies:
-      '@mux/playback-core': 0.28.3
-      castable-video: 1.1.4
+      '@mux/playback-core': 0.28.6
+      castable-video: 1.1.5
       custom-media-element: 1.4.2
       media-tracks: 0.3.3
 
-  '@mux/playback-core@0.28.3':
+  '@mux/playback-core@0.28.6':
     dependencies:
       hls.js: 1.5.20
-      mux-embed: 5.7.0
+      mux-embed: 5.9.0
 
   '@netlify/blobs@8.1.1': {}
 
@@ -13643,7 +13601,7 @@ snapshots:
 
   capitalize@2.0.4: {}
 
-  castable-video@1.1.4:
+  castable-video@1.1.5:
     dependencies:
       custom-media-element: 1.4.2
 
@@ -16159,7 +16117,7 @@ snapshots:
 
   mustache@4.2.0: {}
 
-  mux-embed@5.7.0: {}
+  mux-embed@5.9.0: {}
 
   nanoid@3.3.8: {}
 
@@ -16970,8 +16928,6 @@ snapshots:
 
   prettier@2.8.7:
     optional: true
-
-  prettier@3.5.1: {}
 
   prettier@3.5.3: {}
 
@@ -19112,13 +19068,6 @@ snapshots:
       vscode-uri: 3.1.0
     optionalDependencies:
       '@volar/language-service': 2.4.12
-
-  volar-service-prettier@0.0.62(@volar/language-service@2.4.12)(prettier@3.5.1):
-    dependencies:
-      vscode-uri: 3.1.0
-    optionalDependencies:
-      '@volar/language-service': 2.4.12
-      prettier: 3.5.1
 
   volar-service-prettier@0.0.62(@volar/language-service@2.4.12)(prettier@3.5.3):
     dependencies:
