@@ -6,7 +6,7 @@ import "~styles/global.css";
 const { request } = Astro;
 const { url: pageUrl } = request;
 const { searchParams } = new URL(pageUrl);
-const url = searchParams.get("url") ?? "https://example.com";
+const url = searchParams.get("qrurl") ?? "https://example.com";
 
 const title = "Astro QR Code Generator with Svelte Actions";
 const description = "Astro QR Code Generator with Svelte Actions";
@@ -34,7 +34,7 @@ const description = "Astro QR Code Generator with Svelte Actions";
         <label for="url" class="screen-reader-text">URL</label>
         <input
           id="url"
-          name="url"
+          name="qrurl"
           type="text"
           placeholder="https://example.com"
           value={url}
