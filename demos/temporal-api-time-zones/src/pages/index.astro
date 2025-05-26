@@ -7,8 +7,7 @@ const localTimeZoneName = 'Europe/London';
 const remoteTimeZoneName = 'America/Sao_Paulo';
 
 const localDateTime = Temporal.Now.plainDateTimeISO().toZonedDateTime(localTimeZoneName);
-const remoteTimeZone = Temporal.TimeZone.from(remoteTimeZoneName);
-const remoteDateTime = localDateTime.withTimeZone(remoteTimeZone);
+const remoteDateTime = Temporal.ZonedDateTime.from(localDateTime.withTimeZone(remoteTimeZoneName));
 ---
 
 <html lang="en-GB">
