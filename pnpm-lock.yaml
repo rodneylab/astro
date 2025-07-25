@@ -234,6 +234,13 @@ importers:
         version: 0.14.1
 
   demos/astro-js-location-map:
+    dependencies:
+      '@types/pdfkit':
+        specifier: ^0.17.2
+        version: 0.17.2
+      pdfkit:
+        specifier: ^0.17.1
+        version: 0.17.1
     devDependencies:
       '@astrojs/check':
         specifier: ^0.9.4
@@ -316,48 +323,48 @@ importers:
     devDependencies:
       '@astrojs/check':
         specifier: ^0.9.4
-        version: 0.9.4(prettier-plugin-astro@0.14.1)(prettier@3.5.3)(typescript@5.8.3)
+        version: 0.9.4(prettier-plugin-astro@0.14.1)(prettier@3.6.2)(typescript@5.8.3)
       '@types/blob-stream':
         specifier: ^0.1.33
         version: 0.1.33
       '@types/pdfkit':
-        specifier: ^0.13.9
-        version: 0.13.9
+        specifier: ^0.17.2
+        version: 0.17.2
       astro:
-        specifier: ^5.5.6
-        version: 5.7.13(@netlify/blobs@8.2.0)(@types/node@24.1.0)(jiti@2.4.2)(rollup@4.45.1)(sass-embedded@1.89.0)(sass@1.83.0)(terser@5.39.1)(typescript@5.8.3)(yaml@2.8.0)
+        specifier: ^5.12.3
+        version: 5.12.3(@netlify/blobs@9.1.5)(@types/node@24.1.0)(jiti@2.4.2)(rollup@4.45.1)(sass-embedded@1.89.0)(sass@1.83.0)(terser@5.39.1)(typescript@5.8.3)(yaml@2.8.0)
       blob-stream:
         specifier: ^0.1.3
         version: 0.1.3
       pdfjs:
-        specifier: ^2.5.3
-        version: 2.5.3
+        specifier: ^2.5.4
+        version: 2.5.4
       pdfkit:
-        specifier: ^0.16.0
-        version: 0.16.0
+        specifier: ^0.17.1
+        version: 0.17.1
       postcss:
-        specifier: ^8.5.3
-        version: 8.5.3
+        specifier: ^8.5.6
+        version: 8.5.6
       postcss-html:
         specifier: ^1.8.0
         version: 1.8.0
       prettier:
-        specifier: ^3.5.3
-        version: 3.5.3
+        specifier: ^3.6.2
+        version: 3.6.2
       prettier-plugin-astro:
         specifier: ^0.14.1
         version: 0.14.1
       stylelint:
-        specifier: ^16.17.0
-        version: 16.19.1(typescript@5.8.3)
+        specifier: ^16.22.0
+        version: 16.22.0(typescript@5.8.3)
       stylelint-config-recommended:
-        specifier: ^15.0.0
-        version: 15.0.0(stylelint@16.19.1(typescript@5.8.3))
+        specifier: ^16.0.0
+        version: 16.0.0(stylelint@16.22.0(typescript@5.8.3))
       stylelint-config-standard:
-        specifier: ^37.0.0
-        version: 37.0.0(stylelint@16.19.1(typescript@5.8.3))
+        specifier: ^38.0.0
+        version: 38.0.0(stylelint@16.22.0(typescript@5.8.3))
       typescript:
-        specifier: ^5.8.2
+        specifier: ^5.8.3
         version: 5.8.3
 
   demos/astro-js-sass-styling:
@@ -3531,8 +3538,8 @@ packages:
       svelte: ^5.0.0
       vite: ^6.0.0
 
-  '@swc/helpers@0.5.15':
-    resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
+  '@swc/helpers@0.5.17':
+    resolution: {integrity: sha512-5IKx/Y13RsYd+sauPb2x+U/xZikHjolzfuDgTAl/Tdf3Q8rslRvC19NKDLgAJQ6wsqADk10ntlv08nPFw/gO/A==}
 
   '@tootallnate/once@1.1.2':
     resolution: {integrity: sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==}
@@ -3602,17 +3609,8 @@ packages:
   '@types/nlcst@2.0.3':
     resolution: {integrity: sha512-vSYNSDe6Ix3q+6Z7ri9lyWqgGhJTmzRjZRqyq15N0Z/1/UnVsno9G/N40NBijoYx2seFDIl0+B2mgAb9mezUCA==}
 
-  '@types/node@22.13.16':
-    resolution: {integrity: sha512-15tM+qA4Ypml/N7kyRdvfRjBQT2RL461uF1Bldn06K0Nzn1lY3nAPgHlsVrJxdZ9WhZiW0Fmc1lOYMtDsAuB3w==}
-
   '@types/node@22.14.1':
     resolution: {integrity: sha512-u0HuPQwe/dHrItgHHpmw3N2fYCR6x4ivMNbPHRkBVP4CvN+kiRrKHWk3i8tXiO/joPwXLMYvF9TTF0eqgHIuOw==}
-
-  '@types/node@22.15.18':
-    resolution: {integrity: sha512-v1DKRfUdyW+jJhZNEI1PYy29S2YRxMV5AOO/x/SjKmW0acCIOqmbj6Haf9eHAhsPmrhlHSxEhv/1WszcLWV4cg==}
-
-  '@types/node@22.15.30':
-    resolution: {integrity: sha512-6Q7lr06bEHdlfplU6YRbgG1SFBdlsfNC4/lX+SkhiTs0cpJkOElmWls8PxDFv4yY/xKb8Y6SO0OmSX4wgqTZbA==}
 
   '@types/node@24.1.0':
     resolution: {integrity: sha512-ut5FthK5moxFKH2T1CUOC6ctR67rQRvvHdFLCD2Ql6KXmMuCrjsSsRI9UsLCm9M18BMwClv4pn327UvB7eeO1w==}
@@ -3620,8 +3618,8 @@ packages:
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
 
-  '@types/pdfkit@0.13.9':
-    resolution: {integrity: sha512-RDG8Yb1zT7I01FfpwK7nMSA433XWpblMqSCtA5vJlSyavWZb303HUYPCel6JTiDDFqwGLvtAnYbH8N/e0Cb89g==}
+  '@types/pdfkit@0.17.2':
+    resolution: {integrity: sha512-a7mqP/l8lsLMVNhQ3N2blU5pA1KX0YFE8FxWp0OTqZQKEZoPk7ndAlW+kdFBAWpFmLpy6fFbMRm4a6ZELWNgOQ==}
 
   '@types/qrcode@1.5.5':
     resolution: {integrity: sha512-CdfBi/e3Qk+3Z/fXYShipBT13OJ2fDO2Q2w5CIP5anLTLIndQG9z6P1cnm+8zCWSpm5dnxMFd/uREtb0EXuQzg==}
@@ -6914,12 +6912,12 @@ packages:
   pathe@2.0.3:
     resolution: {integrity: sha512-WUjGcAqP1gQacoQe+OBJsFA7Ld4DyXuUIjZ5cc75cLHvJ7dtNsTugphxIADwspS+AraAUePCKrSVtPLFj/F88w==}
 
-  pdfjs@2.5.3:
-    resolution: {integrity: sha512-XSFh7/znM7gJAVABFvrtIkxi6TcHyHUCYpwaRUv1h0ln2ZQel0s8nKgsvmo+D7IKkkXKEQNtMU/hdmF/MUeaHg==}
+  pdfjs@2.5.4:
+    resolution: {integrity: sha512-+vlkbSV2KDxn1btbBYzjnzt4jDxastsR/ZLzYIvOVMr+VZnW107j2TCwa0tzjp5gOk7SW9HmYRRPt+AMtjs6uw==}
     engines: {node: '>=7'}
 
-  pdfkit@0.16.0:
-    resolution: {integrity: sha512-oXMxkIqXH4uTAtohWdYA41i/f6i2ReB78uhgizN8H4hJEpgR3/Xjy3iu2InNAuwCIabN3PVs8P1D6G4+W2NH0A==}
+  pdfkit@0.17.1:
+    resolution: {integrity: sha512-Kkf1I9no14O/uo593DYph5u3QwiMfby7JsBSErN1WqeyTgCBNJE3K4pXBn3TgkdKUIVu+buSl4bYUNC+8Up4xg==}
 
   pend@1.2.0:
     resolution: {integrity: sha512-F3asv42UuXchdzt+xXqfW1OGlVBe+mxa2mqI0pg5yAHZPvFmY3Y6drSf/GQ1A86WgWEN9Kzh/WrgKa6iGcHXLg==}
@@ -8124,23 +8122,11 @@ packages:
     peerDependencies:
       stylelint: ^16.1.0
 
-  stylelint-config-recommended@15.0.0:
-    resolution: {integrity: sha512-9LejMFsat7L+NXttdHdTq94byn25TD+82bzGRiV1Pgasl99pWnwipXS5DguTpp3nP1XjvLXVnEJIuYBfsRjRkA==}
-    engines: {node: '>=18.12.0'}
-    peerDependencies:
-      stylelint: ^16.13.0
-
   stylelint-config-recommended@16.0.0:
     resolution: {integrity: sha512-4RSmPjQegF34wNcK1e1O3Uz91HN8P1aFdFzio90wNK9mjgAI19u5vsU868cVZboKzCaa5XbpvtTzAAGQAxpcXA==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
       stylelint: ^16.16.0
-
-  stylelint-config-standard@37.0.0:
-    resolution: {integrity: sha512-+6eBlbSTrOn/il2RlV0zYGQwRTkr+WtzuVSs1reaWGObxnxLpbcspCUYajVQHonVfxVw2U+h42azGhrBvcg8OA==}
-    engines: {node: '>=18.12.0'}
-    peerDependencies:
-      stylelint: ^16.13.0
 
   stylelint-config-standard@38.0.0:
     resolution: {integrity: sha512-uj3JIX+dpFseqd/DJx8Gy3PcRAJhlEZ2IrlFOc4LUxBX/PNMEQ198x7LCOE2Q5oT9Vw8nyc4CIL78xSqPr6iag==}
@@ -8498,9 +8484,6 @@ packages:
 
   underscore@1.13.7:
     resolution: {integrity: sha512-GMXzWtsc57XAtguZgaQViUOzs0KTkk8ojr3/xAxXLITqf/3EMwxC0inyETfDFjH/Krbhuep0HNbbjI9i/q3F3g==}
-
-  undici-types@6.20.0:
-    resolution: {integrity: sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg==}
 
   undici-types@6.21.0:
     resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
@@ -11692,7 +11675,7 @@ snapshots:
     dependencies:
       '@types/estree': 1.0.8
       estree-walker: 2.0.2
-      picomatch: 4.0.3
+      picomatch: 4.0.2
     optionalDependencies:
       rollup: 4.45.1
 
@@ -12172,7 +12155,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@swc/helpers@0.5.15':
+  '@swc/helpers@0.5.17':
     dependencies:
       tslib: 2.8.1
 
@@ -12203,7 +12186,7 @@ snapshots:
 
   '@types/blob-stream@0.1.33':
     dependencies:
-      '@types/node': 22.13.16
+      '@types/node': 24.1.0
 
   '@types/conventional-commits-parser@5.0.1':
     dependencies:
@@ -12255,22 +12238,9 @@ snapshots:
     dependencies:
       '@types/unist': 3.0.3
 
-  '@types/node@22.13.16':
-    dependencies:
-      undici-types: 6.20.0
-
   '@types/node@22.14.1':
     dependencies:
       undici-types: 6.21.0
-
-  '@types/node@22.15.18':
-    dependencies:
-      undici-types: 6.21.0
-
-  '@types/node@22.15.30':
-    dependencies:
-      undici-types: 6.21.0
-    optional: true
 
   '@types/node@24.1.0':
     dependencies:
@@ -12278,9 +12248,9 @@ snapshots:
 
   '@types/normalize-package-data@2.4.4': {}
 
-  '@types/pdfkit@0.13.9':
+  '@types/pdfkit@0.17.2':
     dependencies:
-      '@types/node': 22.13.16
+      '@types/node': 24.1.0
 
   '@types/qrcode@1.5.5':
     dependencies:
@@ -12296,7 +12266,7 @@ snapshots:
 
   '@types/tar@6.1.13':
     dependencies:
-      '@types/node': 22.14.1
+      '@types/node': 24.1.0
       minipass: 4.2.8
 
   '@types/triple-beam@1.3.5': {}
@@ -12305,7 +12275,7 @@ snapshots:
 
   '@types/yauzl@2.10.3':
     dependencies:
-      '@types/node': 22.15.30
+      '@types/node': 24.1.0
     optional: true
 
   '@typescript-eslint/eslint-plugin@8.38.0(@typescript-eslint/parser@8.38.0(eslint@9.19.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.19.0(jiti@2.4.2))(typescript@5.8.3)':
@@ -15226,7 +15196,7 @@ snapshots:
 
   eval@0.1.8:
     dependencies:
-      '@types/node': 22.15.18
+      '@types/node': 24.1.0
       require-like: 0.1.2
 
   event-target-shim@5.0.1: {}
@@ -15414,7 +15384,7 @@ snapshots:
 
   fontkit@2.0.4:
     dependencies:
-      '@swc/helpers': 0.5.15
+      '@swc/helpers': 0.5.17
       brotli: 1.3.3
       clone: 2.1.2
       dfa: 1.2.0
@@ -17213,7 +17183,7 @@ snapshots:
 
   pathe@2.0.3: {}
 
-  pdfjs@2.5.3:
+  pdfjs@2.5.4:
     dependencies:
       '@rkusa/linebreak': 1.0.0
       opentype.js: 1.3.4
@@ -17222,7 +17192,7 @@ snapshots:
       unorm: 1.6.0
       uuid: 8.3.2
 
-  pdfkit@0.16.0:
+  pdfkit@0.17.1:
     dependencies:
       crypto-js: 4.2.0
       fontkit: 2.0.4
@@ -17640,6 +17610,10 @@ snapshots:
   postcss-safe-parser@6.0.0(postcss@8.5.6):
     dependencies:
       postcss: 8.5.6
+
+  postcss-safe-parser@7.0.1(postcss@8.5.3):
+    dependencies:
+      postcss: 8.5.3
 
   postcss-safe-parser@7.0.1(postcss@8.5.6):
     dependencies:
@@ -18696,10 +18670,6 @@ snapshots:
     dependencies:
       stylelint: 16.19.1(typescript@5.8.3)
 
-  stylelint-config-recommended@15.0.0(stylelint@16.19.1(typescript@5.8.3)):
-    dependencies:
-      stylelint: 16.19.1(typescript@5.8.3)
-
   stylelint-config-recommended@16.0.0(stylelint@16.19.1(typescript@5.8.3)):
     dependencies:
       stylelint: 16.19.1(typescript@5.8.3)
@@ -18715,11 +18685,6 @@ snapshots:
   stylelint-config-recommended@16.0.0(stylelint@16.22.0(typescript@5.8.3)):
     dependencies:
       stylelint: 16.22.0(typescript@5.8.3)
-
-  stylelint-config-standard@37.0.0(stylelint@16.19.1(typescript@5.8.3)):
-    dependencies:
-      stylelint: 16.19.1(typescript@5.8.3)
-      stylelint-config-recommended: 15.0.0(stylelint@16.19.1(typescript@5.8.3))
 
   stylelint-config-standard@38.0.0(stylelint@16.19.1(typescript@5.8.3)):
     dependencies:
@@ -18787,9 +18752,9 @@ snapshots:
       micromatch: 4.0.8
       normalize-path: 3.0.0
       picocolors: 1.1.1
-      postcss: 8.5.6
+      postcss: 8.5.3
       postcss-resolve-nested-selector: 0.1.6
-      postcss-safe-parser: 7.0.1(postcss@8.5.6)
+      postcss-safe-parser: 7.0.1(postcss@8.5.3)
       postcss-selector-parser: 7.1.0
       postcss-value-parser: 4.2.0
       resolve-from: 5.0.0
@@ -19264,8 +19229,8 @@ snapshots:
 
   tinyglobby@0.2.12:
     dependencies:
-      fdir: 6.4.6(picomatch@4.0.3)
-      picomatch: 4.0.3
+      fdir: 6.4.6(picomatch@4.0.2)
+      picomatch: 4.0.2
 
   tinyglobby@0.2.13:
     dependencies:
@@ -19413,8 +19378,6 @@ snapshots:
   uncrypto@0.1.3: {}
 
   underscore@1.13.7: {}
-
-  undici-types@6.20.0: {}
 
   undici-types@6.21.0: {}
 
